@@ -71,20 +71,165 @@
 
         <!-- ABOUT ************************************************************** -->
         <section class="about_section">
-            <h2 class="about_title"> <a href="about.html">About Us<i class="ri-arrow-right-up-line about_arr"></i></a>
-            </h2>
-            <p class="about_para">We are a <span>creative branding</span> agency, built on the primary goal of fulfilling the <span>dreams and hopes </span> of the clients who come to us. Keeping you and <span>your interests </span> at the centre, we handshake with you to make you <span>stand out</span> in your field. </p>
-            <div class="about_bottom">
-                <div class="why_container"><a href="" class="whyus">Why Us</a></div>
-                <p class="about_second_para"> We believe that whether it's Printing, web development or Graphic design, the locus of focus should be "how the human mind works." By incorporating psychology into branding, we increase your online presence and customer retention. For this, our team includes storytelling, data and facts, and minimalistic design in our working culture to make your idea more human centric so that it can reach people at large. </p>
+            <div class="about_wrapper">
+                <h2 class="about_title"> <a href="about.html">About Us<i
+                            class="ri-arrow-right-up-line about_arr"></i></a>
+                </h2>
+                <p class="about_para">We are a <span>creative branding</span> agency, built on the primary goal of
+                    fulfilling the <span>dreams and hopes </span> of the clients who come to us. Keeping you and
+                    <span>your interests </span> at the centre, we handshake with you to make you <span>stand out</span>
+                    in your field.
+                </p>
+                <div class="about_bottom">
+                    <div class="why_container"><a href="" class="whyus">Why Us</a></div>
+                    <p class="about_second_para"> We believe that whether it's Printing, web development or Graphic
+                        design, the locus of focus should be "how the human mind works." By incorporating psychology
+                        into branding, we increase your online presence and customer retention. For this, our team
+                        includes storytelling, data and facts, and minimalistic design in our working culture to make
+                        your idea more human centric so that it can reach people at large. </p>
+                </div>
             </div>
         </section>
 
         <!-- SERVICES *********************************************************** -->
-         <section class="service_section">
-            <h2 class="service_title">Our Services</h2>
-            <p class="service_para">Elite <span>Web Design And Development</span> For New And Established Ecommerce Brands</p>
-         </section>
+        <section class="service_section">
+            <div class="service_wrapper">
+                <h2 class="service_title">Our Services</h2>
+                <div class="upper-half-wrapper">
+                    <p class="service_para">Elite <span>Web Design And Development</span> For New And Established
+                        Ecommerce
+                        Brands</p>
+                    <div class="pills-wrapper">
+                        <button onclick="openCategory(event, 'design')" id="defaultOpen" class="pill pill-active"><i class="ri-pencil-ruler-line pillu pill-icon-active"></i> Design</button>
+                        <button onclick="openCategory(event, 'digitalmarketing')" class="pill"><i class="ri-printer-line pillu"></i> Printing</button>
+                        <button onclick="openCategory(event, 'development')" class="pill"><i class="ri-code-s-slash-line pillu"></i>
+                            Development</button>
+                        <button onclick="openCategory(event, 'seo')" class="pill"><i class="ri-seo-line pillu"></i>
+                            SEO</button>
+                    </div>
+                </div>
+            </div>
+            <div class="service-categories tabcontent" id="design">
+                <div class="category cat1">
+                    <span class="service-name">UI/UX Design</span>
+                    <span class="img-arr-wrapper">
+                        <img class="service-img" src="/theart.svg" alt="">
+                        <span class="arr"><i class="ri-arrow-right-up-line service-icon"></i></span>
+                    </span>
+                </div>
+                <div class="category">
+                    <span class="service-name">Web Design</span>
+                    <span class="img-arr-wrapper">
+                        <img class="service-img" src="/cuisine.svg" alt="">
+                        <span class="arr"><i class="ri-arrow-right-up-line service-icon"></i></span>
+                    </span>
+                </div>
+                <div class="category">
+                    <span class="service-name">Brand Design</span>
+                    <span class="img-arr-wrapper">
+                        <img class="service-img" src="/386.svg" alt="">
+                        <span class="arr"><i class="ri-arrow-right-up-line service-icon"></i></span>
+                    </span>
+                </div>
+                <div class="category">
+                    <span class="service-name">Graphic Design</span>
+                    <span class="img-arr-wrapper">
+                        <img class="service-img" src="/gd1.webp" alt="">
+                        <span class="arr"><i class="ri-arrow-right-up-line service-icon"></i></span>
+                    </span>
+                </div>
+            </div>
+            <div class="service-categories tabcontent" id="development">
+                <div class="category cat1">
+                    <span class="service-name">Frontend Development</span>
+                    <span class="img-arr-wrapper">
+                        <img class="service-img" src="/frontend.svg" alt="">
+                        <span class="arr"><i class="fa-solid fa-arrow-right service-icon"></i></span>
+                    </span>
+                </div>
+                <div class="category">
+                    <span class="service-name">Backend Development</span>
+                    <span class="img-arr-wrapper">
+                        <img class="service-img" src="/backend.svg" alt="">
+                        <span class="arr"><i class="fa-solid fa-arrow-right service-icon"></i></span>
+                    </span>
+                </div>
+                <div class="category">
+                    <span class="service-name">Fullstack Development</span>
+                    <span class="img-arr-wrapper">
+                        <img class="service-img" src="/fullstack.svg" alt="">
+                        <span class="arr"><i class="fa-solid fa-arrow-right service-icon"></i></span>
+                    </span>
+                </div>
+                <div class="category">
+                    <span class="service-name">Development & Deployment</span>
+                    <span class="img-arr-wrapper">
+                        <img class="service-img" src="/deployment.svg" alt="">
+                        <span class="arr"><i class="fa-solid fa-arrow-right service-icon"></i></span>
+                    </span>
+                </div>
+            </div>
+            <div class="service-categories tabcontent" id="digitalmarketing">
+                <div class="category cat1">
+                    <span class="service-name">Social Media Marketing</span>
+                    <span class="img-arr-wrapper">
+                        <img class="service-img" src="/socialmediamarketing.svg" alt="">
+                        <span class="arr"><i class="fa-solid fa-arrow-right service-icon"></i></span>
+                    </span>
+                </div>
+                <div class="category">
+                    <span class="service-name">Email Marketing</span>
+                    <span class="img-arr-wrapper">
+                        <img class="service-img" src="/emailmarketing.svg" alt="">
+                        <span class="arr"><i class="fa-solid fa-arrow-right service-icon"></i></span>
+                    </span>
+                </div>
+                <div class="category">
+                    <span class="service-name">Content Writing</span>
+                    <span class="img-arr-wrapper">
+                        <img class="service-img" src="/contentwriting.svg" alt="">
+                        <span class="arr"><i class="fa-solid fa-arrow-right service-icon"></i></span>
+                    </span>
+                </div>
+                <div class="category">
+                    <span class="service-name">SMS Marketing</span>
+                    <span class="img-arr-wrapper">
+                        <img class="service-img" src="/smsmarketing.svg" alt="">
+                        <span class="arr"><i class="fa-solid fa-arrow-right service-icon"></i></span>
+                    </span>
+                </div>
+            </div>
+            <div class="service-categories tabcontent" id="seo">
+                <div class="category cat1">
+                    <span class="service-name">SEO</span>
+                    <span class="img-arr-wrapper">
+                        <img class="service-img" src="/seo.svg" alt="">
+                        <span class="arr"><i class="fa-solid fa-arrow-right service-icon"></i></span>
+                    </span>
+                </div>
+                <div class="category">
+                    <span class="service-name">Link Building</span>
+                    <span class="img-arr-wrapper">
+                        <img class="service-img" src="/linkbuilding.svg" alt="">
+                        <span class="arr"><i class="fa-solid fa-arrow-right service-icon"></i></span>
+                    </span>
+                </div>
+                <div class="category">
+                    <span class="service-name">Conversion Rate Optimizaton</span>
+                    <span class="img-arr-wrapper">
+                        <img class="service-img" src="/conversionrate.svg" alt="">
+                        <span class="arr"><i class="fa-solid fa-arrow-right service-icon"></i></span>
+                    </span>
+                </div>
+                <div class="category">
+                    <span class="service-name">Technical SEO</span>
+                    <span class="img-arr-wrapper">
+                        <img class="service-img" src="/technicalSEO.svg" alt="">
+                        <span class="arr"><i class="fa-solid fa-arrow-right service-icon"></i></span>
+                    </span>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="index.js"></script>
