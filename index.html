@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
         integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./js_favicon.png" type="image/x-icon">
 </head>
 
 <body>
@@ -18,22 +19,42 @@
     <!-- HEADER ***************************************************************** -->
     <header class="header">
         <div class="logo">
-            <i class="ri-brush-line"></i><a href="">jswebart</a>
+            <img src="./jswebart_only_js.png" alt=""><a href="">webart</a>
         </div>
         <nav class="navbar">
-            <li><a href="">Why jswebart</a></li>
+            <li><a class="nav_links" href="">Why jswebart</a></li>
             <li class="company">
-                <a>Company <i class="ri-arrow-up-s-line comp_arr"></i></a>
+                <a class="nav_links">Company <i class="ri-arrow-up-s-line comp_arr"></i></a>
                 <div id="dropdown">
-                    <a href="">About us</a>
-                    <a href="">Our process</a>
-                    <a href="">Testimonials </a>
-                    <a href="">Job opportunity</a>
-                    <a href="">Partnership</a>
+                    <div class="links">
+                        <a href="">About us</a>
+                        <a href="">Our process</a>
+                        <a href="">Testimonials </a>
+                        <a href="">Job opportunity</a>
+                        <a href="">Partnership</a>
+                    </div>
+                    <figure class="company_logo">
+                        <img src="./jswebart_logo(white).png" alt="">
+                        <a href="" class="talk">Let's Talk</a>
+                        <p class="img_para">Work with the best and elevate your brand image.</p>
+                    </figure>
                 </div>
             </li>
-            <li><a href="">Printing</a></li>
-            <li><a href="">Blog</a></li>
+            <li><a class="nav_links" href="">Services</a></li>
+            <li><a class="nav_links" href="">Work</a></li>
+            <li class="insights">
+                <a class="nav_links">Insights <i class="ri-arrow-up-s-line insights_arr"></i></a>
+                <div id="dropdown">
+                    <div class="links">
+                        <a href="">Blog</a>
+                        <a href="">News</a>
+                        <a href="">case study</a>
+                    </div>
+                    <figure class="company_logo">
+                        <img src="./jswebart_logo(white).png" alt="">
+                    </figure>
+                </div>
+            </li>
         </nav>
         <div class="contact"><a href="">Contact Us</a></div>
     </header>
@@ -100,9 +121,12 @@
                         Ecommerce
                         Brands</p>
                     <div class="pills-wrapper">
-                        <button onclick="openCategory(event, 'design')" id="defaultOpen" class="pill pill-active"><i class="ri-pencil-ruler-line pillu pill-icon-active"></i> Design</button>
-                        <button onclick="openCategory(event, 'digitalmarketing')" class="pill"><i class="ri-printer-line pillu"></i> Printing</button>
-                        <button onclick="openCategory(event, 'development')" class="pill"><i class="ri-code-s-slash-line pillu"></i>
+                        <button onclick="openCategory(event, 'design')" id="defaultOpen" class="pill pill-active"><i
+                                class="ri-pencil-ruler-line pillu pill-icon-active"></i> Design</button>
+                        <button onclick="openCategory(event, 'digitalmarketing')" class="pill"><i
+                                class="ri-printer-line pillu"></i> Printing</button>
+                        <button onclick="openCategory(event, 'development')" class="pill"><i
+                                class="ri-code-s-slash-line pillu"></i>
                             Development</button>
                         <button onclick="openCategory(event, 'seo')" class="pill"><i class="ri-seo-line pillu"></i>
                             SEO</button>
