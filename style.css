@@ -6,6 +6,7 @@
   --dark-black-clr: #151515;
   --medium-black-clr: #262626;
   --light-black-clr: #3c3c3c;
+  --eee-clr: #eee;
   --redish-clr: #d19f9c;
   --yellow-clr: #f9f871;
   --white-clr: #faf8ff;
@@ -38,7 +39,7 @@ span {
 
 #header {
   width: 100%;
-  height: 7vw;
+  height: 6.5vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,7 +59,7 @@ span {
   padding: 1vw 1.5vw;
   margin: 0 1vw;
   text-align: center;
-  font-size: 1.3vw;
+  font-size: 1.4vw;
   font-family: var(--poppin-font);
 }
 
@@ -86,6 +87,8 @@ span {
   color: var(--dark-black-clr);
 }
 
+/* HERO START ***************************************************************** */
+
 #hero_section {
   display: flex;
   justify-content: center;
@@ -105,17 +108,19 @@ span {
 
 #hero_para {
   font-family: var(--poppin-font);
-  font-size: 1.6vw;
-  color: var(--light-white-clr);
+  font-size: 1vw;
+  color: var(--eee-clr);
   padding-right: 8vw;
+  line-height: 1.3;
+  letter-spacing: 0.05vw;
+  padding-bottom: 2vw;
 }
 
 #hero_title {
   font-family: var(--outfit-font);
-  font-size: 3vw;
+  font-size: 2.6vw;
   font-weight: 500;
-  line-height: 1.4;
-  padding-bottom: 3vw;
+  line-height: 1.2;
 }
 
 #hero_title span {
@@ -124,11 +129,11 @@ span {
 
 #hero_contact_btn {
   font-family: var(--poppin-font);
-  font-size: 2vw;
+  font-size: 1.5vw;
   color: var(--dark-black-clr);
   font-weight: bold;
   background-color: var(--green-clr);
-  padding: 1.2vw 8vw;
+  padding: 1.2vw 4vw;
   border-radius: 1vw;
 }
 
@@ -141,11 +146,11 @@ span {
 }
 
 #block_one {
-  height: 25vw;
+  height: 26vw;
   width: 13vw;
   border: 3px solid var(--redish-clr);
   border-radius: 5vw;
-  transform: translateY(7vw);
+  transform: translateY(7.2vw);
   overflow: hidden;
 }
 
@@ -156,7 +161,7 @@ span {
 }
 
 #block_two {
-  height: 35vw;
+  height: 36vw;
   width: 25vw;
   border: 3px solid var(--blue-clr);
   border-radius: 8vw;
@@ -170,11 +175,11 @@ span {
 }
 
 #block_three {
-  height: 25vw;
+  height: 26vw;
   width: 13vw;
   border: 3px solid var(--green-clr);
   border-radius: 5vw;
-  transform: translateY(-7vw);
+  transform: translateY(-6.5vw);
   overflow: hidden;
 }
 
@@ -183,3 +188,5 @@ span {
   width: 100%;
   height: 100%;
 }
+
+/* HERO END ***************************************************************** */
