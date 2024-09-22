@@ -135,7 +135,7 @@ span {
 
 .dropdown2 {
   position: absolute;
-  max-height: 60vh;
+  max-height: 65vh;
   left: 100%;
   width: 16vw;
   display: flex;
@@ -187,7 +187,7 @@ span {
 
 .print_dropdown {
   width: 16vw;
-  max-height: 60vh;
+  max-height: 65vh;
   background-color: var(--light-black-clr);
   position: absolute;
   display: none;
