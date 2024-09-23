@@ -471,12 +471,12 @@ span {
 }
 
 .featured_work_captions {
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 3vw 0;
+  margin: 3vw auto;
   gap: 1vw;
   transition: all 0.6s;
 }
