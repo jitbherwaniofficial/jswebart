@@ -21,11 +21,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--dark-secondary-black-clr);
-  color: var(--white-clr);
+  background-color: var(--dark-black-clr);
+ color: var(--white-clr);
 }
 
 ::-webkit-scrollbar {
@@ -302,10 +303,9 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh + 3vw);
   background-color: var(--dark-black-clr);
-  padding-top: 6vw;
-  padding-bottom: 3vw;
+  padding-top: 8.5vw;
+  padding-bottom: 5vw;
 }
 
 #hero_left {
@@ -316,6 +316,7 @@ span {
   align-items: flex-start;
   flex-direction: column;
   gap: 1vw;
+  color: var(--white-clr);
 }
 
 #hero_para {
@@ -361,6 +362,7 @@ span {
   justify-content: center;
   align-items: center;
   gap: 2vw;
+  padding-right: 0.5vw;
 }
 
 #block_one {
@@ -409,28 +411,106 @@ span {
 
 /* HERO END ***************************************************************** */
 
+/* FEATURED WORK SECTION START ***************************************************** */
+#featured_work_section {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8vw 0;
+  margin: 0 auto;
+}
 
-/* COMPANY VIDEO START ******************************************************** */
-#company_video {
+#featured_work_title {
+  font-size: 2vw;
+  font-weight: bold;
+  color: var(--green-clr);
+  width: 65%;
+  font-family: var(--poppin-font);
+}
+
+#featured_work_para {
+  font-size: 1vw;
+  line-height: 1.4;
+  color: var(--eee-clr);
+  width: 35%;
+  letter-spacing: 0.05vw;
+  padding: 0 2vw;
+}
+
+#featured_work_container {
   width: 100%;
-  height: 35vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.featured_work_anchor {
+  transition: all 0.6s;
+  display: inline-block;
+  width: 40vw;
+  text-decoration: none;
+  margin: 5vw 0;
+  border-radius: 0.5vw;
+}
+
+.featured_work_anchor:hover {
+  border: 3px solid var(--blue-clr);
+  padding: 5vw;
+}
+
+.featured_work_image_container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.featured_work_image_container img {
+  border: 3px solid var(--green-clr);
+  width: 100%;
+  object-fit: contain;
+  border-radius: 0.5vw;
+}
+
+.featured_work_captions {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  flex-wrap: wrap;
+  margin: 3vw 0;
+  gap: 1vw;
+  transition: all 0.6s;
 }
 
-#company_video::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 200, 150,0.050);
-  position: absolute;
+.featured_work_captions figcaption {
+  width: fit-content;
+  padding: 1vw 2vw;
+  border: 2px solid var(--blue-clr);
+  border-radius: 5vw;
+  color: var(--green-clr);
+  text-transform: uppercase;
+  font-family: var(--poppin-font);
+  font-size: 1vw;
+  
 }
 
-#company_video video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+#fw_one {
+  width: 60vw;
 }
-/* COMPANY VIDEO END ******************************************************** */
+
+#fw_two {
+  width: 60vw;
+  margin-left: auto;
+}
+
+.c_name {
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  font-family: var(--outfit-font);
+  font-weight: bold;
+  font-size: 1.5vw;
+  color: var(--eee-clr);
+  letter-spacing: 0.5vw;
+  padding-top: 3vw;
+}
+/* FEATURED WORK SECTION END ***************************************************** */
