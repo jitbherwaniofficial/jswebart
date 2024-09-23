@@ -4,6 +4,7 @@
   --green-clr: #00c896;
   --blue-clr: #0066cf;
   --dark-black-clr: #151515;
+  --dark-secondary-black-clr: #111111;
   --medium-black-clr: #262626;
   --light-black-clr: #3c3c3c;
   --eee-clr: #eee;
@@ -23,7 +24,7 @@
 }
 
 body {
-  background: var(--dark-black-clr);
+  background: var(--dark-secondary-black-clr);
   color: var(--white-clr);
 }
 
@@ -58,6 +59,11 @@ span {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 0.5px 1px #eee;
+  position: relative;
+  z-index: 999;
+  background-color: var(--medium-black-clr);
+  position: fixed;
+  top: 0;
 }
 
 #header-wrapper {
@@ -296,7 +302,10 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 85vh;
+  height: calc(100vh + 3vw);
+  background-color: var(--dark-black-clr);
+  padding-top: 6vw;
+  padding-bottom: 3vw;
 }
 
 #hero_left {
@@ -399,3 +408,29 @@ span {
 }
 
 /* HERO END ***************************************************************** */
+
+
+/* COMPANY VIDEO START ******************************************************** */
+#company_video {
+  width: 100%;
+  height: 35vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#company_video::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 200, 150,0.050);
+  position: absolute;
+}
+
+#company_video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* COMPANY VIDEO END ******************************************************** */
