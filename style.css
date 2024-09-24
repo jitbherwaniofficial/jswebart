@@ -88,6 +88,7 @@ span {
   justify-content: center;
   align-items: center;
   gap: 1vw;
+  overflow: hidden;
 }
 
 #logo img {
@@ -452,16 +453,15 @@ span {
   margin: 5vw 0;
 }
 
-.featured_work_anchor:hover {
-  /* border: 3px solid var(--blue-clr); */
+/* .featured_work_anchor:hover {
   padding: 3vw;
-  border: 6px solid var(--light-white-clr); /* the thickness and color */
+  border: 6px solid var(--light-white-clr);
   -webkit-mask:
     conic-gradient(at 6vw 6vw,#0000 75%,#000 0)
     0 0/calc(100% - 6vw) calc(100% - 6vw),
     linear-gradient(#000 0 0) content-box;
     border-radius: none;
-}
+} */
 
 .featured_work_image_container {
   width: 100%;
@@ -500,6 +500,10 @@ span {
 }
 
 #fw_one {
+  width: 60vw;
+}
+
+#fw_three {
   width: 60vw;
 }
 
