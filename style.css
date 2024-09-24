@@ -27,6 +27,7 @@
 body {
   background-color: var(--dark-black-clr);
  color: var(--white-clr);
+ overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -52,6 +53,8 @@ a {
 span {
   display: inline-block;
 }
+
+/* HEADER STARTS ******************************************************** */
 
 #header {
   width: 100%;
@@ -297,6 +300,8 @@ span {
 .contact:hover a {
   color: var(--dark-black-clr) !important;
 }
+/* HEADER ENDS ******************************************************** */
+
 
 /* HERO START ***************************************************************** */
 
@@ -412,6 +417,34 @@ span {
 
 /* HERO END ***************************************************************** */
 
+
+/* COMPANY MARQUE STARTS ************************************************* */
+#company_marque {
+  width: 100%;
+  height: 100vh;
+  border-top: 1px solid rgba(238, 238, 238,0.2);
+  border-bottom: 1px solid rgba(238, 238, 238,0.2);
+}
+
+#company_marque_name {
+  display: inline-flex;
+  align-items: center;
+  gap: 5vw;
+}
+
+#company_marque_name img {
+  width: 30vw;
+}
+
+#company_marque_name {
+  letter-spacing: 1vw;
+  font-size: 35vw;
+  text-transform: uppercase;
+  font-family: var(--outfit-font);
+  color: var(--green-clr);
+}
+/* COMPANY MARQUE ENDS ************************************************* */
+
 /* FEATURED WORK SECTION START ***************************************************** */
 #featured_work_section {
   width: 90%;
@@ -419,7 +452,7 @@ span {
   flex-wrap: wrap;
   padding: 8vw 0;
   margin: 0 auto;
-  border-top: 1px solid rgba(238, 238, 238,0.2);
+  /* border-top: 1px solid rgba(238, 238, 238,0.2); */
 }
 
 #featured_work_title {
