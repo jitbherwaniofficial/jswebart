@@ -25,7 +25,7 @@ gsap.to("#company_marque #company_marque_name", {
     scrollTrigger: {
         trigger: "#company_marque",
         scroller: "body",
-        start:"top 0%",
+        start:"top 14%",
         end:"top -100%",
         scrub: 2,
         pin:true,
