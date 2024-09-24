@@ -1,8 +1,17 @@
+
 gsap.from("#logo img", {
-    y:-60,
+    // y:-60,
     duration:1,
-    delay:0.3,
+    // delay:0.3,
     rotate:360,
+    scrollTrigger: {
+        trigger: "body",
+        scroller: "body",
+        // markers: true,
+        start:"top 0%",
+        // end: "top 30%",
+        scrub: true,
+    }
 })
 
 gsap.from(".company_name", {
@@ -10,6 +19,7 @@ gsap.from(".company_name", {
     duration:1,
     delay:0.3
 })
+
 
 gsap.from("#featured_work_section #fw_one", {
     opacity: 0,
