@@ -445,6 +445,61 @@ span {
 }
 /* COMPANY MARQUE ENDS ************************************************* */
 
+/* COUNTER STARTS ************************************************************ */
+#counter {
+  width: 90%;
+  display: flex;
+  gap: 5vw;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-family: var(--outfit-font);
+  border-top: 1px solid rgba(238, 238, 238,0.2);
+  /* border-bottom: 1px solid rgba(238, 238, 238,0.2); */
+  padding-top: 5vw;
+}
+
+#counter_box {
+  width: 20vw;
+  height: 15vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: var(--medium-black-clr);
+  color: var(--light-white-clr);
+  border-radius: 1.5vw;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5vw;
+  padding-top: 3.5vw;
+  box-shadow: 0 2px 3px rgba(238, 238, 238,0.2);
+}
+
+#counter_number {
+  font-size: 3vw;
+  font-weight: 400;
+  color: var(--green-clr);
+  position: relative;
+}
+
+.num:after
+{
+  content: "+";
+  
+}
+.num_per:after{
+  content: '%';
+}
+
+#counter_para {
+  font-size: 1.6vw;
+  text-wrap: wrap;
+  padding: 0 2vw;
+  letter-spacing: 0.1vw;
+  text-align: center;
+}
+/* COUNTER ENDS ************************************************************ */
+
 /* FEATURED WORK SECTION START ***************************************************** */
 #featured_work_section {
   width: 90%;
