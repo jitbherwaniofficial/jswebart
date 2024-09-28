@@ -777,3 +777,130 @@ span {
 }
 
 /* ABOUT US END ************************************************************* */
+
+/*  BUSINESS STAGE START ***************************************** */
+#business_stage{
+  width: 100%;
+  margin-top: 4vw;
+  background-color: var(--light-black-clr);
+  padding: 4vw 0;
+}
+#business_head{
+  width: 60%;
+  margin: 0 auto;
+  color: var(--light-white-clr);
+  font-size: 2.5vw;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: 0.1vw;
+  font-weight: 500;
+  padding-bottom: 1.5vw;
+  font-family: var(--outfit-font);
+}
+
+#business_para{
+  width: 65%;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--eee-clr);
+  
+  font-family: var(--poppin-font);
+  font-size: var(--para-font);
+  letter-spacing: var(--para-letter-spacing);
+  line-height: var(--para-line-height);
+  padding-bottom: 3.5vw;
+}
+#business_steps_wrapper{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+#business_steps{
+  width: 20%;
+  height: 37vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: var(--light-black-clr);
+  border: 2px solid var(--blue-clr);
+  border-radius: 4vw;
+  padding-top: 3vw;
+}
+#steps_icon{
+  width: 5.5vw ;
+  height: 5.5vw;
+  padding-bottom: 1vw;
+}
+#steps_head{
+  width: 100%;
+  height: 20%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.3vw;
+  color:var(--green-clr);
+  padding: 1.5vw;
+  font-weight: 700;
+  font-family: var(--outfit-font);
+}
+#steps_para{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.4vw;
+  color: var(--redish-clr);
+  padding-bottom: 1.8vw;
+  font-weight: 700;
+  font-family: var(--poppin-font);
+}
+#steps_list{
+  height: 60%;
+  width: 70%;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1vw;
+  padding-left: 1.8vw;
+}
+
+#steps::marker {
+  color: var(--green-clr);
+}
+
+#steps{
+  font-family: var(--poppin-font);
+  color: var(--white-clr);
+  font-weight: 500;
+  font-size: 1.1vw;
+  letter-spacing: 0.02vw;
+  
+}
+
+#business_stages_anchor_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#business_stages_anchor{
+  width: 20%;
+  text-align: center;
+  padding: 1.5vw 2vw;
+  background-color: var(--green-clr);
+  color: var(--medium-black-clr);
+  font-weight: 700;
+  font-size: 1.6vw;
+  letter-spacing: 0.01vw;
+  border-radius: 0.3vw;
+  font-family: var(--poppin-font);
+  margin: 2vw auto;
+}
+
+
+/*  BUSINESS STAGE END ***************************************** */
