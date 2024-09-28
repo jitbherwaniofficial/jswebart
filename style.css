@@ -518,7 +518,7 @@ span {
   justify-content: space-between;
   padding: 8vw 0;
   margin: 0 auto;
-  /* border-top: 1px solid rgba(238, 238, 238,0.2); */
+ padding-bottom: 0;
 }
 
 #featured_work_title {
@@ -558,15 +558,21 @@ span {
   height: 40vw;
 }
 
+#featured_work_anchor1 {
+  width: 35%;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-start;
+}
 
-#featured_work_image-container {
+#featured_work_anchor1 #featured_work_image-container {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   height: 32vw;
 }
 
-#featured_work_image-container img {
+#featured_work_anchor1 #featured_work_image-container img {
   width: 100%;
   height: 100%;
 }
@@ -587,13 +593,6 @@ span {
   color: var(--eee-clr);
   font-family: var(--poppin-font);
   padding: 0.2vw 0;
-}
-
-#featured_work_anchor1 {
-  width: 35%;
-  display: flex;
-  flex-wrap: wrap;
-  align-self: flex-start;
 }
 
 #featured_work_anchor2 {
@@ -707,3 +706,74 @@ span {
 }
 
 /* FEATURED WORK SECTION END ***************************************************** */
+
+/* ABOUT US START ************************************************************* */
+#about {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5vw;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  border-top: 1px solid rgba(238, 238, 238,0.2);
+  justify-content: space-between;
+}
+
+#about_left {
+  width: 45%;
+}
+
+#about_title {
+  width: 100%;
+  font-family: var(--outfit-font);
+  letter-spacing: var(--heading-letter-spacing);
+  font-size: var(--heading-two-font);
+  color: var(--green-clr);
+  text-transform: capitalize;
+  font-weight: var(--heading-two-weight);
+  padding-bottom: 3vw;
+}
+
+#about_para {
+  width: 100%;
+  font-family: var(--poppin-font);
+  color: var(--white-clr);
+  font-size: 1.7vw;
+  line-height: var(--para-line-height);
+  letter-spacing: var(--para-letter-spacing);
+ 
+}
+
+#about_image_container {
+  width: fit-content;
+  height: 35vw;
+  display: flex;
+}
+
+#about_image_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#about_para2 {
+  width: 100%;
+  font-family: var(--poppin-font);
+  color: var(--white-clr);
+  font-size: 1.7vw;
+  line-height: var(--para-line-height);
+  letter-spacing: var(--para-letter-spacing);
+  padding-top: 2vw;
+}
+
+.para_anchor {
+  padding: 0.1vw 1.3vw;
+  border-radius: 2vw;
+  border: 2px solid var(--blue-clr);
+  text-decoration: none;
+  display: inline-block;
+  
+}
+
+/* ABOUT US END ************************************************************* */

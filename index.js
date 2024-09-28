@@ -38,7 +38,7 @@ function counter() {
         // Create GSAP animation for the counter
         const counterAnimation = gsap.to(valueDisplay, {
             innerText: endValue,
-            duration: 1,
+            duration: 2,
             roundProps: "innerText",
             ease: "power1.inOut",
             paused: true, // Keep it paused until ScrollTrigger
