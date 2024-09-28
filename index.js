@@ -5,9 +5,7 @@ gsap.from("#logo img", {
     scrollTrigger: {
         trigger: "body",
         scroller: "body",
-        // markers: true,
         start:"top 0%",
-        // end: "top 30%",
         scrub: true,
     }
 })
@@ -65,58 +63,5 @@ function counter() {
 
 counter(); // Call the counter function
 // COUNTER *********************************************************** //
-
-
-gsap.from("#featured_work_section #fw_one", {
-    opacity: 0,
-    duration:2,
-    scrollTrigger: {
-        trigger: "#featured_work_section #fw_one",
-        scroller: "body",
-        // markers: true,
-        start:"top 60%",
-        end: "top 10%",
-        scrub: true,
-    }
-})
-
-gsap.from("#featured_work_section #fw_two", {
-    opacity: 0,
-    duration:2,
-    scrollTrigger: {
-        trigger: "#featured_work_section #fw_two",
-        scroller: "body",
-        // markers: true,
-        start:"top 60%",
-        end: "top 10%",
-        scrub: true,
-    }
-})
-
-gsap.from("#featured_work_section #fw_three", {
-    opacity: 0,
-    duration:2,
-    scrollTrigger: {
-        trigger: "#featured_work_section #fw_three",
-        scroller: "body",
-        // markers: true,
-        start:"top 60%",
-        end: "top 10%",
-        scrub: true,
-    }
-})
-
-gsap.from("#featured_work_section #fw_four", {
-    opacity: 0,
-    duration:2,
-    scrollTrigger: {
-        trigger: "#featured_work_section #fw_four",
-        scroller: "body",
-        // markers: true,
-        start:"top 60%",
-        end: "top 10%",
-        scrub: true,
-    }
-})
 
 
