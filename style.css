@@ -714,6 +714,7 @@ span {
   display: flex;
   flex-wrap: wrap;
   margin-top: 5vw;
+  margin-bottom: 2vw;
   padding-top: 5vw;
   padding-bottom: 5vw;
   border-top: 1px solid rgba(238, 238, 238,0.2);
@@ -781,7 +782,6 @@ span {
 /*  BUSINESS STAGE START ***************************************** */
 #business_stage{
   width: 100%;
-  margin-top: 4vw;
   background-color: var(--medium-black-clr);
   padding: 4vw 0;
 }
@@ -829,7 +829,24 @@ span {
   border: 2px solid var(--blue-clr);
   border-radius: 4vw;
   padding-top: 3vw;
+  transition: all 0.6s;
+  cursor: pointer;
 }
+#business_steps:hover{
+  transform: scale(1.03);
+  border: 2px solid var(--yellow-clr);
+  background-color: var(--blue-clr);
+ }
+ #business_steps:hover #steps_head{
+  color: var(--medium-black-clr);
+ }
+ #business_steps:hover #steps_para{
+  color: var(--white-clr);
+ }
+ #business_steps:hover #steps{
+  color: var(--yellow-clr);
+ }
+
 #steps_icon{
   width: 5.5vw ;
   height: 5.5vw;
@@ -845,6 +862,7 @@ span {
   padding: 1.5vw;
   font-weight: 700;
   font-family: var(--outfit-font);
+  transition: all 0.6s;
 }
 #steps_para{
   width: 100%;
@@ -855,6 +873,7 @@ span {
   padding-bottom: 1.8vw;
   font-weight: 700;
   font-family: var(--poppin-font);
+  transition: all 0.6s;
 }
 #steps_list{
   height: 60%;
@@ -866,11 +885,11 @@ span {
   justify-content: flex-start;
   gap: 1vw;
   padding-left: 1.8vw;
+  transition: all 0.6s;
+  
 }
 
-#steps::marker {
-  color: var(--green-clr);
-}
+
 
 #steps{
   font-family: var(--poppin-font);
@@ -878,7 +897,7 @@ span {
   font-weight: 500;
   font-size: 1.1vw;
   letter-spacing: 0.02vw;
-  
+ 
 }
 
 #business_stages_anchor_container {
