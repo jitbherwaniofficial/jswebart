@@ -782,7 +782,7 @@ span {
 #business_stage{
   width: 100%;
   margin-top: 4vw;
-  background-color: var(--light-black-clr);
+  background-color: var(--medium-black-clr);
   padding: 4vw 0;
 }
 #business_head{
@@ -825,7 +825,7 @@ span {
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  background-color: var(--light-black-clr);
+  background-color: var(--medium-black-clr);
   border: 2px solid var(--blue-clr);
   border-radius: 4vw;
   padding-top: 3vw;
@@ -895,12 +895,17 @@ span {
   background-color: var(--green-clr);
   color: var(--medium-black-clr);
   font-weight: 700;
-  font-size: 1.6vw;
+  font-size: 1.4vw;
   letter-spacing: 0.01vw;
   border-radius: 0.3vw;
   font-family: var(--poppin-font);
-  margin: 2vw auto;
+  margin: 3vw auto;
+  margin-bottom: 0;
+  transition: 0.6s;
 }
-
+#business_stages_anchor:hover{
+  background-color: var(--blue-clr);
+  color: var(--light-white-clr);
+}
 
 /*  BUSINESS STAGE END ***************************************** */
