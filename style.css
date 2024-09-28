@@ -918,8 +918,9 @@ span {
   letter-spacing: 0.01vw;
   border-radius: 0.3vw;
   font-family: var(--poppin-font);
-  margin: 3vw auto;
-  margin-bottom: 0;
+  margin-top: 4vw ;
+ margin-bottom: 2vw;
+  
   transition: 0.6s;
 }
 #business_stages_anchor:hover{
@@ -928,3 +929,56 @@ span {
 }
 
 /*  BUSINESS STAGE END ***************************************** */
+/*  SERVICE SECTION START ***************************************** */
+#service_section{
+  width: 90%;
+  margin: 0 auto;
+  padding: 5vw 0;
+}
+#service_head{
+  width: 100%;
+  font-size: var(--heading-two-font);
+  color: var(--green-clr);
+  font-family: var(--outfit-font);
+  font-weight: var(--heading-two-weight);
+  letter-spacing: var(--heading-letter-spacing);
+  margin-bottom: 1.5vw;
+}
+#service_top{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2vw;
+
+}
+#service_img{
+  width: 38%;
+  height: auto;
+
+}
+#service_para{
+  width: 55%;
+  text-align: start;
+  font-family: var(--poppin-font);
+  font-size: 1.6vw;
+  font-weight: 500;
+  color: var(--white-clr);
+  letter-spacing: var(--para-letter-spacing);
+  line-height: var(--para-line-height);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  SERVICE SECTION END ***************************************** */
