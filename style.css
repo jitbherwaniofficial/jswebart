@@ -740,6 +740,7 @@ span {
 /* SERVICE SECTION START ************************************************************ */
 .service_section {
   border-top: 1px solid rgba(238, 238, 238, 0.2);
+  border-bottom: 1px solid rgba(238, 238, 238, 0.4);
 }
 
 .service_list_container {
@@ -889,70 +890,77 @@ span {
 
 /* SERVICE SECTION END ************************************************************ */
 
-/* ABOUT US START ************************************************************* */
-#about {
-  width: 90%;
+/* BANNER START ************************************************************* */
+#banner_section {
+  width: 100%;
   margin: 0 auto;
+  height: 50vw;
+  padding: 10vw 0;
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
-  padding-top: 10vw;
-  padding-bottom: 10vw;
-  border-top: 1px solid rgba(238, 238, 238, 0.2);
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-#about_left {
-  width: 45%;
-}
-
-#about_title {
-  width: 100%;
-  font-family: var(--outfit-font);
-  letter-spacing: var(--heading-letter-spacing);
-  font-size: var(--heading-two-font);
-  color: var(--green-clr);
-  text-transform: capitalize;
-  font-weight: var(--heading-two-weight);
-  padding-bottom: 3vw;
-}
-
-#about_para {
-  width: 100%;
-  font-family: var(--poppin-font);
-  color: var(--white-clr);
-  font-size: 1.7vw;
-  line-height: var(--para-line-height);
-  letter-spacing: var(--para-letter-spacing);
-}
-
-#about_image_container {
-  width: fit-content;
+.banner_background_image_container {
   height: 35vw;
-  display: flex;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
 }
 
-#about_image_container img {
+.banner_background_image_container::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  background-color: rgba(0, 102, 207,0.2);
 }
 
-#about_para2 {
+.banner_background_image_container img {
+  height: 100%;
   width: 100%;
-  font-family: var(--poppin-font);
+  object-fit: cover; 
+}
+
+#banner_title {
+  font-family: var(--outfit-font);
+  font-weight: bold;
+  font-size: 4vw;
+  letter-spacing: 0.1vw;
   color: var(--white-clr);
-  font-size: 1.7vw;
-  line-height: var(--para-line-height);
-  letter-spacing: var(--para-letter-spacing);
-  padding-top: 2vw;
+  text-align: center;
 }
 
-.para_anchor {
-  padding: 0.1vw 1.3vw;
-  border-radius: 2vw;
-  border: 2px solid var(--blue-clr);
-  text-decoration: none;
-  display: inline-block;
+#banner_para {
+  font-family: var(--poppin-font);
+  font-size: 2.8vw;
+  color: var(--white-clr);
+  letter-spacing: 0.05vw;
+  line-height: 1.3;
+  text-align: center;
+  width: 70%;
+  padding: 2vw 0;
 }
 
-/* ABOUT US END ************************************************************* */
+#collaborate {
+  padding: 1.5vw 3.5vw;
+  background-color: var(--green-clr);
+  color: var(--dark-black-clr);
+  font-family: var(--poppin-font);
+  letter-spacing: 0.05vw;
+  text-align: center;
+  border-radius: 0.5vw;
+  font-size: 2vw;
+  font-weight: bold;
+  transition: 0.6s;
+}
+
+#collaborate:hover {
+  background-color: var(--blue-clr);
+  color: var(--white-clr);
+}
+/* BANNER END ************************************************************* */
