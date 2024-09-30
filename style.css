@@ -904,7 +904,7 @@ span {
 }
 
 .banner_background_image_container {
-  height: 32vw;
+  height: 30vw;
   width: 90%;
   position: absolute;
   z-index: -1;
@@ -932,8 +932,8 @@ span {
 #banner_title {
   font-family: var(--outfit-font);
   font-weight: 500;
-  font-size: 3.6vw;
-  letter-spacing: 0.1vw;
+  font-size: 3.4vw;
+  letter-spacing: 0.03vw;
   color: var(--white-clr);
   text-align: center;
   padding-bottom: 1vw;
@@ -941,7 +941,7 @@ span {
 
 #banner_para {
   font-family: var(--poppin-font);
-  font-size: 2.3vw;
+  font-size: 2.1vw;
   color: var(--light-white-clr);
   letter-spacing: 0.02vw;
   font-weight: 400;
@@ -959,7 +959,7 @@ span {
   letter-spacing: 0.02vw;
   text-align: center;
   border-radius: 0.5vw;
-  font-size: 2vw;
+  font-size: 1.9vw;
   font-weight: 700;
   transition: 0.6s;
 }
