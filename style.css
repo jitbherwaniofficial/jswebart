@@ -696,6 +696,27 @@ span {
   object-fit: cover;
 }
 
+
+#featured_work_anchor8 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#featured_work_anchor8 #featured_work_image-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 32vw;
+}
+
+#featured_work_anchor8 #featured_work_image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
 #view_all_works {
   display: inline-block;
   font-size: 1.5vw;
@@ -722,7 +743,8 @@ span {
 }
 
 .service_list_container {
-  width: 100%;
+  width: 85%;
+  margin: 0 auto;
   font-family: var(--poppin-font);
  
   margin-top: 5vw;
@@ -830,12 +852,12 @@ span {
 
 .service_content_left {
   width: 55%;
-  max-height: 20vw;
+  max-height: 23vw;
 }
 
 .service_content_left img {
   width: 100%;
-  max-height: 20vw;
+  max-height: 23vw;
   object-fit: cover;
   border-bottom-left-radius: 1vw;
 }
