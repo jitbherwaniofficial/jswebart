@@ -743,7 +743,7 @@ span {
 }
 
 .service_list_container {
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
   font-family: var(--poppin-font);
  
