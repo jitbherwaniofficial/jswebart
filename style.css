@@ -354,21 +354,6 @@ span {
   position: relative;
 }
 
-.stripsminus2 {
-  position: absolute;
-  width: 0.2px;
-  height: 150vh;
-  background-color: rgba(247, 247, 255, 0.2);
-  left: 0%;
-}
-
-.stripsminus1 {
-  position: absolute;
-  width: 0.2px;
-  height: 150vh;
-  background-color: rgba(247, 247, 255, 0.2);
-  left: 15%;
-}
 
 .strips0 {
   position: absolute;
@@ -428,8 +413,8 @@ span {
 
 #big_logo_container {
   position: absolute;
-  width: 40vw;
-  height: 40vw;
+  width: 30vw;
+  height: 30vw;
   right: -5vw;
   transform-origin: center;
   -webkit-animation: rotating 60s linear infinite;
