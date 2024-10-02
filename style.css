@@ -7,8 +7,9 @@
   --light-black-clr: #434449;
   --eee-clr: #eee;
   --white-clr: #f7f9ff;
-  --medium-white-clr: #f7f8ff;
-  --light-white-clr: #f7f7ff;
+  --medium-white-clr: #f8faff;
+  --light-white-clr: #f9faff;
+  --near-pure-white:#fefeff;
   --poppin-font: "Poppins", sans-serif;
   --playfair-font: "Playfair Display", serif;
   --semibold: 600;
@@ -865,7 +866,7 @@ span {
 }
 
 #view_all_works:hover {
-  background-color: var(--white-clr);
+  background-color: var(--dark-black-clr);
   color: var(--white-clr);
 }
 
