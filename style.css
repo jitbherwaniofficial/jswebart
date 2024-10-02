@@ -636,6 +636,12 @@ span {
   padding: 0.2vw 0;
 }
 
+#pill {
+  display: block;
+  padding-bottom: 0.5vw;
+  text-align: end;
+}
+
 #featured_work_anchor2 {
   width: 60%;
   display: flex;
