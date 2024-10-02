@@ -610,7 +610,6 @@ span {
   flex-wrap: wrap;
   width: 100%;
   height: 32vw;
-  
 }
 
 
@@ -618,10 +617,13 @@ span {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
-  
+  object-position: bottom;
+  transition: 0.6s;
 }
 
+#featured_work_anchor1 #featured_work_image-container:hover img {
+  object-position: center;
+}
 
 #caption_container {
   width: 100%;
@@ -634,7 +636,7 @@ span {
 
 #caption_container figcaption {
   width: fit-content;
-  
+  letter-spacing: 0.05vw;
   font-size: 1vw;
   color: var(--dark-black-clr);
   font-weight: var(--semibold);
@@ -668,6 +670,11 @@ span {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  transition: 0.6s;
+}
+
+#featured_work_anchor2 #featured_work_image-container:hover img {
+  object-position: top;
 }
 
 #featured_work_middle_wrapper {
@@ -698,6 +705,11 @@ span {
   height: 100%;
   object-fit: cover;
   object-position: top;
+  transition: 0.6s;
+}
+
+#featured_work_anchor3 #featured_work_image-container:hover img {
+  object-position: center;
 }
 
 #featured_work_anchor4 {
@@ -719,6 +731,11 @@ span {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  transition: 0.6s;
+}
+
+#featured_work_anchor4 #featured_work_image-container:hover img {
+  object-position: top;
 }
 
 #featured_work_anchor5 {
@@ -740,6 +757,11 @@ span {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  transition: 0.6s;
+}
+
+#featured_work_anchor5 #featured_work_image-container:hover img {
+  object-position: top;
 }
 
 #featured_work_anchor6 {
@@ -762,6 +784,10 @@ span {
   object-fit: cover;
   object-position: center;
 }
+
+#featured_work_anchor6 #featured_work_image-container:hover img {
+  object-position: top;
+} 
 
 #featured_work_anchor7 {
   width: 60%;
