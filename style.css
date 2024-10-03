@@ -1153,6 +1153,7 @@ span {
 
 .services_box {
   width: 80%;
+  height: 43vw;
   display: flex;
   flex-wrap: wrap;
   background-color: var(--medium-black-clr);
