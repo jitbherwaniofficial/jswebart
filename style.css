@@ -1153,7 +1153,7 @@ span {
 
 .services_box {
   width: 80%;
-  height: 43vw;
+  height: 45vw;
   display: flex;
   flex-wrap: wrap;
   background-color: var(--medium-black-clr);
@@ -1168,7 +1168,7 @@ span {
 }
 
 #services_box_title {
-  font-size: 2.3vw;
+  font-size: 2.5vw;
   font-weight: var(--semibold);
   color: var(--white-clr);
   line-height: 1.2;
@@ -1177,7 +1177,7 @@ span {
 }
 
 #services_box_para {
-  font-size: 1.1vw;
+  font-size: 1.2vw;
   font-weight: var(--medium);
   font-family: var(--poppin-font);
   color: var(--medium-white-clr);
@@ -1209,11 +1209,12 @@ span {
 #services_served_container li {
   position: relative;
   z-index: 0;
-  font-size: 1.1vw;
+  font-size: 1.2vw;
   font-weight: var(--medium);
   padding-bottom: 1vw;
   color: var(--light-white-clr);
   display: list-item;
+  font-family: var(--poppin-font);
 }
 
 #services_served_container li::before {
@@ -1234,8 +1235,8 @@ span {
   position: absolute;
   width: 1.7vw;
   height: 1.7vw;
-  left: 0%;
-  top: -0.3vw;
+  left: 0.2%;
+  top: -0.2vw;
   z-index: -1;
   border-radius: 50%;
   background-color: var(--green-clr);
