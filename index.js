@@ -144,7 +144,7 @@ questions.forEach((question) => {
 const swiper = new Swiper('.swiper-container', {
   grabCursor: true, // Enable grab effect
   loop: false,       // Enable continuous loop mode
-  spaceBetween: 12, // Space between slides
+  spaceBetween: -100, // Space between slides
   slidesPerView: 1, // Number of slides to show at once
   pagination: {
     el: '.swiper-pagination',
