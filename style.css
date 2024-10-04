@@ -1253,7 +1253,7 @@ span {
   letter-spacing: 0.05vw;
   background-color: transparent;
   cursor: pointer;
-  background-color: rgba(44, 44, 51, 0.8);
+  /* background-color: rgba(44, 44, 51, 0.8); */
   border-radius: 3vw;
 }
 
@@ -1390,6 +1390,16 @@ span {
 
 
 /* SERVICES SECTION END ******************************************************** */
+
+/* GOAL SECTION START ***************************************************** */
+#goal_section {
+  width: 100%;
+  padding: var(--section-padding);
+  background-color: var(--white-clr);
+  position: relative;
+}
+
+/* GOAL SECTION END ***************************************************** */
 
 /* BLOGS START ********************************************************* */
 #blog_section {
