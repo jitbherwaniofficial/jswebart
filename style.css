@@ -1499,27 +1499,266 @@ span {
 
 /* CTA PROCESS SECTION START ***************************************************** */
 #cta_process_section {
-  position: relative;
   display: flex;
   flex-wrap: wrap;
-  padding: var(--section-padding);
   background-color: var(--white-clr);
   color: var(--dark-black-clr);
+  width: 100%;
+  
+  padding-bottom: 10vw;
+}
+
+.cta_lines_container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+
+.cl1 {
+  position: absolute;
+  width: 100%;
+  height: 0.1vw;
+  background-color: rgba(20, 21, 28,0.1);
+  left: 0;
+  top: 20%;
+}
+
+.cl2 {
+  position: absolute;
+  width: 100%;
+  height: 0.1vw;
+  background-color: rgba(20, 21, 28,0.1);
+  left: 0;
+  top: 40%;
+}
+
+.cl3 {
+  position: absolute;
+  width: 100%;
+  height: 0.1vw;
+  background-color: rgba(20, 21, 28,0.1);
+  left: 0;
+  top: 60%;
+}
+
+.cl4 {
+  position: absolute;
+  width: 100%;
+  height: 0.1vw;
+  background-color: rgba(20, 21, 28,0.1);
+  left: 0;
+  top: 80%;
+}
+
+
+.ch1 {
+  position: absolute;
+  height: 100%;
+  width: 0.1vw;
+  background-color: rgba(20, 21, 28,0.1);
+  top: 0;
+  left: 5%;
+}
+
+.ch2 {
+  position: absolute;
+  height: 100%;
+  width: 0.1vw;
+  background-color: rgba(20, 21, 28,0.1);
+  top: 0;
+  left: 10%;
+}
+
+.ch3 {
+  position: absolute;
+  height: 100%;
+  width: 0.1vw;
+  background-color: rgba(20, 21, 28,0.1);
+  top: 0;
+  left: 15%;
+}
+
+.ch4 {
+  position: absolute;
+  height: 100%;
+  width: 0.1vw;
+  background-color: rgba(20, 21, 28,0.1);
+  top: 0;
+  left: 20%;
+}
+
+.ch5 {
+  position: absolute;
+  height: 100%;
+  width: 0.1vw;
+  background-color: rgba(20, 21, 28,0.1);
+  top: 0;
+  left: 25%;
+}
+
+.ch6 {
+  position: absolute;
+  height: 100%;
+  width: 0.1vw;
+  background-color: rgba(20, 21, 28,0.1);
+  top: 0;
+  left: 30%;
+}
+
+.ch7 {
+  position: absolute;
+  height: 100%;
+  width: 0.1vw;
+  background-color: rgba(20, 21, 28,0.1);
+  top: 0;
+  left: 35%;
+}
+
+.ch8 {
+  position: absolute;
+  height: 100%;
+  width: 0.1vw;
+  background-color: rgba(20, 21, 28,0.1);
+  top: 0;
+  left: 40%;
+}
+
+.ch9 {
+  position: absolute;
+  height: 100%;
+  width: 0.1vw;
+  background-color: rgba(20, 21, 28,0.1);
+  top: 0;
+  left: 45%;
+}
+
+.ch10 {
+  position: absolute;
+  height: 100%;
+  width: 0.1vw;
+  background-color: rgba(20, 21, 28,0.1);
+  top: 0;
+  left: 50%;
+}
+
+.ch11 {
+  position: absolute;
+  height: 100%;
+  width: 0.1vw;
+  background-color: rgba(20, 21, 28,0.1);
+  top: 0;
+  left: 55%;
+}
+
+.ch12 {
+  position: absolute;
+  height: 100%;
+  width: 0.1vw;
+  background-color: rgba(20, 21, 28,0.1);
+  top: 0;
+  left: 60%;
+}
+
+.ch13 {
+  position: absolute;
+  height: 100%;
+  width: 0.1vw;
+  background-color: rgba(20, 21, 28,0.1);
+  top: 0;
+  left: 65%;
+}
+
+.ch14 {
+  position: absolute;
+  height: 100%;
+  width: 0.1vw;
+  background-color: rgba(20, 21, 28,0.1);
+  top: 0;
+  left: 70%;
+}
+
+.ch15 {
+  position: absolute;
+  height: 100%;
+  width: 0.1vw;
+  background-color: rgba(20, 21, 28,0.1);
+  top: 0;
+  left: 75%;
+}
+
+.ch16 {
+  position: absolute;
+  height: 100%;
+  width: 0.1vw;
+  background-color: rgba(20, 21, 28,0.1);
+  top: 0;
+  left: 80%;
+}
+
+.ch17 {
+  position: absolute;
+  height: 100%;
+  width: 0.1vw;
+  background-color: rgba(20, 21, 28,0.1);
+  top: 0;
+  left: 85%;
+}
+
+.ch18 {
+  position: absolute;
+  height: 100%;
+  width: 0.1vw;
+  background-color: rgba(20, 21, 28,0.1);
+  top: 0;
+  left: 90%;
+}
+
+.ch19 {
+  position: absolute;
+  height: 100%;
+  width: 0.1vw;
+  background-color: rgba(20, 21, 28,0.1);
+  top: 0;
+  left: 95%;
+}
+
+
+.cta_process_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
   gap: 5vw;
+  padding: 5vw 0;
+  position: relative;
+  z-index: 1;
 }
 
 #cta_process_title {
+  width: 40%;
   font-size: 3vw;
   font-weight: var(--bold);
   font-family: var(--playfair-font);
 }
 
 #contact_cta_btn {
-  padding: 1vw 2vw;
+  width: 15%;
+  text-align: center;
+  padding:1.5vw 2vw;
   background-color: var(--green-clr);
   color: var(--dark-black-clr);
   font-weight: var(--semibold);
   font-family: var(--poppin-font);
+  transition: 0.6s ;
+}
+
+
+#contact_cta_btn:hover {
+  color: var(--white-clr);
+  background-color: var(--dark-black-clr);
 }
 /* CTA PROCESS SECTION END ***************************************************** */
 
