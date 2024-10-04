@@ -1,4 +1,29 @@
 
+let lastScrollTop = 0;
+const header = document.querySelector('#header');
+let isScrolling;
+
+window.addEventListener('scroll', function() {
+  window.clearTimeout(isScrolling);
+
+  isScrolling = setTimeout(() => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    // Scroll down - hide the header
+    if (scrollTop > lastScrollTop) {
+      header.classList.add('hidden');
+    } 
+    // Scroll up - show the header
+    else {
+      header.classList.remove('hidden');
+    }
+
+    lastScrollTop = scrollTop;
+  }, 50); // Adjust the debounce delay (50ms) as needed
+});
+
+
+
 gsap.from("#logo img", {
     duration:1,
     rotate:-360,
@@ -155,4 +180,28 @@ const swiper = new Swiper('.swiper-container', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+// Get all the pill elements
+const pills = document.querySelectorAll('.pill');
+
+// Add click event listener for each pill
+pills.forEach(pill => {
+  pill.addEventListener('click', function(event) {
+    event.preventDefault();  // Prevent default anchor behavior
+
+    // Remove active class from all pills
+    pills.forEach(p => p.classList.remove('active'));
+
+    // Add active class to the clicked pill
+    this.classList.add('active');
+
+    // Get the slide index from the data attribute
+    const slideIndex = this.getAttribute('data-slide');
+    
+    // Use Swiper's slideTo method to go to the desired slide
+    swiper.slideTo(slideIndex);
+  });
+});
+
+
 
