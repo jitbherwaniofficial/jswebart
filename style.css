@@ -1502,7 +1502,7 @@ span {
   display: flex;
   flex-wrap: wrap;
   background-color: var(--white-clr);
-  color: var(--dark-black-clr);
+  /* color: var(--dark-black-clr); */
   width: 100%;
   
   padding-bottom: 10vw;
@@ -1730,6 +1730,7 @@ span {
   justify-content: center;
   align-items: center;
   width: 90%;
+  background-color: var(--near-pure-white);
   margin: 0 auto;
   gap: 5vw;
   padding: 5vw 0;
@@ -1742,6 +1743,7 @@ span {
   font-size: 3vw;
   font-weight: var(--bold);
   font-family: var(--playfair-font);
+  color: var(--dark-black-clr);
 }
 
 #contact_cta_btn {
