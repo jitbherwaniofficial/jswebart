@@ -1444,7 +1444,7 @@ span {
 }
 
 #goal_box:nth-child(2) .goal_box_left #goal_para {
-  width: 83%;
+  width: 85%;
 }
 
 #goal_box:nth-child(2) .goal_box_left #details {
@@ -1467,7 +1467,7 @@ span {
 }
 
 #goal_para {
-  width: 34%;
+  width: 38%;
   font-size: 1.3vw;
   font-weight: var(--medium);
   padding-bottom: 2vw;
