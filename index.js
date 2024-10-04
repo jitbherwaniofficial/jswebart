@@ -1,28 +1,40 @@
 
-// let lastScrollTop = 0;
-// const header = document.querySelector('#header');
-// let isScrolling;
+let lastScrollTop = 0;
+const header = document.querySelector('#header');
+let isScrolling;
 
-// window.addEventListener('scroll', function() {
-//   window.clearTimeout(isScrolling);
+window.addEventListener('scroll', function() {
+  window.clearTimeout(isScrolling);
 
-//   isScrolling = setTimeout(() => {
-//     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  isScrolling = setTimeout(() => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-//     if (scrollTop > lastScrollTop) {
-//       header.classList.add('hidden');
-//     } 
-//     else {
-//       header.classList.remove('hidden');
-//     }
+    if (scrollTop > lastScrollTop) {
+      header.classList.add('hidden');
+    } 
+    else {
+      header.classList.remove('hidden');
+    }
 
-//     lastScrollTop = scrollTop;
-//   }, 50);
-// });
+    lastScrollTop = scrollTop;
+  }, 50);
+});
 
 
 
 gsap.from("#logo img", {
+    duration:1,
+    rotate:-360,
+    scrollTrigger: {
+        trigger: "body",
+        scroller: "body",
+        start:"top 0%",
+        scrub: true,
+    }
+})
+
+
+gsap.from("#absolute_logo img", {
     duration:1,
     rotate:-360,
     scrollTrigger: {

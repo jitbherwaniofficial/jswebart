@@ -73,7 +73,7 @@ span {
   position: fixed;
   top: 0;
   left: 0;
-  transition: top 1s ease;
+  transition: top 0.5s ease;
 }
 
 #header.hidden {
@@ -197,6 +197,20 @@ span {
   color: var(--dark-black-clr) !important;
   font-weight: var(--bold) !important;
   background-color: var(--white-clr) !important;
+}
+
+#absolute_logo {
+  position: fixed;
+  z-index: 998;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 0.8vw;
+}
+
+#absolute_logo.hidden {
+  opacity: 0;
 }
 
 /* DROPDOWN START ********************************************************* */
@@ -1396,10 +1410,118 @@ span {
   width: 100%;
   padding: var(--section-padding);
   background-color: var(--white-clr);
+  color: var(--dark-black-clr);
   position: relative;
 }
 
+#goal_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vw;
+  font-family: var(--poppin-font);
+  gap: 7vw;
+}
+
+#goal_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 35vw;
+}
+
+#goal_box:nth-child(2) .goal_box_left {
+  order: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+}
+
+#goal_box:nth-child(2) .goal_box_left #goal_title {
+  width: 100%;
+}
+
+#goal_box:nth-child(2) .goal_box_left #goal_para {
+  width: 83%;
+}
+
+#goal_box:nth-child(2) .goal_box_left #details {
+  width: 85%;
+  padding-left: 2vw;
+}
+
+.goal_box_left {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+#goal_title {
+  width: 50%;
+  font-size: 2.3vw;
+  font-weight: var(--semibold);
+  font-family: var(--playfair-font);
+  padding-bottom: 1vw;
+}
+
+#goal_para {
+  width: 34%;
+  font-size: 1.3vw;
+  font-weight: var(--medium);
+  padding-bottom: 2vw;
+  line-height: 1.3;
+}
+
+#details {
+  font-weight: var(--medium);
+  font-size: 1.2vw;
+  padding-left: 4vw;
+  width: 60%;
+  padding-bottom: 1vw;
+  line-height: 1.3;
+}
+
+.goal_box_right {
+  height: 100%;
+  width: 30%;
+}
+
+.goal_box_right img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 /* GOAL SECTION END ***************************************************** */
+
+
+/* CTA PROCESS SECTION START ***************************************************** */
+#cta_process_section {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: var(--section-padding);
+  background-color: var(--white-clr);
+  color: var(--dark-black-clr);
+  gap: 5vw;
+}
+
+#cta_process_title {
+  font-size: 3vw;
+  font-weight: var(--bold);
+  font-family: var(--playfair-font);
+}
+
+#contact_cta_btn {
+  padding: 1vw 2vw;
+  background-color: var(--green-clr);
+  color: var(--dark-black-clr);
+  font-weight: var(--semibold);
+  font-family: var(--poppin-font);
+}
+/* CTA PROCESS SECTION END ***************************************************** */
 
 /* BLOGS START ********************************************************* */
 #blog_section {
