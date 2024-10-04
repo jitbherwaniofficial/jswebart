@@ -1,26 +1,24 @@
 
-let lastScrollTop = 0;
-const header = document.querySelector('#header');
-let isScrolling;
+// let lastScrollTop = 0;
+// const header = document.querySelector('#header');
+// let isScrolling;
 
-window.addEventListener('scroll', function() {
-  window.clearTimeout(isScrolling);
+// window.addEventListener('scroll', function() {
+//   window.clearTimeout(isScrolling);
 
-  isScrolling = setTimeout(() => {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+//   isScrolling = setTimeout(() => {
+//     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    // Scroll down - hide the header
-    if (scrollTop > lastScrollTop) {
-      header.classList.add('hidden');
-    } 
-    // Scroll up - show the header
-    else {
-      header.classList.remove('hidden');
-    }
+//     if (scrollTop > lastScrollTop) {
+//       header.classList.add('hidden');
+//     } 
+//     else {
+//       header.classList.remove('hidden');
+//     }
 
-    lastScrollTop = scrollTop;
-  }, 50); // Adjust the debounce delay (50ms) as needed
-});
+//     lastScrollTop = scrollTop;
+//   }, 50);
+// });
 
 
 
