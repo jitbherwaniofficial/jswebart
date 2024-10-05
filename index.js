@@ -214,4 +214,44 @@ pills.forEach(pill => {
 });
 
 
+const swiperTwo = new Swiper('.swiper-container-two', {
+  grabCursor: true, // Enable grab effect
+  loop: false,       // Enable continuous loop mode
+  spaceBetween: -114, // Space between slides
+  slidesPerView: 1, // Number of slides to show at once
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true, // Make pagination bullets clickable
+  },
+  navigation: {
+    nextEl: '.swiper-button-next', // Navigation arrows
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+// Get all the pill elements
+const businessPill = document.querySelectorAll('.business_pill');
+
+// Add click event listener for each pill
+businessPill.forEach(pill => {
+  pill.addEventListener('click', function(event) {
+    event.preventDefault();  // Prevent default behavior
+    
+    // Remove active class from all pills
+    businessPill.forEach(p => p.classList.remove('active'));
+
+    // Add active class to the clicked pill
+    this.classList.add('active');
+
+    // Get the slide index from the data attribute
+    const slideIndex = this.getAttribute('data-slider');
+    
+    // Use Swiper's slideTo method to go to the desired slide
+    swiperTwo.slideTo(slideIndex);
+  });
+});
+
+
+
+
 
