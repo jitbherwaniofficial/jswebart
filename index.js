@@ -103,6 +103,20 @@ counter(); // Call the counter function
 // ACCORDION //
 // let questions = document.querySelectorAll(".service_name_container");
 
+// // Open the first accordion by default
+// if (questions.length > 0) {
+//   const firstQuestion = questions[0];
+//   const firstIcon = firstQuestion.querySelector(".icon-shape");
+//   const firstAnswer = firstQuestion.nextElementSibling;
+
+//   // Add the 'active' class to the first question and icon
+//   firstQuestion.classList.add("active");
+//   firstIcon.classList.add("active");
+
+//   // Set the maxHeight for the first answer
+//   firstAnswer.style.maxHeight = "23vw";
+// }
+
 // questions.forEach((question) => {
 //   let icon = question.querySelector(".icon-shape");
 
@@ -131,28 +145,15 @@ counter(); // Call the counter function
 // });
 // ACCORDION //
 
+
 // ACCORDION //
-let questions = document.querySelectorAll(".service_name_container");
-
-// Open the first accordion by default
-if (questions.length > 0) {
-  const firstQuestion = questions[0];
-  const firstIcon = firstQuestion.querySelector(".icon-shape");
-  const firstAnswer = firstQuestion.nextElementSibling;
-
-  // Add the 'active' class to the first question and icon
-  firstQuestion.classList.add("active");
-  firstIcon.classList.add("active");
-
-  // Set the maxHeight for the first answer
-  firstAnswer.style.maxHeight = "23vw";
-}
+let questions = document.querySelectorAll(".faq_question");
 
 questions.forEach((question) => {
   let icon = question.querySelector(".icon-shape");
 
   question.addEventListener("click", (event) => {
-    const active = document.querySelector(".service_name_container.active");
+    const active = document.querySelector(".faq_question.active");
     const activeIcon = document.querySelector(".icon-shape.active");
 
     if (active && active !== question) {
@@ -165,14 +166,13 @@ questions.forEach((question) => {
     icon.classList.toggle("active");
 
     const answer = question.nextElementSibling;
-    
+
     if (question.classList.contains("active")) {
-      answer.style.maxHeight = "23vw";
+      answer.style.maxHeight = answer.scrollHeight + "px";
     } else {
       answer.style.maxHeight = 0;
     }
   });
-  
 });
 // ACCORDION //
 
@@ -251,6 +251,13 @@ businessPill.forEach(pill => {
   });
 });
 
+gsap.to(".testimonials", {
+  y: "-350%", // Move up
+  duration: 15, // Set the duration of the animation
+  ease: "none", // Makes the motion linear
+  repeat: -1, // Infinite loop
+  // yoyo: true, // Makes the animation reverse direction
+});
 
 
 
