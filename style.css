@@ -2402,13 +2402,16 @@ span {
 
 /* FOOTER SECTION START ********************************************* */
 #footer {
-  padding: 10vw 0;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+#footer_wrapper {
   display: flex;
   flex-wrap: wrap;
   width: 90%;
-  margin: 0 auto;
-  position: relative;
-  z-index: 0;
+  margin: 0 auto; 
+  padding: var(--section-padding);
 }
 
 #footer_sect_logo {
