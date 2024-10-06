@@ -2230,6 +2230,12 @@ span {
   font-family: var(--poppin-font);
   font-weight: var(--semibold);
   padding: 1vw 2.5vw;
+  transition: 0.6s;
+}
+
+.con:hover {
+  background-color: var(--dark-black-clr);
+  color: var(--white-clr);
 }
 
 .business_grow_left {
