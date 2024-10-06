@@ -203,13 +203,22 @@ span {
   background-color: var(--white-clr) !important;
 }
 
+.absolute_logo_container {
+  width: 100%;
+  height: 6vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #absolute_logo {
   position: fixed;
   z-index: 998;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: fit-content;
+  margin: 0 auto;
   padding-top: 0.8vw;
 }
 
@@ -340,7 +349,7 @@ span {
   display: flex;
   flex-wrap: wrap;
   background-color: var(--dark-black-clr);
-  padding-top: 15vw;
+  padding-top: 9vw;
   padding-bottom: 8vw;
   margin: 0 auto;
 }
@@ -2261,6 +2270,9 @@ span {
   color: var(--dark-black-clr);
 }
 
+
+
+
 .testimonials_one {
   position: absolute;
   background-color: var(--green-clr);
@@ -2380,3 +2392,182 @@ span {
   padding: 1vw;
 }
 /* BUSINESS GROW SECTION END *************************************** */
+
+
+/* FOOTER SECTION START ********************************************* */
+#footer {
+  padding: var(--section-padding);
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#footer_logo_link {
+  width: 100%;
+  padding-bottom: 1vw;
+}
+
+#footer_logo_link a {
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
+  width: fit-content;
+}
+
+#footer_logo_link a img {
+  width: 5vw;
+}
+
+#footer_logo_link a span {
+  font-size: 3vw;
+  font-family: var(--playfair-font);
+  font-weight: var(--semibold);
+}
+
+.footer_links_container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--poppin-font);
+}
+
+.footer_links_container a {
+  font-size: 1.5vw;
+  padding: 0.5vw 0;
+  width: fit-content;
+}
+
+.footer_news_letter_container {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.newsletter_title {
+  width: 80%;
+  font-size: 1.8vw;
+  font-family: var(--poppin-font);
+}
+
+.footer_news_letter_container input {
+  width: 85%;
+  height: 4vw;
+  padding: 0.5vw;
+  background-color: var(--white-clr);
+  color: var(--light-black-clr);
+  text-align: center;
+  font-size: 1.5vw;
+  outline: none;
+  border: none;
+}
+
+.footer_news_letter_container button {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  font-size: 2.5vw;
+  font-weight: var(--semibold);
+  background-color: var(--green-clr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.footer_nav_links_container {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10vw 0;
+}
+
+.footer_nav_links_container span {
+  width: calc(100%/2);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2vw;
+}
+
+.footer_nav_links_container a {
+  width: 40%;
+  font-size: 1.8vw;
+  text-decoration: underline;
+  align-self: center;
+  display: flex;
+  font-family: var(--poppin-font);
+}
+.privacy_and_terms_container {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10vw 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.privacy_and_terms_container span {
+  width: 40%;
+  font-size: 1.8vw;
+  text-decoration: underline;
+  font-family: var(--poppin-font);
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+.privacy_and_terms_container span a {
+  font-size: 1.8vw;
+  display: flex;
+  text-align: end;
+}
+
+.footer_bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.copyright {
+  width: 50%;
+  font-size: 1.5vw;
+  font-family: var(--poppin-font);
+  align-self: center;
+}
+
+.social_media_link_container {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social_media_link_container a svg {
+  width: 2vw;
+}
+
+.footer_last {
+  text-align: center;
+  width: 100%;
+  padding-top: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  font-family: var(--poppin-font);
+  font-size: 1.5vw;
+}
+.footer_last img {
+  width: 3vw;
+}
+
+/* FOOTER SECTION END ********************************************* */
+
+

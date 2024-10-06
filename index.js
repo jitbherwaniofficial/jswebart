@@ -252,12 +252,13 @@ businessPill.forEach(pill => {
 });
 
 gsap.to(".testimonials", {
-  y: "-350%", // Move up
-  duration: 15, // Set the duration of the animation
-  ease: "none", // Makes the motion linear
-  repeat: -1, // Infinite loop
-  // yoyo: true, // Makes the animation reverse direction
+  y: "-350%",
+    duration: 15, 
+  ease: "none", 
+  repeat: -1, 
 });
+
+
 
 
 
