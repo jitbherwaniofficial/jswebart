@@ -1469,6 +1469,14 @@
     margin-top: 10vw;
 }
 
+#service_sect_logo {
+    width: 50%;
+}
+
+#service_sect_logo img {
+    width: 100%;
+}
+
 #service_title {
     font-size: 6vw;
     padding-bottom: 3vw;
@@ -1479,6 +1487,10 @@
     font-size: 3vw;
     padding-bottom: 4vw;
     width: 85%;
+}
+
+.services_pills_container {
+    gap: 3vw;
 }
 
 .pill {
