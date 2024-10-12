@@ -180,6 +180,14 @@ const swiper = new Swiper('.swiper-container', {
   grabCursor: true, // Enable grab effect
   loop: false,       // Enable continuous loop mode
   spaceBetween: -114, // Space between slides
+  breakpoints: {
+    768: {
+      spaceBetween: -70
+    },
+    430: {
+      spaceBetween: -30
+    }
+  },
   slidesPerView: 1, // Number of slides to show at once
   pagination: {
     el: '.swiper-pagination',
@@ -218,6 +226,14 @@ const swiperTwo = new Swiper('.swiper-container-two', {
   grabCursor: true, // Enable grab effect
   loop: false,       // Enable continuous loop mode
   spaceBetween: -114, // Space between slides
+  breakpoints: {
+    768: {
+      spaceBetween: -70
+    },
+    430: {
+      spaceBetween: -30
+    }
+  },
   slidesPerView: 1, // Number of slides to show at once
   pagination: {
     el: '.swiper-pagination',
