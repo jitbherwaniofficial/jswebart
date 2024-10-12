@@ -1158,7 +1158,7 @@
 
   .testimonials {
     width: 75%;
-    height: 30vw;
+    height: 35vw;
     right: 5%;
   }
 
@@ -1169,8 +1169,9 @@
   }
 
   #test_para {
-    font-size: 2vw;
+    font-size: 2.2vw;
     font-weight: var(--medium);
+    width: 85%;
   }
 
   #owner_name {
@@ -1178,31 +1179,31 @@
   }
 
   #company_name_designation {
-    font-size: 1.6vw;
+    font-size: 1.8vw;
   }
 
   .testimonials_one {
-    top: 15%;
+    top: 10%;
     left: 0%;
   }
   .testimonials_two {
-    top: 15%;
+    top: 10%;
     left: 80%;
   }
   .testimonials_three {
-    top: 15%;
+    top: 10%;
     left: 160%;
   }
   .testimonials_four {
-    top: 15%;
+    top: 10%;
     left: 240%;
   }
 
   .business_grow_wrapper {
     justify-content: flex-end;
-    height: 72vw;
+    height: 65vw;
     flex-direction: column;
-    padding: 3vw 0;
+    padding: 0;
   }
 
   .business_grow_left {
@@ -1223,6 +1224,86 @@
   .business_box_right {
     flex-direction: row;
   }
+
+  #footer_logo_link {
+    padding-bottom: 3vw;
+}
+
+  #footer_logo_link a img {
+    width: 8vw;
+}
+
+#footer_logo_link a span {
+    font-size: 4vw;
+}
+
+.footer_links_container a {
+    font-size: 2.3vw;
+    padding: 0.8vw 0;
+}
+
+.newsletter_title {
+    width: 85%;
+    font-size: 2.3vw;
+}
+
+.footer_links_container {
+    width: 50%;
+}
+
+.footer_news_letter_container input {
+    width: 85%;
+    height: 5vw;
+    padding: 0.5vw;
+    font-size: 1.5vw;
+}
+
+.footer_news_letter_container {
+    width: 50%;
+}
+
+.footer_news_letter_container button {
+    width: 5vw;
+    height: 5vw;
+}
+
+.footer_nav_links_container a {
+    font-size: 2.8vw;
+}
+
+.footer_nav_links_container {
+    width: 77%;
+}
+
+.privacy_and_terms_container {
+    width: 23%;
+}
+
+.privacy_and_terms_container span a {
+    font-size: 2.8vw;
+    display: flex;
+    justify-content: flex-end;
+    text-align: end;
+    width: 28vw;
+}
+
+.copyright {
+    font-size: 2.3vw;
+}
+
+.social_media_link_container a svg {
+    width: 3vw;
+}
+
+.footer_last {
+    font-size: 2.5vw;
+    gap: 2vw;
+}
+
+.footer_last img {
+    width: 4vw;
+}
+
 }
 
 @media only screen and (max-width: 450px) {

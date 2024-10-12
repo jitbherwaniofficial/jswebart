@@ -182,10 +182,10 @@ const swiper = new Swiper('.swiper-container', {
   spaceBetween: -114, // Space between slides
   breakpoints: {
     768: {
-      spaceBetween: -70
+      spaceBetween: -40
     },
     430: {
-      spaceBetween: -40
+      spaceBetween: -20
     },
     400: {
       spaceBetween:-40
@@ -234,10 +234,10 @@ const swiperTwo = new Swiper('.swiper-container-two', {
   spaceBetween: -114, // Space between slides
   breakpoints: {
     768: {
-      spaceBetween: -70
+      spaceBetween: -40
     },
     430: {
-      spaceBetween: -40
+      spaceBetween: -20
     },
     400: {
       spaceBetween:-40
@@ -279,12 +279,50 @@ businessPill.forEach(pill => {
   });
 });
 
-gsap.to(".testimonials", {
-  x: "-290%",
-  duration: 15, 
-  ease: "none", 
-  repeat: -1, 
-});
+// gsap.to(".testimonials", {
+//   y: "-350%",
+//   duration: 15, 
+//   ease: "none", 
+//   repeat: -1, 
+// });
+
+// gsap.to(".testimonials_mob", {
+//   x: "-290%",
+//   duration: 15, 
+//   ease: "none", 
+//   repeat: -1, 
+// });
+
+function applyGsapAnimations() {
+  // Clear any existing GSAP animations
+  gsap.killTweensOf(".testimonials");
+  gsap.killTweensOf(".testimonials_mob");
+  
+  if (window.innerWidth > 768) {
+    // Apply the animation for .testimonials if the viewport is greater than 768px
+    gsap.to(".testimonials", {
+      y: "-350%",
+      duration: 15, 
+      ease: "none", 
+      repeat: -1, 
+    });
+  } else {
+    // Apply the animation for .testimonials_mob if the viewport is 768px or less
+    gsap.to(".testimonials_mob", {
+      x: "-290%",
+      duration: 15, 
+      ease: "none", 
+      repeat: -1, 
+    });
+  }
+}
+
+// Run the function on page load
+applyGsapAnimations();
+
+// Add event listener to handle window resize
+window.addEventListener('resize', applyGsapAnimations);
+
 
 const burger = document.querySelector('.burger');
 burger.addEventListener('click', function() {
