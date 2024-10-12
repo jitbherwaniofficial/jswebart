@@ -1324,8 +1324,12 @@
 }
 
 @media only screen and (max-width: 450px) {
+
+    :root{
+        --section-padding: 19vw 0;
+    }
   #header {
-    height: 16vw;
+    height: 17vw;
   }
 
   #logo {
@@ -1357,7 +1361,7 @@
   }
 
   .absolute_logo_container {
-    height: 16vw;
+    height: 17vw;
   }
 
   #mobile_nav {
@@ -1375,6 +1379,7 @@
 
 
   #hero_section {
+    padding: var(--section-padding);
     padding-top: 35vw;
     gap: 4vw;
   }
