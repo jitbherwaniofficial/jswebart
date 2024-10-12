@@ -1179,4 +1179,8 @@
     .absolute_logo_container {
         height: 15vw;
     }
+
+    #mobile_nav {
+        padding: 0;
+    }
 }
