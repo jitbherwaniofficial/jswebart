@@ -500,7 +500,7 @@
     width: 50vw;
     height: 50vw;
     margin: 0 auto;
-    opacity: 0.3;
+    opacity: 0.8;
   }
 
   #counter {
@@ -1400,6 +1400,12 @@
 #hero_work_btn {
     font-size: 4vw;
     padding: 2vw 6vw;
+}
+
+#big_logo_container {
+    width: 85vw;
+    height: 85vw;
+    opacity: 0.6;
 }
 
 #counter_number {
