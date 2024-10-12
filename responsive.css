@@ -1325,7 +1325,7 @@
 
 @media only screen and (max-width: 450px) {
   #header {
-    height: 15vw;
+    height: 16vw;
   }
 
   #logo {
@@ -1333,17 +1333,18 @@
   }
 
   #logo img {
-    width: 8vw;
+    width: 9vw;
   }
 
   #logo .company_name {
-    font-size: 4vw;
+    font-size: 5vw;
   }
 
   .burger {
     width: 8vw;
     height: 8vw;
     gap: 8px;
+    top: 2.2%;
   }
 
   .menu_line {
@@ -1356,11 +1357,155 @@
   }
 
   .absolute_logo_container {
-    height: 15vw;
+    height: 16vw;
   }
 
   #mobile_nav {
     padding: 0;
     top: -120%;
   }
+
+  .service_link_container {
+    overflow-y: hidden;
+}
+
+.service_link_container.active {
+    max-height: 80vw;
+}
+
+
+  #hero_section {
+    padding-top: 35vw;
+    gap: 4vw;
+  }
+
+  #hero_left {
+    gap: 3vw;
+}
+
+#hero_title {
+    font-size: 7vw;
+}
+
+#hero_para {
+    font-size: 3.2vw;
+    line-height: 1.5;
+}
+
+#hero_work_btn {
+    font-size: 4vw;
+    padding: 2vw 6vw;
+}
+
+#counter_number {
+    font-size: 7vw;
+}
+
+#counter_para {
+    font-size: 4vw;
+    line-height: 1.4;
+}
+
+#section_title {
+    font-size: 6vw;
+    width: 90%;
+}
+
+#section_para {
+    width: 82%;
+    font-size: 3.5vw;
+}
+
+#featured_work_wrapper, #featured_work_middle_wrapper {
+    gap: 7vw;
+}
+
+.anchor_ #featured_work_image-container #caption_container figcaption {
+    font-size: 3.2vw;
+}
+
+#view_all_works {
+    font-size: 3.5vw;
+    padding: 2vw 5.5vw;
+}
+
+#service_title {
+    font-size: 6vw;
+    padding-bottom: 3vw;
+    width: 85%;
+}
+
+#service_para {
+    font-size: 3vw;
+    padding-bottom: 4vw;
+    width: 85%;
+}
+
+.pill {
+    font-size: 3vw;
+    width: calc(100% / 2.5);
+}
+
+.services_box {
+    width: 90%;
+    height: 130vw;
+}
+
+#services_box_title {
+    font-size: 4.2vw;
+    padding-bottom: 10px;
+}
+
+#services_box_para {
+    font-size: 2.7vw;
+}
+
+#services_served_container li {
+    font-size: 2.7vw;
+    padding-bottom: 2vw;
+}
+
+#service_redirect_link {
+    font-size: 2.8vw;
+}
+
+.goal_title {
+    width: 100% !important;
+}
+
+#goal_title {
+    width: 85%;
+    font-size: 5.5vw;
+    padding-bottom: 3vw;
+}
+
+#goal_para {
+    width: 60%;
+    font-size: 3vw;
+}
+
+#details {
+    font-size: 3vw;
+}
+
+#goal_box:nth-child(2) .goal_box_left #goal_title {
+    width: 90%;
+}
+
+#cta_process_section {
+    margin-top: -0.2vw;
+}
+
+.goal_box_right {
+    height: 50vw;
+}
+
+#service_redirect_link {
+    padding: 2vw 3vw;
+}
+
+#services_served_container {
+    padding-top: 2.5vw;
+}
+
 }
