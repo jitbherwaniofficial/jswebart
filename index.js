@@ -258,7 +258,19 @@ gsap.to(".testimonials", {
   repeat: -1, 
 });
 
+const burger = document.querySelector('.burger');
+burger.addEventListener('click', function() {
+  this.classList.toggle('active');
+  const mob_nav = document.querySelector('#mobile_nav')
+  mob_nav.classList.toggle('active')
+})
 
+const service_arrow = document.querySelector('#service_btn')
+service_arrow.addEventListener('click', function() {  
+  this.classList.toggle('active')
+  const service_link_container = document.querySelector('.service_link_container')
+  service_link_container.classList.toggle('active')
+})
 
 
 

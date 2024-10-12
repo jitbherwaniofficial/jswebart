@@ -68,7 +68,7 @@ span {
   width: 100%;
   height: 6.5vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   box-shadow: 0 0.5px 1px var(--light-white-clr);
   position: fixed;
@@ -340,6 +340,41 @@ span {
 }
 /* DROPDOWN END ********************************************************* */
 
+/* BURGER START ****************************************************** */
+.burger {
+  position: fixed;
+  z-index: 1001;
+  width: 5vw;
+  height: 5vw;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent;
+  gap: 1vw;
+  top: 1.2%;
+  right: 4.2%;
+}
+
+.menu_line {
+  width: 4vw;
+  height: 0.3vw;
+  background-color: var(--green-clr);
+  transition: all 0.6s;
+}
+
+.menu_line:nth-child(2) {
+  width: 2vw;
+}
+
+/* BURGER END ****************************************************** */
+
+/* MOBILE NAV START ************************************************** */
+#mobile_nav {
+  display: none;
+}
+/* MOBILE NAV END ************************************************** */
+
 /* HEADER ENDS ******************************************************** */
 
 /* HERO START ***************************************************************** */
@@ -408,9 +443,14 @@ span {
   position: relative;
 }
 
+.stripsminus2,
+.stripsminus2 {
+  display: none;
+}
+
 .strips0 {
   position: absolute;
-  width: 0.2px;
+  width: 0.1px;
   height: 190vh;
   background-color: rgba(247, 247, 255, 0.2);
   left: 30%;
@@ -418,7 +458,7 @@ span {
 
 .strips1 {
   position: absolute;
-  width: 0.2px;
+  width: 0.1px;
   height: 190vh;
   background-color: rgba(247, 247, 255, 0.2);
   left: 45%;
@@ -426,7 +466,7 @@ span {
 
 .strips2 {
   position: absolute;
-  width: 0.2px;
+  width: 0.1px;
   height: 190vh;
   background-color: rgba(247, 247, 255, 0.2);
   left: 60%;
@@ -434,7 +474,7 @@ span {
 
 .strips3 {
   position: absolute;
-  width: 0.2px;
+  width: 0.1px;
   height: 190vh;
   background-color: rgba(247, 247, 255, 0.2);
   left: 75%;
@@ -442,7 +482,7 @@ span {
 
 .strips4 {
   position: absolute;
-  width: 0.2px;
+  width: 0.1px;
   height: 190vh;
   background-color: rgba(247, 247, 255, 0.2);
   left: 90%;
@@ -450,7 +490,7 @@ span {
 
 .strips5 {
   position: absolute;
-  width: 0.2px;
+  width: 0.1px;
   height: 190vh;
   background-color: rgba(247, 247, 255, 0.2);
   left: 105%;
@@ -458,7 +498,7 @@ span {
 
 .strips6 {
   position: absolute;
-  width: 0.2px;
+  width: 0.1px;
   height: 190vh;
   background-color: rgba(247, 247, 255, 0.2);
   left: 120%;
@@ -468,19 +508,21 @@ span {
   position: absolute;
   width: 30vw;
   height: 30vw;
+  overflow: hidden;
   right: -5vw;
+}
+
+#big_logo_container img {
+  width: 100%;
+  height: 100%;
+  
+  object-fit: contain;
   transform-origin: center;
   -webkit-animation: rotating 60s linear infinite;
   -moz-animation: rotating 60s linear infinite;
   -ms-animation: rotating 60s linear infinite;
   -o-animation: rotating 60s linear infinite;
   animation: rotating 60s linear infinite;
-}
-
-#big_logo_container img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
 }
 
 @-webkit-keyframes rotating /* Safari and Chrome */ {
@@ -590,7 +632,7 @@ span {
   position: relative;
 }
 
-.work_lines_container {
+/* .work_lines_container {
   position: absolute;
   width: 25vw;
   height: 11vw;
@@ -678,6 +720,99 @@ span {
   height: 0.5px;
    background-color: rgba(44, 44, 51,0.2);
   top: 9vw;
+  left: -3vw;
+} */
+
+    
+.work_lines_container {
+  position: absolute;
+  width: 45vw;
+  height: 20vw;
+  top: 0;
+  left: 3%;
+}
+
+.w1 {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: rgba(44, 44, 51,0.2);
+  left: 5%;
+}
+
+.w2 {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+ 
+  background-color: rgba(44, 44, 51,0.2);
+  left: 17%;
+}
+
+.w3 {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+   background-color: rgba(44, 44, 51,0.2);
+  left: 29%;
+}
+
+.w4 {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+   background-color: rgba(44, 44, 51,0.2);
+  left: 41%;
+}
+
+.w5 {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+   background-color: rgba(44, 44, 51,0.2);
+  left: 53%;
+}
+
+.w6 {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: rgba(44, 44, 51,0.2);
+  left:65%;
+}
+
+.w7 {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+   background-color: rgba(44, 44, 51,0.2);
+  left: 77%;
+}
+
+.w8 {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+   background-color: rgba(44, 44, 51,0.2);
+  top: 25%;
+  left: -3vw;
+}
+
+.w9 {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+   background-color: rgba(44, 44, 51,0.2);
+  top: 50%;
+  left: -3vw;
+}
+
+.w10 {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+   background-color: rgba(44, 44, 51,0.2);
+  top: 75%;
   left: -3vw;
 }
 
@@ -991,6 +1126,7 @@ span {
   /* background-color: var(--dark-black-clr); */
   padding: var(--section-padding);
   z-index: 0;
+  overflow-x: hidden;
 }
 
 .service_lines_container {
@@ -1251,7 +1387,7 @@ span {
 .services_pills_container {
   width: 100%;
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   gap: 1vw;
   
 }
@@ -1259,9 +1395,9 @@ span {
 .pill {
   display: block;
   font-size: 1.2vw;
-  width: calc(100%/6);
+  /* width: calc(100%/6); */
   text-align: center;
-  padding: 1.3vw;
+  padding: 1.3vw 2.2vw;
   font-family: var(--poppin-font);
   border: 2px solid var(--green-clr);
   color: var(--green-clr);
@@ -1506,7 +1642,7 @@ span {
   background-color: var(--white-clr);
   /* color: var(--dark-black-clr); */
   width: 100%;
-  
+  margin-top: -0.1vw;
   padding-bottom: 10vw;
 }
 
@@ -1521,7 +1657,7 @@ span {
 .cl1 {
   position: absolute;
   width: 100%;
-  height: 0.1vw;
+  height: 2px;
   background-color: rgba(20, 21, 28,0.1);
   left: 0;
   top: 20%;
@@ -1530,7 +1666,7 @@ span {
 .cl2 {
   position: absolute;
   width: 100%;
-  height: 0.1vw;
+  height: 2px;
   background-color: rgba(20, 21, 28,0.1);
   left: 0;
   top: 40%;
@@ -1539,7 +1675,7 @@ span {
 .cl3 {
   position: absolute;
   width: 100%;
-  height: 0.1vw;
+  height: 2px;
   background-color: rgba(20, 21, 28,0.1);
   left: 0;
   top: 60%;
@@ -1548,17 +1684,18 @@ span {
 .cl4 {
   position: absolute;
   width: 100%;
-  height: 0.1vw;
+  height: 2px;
   background-color: rgba(20, 21, 28,0.1);
   left: 0;
   top: 80%;
 }
 
 
+
 .ch1 {
   position: absolute;
   height: 100%;
-  width: 0.1vw;
+  width: 2px;
   background-color: rgba(20, 21, 28,0.1);
   top: 0;
   left: 5%;
@@ -1567,7 +1704,7 @@ span {
 .ch2 {
   position: absolute;
   height: 100%;
-  width: 0.1vw;
+  width: 2px;
   background-color: rgba(20, 21, 28,0.1);
   top: 0;
   left: 10%;
@@ -1576,7 +1713,7 @@ span {
 .ch3 {
   position: absolute;
   height: 100%;
-  width: 0.1vw;
+  width: 2px;
   background-color: rgba(20, 21, 28,0.1);
   top: 0;
   left: 15%;
@@ -1585,7 +1722,7 @@ span {
 .ch4 {
   position: absolute;
   height: 100%;
-  width: 0.1vw;
+  width: 2px;
   background-color: rgba(20, 21, 28,0.1);
   top: 0;
   left: 20%;
@@ -1594,7 +1731,7 @@ span {
 .ch5 {
   position: absolute;
   height: 100%;
-  width: 0.1vw;
+  width: 2px;
   background-color: rgba(20, 21, 28,0.1);
   top: 0;
   left: 25%;
@@ -1603,7 +1740,7 @@ span {
 .ch6 {
   position: absolute;
   height: 100%;
-  width: 0.1vw;
+  width: 2px;
   background-color: rgba(20, 21, 28,0.1);
   top: 0;
   left: 30%;
@@ -1612,7 +1749,7 @@ span {
 .ch7 {
   position: absolute;
   height: 100%;
-  width: 0.1vw;
+  width: 2px;
   background-color: rgba(20, 21, 28,0.1);
   top: 0;
   left: 35%;
@@ -1621,7 +1758,7 @@ span {
 .ch8 {
   position: absolute;
   height: 100%;
-  width: 0.1vw;
+  width: 2px;
   background-color: rgba(20, 21, 28,0.1);
   top: 0;
   left: 40%;
@@ -1630,7 +1767,7 @@ span {
 .ch9 {
   position: absolute;
   height: 100%;
-  width: 0.1vw;
+  width: 2px;
   background-color: rgba(20, 21, 28,0.1);
   top: 0;
   left: 45%;
@@ -1639,7 +1776,7 @@ span {
 .ch10 {
   position: absolute;
   height: 100%;
-  width: 0.1vw;
+  width: 2px;
   background-color: rgba(20, 21, 28,0.1);
   top: 0;
   left: 50%;
@@ -1648,7 +1785,7 @@ span {
 .ch11 {
   position: absolute;
   height: 100%;
-  width: 0.1vw;
+  width: 2px;
   background-color: rgba(20, 21, 28,0.1);
   top: 0;
   left: 55%;
@@ -1657,7 +1794,7 @@ span {
 .ch12 {
   position: absolute;
   height: 100%;
-  width: 0.1vw;
+  width: 2px;
   background-color: rgba(20, 21, 28,0.1);
   top: 0;
   left: 60%;
@@ -1666,7 +1803,7 @@ span {
 .ch13 {
   position: absolute;
   height: 100%;
-  width: 0.1vw;
+  width: 2px;
   background-color: rgba(20, 21, 28,0.1);
   top: 0;
   left: 65%;
@@ -1675,7 +1812,7 @@ span {
 .ch14 {
   position: absolute;
   height: 100%;
-  width: 0.1vw;
+  width: 2px;
   background-color: rgba(20, 21, 28,0.1);
   top: 0;
   left: 70%;
@@ -1684,7 +1821,7 @@ span {
 .ch15 {
   position: absolute;
   height: 100%;
-  width: 0.1vw;
+  width: 2px;
   background-color: rgba(20, 21, 28,0.1);
   top: 0;
   left: 75%;
@@ -1693,7 +1830,7 @@ span {
 .ch16 {
   position: absolute;
   height: 100%;
-  width: 0.1vw;
+  width: 2px;
   background-color: rgba(20, 21, 28,0.1);
   top: 0;
   left: 80%;
@@ -1702,7 +1839,7 @@ span {
 .ch17 {
   position: absolute;
   height: 100%;
-  width: 0.1vw;
+  width: 2px;
   background-color: rgba(20, 21, 28,0.1);
   top: 0;
   left: 85%;
@@ -1711,7 +1848,7 @@ span {
 .ch18 {
   position: absolute;
   height: 100%;
-  width: 0.1vw;
+  width: 2px;
   background-color: rgba(20, 21, 28,0.1);
   top: 0;
   left: 90%;
@@ -1720,7 +1857,7 @@ span {
 .ch19 {
   position: absolute;
   height: 100%;
-  width: 0.1vw;
+  width: 2px;
   background-color: rgba(20, 21, 28,0.1);
   top: 0;
   left: 95%;
@@ -1797,6 +1934,7 @@ span {
   /* background-color: var(--dark-black-clr); */
   padding: var(--section-padding);
   z-index: 0;
+  overflow-x: hidden;
 }
 
 .business_box {
@@ -2282,17 +2420,18 @@ span {
 .testimonials_one {
   position: absolute;
   background-color: var(--green-clr);
-  width: 26%;
-  height: 25vw;
+  
   color: var(--dark-black-clr);
   top: 0;
   right: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .testimonials {
+  width: 26%;
+  height: 25vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   will-change: transform;
 }
 
@@ -2332,14 +2471,9 @@ span {
 .testimonials_two {
   position: absolute;
   background-color: var(--dark-black-clr);
-  width: 26%;
-  height: 25vw;
   color: var(--white-clr);
   top: 100%;
   right: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .testimonials_two .testimonials_wrapper {
@@ -2355,14 +2489,9 @@ span {
 .testimonials_three {
   position: absolute;
   background-color: var(--green-clr);
-  width: 26%;
-  height: 25vw;
   color: var(--dark-black-clr);
   top: 200%;
   right: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .testimonials_three .testimonials_wrapper {
@@ -2378,14 +2507,9 @@ span {
 .testimonials_four {
   position: absolute;
   background-color: var(--dark-black-clr);
-  width: 26%;
-  height: 25vw;
   color: var(--white-clr);
   top: 300%;
   right: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .testimonials_four .testimonials_wrapper {
