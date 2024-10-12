@@ -1100,17 +1100,47 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
     }
 
     #blog_topic_title {
-        width: 65%;
+        width: 90%;
         font-size: 3.5vw;
+        text-align: center;
+        line-height: 1.5;
     }
 
     #blog_topic, #blog_date, #blog_read_time {
         font-size: 2.3vw;
         text-align: center;
+    }
+
+    #blog_date, #blog_read_time {
+        width: 30%;
+    }
+
+    #blog_date {text-align: start;}
+    #blog_read_time {text-align: end;}
+
+    #faq_section_title {
+        font-size: 5vw;
+    }
+
+    .faq_question-text h3 {
+        font-size: 3vw;
+        width: 85%;
+    }
+
+    .answer {
+        margin-left: 9vw;
+    }
+
+    .answer p {
+        font-size: 2vw;
+        width: 85%;
+    }
+
+    .con {
+        font-size: 2.5vw;
     }
 }
 
