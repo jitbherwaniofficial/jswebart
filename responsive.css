@@ -1426,27 +1426,47 @@
     line-height: 1.4;
 }
 
+.work_lines_container {
+    position: absolute;
+    width: 51vw;
+    height: 24vw;
+    top: 0;
+    left: 3%;
+}
+
 #section_title {
     font-size: 6vw;
     width: 90%;
+    padding-bottom: 1vw;
 }
 
 #section_para {
-    width: 82%;
-    font-size: 3.5vw;
+    width: 95%;
+    font-size: 3vw;
+    padding-bottom: 5vw;
 }
 
-#featured_work_wrapper, #featured_work_middle_wrapper {
-    gap: 7vw;
+#featured_work_wrapper {
+    gap: 15vw;
+}
+
+#featured_work_middle_wrapper {
+    margin: 13vw 0;
 }
 
 .anchor_ #featured_work_image-container #caption_container figcaption {
-    font-size: 3.2vw;
+    font-size: 2.8vw;
+    padding-top: 1vw;
+}
+
+#caption_container {
+    padding-top: 2vw;
 }
 
 #view_all_works {
-    font-size: 3.5vw;
-    padding: 2vw 5.5vw;
+    font-size: 4vw;
+    padding: 3vw 7vw;
+    margin-top: 10vw;
 }
 
 #service_title {
