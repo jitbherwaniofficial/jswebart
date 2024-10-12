@@ -937,6 +937,7 @@
 
     .services_box {
         height: 120vw;
+        width: 85%;
     }
 
     .services_box_right {
@@ -1016,6 +1017,7 @@
 
     .business_box {
         height: 95vw;
+        width: 85%;
         flex-direction: column;
     }
 
@@ -1096,30 +1098,28 @@
     }
 
     #blog_right {
-        width: 100%;
+        width: 90%;
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
     }
 
     #blog_topic_title {
-        width: 90%;
+        width: 100%;
         font-size: 3.5vw;
-        text-align: center;
+        text-align: start;
         line-height: 1.5;
     }
 
     #blog_topic, #blog_date, #blog_read_time {
         font-size: 2.3vw;
-        text-align: center;
+        text-align: left;
     }
 
     #blog_date, #blog_read_time {
-        width: 30%;
+        width: 100%;
     }
-
-    #blog_date {text-align: start;}
-    #blog_read_time {text-align: end;}
 
     #faq_section_title {
         font-size: 5vw;
