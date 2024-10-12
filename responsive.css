@@ -1182,5 +1182,6 @@
 
     #mobile_nav {
         padding: 0;
+        top: -120%;
     }
 }
