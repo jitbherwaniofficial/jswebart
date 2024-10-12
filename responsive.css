@@ -1170,6 +1170,7 @@
 
   #test_para {
     font-size: 2vw;
+    font-weight: var(--medium);
   }
 
   #owner_name {
@@ -1211,8 +1212,8 @@
   }
 
   #business_grow_title {
-    width: 60%;
-    font-size: 4.5vw;
+    width: 65%;
+    font-size: 5vw;
   }
 
   .cta_lines_container {
