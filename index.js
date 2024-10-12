@@ -186,6 +186,9 @@ const swiper = new Swiper('.swiper-container', {
     },
     430: {
       spaceBetween: -70
+    },
+    400: {
+      spaceBetween:-50
     }
   },
   slidesPerView: 1, // Number of slides to show at once
