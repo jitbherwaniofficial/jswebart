@@ -1502,26 +1502,45 @@
 
 .services_box {
     width: 90%;
-    height: 130vw;
+    height: 160vw;
 }
 
 #services_box_title {
-    font-size: 4.2vw;
+    font-size: 5.5vw;
     padding-bottom: 10px;
 }
 
 #services_box_para {
-    font-size: 2.7vw;
+    font-size: 2.9vw;
 }
 
-#services_served_container li {
-    font-size: 2.7vw;
+#services_box_para span {
+    display: block;
     padding-bottom: 2vw;
 }
 
-#service_redirect_link {
-    font-size: 2.8vw;
+#services_served_container li {
+    font-size: 2.9vw;
+    padding-bottom: 3vw;
 }
+
+#services_served_container li:after{
+    top: -2px;
+    width: 4vw;
+    height: 4vw;
+    left: -.5vw
+}
+
+#service_redirect_link {
+    font-size: 2.9vw;
+    margin-top: 4vw;
+    padding: 3vw 7vw;
+}
+
+.services_box_right {
+    height: 47vw;
+}
+
 
 .goal_title {
     width: 100% !important;
@@ -1559,7 +1578,7 @@
 }
 
 #services_served_container {
-    padding-top: 2.5vw;
+    padding-top: 3vw;
 }
 
 }
