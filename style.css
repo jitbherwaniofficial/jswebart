@@ -1406,7 +1406,7 @@ span {
   background-color: transparent;
   cursor: pointer;
   /* background-color: rgba(44, 44, 51, 0.8); */
-  border-radius: 3vw;
+  /* border-radius: 3vw; */
 }
 
 .pill.active {
@@ -1985,7 +1985,7 @@ span {
   letter-spacing: 0.05vw;
   background-color: transparent;
   cursor: pointer;
-  border-radius: 3vw;
+  /* border-radius: 3vw; */
 }
 
 .business_pill.active {
