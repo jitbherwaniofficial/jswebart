@@ -1409,12 +1409,20 @@
     top: 10%;
 }
 
+#counter {
+    gap: 10vw;
+}
+
+#counter_box {
+    width: 32%;
+}
+
 #counter_number {
-    font-size: 7vw;
+    font-size: 7.5vw;
 }
 
 #counter_para {
-    font-size: 4vw;
+    font-size: 4.5vw;
     line-height: 1.4;
 }
 
