@@ -828,6 +828,23 @@
     height: 2.5px;
   }
 
+  .service_link_container {
+    overflow-y: scroll;
+}
+
+.service_link_container.active {
+    max-height: 40vw;
+}
+
+.service_link {
+    font-size: 4vw;
+    padding: 3vw 2vw;
+}
+
+.mob_link {
+    padding: 3vw 4vw;
+}
+
   #hero_section {
     padding-top: 20vw;
   }
