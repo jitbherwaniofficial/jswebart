@@ -2478,7 +2478,7 @@ span {
 }
 
 .testimonials_two .testimonials_wrapper {
-  width: 85%;
+  /* width: 85%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2496,7 +2496,7 @@ span {
 }
 
 .testimonials_three .testimonials_wrapper {
-  width: 85%;
+  /* width: 85%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2514,7 +2514,7 @@ span {
 }
 
 .testimonials_four .testimonials_wrapper {
-  width: 85%;
+  /* width: 85%; */
   display: flex;
   justify-content: center;
   align-items: center;

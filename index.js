@@ -280,8 +280,8 @@ businessPill.forEach(pill => {
 });
 
 gsap.to(".testimonials", {
-  y: "-350%",
-    duration: 15, 
+  x: "-290%",
+  duration: 15, 
   ease: "none", 
   repeat: -1, 
 });
