@@ -2316,8 +2316,9 @@ span {
   position: relative;
   width: 50px;
   height: 50px;
-  border-radius: 50%;
-  background-color: var(--green-clr);
+  /* border-radius: 50%; */
+  background-color: var(--dark-black-clr);
+  color: var(--white-clr);
 }
 
 .icon .icon-shape::before {
@@ -2328,7 +2329,7 @@ span {
   transform: translate(-50%, -50%);
   width: 20px;
   height: 2px;
-  background: var(--dark-black-clr);
+  background: var(--white-clr);
   border-radius: 3px;
   transition: all 0.5s ease;
 }
@@ -2341,7 +2342,7 @@ span {
   transform: translate(-50%, -50%);
   width: 2px;
   height: 20px;
-  background: var(--dark-black-clr);
+  background: var(--white-clr);
   border-radius: 3px;
   transition: all 0.5s ease;
 }
