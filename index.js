@@ -244,7 +244,7 @@ const swiperTwo = new Swiper('.swiper-container-two', {
       spaceBetween: -20
     },
     400: {
-      spaceBetween:0
+      spaceBetween:-10
     },
     375: {
       spaceBetween:-20
