@@ -1794,4 +1794,48 @@ padding-bottom: 1.5vw;
     margin-left: 6vw;
 }
 
+.business_grow_wrapper {
+    height: 75vw;
+}
+
+
+#business_grow_title {
+    width: 66%;
+    font-size: 5.5vw;
+}
+
+#testimonials_wrapper{
+    width: 75%;
+    padding: 3vw;
+    border: 1px solid var(--dark-black-clr);
+}
+#test_para {
+    font-size: 1.9vw;
+}
+#owner_name{
+    font-size: 1.5vw;
+    padding-bottom: 1vw;
+}
+#company_name_designation{
+    font-size: 1.3vw;
+}
+.testimonials_two .testimonials_wrapper {
+  border: 1px solid var(--white-clr);
+  padding: 3vw;
+
+}
+.testimonials_three .testimonials_wrapper{
+    border: 1px solid var(--dark-black-clr);
+    padding: 3vw;
+}
+.testimonials_four .testimonials_wrapper{
+    border: 1px solid var(--white-clr);
+    padding: 3vw;
+}
+.con{
+    font-size: 3vw;
+  padding: 3vw 6vw;
+
+}
+
 }
