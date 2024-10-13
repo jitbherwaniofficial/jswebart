@@ -1765,7 +1765,7 @@ padding-bottom: 1.5vw;
     padding-bottom: 7vw;
 }
 #faq_question{
-    gap: 7vw;
+    gap: 10vw;
 }
 .answer{
     gap: 2vw;
@@ -1777,20 +1777,21 @@ padding-bottom: 1.5vw;
     font-size: 3.5vw;
 }
 .icon-shape {
-    height: 8vw;
-    width: 8vw;
+    height: 12vw; 
+    width: 12vw;
 }
 
 .icon .icon-shape::before {
-    width: 15px;
+    width: 20px;
 }
 
 .icon .icon-shape::after {
-    height: 15px;
+    height: 20px;
 }
 
 .answer p {
     font-size: 3vw;
+    margin-left: 6vw;
 }
 
 }
