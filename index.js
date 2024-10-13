@@ -188,7 +188,7 @@ const swiper = new Swiper('.swiper-container', {
       spaceBetween: 0
     },
     400: {
-      spaceBetween:0
+      spaceBetween:10
     },
     375: {
       spaceBetween:-5
