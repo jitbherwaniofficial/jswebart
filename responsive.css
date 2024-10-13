@@ -1632,31 +1632,40 @@
 }
 
 .cta_mob {
-    height: 55vw;
+    height: 65vw;
     flex-direction: column;
 }
 
 .cta_left {
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
 }
 
 .work_together_btn {
     text-wrap: wrap !important;
     width:40% !important;
     font-size: 3vw !important;
+    margin-right: auto;
+    margin-left: 7%;
 }
 
 .cta_left > #cta_process_title {
     font-size: 6vw;
-    width: 70%;
-    margin: 0 auto;
+    width: 80%;
 }
 
 #cta_para {
     font-size: 2.9vw;
-    width: 70%;
-    margin: 0 auto;
+    width: 80%;
+
+}
+
+.pad10 {
+    padding-top: 20vw;
+    padding-bottom: 0 !important;
 }
 
 }
