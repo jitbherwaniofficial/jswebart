@@ -800,6 +800,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+    :root{
+        --section-padding: 20vw 0;
+    }
   #header {
     height: 12vw;
   }
@@ -846,7 +849,8 @@
   }
 
   #hero_section {
-    padding-top: 20vw;
+      padding: var(--section-padding);
+    padding-top: 25vw;
   }
 
   #hero_left {
@@ -864,17 +868,19 @@
 
   #hero_work_btn {
     font-size: 3vw;
-    padding: 1.5vw 6vw;
+    padding: 2.5vw 6.5vw;
   }
 
   #big_logo_container {
     width: 80vw;
     height: 80vw;
+    opacity: 0.6;
+    top: 10%;
   }
-
+ 
   #counter {
     flex-wrap: wrap;
-    gap: 3vw;
+    gap: 4vw;
   }
 
   #counter_box {
@@ -888,19 +894,24 @@
   }
 
   #counter_para {
-    font-size: 3.5vw;
+    font-size: 3.6vw;
+    width: 30%;
     line-height: 1.4;
   }
 
-  #section_title {
-    font-size: 5vw;
-    width: 80%;
-    padding-bottom: 3vw;
+  #section_container{
+    padding: var(--section-padding);
   }
-
+  #section_title {
+    font-size: 6vw;
+    width: 90%;
+    padding-bottom: 0.5vw;
+  }
+  
   #section_para {
-    width: 80%;
-    font-size: 2.8vw;
+    width: 90%;
+    font-size: 2.4vw;
+    padding-bottom: 4vw;
   }
 
   #featured_work_wrapper,
@@ -908,7 +919,7 @@
     justify-content: center;
     flex-direction: column;
     height: auto;
-    gap: 2vw;
+    gap: 10vw;
   }
 
   .anchor_ {
@@ -920,10 +931,12 @@
 
   .anchor_ #featured_work_image-container {
     height: 70vw !important;
+    width: 100%;
   }
 
   .anchor_ #featured_work_image-container img {
     height: 90% !important;
+    width: 100%;
   }
 
   .anchor_ #featured_work_image-container #caption_container {
@@ -931,25 +944,29 @@
   }
 
   .anchor_ #featured_work_image-container #caption_container figcaption {
-    font-size: 2.5vw;
+    font-size: 2.3vw;
+    margin-top: 1vw;
   }
 
   #view_all_works {
-    font-size: 3vw;
+    font-size: 2.8vw;
+    margin-top: 5vw;
   }
 
   #service_title {
-    font-size: 5vw;
-    padding-bottom: 2vw;
+    font-size: 6vw;
+    padding-bottom: 1.5vw;
   }
 
   #service_para {
-    font-size: 2.5vw;
-    padding-bottom: 3vw;
+    font-size: 2.4vw;
+    width: 90%;
+    padding-bottom: 4vw;
   }
 
   .pill {
     font-size: 2.3vw;
+    
   }
 
   .services_box {
