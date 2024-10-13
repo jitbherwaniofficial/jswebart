@@ -1592,12 +1592,18 @@
 }
 
 .cta_process_wrapper {
-    height: 45vw;
+    height: 50vw;
     width: 100%;
 }
 
 #cta_process_title {
     font-size: 6vw;
+}
+#contact_cta_btn{
+    padding: 3vw;
+    font-size: 2.8vw;
+    text-wrap: nowrap;
+    text-align: center;
 }
 
 .cl1,.cl2, .cl3, .cl4 {
