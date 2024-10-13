@@ -1601,9 +1601,10 @@
 }
 #contact_cta_btn{
     padding: 3vw;
-    font-size: 2.8vw;
+    font-size: 3vw;
     text-wrap: nowrap;
     text-align: center;
+    font-weight: var(--bold);
 }
 
 .cl1,.cl2, .cl3, .cl4 {
