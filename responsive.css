@@ -1663,6 +1663,7 @@
     margin-top: -0.2vw;
     padding-bottom: 20vw;
     height: fit-content;
+    background-color: var(--near-pure-white);
   }
 
   .goal_box_right {
@@ -1680,6 +1681,7 @@
   .cta_process_wrapper {
     height: 50vw;
     width: 90%;
+    background-color: transparent;
   }
 
   #cta_process_title {
@@ -1898,12 +1900,12 @@
   }
 
   .business_grow_wrapper {
-    height: 80vw;
+    height: 75vw;
   }
 
   #business_grow_title {
-    width: 66%;
-    font-size: 5.7vw;
+    width: 62%;
+    font-size: 5vw;
   }
 
   #testimonials_wrapper {
