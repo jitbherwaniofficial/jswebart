@@ -1553,12 +1553,22 @@
 }
 
 #goal_para {
-    width: 60%;
+    width: 90%;
     font-size: 3vw;
 }
 
 #details {
     font-size: 3vw;
+    padding-bottom: 3vw;
+    width: 90%;
+}
+
+#goal_wrapper {
+    gap: 12vw;
+}
+
+#goal_box:nth-child(2) .goal_box_right img {
+    object-position: top;
 }
 
 #goal_box:nth-child(2) .goal_box_left #goal_title {
@@ -1579,6 +1589,14 @@
 
 #services_served_container {
     padding-top: 3vw;
+}
+
+.cta_process_wrapper {
+    height: 40vw;
+}
+
+#cta_process_title {
+    font-size: 6vw;
 }
 
 }
