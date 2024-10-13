@@ -1993,8 +1993,9 @@
 }
 
 .footer_news_letter_container button span {
-    font-size: 5.5vw;
-    font-weight: var(--semibold);
+    font-size: 6vw;
+    font-weight: var(--bold);
+    height: inherit;
   }
 
 }
