@@ -1986,10 +1986,15 @@
     width: 5vw;
 }
 
-#footer_sect_logo {opacity: 0.5;}
+#footer_sect_logo {opacity: 0.4;}
 
 #footer_sect_logo img {
     width: 80vw;
 }
+
+.footer_news_letter_container button span {
+    font-size: 5.5vw;
+    font-weight: var(--semibold);
+  }
 
 }
