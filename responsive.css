@@ -1660,7 +1660,7 @@
   }
 
   #cta_process_section {
-    margin-top: -0.2vw;
+    margin-top: -0.3vw;
     padding-bottom: 20vw;
     height: fit-content;
     background-color: var(--near-pure-white);
@@ -1908,10 +1908,25 @@
     font-size: 5vw;
   }
 
-  #testimonials_wrapper {
-    width: 75%;
+  .testimonials_wrapper {
+    width: 90%;
     padding: 2vw;
-    border: 1px solid var(--dark-black-clr);
+    border: 1px solid var(--dark-black-clr) !important;
+  }
+  .testimonials_two .testimonials_wrapper{
+    border: 1px solid var(--white-clr) !important;
+
+  }
+  .testimonials_three .testimonials_wrapper{
+    border: 1px solid var(--dark-black-clr) !important;
+
+  }
+  .testimonials_four .testimonials_wrapper{
+    border: 1px solid var(--white-clr) !important;
+
+  }
+  .ch2,.ch4, .ch6 , .ch8, .ch10, .ch12, .ch14, .ch16, .ch18{
+    display: none;
   }
   #test_para {
     font-size: 2.25vw;
@@ -1925,22 +1940,7 @@
   #company_name_designation {
     font-size: 1.7vw;
   }
-  .testimonials_one {
-    border: 1px solid var(--dark-black-clr);
-    padding: 2vw;
-  }
-  .testimonials_two .testimonials_wrapper {
-    border: 1px solid var(--white-clr);
-    padding: 2vw;
-  }
-  .testimonials_three .testimonials_wrapper {
-    border: 1px solid var(--dark-black-clr);
-    padding: 2vw;
-  }
-  .testimonials_four .testimonials_wrapper {
-    border: 1px solid var(--white-clr);
-    padding: 2vw;
-  }
+  
   .con {
     font-size: 3vw;
     padding: 3vw 6vw;
