@@ -2618,8 +2618,7 @@ span {
   width: 4vw;
   height: 4vw;
   border-radius: 50%;
-  font-size: 2.5vw;
-  font-weight: var(--semibold);
+  
   background-color: var(--green-clr);
   display: flex;
   justify-content: center;
@@ -2627,6 +2626,11 @@ span {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+.footer_news_letter_container button {
+  font-size: 2.5vw;
+  font-weight: var(--semibold);
 }
 
 .footer_nav_links_container {
