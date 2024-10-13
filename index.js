@@ -100,50 +100,6 @@ counter(); // Call the counter function
 // COUNTER *********************************************************** //
 
 
-// ACCORDION //
-// let questions = document.querySelectorAll(".service_name_container");
-
-// // Open the first accordion by default
-// if (questions.length > 0) {
-//   const firstQuestion = questions[0];
-//   const firstIcon = firstQuestion.querySelector(".icon-shape");
-//   const firstAnswer = firstQuestion.nextElementSibling;
-
-//   // Add the 'active' class to the first question and icon
-//   firstQuestion.classList.add("active");
-//   firstIcon.classList.add("active");
-
-//   // Set the maxHeight for the first answer
-//   firstAnswer.style.maxHeight = "23vw";
-// }
-
-// questions.forEach((question) => {
-//   let icon = question.querySelector(".icon-shape");
-
-//   question.addEventListener("click", (event) => {
-//     const active = document.querySelector(".service_name_container.active");
-//     const activeIcon = document.querySelector(".icon-shape.active");
-
-//     if (active && active !== question) {
-//       active.classList.toggle("active");
-//       activeIcon.classList.toggle("active");
-//       active.nextElementSibling.style.maxHeight = 0;
-//     }
-
-//     question.classList.toggle("active");
-//     icon.classList.toggle("active");
-
-//     const answer = question.nextElementSibling;
-    
-//     if (question.classList.contains("active")) {
-//       answer.style.maxHeight = "23vw";
-//     } else {
-//       answer.style.maxHeight = 0;
-//     }
-//   });
-  
-// });
-// ACCORDION //
 
 
 // ACCORDION //
