@@ -248,6 +248,9 @@ const swiperTwo = new Swiper('.swiper-container-two', {
     },
     375: {
       spaceBetween:-20
+    },
+    360: {
+      spaceBetween:0
     }
   },
   slidesPerView: 1, // Number of slides to show at once
