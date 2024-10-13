@@ -1631,4 +1631,32 @@
     width: calc(100% / 2.5);
 }
 
+.cta_mob {
+    height: 55vw;
+    flex-direction: column;
+}
+
+.cta_left {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.work_together_btn {
+    text-wrap: wrap !important;
+    width:40% !important;
+    font-size: 3vw !important;
+}
+
+.cta_left > #cta_process_title {
+    font-size: 6vw;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#cta_para {
+    font-size: 2.9vw;
+    width: 70%;
+    margin: 0 auto;
+}
+
 }
