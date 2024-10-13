@@ -1031,6 +1031,10 @@
     height: 45vw;
   }
 
+  #goal_box:nth-child(2) .goal_box_right img {
+    object-position: top;
+}
+
   #goal_title {
     width: 90%;
     font-size: 5.5vw;
@@ -1658,6 +1662,7 @@
   #cta_process_section {
     margin-top: -0.2vw;
     padding-bottom: 20vw;
+    height: fit-content;
   }
 
   .goal_box_right {
@@ -1674,7 +1679,7 @@
 
   .cta_process_wrapper {
     height: 50vw;
-    width: 100%;
+    width: 90%;
   }
 
   #cta_process_title {
@@ -1735,6 +1740,7 @@
   .cta_mob {
     height: 65vw;
     flex-direction: column;
+    justify-content: center;
   }
 
   .cta_left {
