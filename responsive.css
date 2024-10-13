@@ -1757,9 +1757,40 @@ padding-bottom: 1.5vw;
     font-size: 3vw;
 }
 
+#faq_section{
+    padding: var(--section-padding);
+}
+#faq_section_title{
+    font-size: 6vw;
+    padding-bottom: 7vw;
+}
+#faq_question{
+    gap: 7vw;
+}
+.answer{
+    gap: 2vw;
+}
+.answer p{
+    font-size: 2vw;
+}
+.faq_question-text h3{
+    font-size: 3.5vw;
+}
+.icon-shape {
+    height: 8vw;
+    width: 8vw;
+}
 
+.icon .icon-shape::before {
+    width: 15px;
+}
 
+.icon .icon-shape::after {
+    height: 15px;
+}
 
-
+.answer p {
+    font-size: 3vw;
+}
 
 }
