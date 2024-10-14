@@ -139,6 +139,7 @@ span {
   font-family: var(--poppin-font);
   color: var(--white-clr);
   font-weight: var(--medium);
+  opacity: 0;
 }
 
 #navbar li .nav_link:not(.contact .nav_link) {
@@ -416,6 +417,14 @@ span {
   font-size: 3vw;
   font-weight: var(--semibold);
   line-height: 1.3;
+  /* opacity: 0; */
+  overflow: hidden;
+}
+
+#hero_title span {
+  transform: translateY(500%);
+  display: block;
+  width: 100%;
 }
 
 #hero_work_btn {

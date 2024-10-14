@@ -45,10 +45,24 @@ gsap.from("#absolute_logo img", {
     }
 })
 
-gsap.from(".company_name", {
+const tl = gsap.timeline({
+  default: {
+    duration:2,
+  }
+});
+
+tl.from(".company_name", {
     y:60,
-    duration:1,
-    delay:0.3
+    stagger:0.2
+})
+.to(".nav_link", {
+  opacity: 1,
+  stagger: 0.2,     
+  ease: "power3.out"
+})
+.to("#hero_title span", {
+  y: 0,
+  stagger: 0.1
 })
 
 // gsap.to("#company_marque #company_marque_name", {
