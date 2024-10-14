@@ -1946,16 +1946,15 @@
     display: none;
   }
   #test_para {
-    font-size: 2.25vw;
-    
-
+    font-size: 2.5vw;width: 100%;
   }
   #owner_name {
-    font-size: 1.9vw;
+    font-size: 2.9vw;
     padding-bottom: 1vw;
   }
   #company_name_designation {
-    font-size: 1.7vw;
+    font-size: 2.1vw;
+    width: 100%;
   }
   
   .con {
