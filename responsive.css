@@ -1724,6 +1724,23 @@
     width: 1px;
   }
 
+  .mob_line1,
+  .mob_line3,
+  .mob_line5,
+  .mob_line7,
+  .mob_line9,
+  .mob_line11{
+    display: none;
+  }
+  .h1,
+  .h3,
+  .h5,
+  .h7,
+  .h9,
+  .h11{
+    display: none;
+  }
+
   .business_box {
     height: 110vw;
     width: 85%;
