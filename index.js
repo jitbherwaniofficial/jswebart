@@ -52,7 +52,7 @@ tl.from(".company_name", {
 })
 
 gsap.from(".strip", {
-  duration: 1,     // Duration of the opacity fade for each element
+  duration: 2,     // Duration of the opacity fade for each element
   // opacity: 0,      // Starts from fully transparent
   stagger: 0.2,    // Adds a 0.2-second delay between the start of each element's animation
   ease: "power2.out", // Smooth easing for a more natural fade
