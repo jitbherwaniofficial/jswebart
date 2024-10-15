@@ -56,7 +56,7 @@ gsap.from(".strip", {
   // opacity: 0,      // Starts from fully transparent
   stagger: 0.2,    // Adds a 0.2-second delay between the start of each element's animation
   ease: "power2.out", // Smooth easing for a more natural fade
-  y:800
+  y:1000
 });
 
 

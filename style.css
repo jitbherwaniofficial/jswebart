@@ -449,7 +449,11 @@ span {
   position: relative;
 }
 
-.strip {top: 0%;}
+.strip {
+  position: absolute;
+  top: -50%;
+  height: 220vh;
+}
 
 .stripsminus2,
 .stripsminus2 {
@@ -459,7 +463,7 @@ span {
 .strips0 {
   position: absolute;
   width: 0.1px;
-  height: 190vh;
+  
   background-color: rgba(247, 247, 255, 0.2);
   left: 30%;
 }
@@ -467,7 +471,6 @@ span {
 .strips1 {
   position: absolute;
   width: 0.1px;
-  height: 190vh;
   background-color: rgba(247, 247, 255, 0.2);
   left: 45%;
 }
@@ -475,7 +478,6 @@ span {
 .strips2 {
   position: absolute;
   width: 0.1px;
-  height: 190vh;
   background-color: rgba(247, 247, 255, 0.2);
   left: 60%;
 }
@@ -483,7 +485,6 @@ span {
 .strips3 {
   position: absolute;
   width: 0.1px;
-  height: 190vh;
   background-color: rgba(247, 247, 255, 0.2);
   left: 75%;
 }
@@ -491,7 +492,6 @@ span {
 .strips4 {
   position: absolute;
   width: 0.1px;
-  height: 190vh;
   background-color: rgba(247, 247, 255, 0.2);
   left: 90%;
 }
@@ -499,7 +499,6 @@ span {
 .strips5 {
   position: absolute;
   width: 0.1px;
-  height: 190vh;
   background-color: rgba(247, 247, 255, 0.2);
   left: 105%;
 }
@@ -507,7 +506,6 @@ span {
 .strips6 {
   position: absolute;
   width: 0.1px;
-  height: 190vh;
   background-color: rgba(247, 247, 255, 0.2);
   left: 120%;
 }

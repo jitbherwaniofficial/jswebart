@@ -415,7 +415,6 @@
     display: block;
     position: absolute;
     width: 0.1px;
-    height: 190vh;
     background-color: rgba(247, 247, 255, 0.1);
     left: 10%;
   }
@@ -424,7 +423,6 @@
     display: block;
     position: absolute;
     width: 0.1px;
-    height: 190vh;
     background-color: rgba(247, 247, 255, 0.1);
     left: 20%;
   }
