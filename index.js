@@ -52,11 +52,11 @@ tl.from(".company_name", {
 })
 
 gsap.from(".strip", {
-  duration: 3, 
+  duration: 1, 
   // opacity: 0,
   stagger: 0.2,
   ease: "power2.out",
-  y:2000
+  y:1500
 });
 
 
@@ -139,10 +139,10 @@ gsap.to("#featured_work_anchor1", {
   duration: 2,
   scale:1,
   scrollTrigger: {
-    trigger: ".fww1",
+    trigger: "#featured_work_anchor1",
     scroller: "body",
-    start: "top 60%",
-    end:"top 30%",
+    start: "top 90%",
+    end:"top 60%",
     scrub: true,
   }
 })
@@ -151,10 +151,10 @@ gsap.to("#featured_work_anchor2", {
   duration: 2,
   scale:1,
   scrollTrigger: {
-    trigger: ".fww1",
+    trigger: "#featured_work_anchor2",
     scroller: "body",
-    start: "top 60%",
-    end:"top 30%",
+    start: "top 90%",
+    end:"top 60%",
     scrub: true,
   }
 })
@@ -163,10 +163,10 @@ gsap.to("#featured_work_anchor3", {
   duration: 2,
   scale:1,
   scrollTrigger: {
-    trigger: ".fwmw1",
+    trigger: "#featured_work_anchor3",
     scroller: "body",
-    start: "top 60%",
-    end:"top 30%",
+    start: "top 90%",
+    end:"top 60%",
     scrub: true,
   }
 })
@@ -175,10 +175,10 @@ gsap.to("#featured_work_anchor4", {
   duration: 2,
   scale:1,
   scrollTrigger: {
-    trigger: ".fww2",
+    trigger: "#featured_work_anchor4",
     scroller: "body",
-    start: "top 60%",
-    end:"top 30%",
+    start: "top 90%",
+    end:"top 60%",
     scrub: true,
   }
 })
@@ -187,10 +187,10 @@ gsap.to("#featured_work_anchor5", {
   duration: 2,
   scale:1,
   scrollTrigger: {
-    trigger: ".fww2",
+    trigger: "#featured_work_anchor5",
     scroller: "body",
-    start: "top 60%",
-    end:"top 30%",
+    start: "top 90%",
+    end:"top 60%",
     scrub: true,
   }
 })
@@ -199,10 +199,10 @@ gsap.to("#featured_work_anchor6", {
   duration: 2,
   scale:1,
   scrollTrigger: {
-    trigger: ".fww3",
+    trigger: "#featured_work_anchor6",
     scroller: "body",
-    start: "top 60%",
-    end:"top 30%",
+    start: "top 90%",
+    end:"top 60%",
     scrub: true,
   }
 })
@@ -211,10 +211,10 @@ gsap.to("#featured_work_anchor7", {
   duration: 2,
   scale:1,
   scrollTrigger: {
-    trigger: ".fww3",
+    trigger: "#featured_work_anchor7",
     scroller: "body",
-    start: "top 60%",
-    end:"top 30%",
+    start: "top 90%",
+    end:"top 60%",
     scrub: true,
   }
 })
@@ -223,10 +223,10 @@ gsap.to("#featured_work_anchor8", {
   duration: 2,
   scale:1,
   scrollTrigger: {
-    trigger: ".fwmw2",
+    trigger: "#featured_work_anchor8",
     scroller: "body",
-    start: "top 60%",
-    end:"top 30%",
+    start: "top 90%",
+    end:"top 60%",
     scrub: true,
   }
 })
