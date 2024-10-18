@@ -68,7 +68,7 @@ gsap.from(".w_line", {
     scroller: "body",
     start: "top 50%",
     end:"top 30%",
-    scrub: true,
+    scrub: 4,
   }
 })
 
@@ -80,7 +80,7 @@ gsap.from(".w_hor", {
     scroller: "body",
     start: "top 60%",
     end:"top 30%",
-    scrub: true,
+    scrub: 4,
   }
 })
 
@@ -93,7 +93,7 @@ gsap.from(".w2_line", {
     scroller: "body",
     start: "top 50%",
     end:"top 30%",
-    scrub: true,
+    scrub: 4,
   }
 })
 
@@ -105,7 +105,7 @@ gsap.from(".w2_hor", {
     scroller: "body",
     start: "top 60%",
     end:"top 30%",
-    scrub: true,
+    scrub: 4,
   }
 })
 
@@ -118,7 +118,7 @@ gsap.from(".w3_line", {
     scroller: "body",
     start: "top 50%",
     end:"top 30%",
-    scrub: true,
+    scrub: 4,
   }
 })
 
@@ -130,10 +130,106 @@ gsap.from(".w3_hor", {
     scroller: "body",
     start: "top 60%",
     end:"top 30%",
-    scrub: true,
+    scrub: 4,
   }
 })
 
+
+gsap.to("#featured_work_anchor1", {
+  duration: 2,
+  scale:1,
+  scrollTrigger: {
+    trigger: ".fww1",
+    scroller: "body",
+    start: "top 60%",
+    end:"top 30%",
+    scrub: 4,
+  }
+})
+
+gsap.to("#featured_work_anchor2", {
+  duration: 2,
+  scale:1,
+  scrollTrigger: {
+    trigger: ".fww1",
+    scroller: "body",
+    start: "top 60%",
+    end:"top 30%",
+    scrub: 4,
+  }
+})
+
+gsap.to("#featured_work_anchor3", {
+  duration: 2,
+  scale:1,
+  scrollTrigger: {
+    trigger: ".fwmw1",
+    scroller: "body",
+    start: "top 60%",
+    end:"top 30%",
+    scrub: 4,
+  }
+})
+
+gsap.to("#featured_work_anchor4", {
+  duration: 2,
+  scale:1,
+  scrollTrigger: {
+    trigger: ".fww2",
+    scroller: "body",
+    start: "top 60%",
+    end:"top 30%",
+    scrub: 4,
+  }
+})
+
+gsap.to("#featured_work_anchor5", {
+  duration: 2,
+  scale:1,
+  scrollTrigger: {
+    trigger: ".fww2",
+    scroller: "body",
+    start: "top 60%",
+    end:"top 30%",
+    scrub: 4,
+  }
+})
+
+gsap.to("#featured_work_anchor6", {
+  duration: 2,
+  scale:1,
+  scrollTrigger: {
+    trigger: ".fww3",
+    scroller: "body",
+    start: "top 60%",
+    end:"top 30%",
+    scrub: 4,
+  }
+})
+
+gsap.to("#featured_work_anchor7", {
+  duration: 2,
+  scale:1,
+  scrollTrigger: {
+    trigger: ".fww3",
+    scroller: "body",
+    start: "top 60%",
+    end:"top 30%",
+    scrub: 4,
+  }
+})
+
+gsap.to("#featured_work_anchor8", {
+  duration: 2,
+  scale:1,
+  scrollTrigger: {
+    trigger: ".fwmw2",
+    scroller: "body",
+    start: "top 60%",
+    end:"top 30%",
+    scrub: 4,
+  }
+})
 
 // gsap.to("#company_marque #company_marque_name", {
 //     transform: "translateX(-60%)",
