@@ -52,11 +52,11 @@ tl.from(".company_name", {
 })
 
 gsap.from(".strip", {
-  duration: 2, 
+  duration: 3, 
   // opacity: 0,
   stagger: 0.2,
   ease: "power2.out",
-  y:1000
+  y:2000
 });
 
 
