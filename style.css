@@ -896,7 +896,8 @@ span {
   display: flex;
   flex-wrap: wrap;
   align-self: flex-start;
-  scale: 0;
+  transform:scale(0);
+  transform-origin: bottom;
 }
 
 #featured_work_anchor1 #featured_work_image-container {
@@ -949,7 +950,8 @@ span {
   display: flex;
   flex-wrap: wrap;
   align-self: flex-end;
-  scale: 0;
+  transform:scale(0);
+  transform-origin: bottom;
 }
 
 #featured_work_anchor2 #featured_work_image-container {
@@ -985,7 +987,8 @@ span {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  scale: 0;
+  transform:scale(0);
+  transform-origin: bottom;
 }
 
 #featured_work_anchor3 #featured_work_image-container {
@@ -1012,7 +1015,8 @@ span {
   display: flex;
   flex-wrap: wrap;
   align-self: flex-start;
-  scale: 0;
+  transform:scale(0);
+  transform-origin: bottom;
 }
 
 #featured_work_anchor4 #featured_work_image-container {
@@ -1039,7 +1043,8 @@ span {
   display: flex;
   flex-wrap: wrap;
   align-self: flex-end;
-  scale: 0;
+  transform:scale(0);
+  transform-origin: bottom;
 }
 
 #featured_work_anchor5 #featured_work_image-container {
@@ -1066,7 +1071,8 @@ span {
   display: flex;
   flex-wrap: wrap;
   align-self: flex-start;
-  scale: 0;
+  transform:scale(0);
+  transform-origin: bottom;
 }
 
 #featured_work_anchor6 #featured_work_image-container {
@@ -1093,7 +1099,8 @@ span {
   display: flex;
   flex-wrap: wrap;
   align-self: flex-end;
-  scale: 0;
+  transform:scale(0);
+  transform-origin: bottom;
 }
 
 #featured_work_anchor7 #featured_work_image-container {
@@ -1119,7 +1126,8 @@ span {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  scale: 0;
+  transform:scale(0);
+  transform-origin: bottom;
 }
 
 #featured_work_anchor8 #featured_work_image-container {
