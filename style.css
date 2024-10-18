@@ -738,6 +738,7 @@ span {
   left: 3%;
 }
 
+
 .w1 {
   position: absolute;
   width: 1px;
@@ -820,6 +821,31 @@ span {
    background-color: rgba(44, 44, 51,0.2);
   top: 75%;
   left: -3vw;
+}
+
+
+.w_line {
+  height: 100%;
+}
+
+.w_hor {
+  width: 100%;
+}
+
+.w2_line {
+  height: 100%;
+}
+
+.w2_hor {
+  width: 100%;
+}
+
+.w3_line {
+  height: 100%;
+}
+
+.w3_hor {
+  width: 100%;
 }
 
 .section_wrapper {

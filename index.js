@@ -52,14 +52,87 @@ tl.from(".company_name", {
 })
 
 gsap.from(".strip", {
-  duration: 2,     // Duration of the opacity fade for each element
-  // opacity: 0,      // Starts from fully transparent
-  stagger: 0.2,    // Adds a 0.2-second delay between the start of each element's animation
-  ease: "power2.out", // Smooth easing for a more natural fade
+  duration: 2, 
+  // opacity: 0,
+  stagger: 0.2,
+  ease: "power2.out",
   y:1000
 });
 
 
+gsap.from(".w_line", {
+  duration: 2,
+  height: 0,
+  scrollTrigger: {
+    trigger: ".w_line",
+    scroller: "body",
+    start: "top 50%",
+    end:"top 30%",
+    scrub: true,
+  }
+})
+
+gsap.from(".w_hor", {
+  duration: 2,
+  width: 0,
+  scrollTrigger: {
+    trigger: ".w_hor",
+    scroller: "body",
+    start: "top 60%",
+    end:"top 30%",
+    scrub: true,
+  }
+})
+
+
+gsap.from(".w2_line", {
+  duration: 2,
+  height: 0,
+  scrollTrigger: {
+    trigger: ".w2_line",
+    scroller: "body",
+    start: "top 50%",
+    end:"top 30%",
+    scrub: true,
+  }
+})
+
+gsap.from(".w2_hor", {
+  duration: 2,
+  width: 0,
+  scrollTrigger: {
+    trigger: ".w2_hor",
+    scroller: "body",
+    start: "top 60%",
+    end:"top 30%",
+    scrub: true,
+  }
+})
+
+
+gsap.from(".w3_line", {
+  duration: 2,
+  height: 0,
+  scrollTrigger: {
+    trigger: ".w3_line",
+    scroller: "body",
+    start: "top 50%",
+    end:"top 30%",
+    scrub: true,
+  }
+})
+
+gsap.from(".w3_hor", {
+  duration: 2,
+  width: 0,
+  scrollTrigger: {
+    trigger: ".w3_hor",
+    scroller: "body",
+    start: "top 60%",
+    end:"top 30%",
+    scrub: true,
+  }
+})
 
 
 // gsap.to("#company_marque #company_marque_name", {
