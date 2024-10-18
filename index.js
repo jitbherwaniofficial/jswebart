@@ -143,7 +143,7 @@ gsap.to("#featured_work_anchor1", {
     scroller: "body",
     start: "top 60%",
     end:"top 30%",
-    scrub: 4,
+    scrub: true,
   }
 })
 
@@ -155,7 +155,7 @@ gsap.to("#featured_work_anchor2", {
     scroller: "body",
     start: "top 60%",
     end:"top 30%",
-    scrub: 4,
+    scrub: true,
   }
 })
 
@@ -167,7 +167,7 @@ gsap.to("#featured_work_anchor3", {
     scroller: "body",
     start: "top 60%",
     end:"top 30%",
-    scrub: 4,
+    scrub: true,
   }
 })
 
@@ -179,7 +179,7 @@ gsap.to("#featured_work_anchor4", {
     scroller: "body",
     start: "top 60%",
     end:"top 30%",
-    scrub: 4,
+    scrub: true,
   }
 })
 
@@ -191,7 +191,7 @@ gsap.to("#featured_work_anchor5", {
     scroller: "body",
     start: "top 60%",
     end:"top 30%",
-    scrub: 4,
+    scrub: true,
   }
 })
 
@@ -203,7 +203,7 @@ gsap.to("#featured_work_anchor6", {
     scroller: "body",
     start: "top 60%",
     end:"top 30%",
-    scrub: 4,
+    scrub: true,
   }
 })
 
@@ -215,7 +215,7 @@ gsap.to("#featured_work_anchor7", {
     scroller: "body",
     start: "top 60%",
     end:"top 30%",
-    scrub: 4,
+    scrub: true,
   }
 })
 
@@ -227,7 +227,7 @@ gsap.to("#featured_work_anchor8", {
     scroller: "body",
     start: "top 60%",
     end:"top 30%",
-    scrub: 4,
+    scrub: true,
   }
 })
 
