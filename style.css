@@ -1196,7 +1196,7 @@ span {
 .s1 {
   position: absolute;
   width: 100%;
-  height: 0.5px;
+  height: 1px;
   background-color: rgba(247, 247, 255, 0.1);
   top: 8%;
   left: 0;
@@ -1205,7 +1205,7 @@ span {
 .s2 {
   position: absolute;
   width: 100%;
-  height: 0.5px;
+  height: 1px;
   background-color: rgba(247, 247, 255, 0.1);
   top: 16%;
   left: 0;
@@ -1214,7 +1214,7 @@ span {
 .s3 {
   position: absolute;
   width: 100%;
-  height: 0.5px;
+  height: 1px;
   background-color: rgba(247, 247, 255, 0.1);
   top: 24%;
   left: 0;
@@ -1223,7 +1223,7 @@ span {
 .s4 {
   position: absolute;
   width: 100%;
-  height: 0.5px;
+  height: 1px;
   background-color: rgba(247, 247, 255, 0.1);
   top: 32%;
   left: 0;
@@ -1232,7 +1232,7 @@ span {
 .s5 {
   position: absolute;
   width: 100%;
-  height: 0.5px;
+  height: 1px;
   background-color: rgba(247, 247, 255, 0.1);
   top: 40%;
   left: 0;
@@ -1241,7 +1241,7 @@ span {
 .s6 {
   position: absolute;
   width: 100%;
-  height: 0.5px;
+  height: 1px;
   background-color: rgba(247, 247, 255, 0.1);
   top: 48%;
   left: 0;
@@ -1249,7 +1249,7 @@ span {
 .s7 {
   position: absolute;
   width: 100%;
-  height: 0.5px;
+  height: 1px;
   background-color: rgba(247, 247, 255, 0.1);
   top: 56%;
   left: 0;
@@ -1258,7 +1258,7 @@ span {
 .s8 {
   position: absolute;
   width: 100%;
-  height: 0.5px;
+  height: 1px;
   background-color: rgba(247, 247, 255, 0.1);
   top: 64%;
   left: 0;
@@ -1267,7 +1267,7 @@ span {
 .s9 {
   position: absolute;
   width: 100%;
-  height: 0.5px;
+  height: 1px;
   background-color: rgba(247, 247, 255, 0.1);
   top: 72%;
   left: 0;
@@ -1276,7 +1276,7 @@ span {
 .s10 {
   position: absolute;
   width: 100%;
-  height: 0.5px;
+  height: 1px;
   background-color: rgba(247, 247, 255, 0.1);
   top: 80%;
   left: 0;
@@ -1285,7 +1285,7 @@ span {
 .s11 {
   position: absolute;
   width: 100%;
-  height: 0.5px;
+  height: 1px;
   background-color: rgba(247, 247, 255, 0.1);
   top: 88%;
   left: 0;
@@ -1294,7 +1294,7 @@ span {
 .s12 {
   position: absolute;
   width: 100%;
-  height: 0.5px;
+  height: 1px;
   background-color: rgba(247, 247, 255, 0.1);
   top: 96%;
   left: 0;
@@ -1303,7 +1303,7 @@ span {
 
 .h1 {
   position: absolute;
-  width: 0.5px;
+  width: 1px;
   height: 100%;
   background-color: rgba(247, 247, 255, 0.1);
   left: 8%;
@@ -1312,7 +1312,7 @@ span {
 
 .h2 {
   position: absolute;
-  width: 0.5px;
+  width: 1px;
   height: 100%;
   background-color: rgba(247, 247, 255, 0.1);
   left: 16%;
@@ -1321,7 +1321,7 @@ span {
 
 .h3 {
   position: absolute;
-  width: 0.5px;
+  width: 1px;
   height: 100%;
   background-color: rgba(247, 247, 255, 0.1);
   left: 24%;
@@ -1330,7 +1330,7 @@ span {
 
 .h4 {
   position: absolute;
-  width: 0.5px;
+  width: 1px;
   height: 100%;
   background-color: rgba(247, 247, 255, 0.1);
   left: 32%;
@@ -1339,7 +1339,7 @@ span {
 
 .h5 {
   position: absolute;
-  width: 0.5px;
+  width: 1px;
   height: 100%;
   background-color: rgba(247, 247, 255, 0.1);
   left: 40%;
@@ -1348,7 +1348,7 @@ span {
 
 .h6 {
   position: absolute;
-  width: 0.5px;
+  width: 1px;
   height: 100%;
   background-color: rgba(247, 247, 255, 0.1);
   left: 48%;
@@ -1356,7 +1356,7 @@ span {
 }
 .h7 {
   position: absolute;
-  width: 0.5px;
+  width: 1px;
   height: 100%;
   background-color: rgba(247, 247, 255, 0.1);
   left: 56%;
@@ -1365,7 +1365,7 @@ span {
 
 .h8 {
   position: absolute;
-  width: 0.5px;
+  width: 1px;
   height: 100%;
   background-color: rgba(247, 247, 255, 0.1);
   left: 64%;
@@ -1374,7 +1374,7 @@ span {
 
 .h9 {
   position: absolute;
-  width: 0.5px;
+  width: 1px;
   height: 100%;
   background-color: rgba(247, 247, 255, 0.1);
   left: 72%;
@@ -1383,7 +1383,7 @@ span {
 
 .h10 {
   position: absolute;
-  width: 0.5px;
+  width: 1px;
   height: 100%;
   background-color: rgba(247, 247, 255, 0.1);
   left: 80%;
@@ -1392,7 +1392,7 @@ span {
 
 .h11 {
   position: absolute;
-  width: 0.5px;
+  width: 1px;
   height: 100%;
   background-color: rgba(247, 247, 255, 0.1);
   left: 88%;
@@ -1401,7 +1401,7 @@ span {
 
 .h12 {
   position: absolute;
-  width: 0.5px;
+  width: 1px;
   height: 100%;
   background-color: rgba(247, 247, 255, 0.1);
   left: 96%;
