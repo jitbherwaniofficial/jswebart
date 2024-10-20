@@ -326,6 +326,12 @@
     padding: 5vw;
     text-align: center;
     line-height: 1.4;
+    transition: all 0.3s;
+}
+
+#reach_out_to_us_wrapper a:hover {
+    background-color: var(--green-clr);
+    color: var(--dark-black-clr);
 }
 
 /* REACH OUT TO US END ******************* */
