@@ -1,0 +1,294 @@
+:root {
+  --green-clr: #6efacc;
+  --dark-black-clr: #14151c;
+  --medium-black-clr: #2c2c33;
+  --light-black-clr: #434449;
+  --eee-clr: #eee;
+  --white-clr: #f7f9ff;
+  --medium-white-clr: #f8faff;
+  --light-white-clr: #f9faff;
+  --near-pure-white: #fefeff;
+  --poppin-font: "Poppins", sans-serif;
+  --playfair-font: "Playfair Display", serif;
+  --semibold: 600;
+  --bold: 700;
+  --medium: 500;
+  --normal: 400;
+  --section-padding: 12vw 0;
+  --h2-font: 2.7vw;
+  --below-h2-para: 1.2vw;
+}
+
+
+.absolute_logo_container {
+    width: 100%;
+    height: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 998;
+  }
+  
+  #absolute_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+#contact_banner {
+    width: 100%;
+    padding: var(--section-padding);
+    padding-bottom: 5vw;
+    background-color: var(--white-clr);
+    color: var(--white-clr);
+}
+
+#contact_banner_wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    background-color: var(--dark-black-clr);
+}
+
+#contact_banner_left{
+    width: 50%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+#contact_banner_right{
+    width: 50%;
+   
+}
+
+#contact_banner_head{
+    padding-left: 4.5vw;
+    color: var(--white-clr);
+    width: 90%;
+    text-align: start;
+    font-family: var(--playfair-font);
+    font-size: 3vw;
+    font-weight: var(--bold);
+    line-height: 1.3;
+    
+}
+
+
+
+#contact_banner_right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* CONTACT FORM SECTION START *************************************************** */
+#contact_form_section{
+    width: 100%;
+    background-color: var(--white-clr);
+    padding: var(--section-padding);
+    padding-top: 0vw;
+    position: relative;
+}
+
+#contact_form_heading{
+    width: 90%;
+    margin: 0 auto;
+    text-align: start;
+    font-size: 2.5vw;
+    font-weight: var(--bold);
+    color: var(--dark-black-clr);
+    font-family: var(--playfair-font);
+}
+
+#contact_form {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    padding: 5vw 0;
+}
+
+.form_control {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 0;
+}
+
+.form_control label {
+    width: 50%;
+    color: var(--dark-black-clr);
+    font-size: 1.6vw;
+    font-weight: var(--medium);
+    font-family: var(--poppin-font);
+    padding-bottom: 5px;
+}
+
+.form_control input {
+    width: 100%;
+    font-size: 1.4vw;
+    padding: 1vw 2vw;
+    font-family: var(--poppin-font);
+}
+
+#company_stage_wrapper {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2vw;
+}
+
+#company_stage_wrapper label {
+    width: 50%;
+    color: var(--dark-black-clr);
+    font-size: 1.6vw;
+    font-weight: var(--medium);
+    font-family: var(--poppin-font);
+    padding-bottom: 5px;
+}
+
+#company_stage_wrapper #company_stage_button {
+    padding: 1.5vw 0;
+    display: flex;
+    gap: 1.5vw;
+}
+
+#company_stage_button button {
+    background-color: var(--dark-black-clr);
+    padding: 1.5vw 2vw;
+    color: var(--white-clr);
+    font-size: 1.4vw;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 0.6s;
+}
+
+#company_stage_button button:hover {
+    background-color: #6efacc;
+    color: var(--dark-black-clr);
+}
+
+#need_help_with_wrapper {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2vw;
+}
+
+#need_help_with_wrapper button {
+    background-color: var(--dark-black-clr);
+    padding: 1.5vw 2vw;
+    color: var(--white-clr);
+    font-size: 1.4vw;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 0.6s;
+    align-self: start;
+}
+
+#need_help_with_wrapper label {
+    width: 50%;
+    color: var(--dark-black-clr);
+    font-size: 1.6vw;
+    font-weight: var(--medium);
+    font-family: var(--poppin-font);
+    padding-bottom: 5px;
+}
+
+
+#need_help_with_wrapper button:hover {
+    background-color: #6efacc;
+    color: var(--dark-black-clr);
+}
+
+#need_help_with_wrapper #need_help_button {
+    padding: 1.5vw 0;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5vw;
+}
+
+#text_field_wrapper {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2vw;
+}
+
+#text_field_wrapper label {
+    width: 50%;
+    color: var(--dark-black-clr);
+    font-size: 1.6vw;
+    font-weight: var(--medium);
+    font-family: var(--poppin-font);
+    padding-bottom: 5px;
+}
+
+#text_field_wrapper textarea {
+    font-size: 1.4vw;
+    padding: 1vw 2vw;
+    font-family: var(--poppin-font);
+}
+
+#recaptcha_box {
+    width: 40%;
+    height: 10vw;
+    border: 1px solid var(--dark-black-clr);
+    margin-top: 5vw;
+    color: var(--dark-black-clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--poppin-font);
+}
+
+#contact_submit_wrapper {
+    width: 60%;
+}
+
+#contact_submit {
+    border: none;
+    outline: none;
+    background-color: var(--green-clr);
+    color: var(--dark-black-clr);
+    font-family: var(--poppin-font);
+    font-weight: var(--bold);
+    align-self: start;
+    margin-top: 5vw;
+    font-size: 1.8vw;
+    padding: 1.5vw 4vw;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+#contact_submit:hover {
+    background-color: var(--dark-black-clr);
+    color: var(--white-clr);
+}
+
+#agreement {
+    color: var(--dark-black-clr);
+    font-family: var(--poppin-font);
+    font-weight: var(--medium);
+    font-size: 1.4vw;
+    padding-top: 2vw;
+}
+
+#agreement a {
+    font-weight: var(--medium);
+    color: var(--green-clr);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+
+/* CONTACT FORM SECTION END *************************************************** */
