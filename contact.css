@@ -40,8 +40,9 @@
 
 #contact_banner {
     width: 100%;
-    padding: var(--section-padding);
-    padding-bottom: 5vw;
+    /* padding: var(--section-padding); */
+    padding-top: 10vw;
+    padding-bottom: 3vw;
     background-color: var(--white-clr);
     color: var(--white-clr);
 }
