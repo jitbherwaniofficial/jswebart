@@ -110,7 +110,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2%;
-    padding: 5vw 0;
+    padding: 10vw 0;
 }
 
 .form_control {
