@@ -290,5 +290,46 @@
     text-decoration-thickness: 1px;
 }
 
+/* REACH OUT TO US START ******************* */
+#reach_out_to_us {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--playfair-font);
+}
+
+#reach_out_to_us_head {
+    width: 100%;
+    font-size: 2.2vw;
+    color: var(--dark-black-clr);
+}
+
+#reach_out_to_us_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 5vw;
+}
+
+#reach_out_to_us_wrapper a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(90%/3); 
+    background-color: var(--dark-black-clr);
+    color: var(--white-clr);
+    font-size: 1.6vw;
+    font-family: var(--poppin-font);
+    font-weight: var(--semibold);
+    padding: 5vw;
+    text-align: center;
+    line-height: 1.4;
+}
+
+/* REACH OUT TO US END ******************* */
+
+.cta_left {width: 40%;}
 
 /* CONTACT FORM SECTION END *************************************************** */
