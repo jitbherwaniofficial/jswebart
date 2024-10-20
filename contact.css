@@ -332,4 +332,8 @@
 
 .cta_left {width: 40%;}
 
+#contact_form_section {
+    padding-bottom: 0;
+}
+
 /* CONTACT FORM SECTION END *************************************************** */
