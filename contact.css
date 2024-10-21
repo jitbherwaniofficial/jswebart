@@ -19,6 +19,7 @@
   --below-h2-para: 1.2vw;
 }
 
+.mt-0 {margin-top: 0;}
 
 .absolute_logo_container {
     width: 100%;
@@ -227,7 +228,7 @@
 }
 
 #text_field_wrapper label {
-    width: 50%;
+    width: 70%;
     color: var(--dark-black-clr);
     font-size: 1.6vw;
     font-weight: var(--medium);
@@ -345,3 +346,236 @@
 }
 
 /* CONTACT FORM SECTION END *************************************************** */
+
+/* THANK YOU START ************************************************************* */
+#thankyou {
+    background-color: var(--white-clr);
+    color: var(--dark-black-clr);
+    width: 100%;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+}
+
+#thankyou_banner {
+    background-color: var(--dark-black-clr);
+    color: var(--white-clr);
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    padding: 7vw;
+}
+
+#thankyou_head {
+    font-size: 4vw;
+    font-weight: var(--semibold);
+    font-family: var(--playfair-font);
+}
+
+#thankyou_para {
+    width: 55%;
+    font-size: 1.7vw;
+    padding-top: 1.5vw;
+    line-height: 1.4;
+    font-family: var(--poppin-font);
+    font-weight: var(--medium);
+}
+
+#thankyou_banner_lines_container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#thankyou_banner_lines_container img {
+    position: absolute;
+    right: 0;
+    width: 35%;
+    height: 100%;
+    opacity: 0.6;
+}
+
+.tyv{
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background-color:  rgba(247, 247, 255, 0.2);
+}
+
+.tyh {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(247, 247, 255, 0.2);
+}
+
+#ty1 {
+    left: 7%;
+}
+
+#ty2 {
+    left: 14%;
+}
+
+#ty3 {
+    left: 21%;
+}
+
+#ty4 {
+    left: 28%;
+}
+
+#ty5 {
+    left: 35%;
+}
+
+#ty6 {
+    left: 42%;
+}
+
+#ty7 {
+    left: 49%;
+}
+
+#ty8 {
+    left: 56%;
+}
+
+#ty9 {
+    left: 63%;
+}
+
+#ty10 {
+    left: 70%;
+}
+
+#ty11 {
+    left: 77%;
+}
+
+#ty12 {
+    left: 84%;
+}
+
+#ty13 {
+    left: 92%;
+}
+
+#tyh1 {
+    top: 20%;
+}
+
+#tyh2 {
+    top: 40%;
+}
+
+#tyh3 {
+    top: 60%;
+}
+
+#tyh4 {
+    top: 80%;
+}
+
+#whats_next_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 5vw;
+}
+
+#whats_next_head {
+    font-size: 2.5vw;
+    font-family: var(--playfair-font);
+    font-weight: var(--semibold);
+    padding-bottom: 2vw;
+}
+
+#whats_next_box_container {
+    display: flex;
+    gap: 3vw;
+}
+
+#whats_next_box_container #whats_next_box {
+    padding: 3vw;
+    width: 25%;
+    line-height: 1.4;
+    border: 1px solid var(--dark-black-clr);
+    display: block;
+    font-weight: normal;
+    font-family: var(--poppin-font);
+    font-size: 1.5vw;
+}
+
+#join_social_media_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 5vw;
+}
+
+#join_social_media_head {
+    width: 45%;
+    font-size: 2.5vw;
+    font-family: var(--playfair-font);
+    font-weight: var(--semibold);
+    padding-bottom: 2vw;
+}
+
+#join_social_media_container {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#join_social_media_container a {
+    padding: 1vw;
+    background-color: var(--dark-black-clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#join_social_media_container a svg {
+    width: 70%;
+}
+
+/* THANK YOU START ************************************************************* */
+
+
+/* JOIN US START ************************************************************* */
+.join_us_banner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+#joinus_banner_para {
+    padding-left: 1vw;
+    color: var(--light-white-clr);
+    width: 75%;
+    text-align: start;
+    font-family: var(--poppin-font);
+    font-size: 1.8vw;
+    font-weight: var(--bold);
+    line-height: 1.4;
+    padding-top: 1vw;
+}
+
+
+.form_control select {
+    width: 100%;
+    font-size: 1.4vw;
+    padding: 1vw 2vw;
+    font-family: var(--poppin-font);
+}
+
+.form_control select option:hover {
+    background-color: var(--green-clr);
+    color: var(--dark-black-clr);
+}
+/* JOIN US END ************************************************************* */
