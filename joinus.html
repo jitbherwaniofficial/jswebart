@@ -49,10 +49,11 @@
             font-size: 1.5vw;
             color: var(--dark-black-clr);
         }
+
     </style>
 </head>
 
-<body>
+<body style="position: relative;">
     <!-- HEADER START **************************************** -->
     <header id="header">
         <div id="header-wrapper">
@@ -474,6 +475,7 @@
             <img src="jswebart_logo.svg" alt="" /> </a></span>
     <!-- HEADER END **************************************** -->
 
+    <div id="thankyou_card" class="">Thank you for applying! We’ll review your application and get back to you within 6 business days.</div>
 
     <!-- CONTACT BANNER START *************************************************** -->
     <section id="contact_banner">
@@ -536,7 +538,7 @@
                 Recaptcha Box
             </div>
             <div id="contact_submit_wrapper">
-                <button id="contact_submit" type="submit" onclick="onSubmit()">Submit</button>
+                <button id="contact_submit" type="submit">Submit</button>
             </div>
             <p id="agreement">By submitting, you agree to our <a href="">Terms & Conditions</a> and <a href="">Privacy
                     Policy</a>.</p>
@@ -544,6 +546,7 @@
     </section>
     <!-- CONTACT FORM SECTION END *************************************************** -->
 
+    
 
     <!-- FOOTER START ***************************************************** -->
     <footer id="footer">
@@ -701,10 +704,25 @@
             fileNameDisplay.textContent = this.files.length > 0 ? this.files[0].name : 'No file chosen';
         });
 
-        function onSubmit() {
-            console.log("This Thing is clicked");
-            
-        }
+        
+        
+        // JavaScript to handle the button click and show the thank you card
+        const contactSubmit = document.getElementById('contact_submit');
+        const thankYouCard = document.getElementById('thankyou_card');
+
+        contactSubmit.addEventListener('click', function() {
+            // Add the 'active' class to make the thank you card slide down
+            thankYouCard.classList.add('active');
+        });
+
+        // Add a click event to the close button using event delegation
+        thankYouCard.addEventListener('click', function(event) {
+            // Check if the clicked element is the close button (::after)
+            if (event.target === thankYouCard && event.offsetX > thankYouCard.clientWidth - 50) {
+                // Remove the 'active' class to hide the thank you card
+                thankYouCard.classList.remove('active');
+            }
+        });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
