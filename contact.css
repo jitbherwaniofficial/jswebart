@@ -831,4 +831,164 @@
         height: 20vw;
     }
 }
+
+@media only screen and (max-width: 450px) {
+
+    #contact_banner {
+        padding-top: 22vw;
+    }
+
+    #contact_banner_wrapper {
+        flex-direction: column-reverse;
+    }
+
+    #contact_banner_right {
+        width: 100%;
+        height: 70vw;
+    }
+
+    #contact_banner_left {
+        width: 100%;
+        height: 40vw;
+    }
+
+    #contact_banner_head {
+        font-size: 7vw;
+        padding-left: 10vw;
+        line-height: 1.4;
+    }
+
+    #contact_form_heading {
+        font-size: 5vw;
+        padding-bottom: 5vw;
+    }
+
+    .form_control label {
+        padding-bottom: 10px;
+        font-size: 4.2vw;
+    }
+
+    .form_control input {
+        font-size: 3.5vw;
+        height: 12vw;
+    }
+
+    #company_stage_wrapper {
+        padding-top: 7vw;
+    }
+
+    #company_stage_wrapper label {
+        font-size: 4.2vw;
+    }
+
+    #company_stage_wrapper #company_stage_button {
+        flex-wrap: wrap;
+        gap: 2.5vw;
+    }
+
+    #company_stage_button button {
+        width: 48%;
+        height: 12vw;
+        font-size: 3.5vw;
+        text-wrap: wrap;
+    }
+
+    #need_help_with_wrapper {
+        padding-top: 7vw;
+    }
+
+    #need_help_with_wrapper label {
+        font-size: 4.2vw;
+    }
+
+    #need_help_with_wrapper #need_help_button {
+        gap: 2.5vw;
+    }
+
+    #need_help_with_wrapper button {
+        width: 48%;
+        height: 12vw;
+        font-size: 3.5vw;
+        text-wrap: wrap;
+    }
+
+    #text_field_wrapper {
+        padding-top: 7vw;
+    }
+
+    #text_field_wrapper label {
+        font-size: 4.2vw;
+    }
+
+    #text_field_wrapper textarea {
+        font-size: 3.5vw;
+        padding: 3vw;
+    }
+
+    #recaptcha_box {
+        width: 50%;
+        height: 15vw;
+        font-size: 3.5vw;
+    }
+
+    #contact_submit {
+        width: 70%;
+        height: 12vw;
+        text-align: center;
+        font-size: 4.2vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    #agreement {
+        font-size: 3.5vw;
+    }
+
+    #reach_out_to_us_wrapper {
+        flex-direction: column;
+    }
+
+    #reach_out_to_us_head {
+        font-size: 6vw;
+    }
+
+    #reach_out_to_us_wrapper a {
+        width: 100%;
+        font-size: 4.2vw;
+        margin: 2vw 0;
+        height: 30vw;
+        line-height: 1.5;
+    }
+
+    .cta_left > #cta_process_title {
+        font-size: 6vw !important;
+    }
+
+    #cta_para {
+        font-size: 3.5vw;
+        line-height: 1.3;
+        width: 80%;
+    }
+
+    #contact_cta_btn {
+        padding: 0 3vw !important;
+        font-size: 3.5vw !important;
+        height: 10vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #cta_process_section {
+        padding-top: 10vw !important;
+        padding-bottom: 10vw !important;
+    }
+
+    .ch3,.ch7,.ch11,.ch15,.ch19 {
+        display: none;
+    }
+
+}
 /* CONTACT RESPONSIVE END ***************************************************** */
