@@ -45,7 +45,7 @@ gsap.from(".w_line", {
   scrollTrigger: {
     trigger: ".w_line",
     scroller: "body",
-    start: "top 50%",
+    start: "top 60%",
     end: "top 30%",
     scrub: 5,
   },
@@ -57,7 +57,7 @@ gsap.from(".w_hor", {
   scrollTrigger: {
     trigger: ".w_hor",
     scroller: "body",
-    start: "top 50%",
+    start: "top 60%",
     end: "top 30%",
     scrub: 5,
   },
@@ -69,7 +69,7 @@ gsap.from(".w2_line", {
   scrollTrigger: {
     trigger: ".w2_line",
     scroller: "body",
-    start: "top 50%",
+    start: "top 60%",
     end: "top 30%",
     scrub: 5,
   },
@@ -81,7 +81,7 @@ gsap.from(".w2_hor", {
   scrollTrigger: {
     trigger: ".w2_hor",
     scroller: "body",
-    start: "top 50%",
+    start: "top 60%",
     end: "top 30%",
     scrub: 5,
   },
@@ -93,7 +93,7 @@ gsap.from(".w3_line", {
   scrollTrigger: {
     trigger: ".w3_line",
     scroller: "body",
-    start: "top 50%",
+    start: "top 60%",
     end: "top 30%",
     scrub: 5,
   },
@@ -105,7 +105,7 @@ gsap.from(".w3_hor", {
   scrollTrigger: {
     trigger: ".w3_hor",
     scroller: "body",
-    start: "top 50%",
+    start: "top 60%",
     end: "top 30%",
     scrub: 5,
   },
