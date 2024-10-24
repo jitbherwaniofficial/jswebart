@@ -48,11 +48,11 @@
   }
 
 #big_logo_container img {
-    opacity: .3;
+    opacity: .5;
 }
 
 .strip {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 #counter {
