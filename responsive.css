@@ -523,6 +523,10 @@
     font-size: 1.6vw;
   }
 
+  .work_lines_container {
+    height: 40vh;
+  }
+
   #caption_container figcaption {
     font-size: 1.4vw;
   }
@@ -902,48 +906,7 @@
   }
 
   .work_lines_container {
-    width: 60vw;
-    height: 40vw;
-
-  }
-
-  .w2 {
-    left: 20%;
-  }
-
-  .w3 {
-    left: 35%;
-  }
-
-  .w4 {
-    left: 50%;
-  }
-
-  .w5 {
-    left: 65%;
-  }
-
-  .w6 {
-    left: 80%;
-  }
-
-  .w7 {
-    left: 95%;
-  }
-
-  .w8 {
-    top: 25%;
-    width: 120%;
-  }
-
-  .w9 {
-    top: 50%;
-    width: 120%;
-  }
-
-  .w10 {
-    top: 75%;
-    width: 120%;
+    height: 30vh;
   }
 
   #section_title {
@@ -1556,11 +1519,7 @@
   }
 
   .work_lines_container {
-    position: absolute;
-    width: 51vw;
-    height: 24vw;
-    top: 0;
-    left: 3%;
+    height: 20vh;
   }
 
   #section_title {

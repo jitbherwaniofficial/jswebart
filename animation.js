@@ -45,8 +45,8 @@ gsap.from(".w_line", {
   scrollTrigger: {
     trigger: ".w_line",
     scroller: "body",
-    start: "top 40%",
-    end: "top 10%",
+    start: "top 50%",
+    end: "top 30%",
     scrub: 5,
   },
 });
@@ -57,7 +57,7 @@ gsap.from(".w_hor", {
   scrollTrigger: {
     trigger: ".w_hor",
     scroller: "body",
-    start: "top 60%",
+    start: "top 50%",
     end: "top 30%",
     scrub: 5,
   },
@@ -122,6 +122,8 @@ gsap.to("#featured_work_anchor1", {
     scrub: 5,
   },
 });
+
+
 
 gsap.to("#featured_work_anchor2", {
   duration: 2,

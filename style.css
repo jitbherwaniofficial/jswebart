@@ -741,7 +741,7 @@ span {
 .work_lines_container {
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   top: 0;
   left: 0%;
 }
@@ -751,7 +751,7 @@ span {
   width: 1px;
   height: 100%;
   background-color: rgba(44, 44, 51,0.2);
-  left: 5%;
+  left: 10%;
 }
 
 .w2 {
@@ -760,7 +760,7 @@ span {
   height: 100%;
  
   background-color: rgba(44, 44, 51,0.2);
-  left: 17%;
+  left: 20%;
 }
 
 .w3 {
@@ -768,7 +768,7 @@ span {
   width: 1px;
   height: 100%;
    background-color: rgba(44, 44, 51,0.2);
-  left: 29%;
+  left: 30%;
 }
 
 .w4 {
@@ -776,7 +776,7 @@ span {
   width: 1px;
   height: 100%;
    background-color: rgba(44, 44, 51,0.2);
-  left: 41%;
+  left: 40%;
 }
 
 .w5 {
@@ -784,7 +784,7 @@ span {
   width: 1px;
   height: 100%;
    background-color: rgba(44, 44, 51,0.2);
-  left: 53%;
+  left: 50%;
 }
 
 .w6 {
@@ -792,7 +792,7 @@ span {
   width: 1px;
   height: 100%;
   background-color: rgba(44, 44, 51,0.2);
-  left:65%;
+  left:60%;
 }
 
 .w7 {
@@ -800,7 +800,7 @@ span {
   width: 1px;
   height: 100%;
    background-color: rgba(44, 44, 51,0.2);
-  left: 77%;
+  left: 70%;
 }
 
 .w11 {
@@ -808,8 +808,17 @@ span {
   width: 1px;
   height: 100%;
    background-color: rgba(44, 44, 51,0.2);
-  left: 89%;
+  left: 80%;
 }
+
+.w12 {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+   background-color: rgba(44, 44, 51,0.2);
+  left: 90%;
+}
+
 
 .w8 {
   position: absolute;
