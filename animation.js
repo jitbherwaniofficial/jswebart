@@ -45,8 +45,8 @@ gsap.from(".w_line", {
   scrollTrigger: {
     trigger: ".w_line",
     scroller: "body",
-    start: "top 60%",
-    end: "top 40%",
+    start: "top 50%",
+    end: "top 30%",
     scrub: 5,
   },
 });
@@ -57,8 +57,8 @@ gsap.from(".w_hor", {
   scrollTrigger: {
     trigger: ".w_hor",
     scroller: "body",
-    start: "top 60%",
-    end: "top 40%",
+    start: "top 50%",
+    end: "top 30%",
     scrub: 5,
   },
 });
@@ -69,8 +69,8 @@ gsap.from(".w2_line", {
   scrollTrigger: {
     trigger: ".w2_line",
     scroller: "body",
-    start: "top 60%",
-    end: "top 40%",
+    start: "top 50%",
+    end: "top 30%",
     scrub: 5,
   },
 });
@@ -81,8 +81,8 @@ gsap.from(".w2_hor", {
   scrollTrigger: {
     trigger: ".w2_hor",
     scroller: "body",
-    start: "top 60%",
-    end: "top 40%",
+    start: "top 50%",
+    end: "top 30%",
     scrub: 5,
   },
 });
@@ -93,8 +93,8 @@ gsap.from(".w3_line", {
   scrollTrigger: {
     trigger: ".w3_line",
     scroller: "body",
-    start: "top 60%",
-    end: "top 40%",
+    start: "top 50%",
+    end: "top 30%",
     scrub: 5,
   },
 });
@@ -105,8 +105,8 @@ gsap.from(".w3_hor", {
   scrollTrigger: {
     trigger: ".w3_hor",
     scroller: "body",
-    start: "top 60%",
-    end: "top 40%",
+    start: "top 50%",
+    end: "top 30%",
     scrub: 5,
   },
 });
@@ -118,7 +118,7 @@ gsap.to("#featured_work_anchor1", {
     trigger: "#featured_work_anchor1",
     scroller: "body",
     start: "top 100%",
-    end: "top 95%",
+    end: "top 90%",
     scrub: 5,
   },
 });
@@ -132,7 +132,7 @@ gsap.to("#featured_work_anchor2", {
     trigger: "#featured_work_anchor2",
     scroller: "body",
     start: "top 100%",
-    end: "top 95%",
+    end: "top 90%",
     scrub: 5,
   },
 });
@@ -144,7 +144,7 @@ gsap.to("#featured_work_anchor3", {
     trigger: "#featured_work_anchor3",
     scroller: "body",
     start: "top 100%",
-    end: "top 95%",
+    end: "top 90%",
     scrub: 5,
   },
 });
@@ -156,7 +156,7 @@ gsap.to("#featured_work_anchor4", {
     trigger: "#featured_work_anchor4",
     scroller: "body",
     start: "top 100%",
-    end: "top 95%",
+    end: "top 90%",
     scrub: 5,
   },
 });
@@ -168,7 +168,7 @@ gsap.to("#featured_work_anchor5", {
     trigger: "#featured_work_anchor5",
     scroller: "body",
     start: "top 100%",
-    end: "top 95%",
+    end: "top 90%",
     scrub: 5,
   },
 });
@@ -180,7 +180,7 @@ gsap.to("#featured_work_anchor6", {
     trigger: "#featured_work_anchor6",
     scroller: "body",
     start: "top 100%",
-    end: "top 95%",
+    end: "top 90%",
     scrub: 5,
   },
 });
@@ -192,7 +192,7 @@ gsap.to("#featured_work_anchor7", {
     trigger: "#featured_work_anchor7",
     scroller: "body",
     start: "top 100%",
-    end: "top 95%",
+    end: "top 90%",
     scrub: 5,
   },
 });
@@ -204,7 +204,7 @@ gsap.to("#featured_work_anchor8", {
     trigger: "#featured_work_anchor8",
     scroller: "body",
     start: "top 100%",
-    end: "top 95%",
+    end: "top 90%",
     scrub: 5,
   },
 });
