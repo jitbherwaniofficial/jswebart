@@ -730,16 +730,116 @@ span {
 } */
 
     
-.work_lines_container {
+/* .work_lines_container {
   position: absolute;
   width: 45vw;
   height: 20vw;
   top: 0;
   left: 3%;
+} */
+    
+.work_lines_container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0%;
+}
+
+.w1 {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: rgba(44, 44, 51,0.2);
+  left: 5%;
+}
+
+.w2 {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+ 
+  background-color: rgba(44, 44, 51,0.2);
+  left: 17%;
+}
+
+.w3 {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+   background-color: rgba(44, 44, 51,0.2);
+  left: 29%;
+}
+
+.w4 {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+   background-color: rgba(44, 44, 51,0.2);
+  left: 41%;
+}
+
+.w5 {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+   background-color: rgba(44, 44, 51,0.2);
+  left: 53%;
+}
+
+.w6 {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: rgba(44, 44, 51,0.2);
+  left:65%;
+}
+
+.w7 {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+   background-color: rgba(44, 44, 51,0.2);
+  left: 77%;
+}
+
+.w11 {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+   background-color: rgba(44, 44, 51,0.2);
+  left: 89%;
+}
+
+.w8 {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+   background-color: rgba(44, 44, 51,0.2);
+  top: 25%;
+  left: 0%;
+}
+
+.w9 {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+   background-color: rgba(44, 44, 51,0.2);
+  top: 50%;
+  left: 0%;
+}
+
+.w10 {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+   background-color: rgba(44, 44, 51,0.2);
+  top: 75%;
+  left: 0%;
 }
 
 
-.w1 {
+/* .w1 {
   position: absolute;
   width: 1px;
   height: 100%;
@@ -821,7 +921,7 @@ span {
    background-color: rgba(44, 44, 51,0.2);
   top: 75%;
   left: -3vw;
-}
+} */
 
 
 .w_line {

@@ -45,9 +45,9 @@ gsap.from(".w_line", {
   scrollTrigger: {
     trigger: ".w_line",
     scroller: "body",
-    start: "top 50%",
-    end: "top 30%",
-    scrub: 4,
+    start: "top 40%",
+    end: "top 10%",
+    scrub: 5,
   },
 });
 
@@ -59,7 +59,7 @@ gsap.from(".w_hor", {
     scroller: "body",
     start: "top 60%",
     end: "top 30%",
-    scrub: 4,
+    scrub: 5,
   },
 });
 
@@ -71,7 +71,7 @@ gsap.from(".w2_line", {
     scroller: "body",
     start: "top 50%",
     end: "top 30%",
-    scrub: 4,
+    scrub: 5,
   },
 });
 
@@ -83,7 +83,7 @@ gsap.from(".w2_hor", {
     scroller: "body",
     start: "top 60%",
     end: "top 30%",
-    scrub: 4,
+    scrub: 5,
   },
 });
 
@@ -95,7 +95,7 @@ gsap.from(".w3_line", {
     scroller: "body",
     start: "top 50%",
     end: "top 30%",
-    scrub: 4,
+    scrub: 5,
   },
 });
 
@@ -107,7 +107,7 @@ gsap.from(".w3_hor", {
     scroller: "body",
     start: "top 60%",
     end: "top 30%",
-    scrub: 4,
+    scrub: 5,
   },
 });
 
