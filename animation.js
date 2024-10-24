@@ -46,7 +46,7 @@ gsap.from(".w_line", {
     trigger: ".w_line",
     scroller: "body",
     start: "top 60%",
-    end: "top 30%",
+    end: "top 25%",
     scrub: 5,
   },
 });
@@ -58,7 +58,7 @@ gsap.from(".w_hor", {
     trigger: ".w_hor",
     scroller: "body",
     start: "top 60%",
-    end: "top 30%",
+    end: "top 25%",
     scrub: 5,
   },
 });
@@ -70,7 +70,7 @@ gsap.from(".w2_line", {
     trigger: ".w2_line",
     scroller: "body",
     start: "top 60%",
-    end: "top 30%",
+    end: "top 25%",
     scrub: 5,
   },
 });
@@ -82,7 +82,7 @@ gsap.from(".w2_hor", {
     trigger: ".w2_hor",
     scroller: "body",
     start: "top 60%",
-    end: "top 30%",
+    end: "top 25%",
     scrub: 5,
   },
 });
@@ -94,7 +94,7 @@ gsap.from(".w3_line", {
     trigger: ".w3_line",
     scroller: "body",
     start: "top 60%",
-    end: "top 30%",
+    end: "top 25%",
     scrub: 5,
   },
 });
@@ -106,7 +106,7 @@ gsap.from(".w3_hor", {
     trigger: ".w3_hor",
     scroller: "body",
     start: "top 60%",
-    end: "top 30%",
+    end: "top 25%",
     scrub: 5,
   },
 });
