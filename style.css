@@ -453,6 +453,7 @@ span {
   position: absolute;
   top: -50%;
   height: 220vh;
+  background-color: rgba(247, 247, 255, 0.2);
 }
 
 .stripsminus2,
@@ -464,49 +465,49 @@ span {
   position: absolute;
   width: 1px;
   
-  background-color: rgba(247, 247, 255, 0.2);
+  /* background-color: rgba(247, 247, 255, 0.2);  */
   left: 30%;
 }
 
 .strips1 {
   position: absolute;
   width: 1px;
-  background-color: rgba(247, 247, 255, 0.2);
+  /* background-color: rgba(247, 247, 255, 0.2); */
   left: 45%;
 }
 
 .strips2 {
   position: absolute;
   width: 1px;
-  background-color: rgba(247, 247, 255, 0.2);
+  /* background-color: rgba(247, 247, 255, 0.2); */
   left: 60%;
 }
 
 .strips3 {
   position: absolute;
   width: 1px;
-  background-color: rgba(247, 247, 255, 0.2);
+  /* background-color: rgba(247, 247, 255, 0.2); */
   left: 75%;
 }
 
 .strips4 {
   position: absolute;
   width: 1px;
-  background-color: rgba(247, 247, 255, 0.2);
+  /* background-color: rgba(247, 247, 255, 0.2); */
   left: 90%;
 }
 
 .strips5 {
   position: absolute;
   width: 1px;
-  background-color: rgba(247, 247, 255, 0.2);
+  /* background-color: rgba(247, 247, 255, 0.2); */
   left: 105%;
 }
 
 .strips6 {
   position: absolute;
   width: 1px;
-  background-color: rgba(247, 247, 255, 0.2);
+  /* background-color: rgba(247, 247, 255, 0.2); */
   left: 120%;
 }
 
