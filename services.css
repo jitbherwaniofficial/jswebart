@@ -19,66 +19,88 @@
   --below-h2-para: 1.2vw;
 }
 
-.absolute_logo_container {background-color: var(--white-clr);}
+.absolute_logo_container {
+  background-color: var(--white-clr);
+}
 
 .hero_wrapper {
-    background-color: var(--white-clr);
-    color: var(--dark-black-clr);
+  background-color: var(--white-clr);
+  color: var(--dark-black-clr);
 }
 
 #hero_section {
-    background-color: inherit;
-    color: inherit;
+  background-color: inherit;
+  color: inherit;
 }
 
 #hero_title {
-    color: var(--dark-black-clr);
-    width: 90%;
+  color: var(--dark-black-clr);
+  width: 90%;
 }
-
 
 #hero_para {
-    color: var(--dark-black-clr);
+  color: var(--dark-black-clr);
 }
 
-
 #hero_work_btn:hover {
-    color: var(--white-clr);
-    background-color: var(--dark-black-clr);
-  }
+  color: var(--white-clr);
+  background-color: var(--dark-black-clr);
+}
 
 #big_logo_container img {
-    opacity: .5;
+  opacity: 0.4;
 }
 
 .strip {
-    /* background-color: rgba(0, 0, 0, 0.2); */
-    background-color: var(--light-black-clr);
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  background-color: rgba(67, 68, 73, 0.3);
 }
 
 #counter {
-    width: 60%;
-    display: flex;
-    padding-top: 8vw;
-    gap: 1vw;
-  }
+  width: 60%;
+  display: flex;
+  padding-top: 8vw;
+  gap: 1vw;
+}
 
 #counter_box {
-    width: 40%;
-    height: 15vw;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    color: var(--light-white-clr);
-    background-color: var(--dark-black-clr);
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 0.5vw;
-    padding-top: 2vw;
-    padding-left: 3.5vw;
-  }
+  width: 40%;
+  height: 15vw;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  color: var(--light-white-clr);
+  background-color: var(--dark-black-clr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5vw;
+  padding-top: 2vw;
+  padding-left: 3.5vw;
+}
 
-  #counter_para {
-    text-wrap: wrap;
-    width: 50%;
-  }
+#counter_para {
+  text-wrap: wrap;
+  width: 50%;
+}
+
+/* MARQUE ********************************************************* */
+
+/* MARQUE ********************************************************* */
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-content {
+  display: flex;
+}
+
+.item {
+  width: fit-content;
+  text-wrap: nowrap;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: var(--semibold);
+  font-family: var(--playfair-font);
+}

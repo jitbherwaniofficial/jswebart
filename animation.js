@@ -36,7 +36,7 @@ gsap.from(".strip", {
   // opacity: 0,
   stagger: 0.2,
   ease: "power2.out",
-  y: 1600,
+  y: 1500,
 });
 
 gsap.from(".w_line", {
