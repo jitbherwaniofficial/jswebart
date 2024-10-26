@@ -104,3 +104,100 @@
   font-weight: var(--semibold);
   font-family: var(--playfair-font);
 }
+
+/* WORK RELATED SECTION ************************************ */
+.work_content {
+  padding-top: 10vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#work_head {
+  font-size: 3vw;
+  color: var(--dark-black-clr);
+  font-family: var(--playfair-font);
+  padding-bottom: 10px;
+}
+
+#work_para {
+  width: 70%;
+  font-size: 1.4vw;
+  line-height: 1.3;
+  color: var(--light-black-clr);
+  font-family: var(--poppin-font);
+  padding-bottom: 20px;
+}
+/* SWIPER JS CODE **************************************** */
+.swiper {
+  width: 100%;
+  background-color: var(--dark-black-clr);  
+}
+
+.swiper-wrapper {
+  padding: 30px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60vw !important;
+  padding: 30px;
+}
+
+.color-1 {
+  background-color: #839ADC;
+}
+.color-2 {
+  background-color: #F87B8E;
+}
+
+.color-3 {
+  background-color: #E0822B;
+}
+.color-4 {
+  background-color: #F0CFBC;
+}
+
+.color-5 {
+  background-color: #14B4A7;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* SWIPER JS CODE **************************************** */
+
+.test_quotes {
+  color: var(--dark-black-clr);
+}
+
+.test_quotes span {
+  display: inline-block;
+  font-size: 7vw;
+  font-family: var(--playfair-font);
+}
+
+.test_quotes .test_para {
+  display: inline-flex;
+  width: 50%;
+  color: var(--light-black-clr);
+  line-height: 1.3;
+  font-family: var(--playfair-font);
+}
+
+.test_quotes address {
+  display: inline-flex;
+  justify-content: end;
+  width: 50%;
+  color: var(--light-black-clr);
+  line-height: 1.3;
+  font-family: var(--playfair-font);
+}
+/* WORK RELATED SECTION ************************************ */
+

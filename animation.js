@@ -123,8 +123,6 @@ gsap.to("#featured_work_anchor1", {
   },
 });
 
-
-
 gsap.to("#featured_work_anchor2", {
   duration: 2,
   scale: 1,
@@ -417,3 +415,15 @@ applyGsapAnimations();
 
 // Add debounced event listener to handle window resize
 window.addEventListener("resize", debounce(applyGsapAnimations, 200));
+
+//  Initialize Swiper //
+var workSwiper = new Swiper(".workSwiper", {
+  slidesPerView: 1.45,
+  spaceBetween: 50,
+  freeMode: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  grabCursor: true, // Enable grab effect
+});
