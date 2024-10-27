@@ -103,6 +103,7 @@
   font-size: 24px;
   font-weight: var(--semibold);
   font-family: var(--playfair-font);
+  align-self: normal !important;
 }
 
 /* WORK RELATED SECTION ************************************ */
@@ -144,6 +145,7 @@
   justify-content: center;
   align-items: center;
   width: 60vw !important;
+  height: 30vw !important;
   padding: 30px;
 }
 
