@@ -39,6 +39,15 @@ gsap.from(".strip", {
   y: 1500,
 });
 
+gsap.to(".striph", {
+  duration: 1,
+  // opacity: 0,
+  stagger: -0.2,
+  ease: "power2.out",
+  width: 500
+});
+
+
 gsap.from(".w_line", {
   duration: 2,
   height: 0,
@@ -362,6 +371,15 @@ businessPill.forEach((pill) => {
     swiperTwo.slideTo(slideIndex);
   });
 });
+
+gsap.to("#hero_work_slider", {
+  y: -1000,
+  duration: 20,
+  ease: "linear",
+  repeat: -1,
+});
+
+
 
 // gsap.to(".testimonials", {
 //   y: "-350%",
