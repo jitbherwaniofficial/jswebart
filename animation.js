@@ -372,14 +372,6 @@ businessPill.forEach((pill) => {
   });
 });
 
-gsap.to("#hero_work_slider", {
-  y: -1000,
-  duration: 20,
-  ease: "linear",
-  repeat: -1,
-});
-
-
 
 // gsap.to(".testimonials", {
 //   y: "-350%",
