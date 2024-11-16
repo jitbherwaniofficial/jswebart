@@ -120,6 +120,30 @@ gsap.from(".w3_hor", {
   },
 });
 
+gsap.from(".w4_line", {
+  duration: 2,
+  height: 0,
+  scrollTrigger: {
+    trigger: ".w4_line",
+    scroller: "body",
+    start: "top 50%",
+    end: "top 30%",
+    scrub: 5,
+  },
+});
+
+gsap.from(".w4_hor", {
+  duration: 2,
+  width: 0,
+  scrollTrigger: {
+    trigger: ".w4_hor",
+    scroller: "body",
+    start: "top 50%",
+    end: "top 30%",
+    scrub: 5,
+  },
+});
+
 gsap.to("#featured_work_anchor1", {
   duration: 2,
   scale: 1,
