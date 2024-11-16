@@ -577,3 +577,26 @@
   color: var(--white-clr);
 }
 /* FAQ SECTION *********************************************** */
+
+/* UPPER FOOTER CTA START *********************************** */
+.upper_footer_cta {
+  padding: 0 !important;
+}
+
+.cta_process_wrapper_above_footer {
+  width: 100% !important;
+  height: 28vw !important;
+  justify-content: space-evenly !important;
+}
+
+.cta_h2 {
+  width: 35% !important;
+  font-size: 3.5vw;
+}
+
+.contact_cta_btn {
+  padding: 2vw !important;
+  font-size: 1.6vw !important;
+  width: 25% !important;
+}
+/* UPPER FOOTER CTA END *********************************** */
