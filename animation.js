@@ -54,8 +54,8 @@ gsap.from(".w_line", {
   scrollTrigger: {
     trigger: ".w_line",
     scroller: "body",
-    start: "top 60%",
-    end: "top 25%",
+    start: "top 50%",
+    end: "top 30%",
     scrub: 5,
   },
 });
@@ -66,8 +66,8 @@ gsap.from(".w_hor", {
   scrollTrigger: {
     trigger: ".w_hor",
     scroller: "body",
-    start: "top 60%",
-    end: "top 25%",
+    start: "top 50%",
+    end: "top 30%",
     scrub: 5,
   },
 });
@@ -78,8 +78,8 @@ gsap.from(".w2_line", {
   scrollTrigger: {
     trigger: ".w2_line",
     scroller: "body",
-    start: "top 60%",
-    end: "top 25%",
+    start: "top 50%",
+    end: "top 30%",
     scrub: 5,
   },
 });
@@ -90,8 +90,8 @@ gsap.from(".w2_hor", {
   scrollTrigger: {
     trigger: ".w2_hor",
     scroller: "body",
-    start: "top 60%",
-    end: "top 25%",
+    start: "top 50%",
+    end: "top 30%",
     scrub: 5,
   },
 });
@@ -102,8 +102,8 @@ gsap.from(".w3_line", {
   scrollTrigger: {
     trigger: ".w3_line",
     scroller: "body",
-    start: "top 60%",
-    end: "top 25%",
+    start: "top 50%",
+    end: "top 30%",
     scrub: 5,
   },
 });
@@ -114,8 +114,8 @@ gsap.from(".w3_hor", {
   scrollTrigger: {
     trigger: ".w3_hor",
     scroller: "body",
-    start: "top 60%",
-    end: "top 25%",
+    start: "top 50%",
+    end: "top 30%",
     scrub: 5,
   },
 });
@@ -369,6 +369,169 @@ businessPill.forEach((pill) => {
 
     // Use Swiper's slideTo method to go to the desired slide
     swiperTwo.slideTo(slideIndex);
+  });
+});
+
+
+const swiper3 = new Swiper(".swiper-container-three", {
+  grabCursor: true, // Enable grab effect
+  loop: false, // Enable continuous loop mode
+  spaceBetween: -114, // Space between slides
+  breakpoints: {
+    768: {
+      spaceBetween: -40,
+    },
+    430: {
+      spaceBetween: 0,
+    },
+    400: {
+      spaceBetween: 0,
+    },
+    375: {
+      spaceBetween: -5,
+    },
+    360: {
+      spaceBetween: 0,
+    },
+  },
+  slidesPerView: 1, // Number of slides to show at once
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true, // Make pagination bullets clickable
+  },
+  navigation: {
+    nextEl: ".swiper-button-next", // Navigation arrows
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+// Get all the pill elements
+const bfpills = document.querySelectorAll(".pill");
+
+// Add click event listener for each pill
+bfpills.forEach((pill) => {
+  pill.addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent default anchor behavior
+
+    // Remove active class from all pills
+    bfpills.forEach((p) => p.classList.remove("active"));
+
+    // Add active class to the clicked pill
+    this.classList.add("active");
+
+    // Get the slide index from the data attribute
+    const slideIndex = this.getAttribute("data-slide-branding");
+
+    // Use Swiper's slideTo method to go to the desired slide
+    swiper3.slideTo(slideIndex);
+  });
+});
+
+const swiper4 = new Swiper(".swiper-container-four", {
+  grabCursor: true, // Enable grab effect
+  loop: false, // Enable continuous loop mode
+  spaceBetween: -114, // Space between slides
+  breakpoints: {
+    768: {
+      spaceBetween: -40,
+    },
+    430: {
+      spaceBetween: 0,
+    },
+    400: {
+      spaceBetween: 0,
+    },
+    375: {
+      spaceBetween: -5,
+    },
+    360: {
+      spaceBetween: 0,
+    },
+  },
+  slidesPerView: 1, // Number of slides to show at once
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true, // Make pagination bullets clickable
+  },
+  navigation: {
+    nextEl: ".swiper-button-next", // Navigation arrows
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+// Get all the pill elements
+const bdpills = document.querySelectorAll(".pill");
+
+// Add click event listener for each pill
+bdpills.forEach((pill) => {
+  pill.addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent default anchor behavior
+
+    // Remove active class from all pills
+    bdpills.forEach((p) => p.classList.remove("active"));
+
+    // Add active class to the clicked pill
+    this.classList.add("active");
+
+    // Get the slide index from the data attribute
+    const slideIndex = this.getAttribute("data-slide-b");
+
+    // Use Swiper's slideTo method to go to the desired slide
+    swiper4.slideTo(slideIndex);
+  });
+});
+
+const swiper5 = new Swiper(".swiper-container-five", {
+  grabCursor: true, // Enable grab effect
+  loop: false, // Enable continuous loop mode
+  spaceBetween: -114, // Space between slides
+  breakpoints: {
+    768: {
+      spaceBetween: -40,
+    },
+    430: {
+      spaceBetween: 0,
+    },
+    400: {
+      spaceBetween: 0,
+    },
+    375: {
+      spaceBetween: -5,
+    },
+    360: {
+      spaceBetween: 0,
+    },
+  },
+  slidesPerView: 1, // Number of slides to show at once
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true, // Make pagination bullets clickable
+  },
+  navigation: {
+    nextEl: ".swiper-button-next", // Navigation arrows
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+// Get all the pill elements
+const bgpills = document.querySelectorAll(".pill");
+
+// Add click event listener for each pill
+bgpills.forEach((pill) => {
+  pill.addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent default anchor behavior
+
+    // Remove active class from all pills
+    bgpills.forEach((p) => p.classList.remove("active"));
+
+    // Add active class to the clicked pill
+    this.classList.add("active");
+
+    // Get the slide index from the data attribute
+    const slideIndex = this.getAttribute("data-slide-g");
+
+    // Use Swiper's slideTo method to go to the desired slide
+    swiper5.slideTo(slideIndex);
   });
 });
 

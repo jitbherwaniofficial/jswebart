@@ -266,7 +266,7 @@
   padding: 30px;
 }
 
-.swiper-slide {
+.ss_slide {
   text-align: center;
   font-size: 18px;
   display: flex;
@@ -339,3 +339,136 @@
 }
 /* WORK RELATED SECTION ************************************ */
 
+/* BRAND FOUNDATION ***************************************** */
+#section_container {
+  padding-bottom: 5vw;
+}
+#business_step_section {
+  padding: 0vw 0;
+}
+.sw_ {
+  padding-bottom: 10vw;
+}
+
+#service_title {
+  padding-top: 5vw;
+  color: var(--dark-black-clr);
+}
+
+#service_para {
+  color: var(--dark-black-clr);
+} 
+
+.business_pill {
+  border: 2px solid var(--dark-black-clr);
+  color: var(--dark-black-clr);
+  font-weight: var(--semibold);
+}
+
+.business_pill.active {
+  background-color: var(--dark-black-clr);
+  color: var(--white-clr);
+}
+
+.brand_foundation {
+  width: 100%;
+  height: fit-content;
+  /* background-color: var(--white-clr); */
+}
+
+#s1 {
+  width: 100%;
+  position: relative;
+  /* background-color: var(--dark-black-clr); */
+  padding: var(--section-padding);
+  z-index: 0;
+  overflow-x: hidden;
+}
+
+#s2 {
+  width: 100%;
+  position: relative;
+  /* background-color: var(--dark-black-clr); */
+  padding: var(--section-padding);
+  z-index: 0;
+  overflow-x: hidden;
+}
+
+#s3 {
+  width: 100%;
+  position: relative;
+  /* background-color: var(--dark-black-clr); */
+  padding: var(--section-padding);
+  z-index: 0;
+  overflow-x: hidden;
+}
+
+.services_box {
+  width: 90%;
+  height: 38vw;
+}
+
+.services_box_left, .services_box_right {
+  width: 50%;
+  height: 100%;
+}
+
+.brand_foundation_wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.swiper-container-three {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.swiper-container-four {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.swiper-container-five {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: var(--white-clr);
+  color: var(--dark-black-clr);
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1.5vw ;
+  font-size: 1.3vw;
+  font-weight: var(--medium);
+  letter-spacing: 0.1vw;
+  width: 20%;
+  cursor: pointer;
+  transition: all 0.6s;
+  border-left: 1px solid var(--dark-black-clr);
+  border-top: 1px solid var(--dark-black-clr);
+}
+
+.tablink:hover {
+  background-color: #ebebeb;
+  color: var(--white-clr);
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: var(--white-clr);
+  display: none;
+  padding: 100px 20px;
+  height: 200vh;
+}
+
+#service_para, #service_title {color: var(--white-clr); width: 70%;}
+
+#Home {background-color: var(--dark-black-clr);}
+#News {background-color: var(--dark-black-clr);}
+#Contact {background-color: var(--dark-black-clr);}
+#About {background-color: var(--dark-black-clr);}
+/* BRAND FOUNDATION ***************************************** */
