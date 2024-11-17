@@ -26,6 +26,7 @@
 .hero_wrapper {
   background-color: var(--white-clr);
   color: var(--dark-black-clr);
+  padding-bottom: 2vw;
 }
 
 #hero_section {
@@ -256,6 +257,10 @@
   font-family: var(--poppin-font);
   padding-bottom: 20px;
 }
+
+/* .service_work_section {
+  padding-bottom: 10vw !important;
+} */
 /* SWIPER JS CODE **************************************** */
 .swiper {
   width: 100%;
@@ -549,7 +554,7 @@
 }
 
 .transform_brand_section {
-  padding-bottom: 0 !important;
+  padding-bottom: 10vw !important;
 }
 /* BRAND PROCESS END ****************************************** */
 
@@ -581,6 +586,7 @@
 /* UPPER FOOTER CTA START *********************************** */
 .upper_footer_cta {
   padding: 0 !important;
+  background-color: var(--near-pure-white) !important;
 }
 
 .cta_process_wrapper_above_footer {

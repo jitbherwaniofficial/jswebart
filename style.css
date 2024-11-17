@@ -1798,7 +1798,7 @@ span {
 #cta_process_section {
   display: flex;
   flex-wrap: wrap;
-  background-color: var(--white-clr);
+  background-color: var(--near-pure-white);
   /* color: var(--dark-black-clr); */
   width: 100%;
   margin-top: -0.1vw;
