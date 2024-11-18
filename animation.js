@@ -146,7 +146,8 @@ gsap.from(".w4_hor", {
 
 gsap.to("#featured_work_anchor1", {
   duration: 2,
-  scale: 1,
+  // scale: 1,
+  // opacity:1,
   scrollTrigger: {
     trigger: "#featured_work_anchor1",
     scroller: "body",
@@ -158,7 +159,8 @@ gsap.to("#featured_work_anchor1", {
 
 gsap.to("#featured_work_anchor2", {
   duration: 2,
-  scale: 1,
+  // scale: 1,
+  // opacity:1,
   scrollTrigger: {
     trigger: "#featured_work_anchor2",
     scroller: "body",
@@ -170,7 +172,8 @@ gsap.to("#featured_work_anchor2", {
 
 gsap.to("#featured_work_anchor3", {
   duration: 2,
-  scale: 1,
+  // scale: 1,
+  // opacity:1,
   scrollTrigger: {
     trigger: "#featured_work_anchor3",
     scroller: "body",
@@ -182,7 +185,8 @@ gsap.to("#featured_work_anchor3", {
 
 gsap.to("#featured_work_anchor4", {
   duration: 2,
-  scale: 1,
+  // scale: 1,
+  // opacity:1,
   scrollTrigger: {
     trigger: "#featured_work_anchor4",
     scroller: "body",
@@ -194,7 +198,8 @@ gsap.to("#featured_work_anchor4", {
 
 gsap.to("#featured_work_anchor5", {
   duration: 2,
-  scale: 1,
+  // scale: 1,
+  // opacity:1,
   scrollTrigger: {
     trigger: "#featured_work_anchor5",
     scroller: "body",
@@ -206,7 +211,8 @@ gsap.to("#featured_work_anchor5", {
 
 gsap.to("#featured_work_anchor6", {
   duration: 2,
-  scale: 1,
+  // scale: 1,
+  // opacity:1,
   scrollTrigger: {
     trigger: "#featured_work_anchor6",
     scroller: "body",
@@ -218,7 +224,8 @@ gsap.to("#featured_work_anchor6", {
 
 gsap.to("#featured_work_anchor7", {
   duration: 2,
-  scale: 1,
+  // scale: 1,
+  // opacity:1,
   scrollTrigger: {
     trigger: "#featured_work_anchor7",
     scroller: "body",
@@ -230,7 +237,8 @@ gsap.to("#featured_work_anchor7", {
 
 gsap.to("#featured_work_anchor8", {
   duration: 2,
-  scale: 1,
+  // scale: 1,
+  // opacity:1,
   scrollTrigger: {
     trigger: "#featured_work_anchor8",
     scroller: "body",

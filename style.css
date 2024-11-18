@@ -1006,7 +1006,8 @@ span {
   display: flex;
   flex-wrap: wrap;
   align-self: flex-start;
-  transform:scale(0);
+  /* transform:scale(0); */
+  /* opacity: 0; */
   transform-origin: bottom;
 }
 
@@ -1060,7 +1061,8 @@ span {
   display: flex;
   flex-wrap: wrap;
   align-self: flex-end;
-  transform:scale(0);
+  /* transform:scale(0); */
+  /* opacity: 0; */
   transform-origin: bottom;
 }
 
@@ -1097,7 +1099,8 @@ span {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  transform:scale(0);
+  /* transform:scale(0); */
+  /* opacity: 0; */
   transform-origin: bottom;
 }
 
@@ -1125,7 +1128,8 @@ span {
   display: flex;
   flex-wrap: wrap;
   align-self: flex-start;
-  transform:scale(0);
+  /* transform:scale(0); */
+  /* opacity: 0; */
   transform-origin: bottom;
 }
 
@@ -1153,7 +1157,8 @@ span {
   display: flex;
   flex-wrap: wrap;
   align-self: flex-end;
-  transform:scale(0);
+  /* transform:scale(0); */
+  /* opacity: 0; */
   transform-origin: bottom;
 }
 
@@ -1181,7 +1186,8 @@ span {
   display: flex;
   flex-wrap: wrap;
   align-self: flex-start;
-  transform:scale(0);
+  /* transform:scale(0); */
+  /* opacity: 0; */
   transform-origin: bottom;
 }
 
@@ -1209,7 +1215,8 @@ span {
   display: flex;
   flex-wrap: wrap;
   align-self: flex-end;
-  transform:scale(0);
+  /* transform:scale(0); */
+  /* opacity: 0; */
   transform-origin: bottom;
 }
 
@@ -1236,7 +1243,8 @@ span {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  transform:scale(0);
+  /* transform:scale(0); */
+  /* opacity: 0; */
   transform-origin: bottom;
 }
 
