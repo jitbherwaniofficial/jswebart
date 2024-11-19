@@ -21,9 +21,75 @@
 
 
   .about_hero_section {
+    margin: 0 auto;
     background-color: var(--white-clr);
+    padding: 5vw 0;
+  }
+
+  .about_hero_section_wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
   }
 
   .about_hero_logo {
     opacity: 0.3;
+  }
+
+  .about_section_left {
+    width: 40%;
+  }
+
+  
+
+  .about_us_image_container {
+    width: 100%;
+    position: relative;
+  }
+
+  .about_hero_logo {
+    width: 70%;
+  }
+
+  .about_us_head {
+    position: absolute;
+    color: var(--dark-black-clr);
+    font-family: var(--playfair-font);
+    font-size: 3vw;
+    letter-spacing: 0.05vw;
+    left: 3%;
+    top: 26%;
+  }
+
+  .about_section_right {
+    padding-top: 3vw;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    align-items: start;
+    justify-content: start;
+  }
+  .about_para_upper{
+    font-family: var(--playfair-font);
+    font-weight: var(--medium);
+    font-size: 1.7vw;
+    color: var(--dark-black-clr);
+    
+  }
+  .about_para_middle1, .about_para_middle2, .about_para_down{
+    font-family: var(--poppin-font);
+    font-weight: var(--medium);
+    font-size: 1.3vw;
+    color: var(--medium-black-clr);
+  }
+
+  #counter {
+    width: 90%;
+    margin: 0 auto;
+    gap: 5vw;
+  }
+
+  .city {
+    font-size: 2.5vw !important;
   }
