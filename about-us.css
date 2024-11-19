@@ -93,3 +93,52 @@
   .city {
     font-size: 2.5vw !important;
   }
+
+  .about_image_marque_container {
+    position: relative;
+    width: 100%;
+    padding: 2.5vw 0;
+    height: 40vw;
+    overflow: hidden;
+  }
+
+  .about_marque {
+    display: flex;
+    animation: scrollleft 40s linear infinite;
+  }
+
+  .about_image_marque_container .about_marque img {
+    width: 32vw;
+    object-fit: cover;
+    padding-right: 2vw;
+  }
+
+  .about_image_marque_container .about_marque span {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+  }
+
+  .ab1,.ab4, .ab7, .ab10, .ab13{
+    height: 32vw;
+  }
+
+  .ab2, .ab3, .ab5,.ab6, .ab8, .ab9, .ab11, .ab12 {
+    height: 15vw;
+  }
+
+@keyframes scrollleft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-450%);
+    }
+}
+
+.about_marque:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
