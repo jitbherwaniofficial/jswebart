@@ -592,12 +592,17 @@
 .cta_process_wrapper_above_footer {
   width: 100% !important;
   height: 28vw !important;
-  justify-content: space-evenly !important;
 }
 
 .cta_h2 {
-  width: 35% !important;
-  font-size: 3.5vw;
+  width: 50% !important;
+  font-size: 3vw;
+  margin-right: 10%;
+}
+
+.top_cta {
+  width: 75%;
+  padding-right: 4vw;
 }
 
 .contact_cta_btn {
