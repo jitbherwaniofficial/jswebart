@@ -159,6 +159,7 @@
 }
 
 
+
 .values_heading{
     color: var(--dark-black-clr);
     font-weight: var(--semibold);
@@ -176,6 +177,7 @@
     background-color: var(--dark-black-clr);
     display: flex;
     flex-direction: column;
+    margin-bottom: 10vw;
 }
 
 .first_box_container, .second_box_container, .third_box_container{
@@ -256,4 +258,118 @@
 }
 .third_box_container:hover .thrd_para_box{
     border: 2px solid var(--green-clr);
+}
+
+/* Mission part */
+.mission_container{
+    width: 100%;
+    background-color: var(--white-clr);
+
+}
+.mission_heading{
+    padding-top: 4vw;
+    color: var(--dark-black-clr);
+    font-weight: var(--semibold);
+    font-family: var(--playfair-font);
+    font-size: 3vw;
+    width: 90%;
+    margin: 0 auto;
+    text-align: start;
+    padding-bottom: 6vw;
+}
+
+.mission_list_container{
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--white-clr);
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.first_mission_box{
+    border-right: 1.5px solid var(--dark-black-clr);
+    transition: 0.5s all;
+}
+.second_mission_box{
+    border-right: 1.5px solid var(--dark-black-clr);
+    transition: 0.5s all;
+}
+.third_mission_box{
+    border-right: 1.5px solid var(--dark-black-clr);
+    transition: 0.5s all;
+}
+.forth_mission_box{
+    /* border: 1.5px solid var(--dark-black-clr); */
+    transition: 0.5s all;
+}
+
+.first_mission_box:hover{
+  background-color: var(--dark-black-clr);
+  cursor: pointer;
+}
+.first_mission_box:hover .mission{
+    color: var(--white-clr);
+}
+.first_mission_box:hover .mission_para{
+    color: var(--medium-white-clr);
+}
+.second_mission_box:hover{
+  background-color: var(--dark-black-clr);
+  cursor: pointer;
+}
+.second_mission_box:hover .mission{
+    color: var(--white-clr);
+}
+.second_mission_box:hover .mission_para{
+    color: var(--medium-white-clr);
+}
+.third_mission_box:hover{
+  background-color: var(--dark-black-clr);
+  cursor: pointer;
+}
+.third_mission_box:hover .mission{
+    color: var(--white-clr);
+}
+.third_mission_box:hover .mission_para{
+    color: var(--medium-white-clr);
+}
+.forth_mission_box:hover{
+  background-color: var(--dark-black-clr);
+  cursor: pointer;
+}
+.forth_mission_box:hover .mission{
+    color: var(--white-clr);
+}
+.forth_mission_box:hover .mission_para{
+    color: var(--medium-white-clr);
+}
+
+
+.mission_box{
+    width: 25%;
+    height: 25vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw;
+}
+
+.mission{
+    color: var(--dark-black-clr);
+    font-weight: var(--semibold);
+    font-family: var(--playfair-font);
+    font-size: 1.8vw;
+    text-align: start;
+    width: 90%;
+    margin: 0 auto;
+}
+.mission_para{
+    color: var(--medium-black-clr);
+    font-weight: var(--medium);
+    font-family: var(--poppin-font);
+    font-size: 1.1vw;
+    text-align: start;
+    width: 90%;
+    margin: 0 auto;
 }
