@@ -373,3 +373,130 @@
     width: 90%;
     margin: 0 auto;
 }
+
+
+/* CAPABILITIES SECTION *************************************************** */
+.capabilities_section {
+    display: flex;
+    flex-direction: column;
+    padding: var(--section-padding);
+}
+
+.capabilities_head {
+    font-size: 3vw;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.capabilities_container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 5vw 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
+.capabilities_circle {
+    background-color: var(--medium-black-clr);
+    width: 43.9vw;
+    height: 43.9vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform-origin: 50% 50%;
+    transition: 0.6s all;
+}
+
+.capabilities_circle:hover {
+    background-color: var(--dark-black-clr);
+}
+
+.capabilities_circle:hover .capability_name {
+    scale: 1 !important;
+}
+
+.capability_name {
+    font-size: 2.5vw;
+    transition: 0.6s all;
+    cursor: pointer;
+}
+
+.capabilities_points_container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.capabilities_points {
+    width: 10vw;
+    height: 10vw;
+    background-color: var(--light-black-clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.2vw;
+    scale: 0;
+    transition: 0.6s all;
+}
+
+.capabilities_circle:hover .capabilities_points {
+    scale: 1;
+}
+
+.capabilities_points:nth-child(1) {
+    position: absolute;
+    top: 0%;
+}
+
+.capabilities_points:nth-child(2) {
+    position: absolute;
+    top: 22%;
+    left: 0%;
+}
+
+.capabilities_points:nth-child(3) {
+    position: absolute;
+    top: 22%;
+    right: 0%;
+}
+
+.capabilities_points:nth-child(4) {
+    position: absolute;
+    top: 55%;
+    left: 0%;
+}
+
+.capabilities_points:nth-child(5) {
+    position: absolute;
+    top: 55%;
+    right: 0%;
+}
+
+.capabilities_points:nth-child(6) {
+    position: absolute;
+    bottom: 0%;
+
+}
+
+.capabilities_points:nth-child(7) {
+    position: absolute;
+    bottom: -10%;
+    left: 1%;
+}
+
+.capabilities_points:nth-child(8) {
+    position: absolute;
+    bottom: -10%;
+    right: 1%;
+
+}
+/* CAPABILITIES SECTION *************************************************** */
