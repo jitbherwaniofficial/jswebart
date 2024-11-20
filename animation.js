@@ -144,6 +144,16 @@ gsap.from(".w4_hor", {
   },
 });
 
+gsap.to(".about_hero_logo", {
+  rotate: "360deg",
+  duration: 3
+})
+
+gsap.to(".about_us_head", {
+  scale: 1,
+  duration:3
+})
+
 gsap.to("#featured_work_anchor1", {
   duration: 2,
   // scale: 1,
