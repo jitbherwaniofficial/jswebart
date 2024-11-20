@@ -31,6 +31,7 @@ tl.from(".company_name", {
   stagger: 0.2,
 });
 
+
 gsap.from(".strip", {
   duration: 1,
   // opacity: 0,
