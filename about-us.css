@@ -102,6 +102,7 @@
     padding: 2.5vw 0;
     height: 40vw;
     overflow: hidden;
+    /* margin-bottom: 10vw; */
   }
 
   .about_marque {
@@ -144,3 +145,115 @@
     cursor: pointer;
 }
 
+/* Values and Mission starts here */
+
+.values_and_mission {
+    width: 100%;
+    padding: var(--section-padding);
+    background-color: var(--white-clr);
+    position: relative;
+}
+
+.w_li {
+    height: 76%;
+}
+
+
+.values_heading{
+    color: var(--dark-black-clr);
+    font-weight: var(--semibold);
+    font-family: var(--playfair-font);
+    font-size: 3vw;
+    width: 90%;
+    margin: 0 auto;
+    text-align: start;
+    padding-top: 4vw;
+    padding-bottom: 10vw;
+}
+
+.values_boxes_container{
+    width: 100%;
+    background-color: var(--dark-black-clr);
+    display: flex;
+    flex-direction: column;
+}
+
+.first_box_container, .second_box_container, .third_box_container{
+    width: 100%;
+    height: 25vw;
+    display: flex;
+}
+
+.value_box, .value_img_box, .values_para_box{
+    width: calc(100%/3);
+    height: 100%;
+     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s all;
+}
+
+.value_box{
+    background-color: var(--dark-black-clr);
+    transition: 0.5s all;
+    position: relative;
+}
+
+.value{
+    color: var(--white-clr);
+    font-weight: var(--semibold);
+    font-family: var(--playfair-font);
+    font-size: 2.5vw;
+    
+} 
+.values_para_box{
+    background-color: var(--medium-black-clr);
+    padding: 2vw;
+    transition: 0.5s all 0.5s; 
+}
+.value_para{
+    color: var(--white-clr);
+    font-weight: var(--normal);
+    font-family: var(--poppin-font);
+    font-size: 1.3vw;
+    text-align: center;
+}
+
+.value_img_box{
+    background-color: var(--dark-black-clr);
+    transition: 0.5s all;
+}
+.value_img_box img{
+  width: 100%;
+  height: 100%;  
+}
+
+.first_box_container:hover .first_value_box{
+    transform: translateX(33.3vw);
+}
+
+.first_box_container:hover .first_img_box {
+    transform: translateX(-33.3vw);
+}
+.first_box_container:hover .first_para_box {
+    border: 2px solid var(--green-clr);
+}
+.second_box_container:hover .snd_value_box {
+    transform: translateX(-66.55vw);
+}
+.second_box_container:hover .snd_img_box {
+    transform: translateX(66.55vw);
+}
+.second_box_container:hover .snd_para_box{
+    border: 2px solid var(--green-clr);
+}
+.third_box_container:hover .thrd_value_box {
+    transform: translateX(33.3vw);
+}
+.third_box_container:hover .thrd_img_box {
+    transform: translateX(-33.3vw);
+}
+.third_box_container:hover .thrd_para_box{
+    border: 2px solid var(--green-clr);
+}

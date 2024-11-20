@@ -48,6 +48,18 @@ gsap.to(".striph", {
 });
 
 
+gsap.from(".w_li", {
+  duration: 2,
+  height: 0,
+  scrollTrigger: {
+    trigger: ".w_li",
+    scroller: "body",
+    start: "top 50%",
+    end: "top 30%",
+    scrub: 5,
+  },
+});
+
 gsap.from(".w_line", {
   duration: 2,
   height: 0,
