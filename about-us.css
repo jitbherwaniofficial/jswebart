@@ -287,9 +287,11 @@
 }
 .first_mission_box{
     border-right: 1.5px solid var(--dark-black-clr);
+    /* border-bottom: 1.5px solid var(--dark-black-clr); */
     transition: 0.5s all;
 }
 .second_mission_box{
+    /* border-bottom: 1.5px solid var(--dark-black-clr); */
     border-right: 1.5px solid var(--dark-black-clr);
     transition: 0.5s all;
 }
@@ -351,7 +353,7 @@
     flex-direction: column;
     gap: 1vw;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 2vw;
 }
 
@@ -412,17 +414,42 @@
 }
 
 .capabilities_circle:hover {
-    background-color: var(--dark-black-clr);
+    background-color: transparent;
 }
 
 .capabilities_circle:hover .capability_name {
-    scale: 1 !important;
+   color: var(--green-clr);
+   text-decoration: underline;
+}
+
+.capability_name::after {
+    content: "";
+    background-color: var(--medium-black-clr);
+    width: 22vw;
+    height: 22vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transition: 0.6s all;
+    z-index: -1;
+    scale: 0;
+}
+
+.capabilities_circle:hover .capability_name::after {
+    scale: 1;
 }
 
 .capability_name {
-    font-size: 2.5vw;
+    font-size: 2vw;
     transition: 0.6s all;
     cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
 }
 
 .capabilities_points_container {
@@ -449,9 +476,9 @@
     transition: 0.6s all;
 }
 
-/* .capabilities_circle:hover .capabilities_points {
+.capabilities_circle:hover .capabilities_points {
     transform: scale(1);
-} */
+}
 
 .capabilities_points:nth-child(1) {
     position: absolute;
