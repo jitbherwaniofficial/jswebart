@@ -61,6 +61,18 @@ gsap.from(".w_li", {
   },
 });
 
+gsap.from(".w_li2", {
+  duration: 2,
+  height: 0,
+  scrollTrigger: {
+    trigger: ".w_li2",
+    scroller: "body",
+    start: "top 50%",
+    end: "top 30%",
+    scrub: 5,
+  },
+});
+
 gsap.from(".w_line", {
   duration: 2,
   height: 0,
