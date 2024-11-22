@@ -64,6 +64,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 4vw;
 }
 
 .single_portfolio {
@@ -71,10 +72,10 @@
     flex-direction: column;
     width: 45%;
     height: 45vw;
-    gap: 1vw;
+    /* gap: 1vw; */
 }
 
-.sp_left {transform: translateY(-10%);}
+.sp_left {transform: translateY(5%);}
 .sp_right {transform: translateY(25%);}
 
 .single_portfolio figure {
@@ -89,16 +90,15 @@
 }
 
 .portfolio_name {
-    font-size: 1.6vw;
-    letter-spacing: 0.2vw;
-    font-family: var(--poppin-font);
+    font-size: 1.7vw;
+    font-family: var(--playfair-font);
+    padding: 0.5vw 0;
 }
 
 .portfolio_about {
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     font-family: var(--poppin-font);
     font-weight: normal;
-    letter-spacing: 0.1vw;
 }
 
 /* PORTFOLIOS *********************************************************** */
