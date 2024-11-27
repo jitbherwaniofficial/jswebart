@@ -430,6 +430,9 @@
 .services_box_left,
 .services_box_right {
   width: 50%;
+}
+
+.services_box_right {
   height: 100%;
 }
 
@@ -862,5 +865,36 @@
   width: calc(100% / 3);
 }
 
+.services_box_right {
+  height: 45vw !important;
+}
+
+.business_box_left {
+  height: 45vw;
+}
+
+.sidebarLink {
+  font-size: 2vw;
+  padding: 2vw 0;
+}
+
+#service_paragraph {
+  font-size: 1.6vw;
+  width: 100%;
+}
+
+.cta_h2 {
+  width: 45% !important;
+}
+
+.cta_process_wrapper_above_footer {
+  width: 100% !important;
+  height: 35vw !important;
+}
+
+.contact_cta_btn {
+  font-size: 3vw !important;
+  width: 30% !important;
+}
 
 }
