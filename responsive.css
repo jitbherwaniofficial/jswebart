@@ -1449,6 +1449,20 @@
     height: 2px;
   }
 
+  #mobile_nav span a {
+    color: var(--dark-black-clr);
+    font-size: 5vw;
+    padding: 1.5vw 4vw;
+    background-color: var(--green-clr);
+    font-family: var(--playfair-font);
+    font-weight: var(--semibold);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+}
+
   .menu_line:nth-child(2) {
     width: 50%;
   }
