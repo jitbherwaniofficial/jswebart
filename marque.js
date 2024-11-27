@@ -15,6 +15,6 @@ items.forEach(item => {
 marquee.to(".marquee-content", {
   x: -contentWidth,    // Move the content to the left by its width
   ease: "none",        // Linear animation for smooth movement
-  duration: 20,        // Adjust duration to control speed
+  duration: 25,        // Adjust duration to control speed
   repeat: -1           // Infinite loop
 }).play();

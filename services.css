@@ -852,4 +852,15 @@
   .test_quotes {
     width: 100%;
 }
+
+.brand_foundation_wrapper {
+  width: 100%;
+}
+
+.tablink {
+  font-size: 2vw;
+  width: calc(100% / 3);
+}
+
+
 }
