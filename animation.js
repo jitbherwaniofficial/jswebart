@@ -49,6 +49,23 @@ gsap.to(".striph", {
 });
 
 
+gsap.from(".st", {
+  duration: 1,
+  // opacity: 0,
+  stagger: 0.2,
+  ease: "power2.out",
+  y: -1500,
+});
+
+gsap.to(".sth", {
+  duration: 2,
+  // opacity: 0,
+  stagger: 0.2,
+  ease: "power2.out",
+  width: "100%"
+});
+
+
 gsap.from(".w_li", {
   duration: 2,
   height: 0,
@@ -659,11 +676,31 @@ window.addEventListener("resize", debounce(applyGsapAnimations, 200));
 //  Initialize Swiper //
 var workSwiper = new Swiper(".workSwiper", {
   slidesPerView: 1.45,
-  spaceBetween: 50,
+  // slidesPerView: 1.17,
+  // spaceBetween: 50,
+  spaceBetween: 60,
   freeMode: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
   grabCursor: true, // Enable grab effect
+  breakpoints: {
+    // When the screen width is >= 320px
+    320: {
+      slidesPerView: 1.1,
+      spaceBetween: 40,
+    },
+    // When the screen width is >= 768px
+    768: {
+      slidesPerView: 1.5,
+      spaceBetween: 50,
+    },
+    // When the screen width is >= 1024px
+    1024: {
+      slidesPerView: 1.17,
+      spaceBetween: 60,
+    },
+    // Add more breakpoints as needed
+  },
 });

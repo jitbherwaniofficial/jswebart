@@ -90,7 +90,7 @@
   .mob_link {
     width: 90%;
     background-color: var(--dark-black-clr);
-    font-size: 5vw;
+    font-size: 4vw;
     padding: 1.5vw 4vw;
     font-family: var(--playfair-font);
     font-weight: var(--semibold);
@@ -134,7 +134,7 @@
 
   #mobile_nav span a {
     color: var(--dark-black-clr);
-    font-size: 5vw;
+    font-size: 4vw;
     padding: 1.5vw 4vw;
     background-color: var(--green-clr);
     font-family: var(--playfair-font);
