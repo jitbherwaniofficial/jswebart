@@ -1060,7 +1060,7 @@
     left: 0%;
     top: 6%;
     width: 100%;
-    height: 45vh;
+    height: 35vh;
 }
   .marquee_img {
     gap: 20px;
@@ -1106,36 +1106,68 @@
   width: 50vw !important;
 }
 
-.item {font-size: 18px;}
+.item {font-size: 20px;}
+
+#hero_title {
+  font-size: 7.5vw !important;
+  width: 90%;
+  padding-top: 2vw;
+}
 
 #work_head {
   font-size: 5vw;
 }
 
-#work_para {
-  font-size: 3vw;
+#hero_para {
+  font-size: 4vw !important;
+}
+
+#hero_work_btn {
+  font-size: 5vw !important;
+  padding: 4vw 10vw !important;
+}
+
+#section_para {
+  font-size: 3.6vw !important;
+}
+
+#counter_para {
+  font-size: 5vw !important;
+  line-height: 1.4;
 }
 
 .sw {
   padding: 10px;
 }
 
+#work_para {
+  font-size: 3.5vw;
+}
+
 .ss_slide {
   padding: 10px;
 }
 
 .ss_slide {
-  width: 80vw !important;
-  height: 42vw !important;
+  width: 82vw !important;
+  height: 80vw !important;
+}
+
+.test_quotes span {
+  top: -20%;
 }
 
 .test_quotes .test_para {
-  font-size: 2.6vw;
+  font-size: 3.5vw;
   padding-left: 8vw;
 }
 
 .test_quotes address {
-  font-size: 2.6vw;
+  font-size: 3.5vw;
+}
+
+#service_paragraph {
+  font-size: 3.2vw;
 }
 
 .box {
@@ -1152,12 +1184,21 @@
 .services_box {height: 130vw !important;}
 
 .business_box_left {
-  height: 70vw;
+  height: 80vw;
+}
+
+.business_box_left span {
+  font-size: 3.5vw !important;
 }
 
 .sidebarLink {
   font-size: 4vw;
   padding: 4vw;
+}
+
+.cta_process_wrapper_above_footer {
+  width: 100% !important;
+  height: 50vw !important;
 }
 
 
