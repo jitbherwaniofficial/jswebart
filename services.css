@@ -898,3 +898,158 @@
 }
 
 }
+
+@media only screen and (max-width:768px) {
+
+  .marquee_img {
+    gap: 40px;
+    animation: scrollUp 60s linear infinite;
+  }
+
+
+  .hw_img {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  @keyframes scrollUp {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-650%);
+    }
+  }
+
+  #hero_title {
+    font-size: 6vw  !important;
+    width: 95%;
+    padding-top: 2vw;
+  }
+
+  #counter_box {
+    width: 47% !important;
+    flex-wrap: nowrap;
+    height: 25vw !important;
+}
+
+#counter_para {
+  width: 35vw !important;
+}
+
+.st, .sth {
+  position: absolute;
+  display: block;
+  background-color: rgba(67, 68, 73, 0.8);
+}
+
+.st {
+  width: 1px;
+  height: 100%;
+}
+
+.sth {
+  height: 1px;
+  width: 0%;
+  left: 0;
+}
+
+#work_head {
+  font-size: 4vw;
+}
+
+#work_para {
+  width: 100%;
+  font-size: 2.5vw;
+}
+
+.test_quotes span {
+  font-size: 15vw;
+}
+
+.test_quotes .test_para {
+  font-size: 2.3vw;
+  padding-left: 8vw;
+}
+
+.test_quotes address {
+  font-size: 2.3vw;
+}
+
+.cta_h2 {
+  width: 55% !important;
+  padding-right: 0 !important;
+  margin-right: 0 !important;
+}
+
+.cta_process_wrapper {
+  justify-content: center !important;
+}
+
+.cta_process_wrapper_above_footer {
+  width: 100% !important;
+  height: 40vw !important;
+}
+
+.tablink {
+  font-size: 2.5vw;
+  width: calc(100% / 3);
+  height: 6vh;
+}
+
+.services_box {
+  height: 115vw !important;
+}
+
+
+.services_box_left span {
+  font-size: 2.3vw !important;
+  padding-bottom: 1vw;
+}
+
+.brand_process_wrapper {
+  width: 100%;
+  flex-direction: column-reverse;
+}
+
+.brand_sidebar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebarLink {
+  font-size: 3vw;
+  padding: 2vw;
+}
+
+#brand1, #brand2, #brand3, #brand4 {
+  width: 100%;
+}
+
+.business_box_left {
+  height: 60vw;
+}
+
+#service_paragraph {
+  font-size: 2.5vw;
+  width: 100%;
+  font-family: var(--poppin-font);
+}
+
+.business_box_left span {
+  font-size: 2.5vw !important;
+}
+
+#services_box_title {
+  font-size: 5vw;
+  padding-bottom: 1.5vw;
+}
+
+#cta_process_title {
+  font-size: 4.5vw !important;
+  width: 65%;
+}
+
+}
