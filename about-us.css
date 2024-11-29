@@ -1034,3 +1034,144 @@
         font-size: 2.5vw;
     }
 }
+
+@media only screen and (max-width: 450px) {
+    .about_hero_logo {
+        width: 90%;
+    }
+
+    .about_us_head {
+        font-size: 9vw;
+    }
+
+    .about_para_upper {
+        font-size: 6.5vw;
+        line-height: 1.5;
+    }
+
+    .about_para_middle1, .about_para_middle2, .about_para_down {
+        font-size: 5vw;
+    }
+
+    .city {
+        font-size: 7vw !important;
+    }
+
+    .about_image_marque_container {
+        height: 100vw;
+    }
+
+    .about_image_marque_container .about_marque img {
+        width: 85vw;
+    }
+
+    .ab1, .ab4, .ab7, .ab10, .ab13 {
+        height: 95vw;
+    }
+
+    .ab2, .ab3, .ab5, .ab6, .ab8, .ab9, .ab11, .ab12 {
+        height: 46.2vw;
+    }
+
+    .about_marque {
+        display: flex;
+        animation: scrollleft 50s linear infinite;
+      }
+
+    @keyframes scrollleft {
+        0% {
+            transform: translateX(0);
+        }
+    
+        100% {
+            transform: translateX(-1430%);
+        }
+    }
+
+    .values_heading {
+        font-size: 6vw;
+    }
+
+    .mission_heading {
+        font-size: 6vw;
+    }
+
+    .mission_box {
+        height: 70vw;
+        width: 100%;
+        gap: 3vw;
+    }
+
+    .first_mission_box, .second_mission_box, .third_mission_box, .fourth_mission_box {
+        border-bottom: 1px solid rgba(20, 21, 28,0.3);
+    }
+
+    .mission {
+        font-size: 5vw;
+    }
+
+    .mission_para {
+        font-size: 4vw;
+        line-height: 1.4;
+    }
+
+    .capabilities_head {
+        font-size: 6vw;
+    }
+
+    .capabilities_circle {
+        width: 90vw;
+        height: 90vw;
+        margin: 5vw auto;
+    }
+
+    .capabilities_points {
+        width: 24vw;
+        height: 24vw;
+        font-size: 3.5vw;
+    }
+
+    .meet_team_heading {
+        font-size: 6vw;
+    }
+
+    .founder_name {
+        font-size: 5vw;
+    }
+
+    .founder_designation {
+        font-size: 4vw;
+    }
+
+    .founder_quote {
+        width: 100%;
+    }
+
+    .founder_quote p {
+        font-size: 4vw;
+        line-height: 1.4;
+        padding-top: 12vw;
+    }
+
+    .founder_bar_container {
+        gap: 18vw;
+    }
+
+    .cta_left > #cta_process_title {
+        font-size: 7vw !important;
+    }
+
+    #cta_para {
+        font-size: 4vw !important;
+    }
+
+    #contact_cta_btn {
+        font-size: 4vw !important;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50% !important;
+    }
+
+    .cta_mob {height: 90vw !important;}
+    
+}
