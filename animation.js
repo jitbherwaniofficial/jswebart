@@ -692,7 +692,7 @@ var workSwiper = new Swiper(".workSwiper", {
       spaceBetween: 15,
     },
     400: {
-      slidesPerView: 1.08,
+      slidesPerView: 0.568,
       spaceBetween: 15,
     },
     // When the screen width is >= 768px
