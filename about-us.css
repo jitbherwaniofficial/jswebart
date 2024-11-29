@@ -563,7 +563,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} 
 
 .founder_image_caption {
     width: 40%;
@@ -645,3 +645,229 @@
 
 
 /* MEET TEAM SECTION **************************************************** */
+
+
+@media only screen and (max-width: 1024px) {
+    .about_hero_section_wrapper {
+        flex-wrap: wrap;
+    }
+
+    .about_section_left, .about_section_right {
+        width: 100%;
+    }
+
+    .about_section_left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about_us_image_container {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about_us_head {
+        font-size: 4vw;
+        top: 26%;
+        left: auto;
+    }
+
+    .about_section_right {
+        padding-top: 5vw;
+    }
+
+    .about_para_upper {
+        font-size: 4vw;
+    }
+
+    .about_para_middle1, .about_para_middle2, .about_para_down {
+        font-size: 3vw;
+    }
+
+    .about_section_right {
+        gap: 5vw;
+    }
+
+    @keyframes scrollleft {
+        0% {
+            transform: translateX(0);
+        }
+    
+        100% {
+            transform: translateX(-1050%);
+        }
+    }
+
+    #counter {
+        width: 90% !important;
+        flex-wrap: wrap;
+    }
+
+    .about_image_marque_container {
+        height: 70vw;
+    }
+
+    .about_image_marque_container .about_marque img {
+        width: 65vw;
+    }
+
+    .ab1, .ab4, .ab7, .ab10, .ab13 {
+        height: 65vw;
+    }
+
+    .ab2, .ab3, .ab5, .ab6, .ab8, .ab9, .ab11, .ab12 {
+        height: 31.51vw;
+    }
+
+    .values_heading {
+        font-size: 4vw;
+    }
+
+    .value_para {
+        font-size: 1.5vw;
+        line-height: 1.4;
+    }
+
+    .value {
+        font-size: 3.5vw;
+    }
+
+    .mission_heading {
+        font-size: 4vw;
+    }
+
+    .mission_list_container {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .mission_list_container {
+        font-size: 2vw;
+    }
+
+    .mission_para {
+        font-size: 1.6vw;
+    }
+
+    .mission_box {
+        height: 35vw;
+        justify-content: center;
+    }
+
+    .capabilities_head {
+        font-size: 4vw;
+    }
+
+    .meet_team_heading {
+        font-size: 4vw;
+    }
+
+    .founder_name {
+        font-size: 2.5vw;
+    }
+
+    .founder_designation {
+        font-size: 1.8vw;
+    }
+
+    .founder_quote p {
+        font-size: 3vw;
+    }
+
+    #cta_para {
+        font-size: 2vw !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .about_us_image_container {
+        width: 100%;
+    }
+
+
+    .about_us_head{
+        font-size: 7vw;
+    }
+
+    .about_section_right {
+        padding-top: 15vw;
+        gap: 6vw;
+    }
+    .about_para_upper {
+        font-size: 5vw;
+        line-height: 1.5;
+    }
+
+    .about_para_middle1, .about_para_middle2, .about_para_down {
+        line-height: 1.4;
+        font-size: 4vw;
+    }
+
+    .city {
+        font-size: 5vw !important;
+        padding-bottom: 1vw;
+    }
+
+    .about_image_marque_container .about_marque img {
+        width: 75vw;
+    }
+
+    .ab1, .ab4, .ab7, .ab10, .ab13 {
+        height: 80vw;
+    }
+
+    .about_image_marque_container {
+        height: 85vw;
+    }
+
+    .ab2, .ab3, .ab5, .ab6, .ab8, .ab9, .ab11, .ab12 {
+        height: 39vw;
+    }
+
+    .about_marque {
+        display: flex;
+        animation: scrollleft 70s linear infinite;
+      }
+
+    @keyframes scrollleft {
+        0% {
+            transform: translateX(0);
+        }
+    
+        100% {
+            transform: translateX(-1250%);
+        }
+    }
+
+    .values_heading {
+        font-size: 5vw;
+    }
+
+    .mission_heading {
+        font-size: 5vw;
+    }
+
+    .mission_box {
+        width: 50%;
+    }
+
+    .first_mission_box, .second_mission_box {
+        border-bottom: 2px solid var(--dark-black-clr);
+    }
+
+    .mission {
+        font-size: 3.2vw;
+    }
+
+    .mission_para {
+        font-size: 2.2vw;
+    }
+
+    .mission_box {
+        height: 40vw;
+        padding: 3vw;
+    }
+}
