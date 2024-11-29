@@ -1158,6 +1158,11 @@
   font-size: 3.6vw !important;
 }
 
+#service_title {
+  padding-top: 10vw !important;
+  padding-bottom: 2vw !important;
+}
+
 #counter_para {
   font-size: 5vw !important;
   line-height: 1.4;
@@ -1185,7 +1190,7 @@
 }
 
 .test_quotes .test_para {
-  font-size: 3.5vw;
+  font-size: 3.2vw;
   padding-left: 8vw;
 }
 
@@ -1208,14 +1213,27 @@
   height: 10vh;
 }
 
-.services_box {height: 130vw !important;}
+.services_box {height: 140vw !important;}
+
+.services_box_left span {
+  font-size: 2.8vw !important;
+}
 
 .business_box_left {
   height: 80vw;
+  justify-content: center;
 }
 
 .business_box_left span {
   font-size: 3.5vw !important;
+}
+
+.brand_process_wrapper {
+  gap: 5vw;
+}
+
+.transform_brand_section {
+  padding-bottom: 12vw !important;
 }
 
 .sidebarLink {
@@ -1227,6 +1245,14 @@
   width: 100% !important;
   height: 80vw !important;
 }
+
+.pill {
+  font-size: 3vw !important;
+  width: calc(100% / 2.5);
+  padding: 3vw 3.5vw !important;
+  border-radius: 25px !important;
+}
+
 
 
 }
