@@ -234,6 +234,7 @@
   height: 100%;  
 }
 
+
 .first_box_container:hover .first_value_box{
     transform: translateX(33.3vw);
 }
@@ -787,6 +788,134 @@
         width: 100%;
     }
 
+    .first_box_container:hover .first_value_box{
+        transform: translateX(0);
+    }
+    
+    .first_box_container:hover .first_img_box {
+        transform: translateX(0);
+    }
+    .first_box_container:hover .first_para_box {
+        border: none;
+    }
+    .second_box_container:hover .snd_value_box {
+        transform: translateX(0);
+    }
+    .second_box_container:hover .snd_img_box {
+        transform: translateX(0);
+    }
+    .second_box_container:hover .snd_para_box{
+        border: none;
+    }
+    .third_box_container:hover .thrd_value_box {
+        transform: translateX(0);
+    }
+    .third_box_container:hover .thrd_img_box {
+        transform: translateX(0);
+    }
+    .third_box_container:hover .thrd_para_box{
+        border: none;
+    }
+
+    .first_box_container, .second_box_container, .third_box_container {
+        height: auto !important;
+        flex-direction: column;
+    }
+
+    .vbc {
+        width: 100%;
+        height: 70vw;
+    }
+
+    .first_value_box {order: 2;}
+    .first_img_box {order: 1;}
+    .first_para_box {order: 3;}
+    .snd_para_box {order: 3;}
+    .snd_value_box {order: 2;}
+    .thrd_value_box {order: 2;}
+    .thrd_img_box {order: 1;}
+    .thrd_para_box {order: 3;}
+
+    .value {
+        font-size: 6.5vw;
+    }
+
+    .value_para {
+        font-size: 4vw;
+        line-height: 1.5;
+        width: 75%;
+    }
+
+    .meet_team_heading {
+        font-size: 5vw;
+    }
+
+    .founder_bar_container {
+        padding-top: 10vw;
+        gap: 10vw;
+    }
+
+    .founder_image_caption {
+        width: 100%;
+    }
+
+    .founder_image {
+        height: 100vw;
+    }
+
+    .founder_name {
+        font-size: 4.5vw;
+    }
+
+    .founder_designation {
+        font-size: 3.5vw;
+    }
+
+    .founder_bar {
+        flex-direction: column;
+        gap: 5vw;
+    }
+
+    .founder_quote {
+        width: 90%;
+    }
+
+    .founder_quote p {
+        font-size: 3.5vw;
+    }
+
+    .team_container {
+        gap: 10vw;
+    }
+
+    .above_cta, .cta_left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .cta_left > #cta_process_title {
+        text-align: center;
+        font-size: 6vw !important;
+        width: 80% !important;
+    }
+
+    #cta_para {
+        font-size: 2.3vw;
+        font-size: 3vw !important;
+        text-align: center;
+        padding-top: 2vw;
+    }
+
+    #contact_cta_btn {
+        font-size: 3.5vw !important;
+        padding: 3vw !important;
+    }
+
+    .fme {
+        order: 2;
+    }
 
     .about_us_head{
         font-size: 7vw;
@@ -804,6 +933,11 @@
     .about_para_middle1, .about_para_middle2, .about_para_down {
         line-height: 1.4;
         font-size: 4vw;
+    }
+
+    .about_marque:hover {
+        animation-play-state: running;
+        cursor: pointer;
     }
 
     .city {
