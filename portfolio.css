@@ -217,4 +217,13 @@
         width: 45% !important;
         padding: 7vw 3.3vw !important;
     }
+
+    #cta_process_section {
+        padding-top: 0vw !important;
+        padding-bottom: 0vw !important;
+    }
+
+    .cta_process_wrapper {
+        height: 70vw !important;
+    }
 }
