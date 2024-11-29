@@ -1122,8 +1122,14 @@
 
 #cta_process_title {
   text-align: center;
-  font-size: 5vw !important;
+  font-size: 7vw !important;
   width: 85% !important;
+}
+
+.contact_cta_btn {
+  font-size: 5vw !important;
+  width: 50% !important;
+  padding: 3vw !important;
 }
 
 .item {font-size: 20px;}
@@ -1218,7 +1224,7 @@
 
 .cta_process_wrapper_above_footer {
   width: 100% !important;
-  height: 50vw !important;
+  height: 80vw !important;
 }
 
 
