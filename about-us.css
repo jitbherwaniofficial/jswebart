@@ -1179,6 +1179,7 @@
 
     #cta_para {
         font-size: 4vw !important;
+        width: 100% !important;
     }
 
     #contact_cta_btn {
