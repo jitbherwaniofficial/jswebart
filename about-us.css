@@ -1040,6 +1040,8 @@
         width: 90%;
     }
 
+    .about_hero_section {padding-bottom: 20vw;}
+
     .about_us_head {
         font-size: 9vw;
     }
@@ -1052,6 +1054,8 @@
     .about_para_middle1, .about_para_middle2, .about_para_down {
         font-size: 5vw;
     }
+
+    #counter {padding-top: 20vw;}
 
     .city {
         font-size: 7vw !important;
@@ -1088,6 +1092,8 @@
         }
     }
 
+    .values_boxes_container {margin-bottom: 20vw;}
+
     .values_heading {
         font-size: 6vw;
     }
@@ -1114,6 +1120,7 @@
         font-size: 4vw;
         line-height: 1.4;
     }
+    .capabilities_container {gap: 10vw;}
 
     .capabilities_head {
         font-size: 6vw;
@@ -1123,12 +1130,21 @@
         width: 90vw;
         height: 90vw;
         margin: 5vw auto;
+        background-color: transparent;
     }
 
     .capabilities_points {
         width: 24vw;
         height: 24vw;
-        font-size: 3.5vw;
+        font-size: 3.4vw;
+    }
+
+    .capability_name::after {
+        scale: 1;
+    }
+
+    .capabilities_points {
+        transform: scale(1);
     }
 
     .meet_team_heading {
