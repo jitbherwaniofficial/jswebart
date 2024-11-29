@@ -199,11 +199,12 @@
     }
 
     .portfolio_name {
-        font-size: 4vw;
+        font-size: 5vw;
+        padding: 2vw 0 !important;
     }
 
     .portfolio_about {
-        font-size: 2.5vw;
+        font-size: 3.5vw;
     }
 
     #cta_process_title {
