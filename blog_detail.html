@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jswebart</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="contact.css" />
-    <link rel="stylesheet" href="portfolio.css" />
-    <link rel="stylesheet" href="blogs.css" />
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="blog_detail.css">
+    <link rel="stylesheet" href="responsive.css" />
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
@@ -33,11 +31,9 @@
                                     <!DOCTYPE svg
                                         PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
-
                                     <svg fill="#00c896" class="change_clr" width="800px" height="800px"
                                         viewBox="0 0 512 512" version="1.1" xml:space="preserve"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
                                         <g id="SVGRepo_bgCarrier" stroke-width="0" />
 
                                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
@@ -47,21 +43,22 @@
                                                 <g>
                                                     <path
                                                         d="M236.836,29.236h-62.15v9.729h26.128c2.235,0,4.043,1.808,4.043,4.042 c0,2.202-1.808,4.043-4.043,4.043h-26.128v12.423h13.048c2.201,0,4.008,1.808,4.008,4.043c0,2.201-1.807,4.042-4.008,4.042 h-13.048V83.07h26.128c2.235,0,4.043,1.808,4.043,4.043c0,2.234-1.808,4.041-4.043,4.041h-26.128v14.625h13.048 c2.201,0,4.008,1.809,4.008,4.043c0,2.235-1.807,4.043-4.008,4.043h-13.048v15.545h26.128c2.235,0,4.043,1.807,4.043,4.043 c0,2.201-1.808,4.01-4.043,4.01h-26.128v14.657h13.048c2.201,0,4.008,1.808,4.008,4.043c0,2.234-1.807,4.042-4.008,4.042h-13.048 v15.512h26.128c2.235,0,4.043,1.809,4.043,4.043s-1.808,4.043-4.043,4.043h-26.128v14.658h13.048c2.201,0,4.008,1.807,4.008,4.041 c0,2.235-1.807,4.043-4.008,4.043h-13.048v15.513h26.128c2.235,0,4.043,1.808,4.043,4.043c0,2.234-1.808,4.042-4.043,4.042 h-26.128v14.658h13.048c2.201,0,4.008,1.807,4.008,4.01c0,2.234-1.807,4.042-4.008,4.042h-13.048v15.546h26.128 c2.235,0,4.043,1.807,4.043,4.041s-1.808,4.043-4.043,4.043h-26.128v14.625h13.048c2.201,0,4.008,1.808,4.008,4.043 c0,2.234-1.807,4.043-4.008,4.043h-13.048v15.512h26.128c2.235,0,4.043,1.84,4.043,4.043c0,2.234-1.808,4.041-4.043,4.041h-26.128 v14.659h13.048c2.201,0,4.008,1.808,4.008,4.042s-1.807,4.042-4.008,4.042h-13.048v15.513h26.128c2.235,0,4.043,1.808,4.043,4.042 c0,2.235-1.808,4.043-4.043,4.043h-26.128v14.657h13.048c2.201,0,4.008,1.809,4.008,4.044c0,2.201-1.807,4.042-4.008,4.042 h-13.048v15.513h26.128c2.235,0,4.043,1.808,4.043,4.042s-1.808,4.042-4.043,4.042h-26.128v17.551h62.15V29.236z M93.838,88.822 v276.528h21.46V202.174c0-2.234,1.808-4.043,4.043-4.043s4.043,1.809,4.043,4.043v163.177h21.492V140.223h-27.146 c-2.235,0-4.043-1.807-4.043-4.042c0-2.202,1.808-4.043,4.043-4.043h27.146V88.789l-25.535-45.617L93.838,88.822z M93.838,373.436 v12.652h51.039v-12.652H119.44h-0.098h-0.098H93.838z M93.838,394.174v21.362c0,5.883,2.4,11.239,6.243,15.085 c3.913,3.911,9.237,6.311,15.119,6.311h8.282c5.882,0,11.241-2.433,15.084-6.311c3.878-3.846,6.31-9.202,6.31-15.085v-21.362 H93.838z M386.703,220.514c-2.008-1.973-4.734-3.221-7.791-3.221c-3.022,0-5.784,1.248-7.788,3.221 c-1.973,1.971-3.222,4.732-3.222,7.788c0,3.024,1.249,5.784,3.222,7.789c2.004,1.973,4.766,3.222,7.788,3.222 c2.958,0,5.621-1.184,7.59-3.058l0.201-0.164c1.972-2.005,3.218-4.765,3.218-7.789 C389.921,225.246,388.675,222.484,386.703,220.514z M378.912,209.207c5.26,0,10.022,2.137,13.477,5.588 c3.449,3.482,5.586,8.248,5.586,13.507s-2.137,10.024-5.586,13.475l-0.264,0.263c-3.45,3.32-8.086,5.357-13.213,5.357 c-5.258,0-10.055-2.168-13.509-5.62c-3.45-3.45-5.587-8.216-5.587-13.475s2.137-10.024,5.622-13.475 C368.857,211.344,373.654,209.207,378.912,209.207z M395.049,171.807c1.182,1.906,0.592,4.371-1.313,5.554 c-1.875,1.15-4.373,0.56-5.524-1.314c-3.253-5.258-3.187-12.259-3.12-20.804c0.165-17.418,0.393-42.101-31.189-64.811 c-7.987-5.751-17.318-9.99-27.213-12.588c-10.156-2.662-20.902-3.614-31.452-2.76c-2.235,0.164-4.176-1.479-4.337-3.714 c-0.165-2.202,1.478-4.174,3.713-4.338c11.402-0.888,23.071,0.131,34.112,3.023c10.813,2.859,21.036,7.493,29.908,13.868 c34.937,25.11,34.674,52.257,34.509,71.385C393.076,162.571,393.013,168.52,395.049,171.807z M53.809,465.064 c-2.236,0-4.043-1.809-4.043-4.043c0-2.202,1.807-4.01,4.043-4.01h245.735c2.232,0,4.039,1.808,4.039,4.01 c0,2.234-1.807,4.043-4.039,4.043H53.809z M197.691,486c-2.2,0-4.008-1.808-4.008-4.043s1.808-4.043,4.008-4.043h170.081 c2.2,0,4.039,1.808,4.039,4.043S369.973,486,367.772,486H197.691z M385.158,486c-2.235,0-4.043-1.808-4.043-4.043 s1.808-4.043,4.043-4.043h21.261c2.235,0,4.043,1.808,4.043,4.043S408.654,486,406.419,486H385.158z M44.112,485.375 c-2.201,0-4.008-1.808-4.008-4.042c0-2.235,1.807-4.043,4.008-4.043h80.585c2.236,0,4.043,1.808,4.043,4.043 c0,2.234-1.807,4.042-4.043,4.042H44.112z M57.554,185.348c0-2.235,1.807-4.043,4.043-4.043c2.204,0,4.043,1.808,4.043,4.043 v202.418c0,2.234-1.839,4.041-4.043,4.041c-2.236,0-4.043-1.807-4.043-4.041V185.348z M266.905,433.776h85.944 c5.98-5.686,6.082-22.446,6.181-38.979c0.099-17.155,0.228-34.114,7.327-42.167c10.09-11.437,21.626-10.647,36.054-9.662 c3.614,0.23,7.426,0.494,11.143,0.559c23.233,0.395,28.164-11.502,28.36-25.307c0.099-5.422-0.491-11.305-1.018-16.957 c-1.513-15.152-2.825-28.725,8.412-33.228l0.2-0.099c1.808-0.689,2.727-0.887,4.271-1.184l1.643-0.295 c13.049-2.695,17.092-5.588,16.4-9.006c-0.821-4.075-6.114-9.893-12.325-16.729c-5.718-6.31-12.192-13.408-17.187-21.526 c-5.622-9.07-5.488-21.855-5.359-37.401c0.33-33.719,0.759-81.505-60.437-125.512c-15.516-11.174-33.558-19.324-52.685-24.354 c-18.373-4.832-37.794-6.736-56.925-5.62V433.776z"
-                                                        style="fill-rule:evenodd;clip-rule:evenodd;" />
+                                                        style="fill-rule: evenodd; clip-rule: evenodd" />
                                                 </g>
                                             </g>
                                             <g id="Layer_1" />
                                         </g>
-
                                     </svg>
                                 </figure>
                                 <div class="dropdown_content">
                                     <h2 class="dropdown_title">Branding Services</h2>
-                                    <p class="dropdown_para"> Branding services that gives your brand a unique memorable
-                                        identity.</p>
+                                    <p class="dropdown_para">
+                                        Branding services that gives your brand a unique memorable
+                                        identity.
+                                    </p>
                                 </div>
                             </a>
-                            <a href="#" class="dropdown_link">
+                            <a href="ui-ux-services.html" class="dropdown_link">
                                 <figure class="dropdown_image_container">
                                     <!DOCTYPE svg
                                         PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
@@ -71,7 +68,6 @@
                                         id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 511.996 511.996"
                                         xml:space="preserve">
-
                                         <g id="SVGRepo_bgCarrier" stroke-width="0" />
 
                                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
@@ -96,14 +92,14 @@
                                                 </g>
                                             </g>
                                         </g>
-
                                     </svg>
                                 </figure>
                                 <div class="dropdown_content">
                                     <h2 class="dropdown_title">UI / UX Design</h2>
-                                    <p class="dropdown_para"> UI/UX design that not only look stunning but also gives
-                                        best user
-                                        experience.</p>
+                                    <p class="dropdown_para">
+                                        UI/UX design that not only look stunning but also gives
+                                        best user experience.
+                                    </p>
                                 </div>
                             </a>
                             <a href="#" class="dropdown_link">
@@ -115,7 +111,6 @@
                                     <svg fill="#00c896" class="change_clr" version="1.1" id="Layer_1"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                         viewBox="0 0 496 496" xml:space="preserve" width="800px" height="800px">
-
                                         <g id="SVGRepo_bgCarrier" stroke-width="0" />
 
                                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
@@ -135,14 +130,14 @@
                                                 </g>
                                             </g>
                                         </g>
-
                                     </svg>
                                 </figure>
                                 <div class="dropdown_content">
                                     <h2 class="dropdown_title">Web Development</h2>
-                                    <p class="dropdown_para"> Crafting websites that is responsive to all devices and
-                                        give your brand a
-                                        digital touchpoint.</p>
+                                    <p class="dropdown_para">
+                                        Crafting websites that is responsive to all devices and
+                                        give your brand a digital touchpoint.
+                                    </p>
                                 </div>
                             </a>
                             <a href="#" class="dropdown_link">
@@ -150,11 +145,9 @@
                                     <!DOCTYPE svg
                                         PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
-
                                     <svg fill="#00c896" class="change_clr" version="1.1" id="Layer_1"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                         viewBox="0 0 512 512" xml:space="preserve" width="800px" height="800px">
-
                                         <g id="SVGRepo_bgCarrier" stroke-width="0" />
 
                                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
@@ -250,14 +243,14 @@
                                                 </g>
                                             </g>
                                         </g>
-
                                     </svg>
                                 </figure>
                                 <div class="dropdown_content">
                                     <h2 class="dropdown_title">Digital Marketing</h2>
-                                    <p class="dropdown_para"> Digital Marketing strategies that drives traffic and make
-                                        you visible across
-                                        globe.</p>
+                                    <p class="dropdown_para">
+                                        Digital Marketing strategies that drives traffic and make
+                                        you visible across globe.
+                                    </p>
                                 </div>
                             </a>
                             <a href="#" class="dropdown_link">
@@ -269,13 +262,11 @@
                                     <svg width="800px" height="800px" viewBox="0 0 1024 1024" fill="#00c896"
                                         class="change_clr" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
                                         stroke="#00c896" stroke-width="10.24">
-
                                         <g id="SVGRepo_bgCarrier" stroke-width="0" />
 
                                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
 
                                         <g id="SVGRepo_iconCarrier">
-
                                             <path
                                                 d="M791.942 1023.906H152.072a7.94 7.94 0 0 1-5.78-2.484 7.946 7.946 0 0 1-2.21-5.876l31.994-703.862a8 8 0 0 1 4.412-6.794c3.446-1.726 34.19-16.84 51.568-16.84 9.888 0 18.878 4.498 27.572 8.842 7.358 3.678 14.302 7.154 20.41 7.154 6.108 0 13.06-3.476 20.416-7.154 8.702-4.344 17.692-8.842 27.574-8.842 9.88 0 18.872 4.498 27.572 8.842 7.358 3.678 14.308 7.154 20.416 7.154s13.06-3.476 20.418-7.154c8.702-4.344 17.692-8.842 27.572-8.842s18.872 4.49 27.572 8.842c7.358 3.678 14.318 7.154 20.426 7.154s13.06-3.476 20.416-7.154c8.694-4.344 17.684-8.842 27.572-8.842s18.872 4.498 27.572 8.842c7.358 3.678 14.31 7.154 20.418 7.154s13.06-3.476 20.418-7.154c8.702-4.344 17.684-8.842 27.572-8.842s18.872 4.498 27.572 8.842c7.358 3.678 14.31 7.154 20.418 7.154s13.06-3.476 20.418-7.154c8.702-4.344 17.684-8.842 27.572-8.842 17.386 0 48.116 15.114 51.566 16.84a7.98 7.98 0 0 1 4.406 6.794l31.992 703.862a7.91 7.91 0 0 1-2.202 5.876 7.904 7.904 0 0 1-5.772 2.484z m-631.496-15.998h623.12l-31.398-690.732c-10.56-4.936-30.212-13.13-40.21-13.13-6.11 0-13.06 3.476-20.418 7.154-8.702 4.344-17.684 8.842-27.572 8.842s-18.872-4.498-27.572-8.842c-7.358-3.678-14.308-7.154-20.418-7.154-6.108 0-13.058 3.476-20.418 7.154-8.702 4.344-17.684 8.842-27.572 8.842s-18.872-4.498-27.572-8.842c-7.358-3.678-14.308-7.154-20.418-7.154-6.108 0-13.058 3.476-20.416 7.154-8.694 4.344-17.684 8.842-27.572 8.842-9.888 0-18.878-4.498-27.582-8.842-7.358-3.678-14.308-7.154-20.416-7.154s-13.06 3.476-20.416 7.154c-8.702 4.344-17.692 8.842-27.574 8.842-9.88 0-18.872-4.498-27.572-8.842-7.358-3.678-14.31-7.154-20.416-7.154-6.11 0-13.06 3.476-20.418 7.154-8.702 4.344-17.692 8.842-27.572 8.842s-18.872-4.49-27.564-8.842c-7.358-3.678-14.31-7.154-20.418-7.154-9.154 0-27.94 7.374-40.218 13.122l-31.398 690.74z"
                                                 fill="" />
@@ -327,15 +318,15 @@
                                             <path
                                                 d="M823.934 272.052h-31.992c-4.422 0-8-3.576-8-7.998a7.994 7.994 0 0 1 8-7.998h31.992a7.994 7.994 0 0 1 7.998 7.998 7.992 7.992 0 0 1-7.998 7.998z"
                                                 fill="" />
-
                                         </g>
-
                                     </svg>
                                 </figure>
                                 <div class="dropdown_content">
                                     <h2 class="dropdown_title">Packaging Design</h2>
-                                    <p class="dropdown_para"> Packaging designs that make customer choose your product
-                                        in the crowd.</p>
+                                    <p class="dropdown_para">
+                                        Packaging designs that make customer choose your product
+                                        in the crowd.
+                                    </p>
                                 </div>
                             </a>
                             <a href="#" class="dropdown_link">
@@ -348,7 +339,6 @@
                                         id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 455 455"
                                         xml:space="preserve">
-
                                         <g id="SVGRepo_bgCarrier" stroke-width="0" />
 
                                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
@@ -369,14 +359,14 @@
                                                     d="M294.616,280.929c-4.007,1.05-6.403,5.149-5.354,9.156c0.489,1.867,0.737,3.796,0.737,5.731 c0,12.406-10.094,22.5-22.5,22.5s-22.5-10.094-22.5-22.5c0-1.936,0.248-3.864,0.737-5.731c1.05-4.007-1.347-8.106-5.354-9.156 c-4.012-1.054-8.106,1.348-9.156,5.354c-0.814,3.108-1.228,6.316-1.228,9.534c0,20.678,16.822,37.5,37.5,37.5 s37.5-16.822,37.5-37.5c0-3.218-0.413-6.426-1.228-9.534C302.723,282.277,298.63,279.879,294.616,280.929z" />
                                             </g>
                                         </g>
-
                                     </svg>
                                 </figure>
                                 <div class="dropdown_content">
                                     <h2 class="dropdown_title">Print Design</h2>
-                                    <p class="dropdown_para"> Print designs that looks amazing and tells the brand story
-                                        and enhance it's
-                                        visibility.</p>
+                                    <p class="dropdown_para">
+                                        Print designs that looks amazing and tells the brand story
+                                        and enhance it's visibility.
+                                    </p>
                                 </div>
                             </a>
                         </div>
@@ -388,7 +378,6 @@
                     </li>
                 </ul>
             </nav>
-
         </div>
     </header>
 
@@ -427,9 +416,7 @@
             <div class="mob_line22"></div>
         </div>
         <a href="about-us.html" class="mob_link">About Us</a>
-        <button class="mob_link" id="service_btn">
-            Service
-        </button>
+        <button class="mob_link" id="service_btn">Service</button>
         <div class="service_link_container">
             <a href="branding_services.html" class="service_link">Branding</a>
             <a href="ui-ux-services.html" class="service_link">UI/UX Design</a>
@@ -445,138 +432,140 @@
 
     <!-- MOBILE VIEW -->
     <span class="absolute_logo_container"><a href="index.html" id="absolute_logo">
-            <img src="jswebart_logo.svg" alt="">
-        </a></span>
+            <img src="jswebart_logo.svg" alt="" /> </a></span>
     <!-- HEADER END **************************************** -->
 
-    <!-- HERO SECTION START ******************************** -->
-
-    <section class="portfolio_hero_section">
-        <div class="portfolio_wrapper">
-            <h1 class="portfolio_title">Blogs
-                <p class="portfolio_para">Insights, Ideas, and News on Design, Technology, and Marketing—Pen Down by the Experts at JSwebart.</p>
-            </h1>
-
-            <nav class="portfolio_nav">
-                <a class="active" href="blog.html">View All</a>
-                <a href="branding_blog.html">Branding</a>
-                <a href="ui-ux_blog.html">UI/UX Design</a>
-                <a href="web-development_blog.html">Web Development</a>
-            </nav>
-
-
-            <div class="portfolios">
-                <a href="blog_detail.html" class="single_portfolio sp_left">
-                    <figure>
-                        <img src="img/blog1.jpg" alt="">
-                    </figure>
-                    <div class="write_up_container">
-                        <h3 class="blog_section_time">11 November 2024</h3>
-                        <p class="blog_section_service">Branding</p>
-                        <div class="blog_section_topic">What Is Branding? Why It Is The Foundation Of Every Successful Business?</div>
-                    </div>
-                </a>
-                <a href="blog_detail.html" class="single_portfolio sp_right">
-                    <figure>
-                        <img src="img/blog2.jpg" alt="">
-                    </figure>
-                    <div class="write_up_container">
-                        <h3 class="blog_section_time">11 November 2024</h3>
-                        <p class="blog_section_service">Web Development</p>
-                        <div class="blog_section_topic">What Is Branding? Why It Is The Foundation Of Every Successful Business?</div>
-                    </div>
-                </a>
-                <a href="blog_detail.html" class="single_portfolio sp_left">
-                    <figure>
-                        <img src="img/blog1.jpg" alt="">
-                    </figure>
-                    <div class="write_up_container">
-                        <h3 class="blog_section_time">11 November 2024</h3>
-                        <p class="blog_section_service">Branding</p>
-                        <div class="blog_section_topic">What Is Branding? Why It Is The Foundation Of Every Successful Business?</div>
-                    </div>
-                </a>
-                <a href="blog_detail.html" class="single_portfolio sp_right">
-                    <figure>
-                        <img src="img/blog2.jpg" alt="">
-                    </figure>
-                    <div class="write_up_container">
-                        <h3 class="blog_section_time">11 November 2024</h3>
-                        <p class="blog_section_service">Web Development</p>
-                        <div class="blog_section_topic">What Is Branding? Why It Is The Foundation Of Every Successful Business?</div>
-                    </div>
-                </a>
-                <a href="blog_detail.html" class="single_portfolio sp_left">
-                    <figure>
-                        <img src="img/blog1.jpg" alt="">
-                    </figure>
-                    <div class="write_up_container">
-                        <h3 class="blog_section_time">11 November 2024</h3>
-                        <p class="blog_section_service">Branding</p>
-                        <div class="blog_section_topic">What Is Branding? Why It Is The Foundation Of Every Successful Business?</div>
-                    </div>
-                </a>
-                <a href="blog_detail.html" class="single_portfolio sp_right">
-                    <figure>
-                        <img src="img/blog2.jpg" alt="">
-                    </figure>
-                    <div class="write_up_container">
-                        <h3 class="blog_section_time">11 November 2024</h3>
-                        <p class="blog_section_service">Web Development</p>
-                        <div class="blog_section_topic">What Is Branding? Why It Is The Foundation Of Every Successful Business?</div>
-                    </div>
-                </a>
-                <a href="blog_detail.html" class="single_portfolio sp_left">
-                    <figure>
-                        <img src="img/blog1.jpg" alt="">
-                    </figure>
-                    <div class="write_up_container">
-                        <h3 class="blog_section_time">11 November 2024</h3>
-                        <p class="blog_section_service">Branding</p>
-                        <div class="blog_section_topic">What Is Branding? Why It Is The Foundation Of Every Successful Business?</div>
-                    </div>
-                </a>
-                <a href="blog_detail.html" class="single_portfolio sp_right">
-                    <figure>
-                        <img src="img/blog2.jpg" alt="">
-                    </figure>
-                    <div class="write_up_container">
-                        <h3 class="blog_section_time">11 November 2024</h3>
-                        <p class="blog_section_service">Web Development</p>
-                        <div class="blog_section_topic">What Is Branding? Why It Is The Foundation Of Every Successful Business?</div>
-                    </div>
-                </a>
-                <a href="blog_detail.html" class="single_portfolio sp_left">
-                    <figure>
-                        <img src="img/blog1.jpg" alt="">
-                    </figure>
-                    <div class="write_up_container">
-                        <h3 class="blog_section_time">11 November 2024</h3>
-                        <p class="blog_section_service">Branding</p>
-                        <div class="blog_section_topic">What Is Branding? Why It Is The Foundation Of Every Successful Business?</div>
-                    </div>
-                </a>
-                <a href="blog_detail.html" class="single_portfolio sp_right">
-                    <figure>
-                        <img src="img/blog2.jpg" alt="">
-                    </figure>
-                    <div class="write_up_container">
-                        <h3 class="blog_section_time">11 November 2024</h3>
-                        <p class="blog_section_service">Web Development</p>
-                        <div class="blog_section_topic">What Is Branding? Why It Is The Foundation Of Every Successful Business?</div>
-                    </div>
-                </a>
+    <!-- HERO SECTION START *********************************************** -->
+    <section class="blog_detail_hero_section">
+        <figure class="cover_img">
+            <img src="img/blog1.jpg" alt="">
+        </figure>
+        <div class="cover_part">
+            <div class="cover_content_container">
+                <p class="category_name">Branding</p>
+                <h1 class="blog_detail_title">What Is Branding? Why It Is The Foundation Of Every Successful Business?
+                </h1>
+                <div class="cover_bottom">
+                    <address class="writtenby">Written by <span>JSwebart</span></address>
+                    <p class="timeandreadtime">
+                        24/11/2024
+                    </p>
+                    <p class="timeandreadtime">
+                        9 min read
+                    </p>
+                </div>
             </div>
         </div>
     </section>
+    <!-- HERO SECTION END *********************************************** -->
 
-    <!-- HERO SECTION END ******************************** -->
+    <!-- BLOG DETAIL SECOND SECTION START ********************************************* -->
+    <section class="blog_detail_second_section">
+        <div class="blog_detail_section_wrapper">
+            <div class="blog_detail_second_left">
+                <p class="blog_detail_second_left_para">
+                    If you’ve worked with any type of site that deals with a large number of listings, you’ve likely
+                    come across faceted navigation. Faceted navigation is a widely accepted UX pattern that helps users
+                    discover what they’re looking for in less time. The downside is that it comes with many potential
+                    SEO complications that you’ll need to mitigate.
+                </p>
+                <ul class="blog_detail_second_left_unorder_list">
+                    <p class="blog_detail_second_left_para_2">
+                        In this guide, you’ll learn:
+                    </p>
+                    <li><a href="">What faceted navigation is</a></li>
+                    <li><a href="">How faceted navigation works</a></li>
+                    <li><a href="">SEO issues caused by faceted navigation</a></li>
+                    <li><a href="">How to check for faceted navigation issues</a></li>
+                    <li><a href="">How to fix faceted navigation issues</a></li>
+                    <li><a href="">How to prevent faceted navigation issues</a></li>
+                    <li><a href="">How to use faceted navigation to get more traffic</a></li>
+                </ul>
+            </div>
+            <div class="blog_detail_second_right">
+                <div class="brand_logo_blog_container">
+                    <figure class="brand_logo_blog">
+                        <img src="./jswebart_logo.svg" alt="">
+                    </figure>
+                    <h3 class="brand_name">JSwebart</h3>
+                </div>
+                <p class="blog_detail_second_right_para">
+                    Jswebart is one of the leading branding and design agencies, with more than 6 years of expertise in
+                    the industry. Within this period, our team has delivered exceptional brands that are impacting
+                    future on local, national and global levels. Apart from brand identity design, Jswebart also
+                    provides UI/UX design, web development, packaging design, marketing and print design services.
+                </p>
+                <div class="blog_social_link_container">
+                    <a href="">Linkedin</a>
+                    <a href="">Instagram</a>
+                    <a href="">Facebook</a>
+                    <a href="">Twitter</a>
+                </div>
+                <div class="insights_container">
+                    <p class="insights_para">Subscribe for insights, case studies, and updates penned by the experts at
+                        JSWebArt.</p>
+                    <form action="" class="insights_form">
+                        <div class="form_input">
+                            <input type="email" name="" placeholder="Enter Your Email" id="">
+                        </div>
+                        <button class="subscribe" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BLOG DETAIL SECOND SECTION END ********************************************* -->
 
+    <!-- BLOG DETAIL THIRD SECTION START ********************************************* -->
+    <section class="blog_detail_third_section">
+        <div class="blog_detail_third_section_wrapper">
+            <div class="sidebar">
+                <div class="sidebar_wrapper">
+
+                    <div class="share_container">
+                        <h4 class="share">Share</h4>
+                        <div class="share_icons_container">
+                            <a href="">
+                                <img src="img/linkedin_share.svg" alt="">
+                            </a>
+                            <a href="">
+                                <img src="img/facebook_share.svg" alt="">
+                            </a>
+                            <a href="">
+                                <img src="img/whatsapp_share.svg" alt="">
+                            </a>
+                            <a href="">
+                                <img src="img/twitter_share.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="blog_detail_second_left_unorder_list bdt_links">
+                        <p class="blog_detail_third_title">
+                            contents
+                        </p>
+                        <li><a href="">What faceted navigation is</a></li>
+                        <li><a href="">How faceted navigation works</a></li>
+                        <li><a href="">SEO issues caused by faceted navigation</a></li>
+                        <li><a href="">How to check for faceted navigation issues</a></li>
+                        <li><a href="">How to fix faceted navigation issues</a></li>
+                        <li><a href="">How to prevent faceted navigation issues</a></li>
+                        <li><a href="">How to use faceted navigation to get more traffic</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right_side">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et recusandae esse sapiente, ducimus fugiat sequi! Odit nesciunt, reprehenderit adipisci tempore assumenda hic impedit rerum vero cumque nobis temporibus aspernatur itaque?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit dolor minus repellendus quis quas inventore? At, cumque eveniet, ab obcaecati provident vel adipisci aspernatur tenetur perferendis a magni, eligendi ad similique itaque debitis. Molestiae quisquam explicabo quas recusandae vitae libero praesentium quidem laborum ea, consectetur nam eligendi distinctio sint sapiente provident, vel ipsum ratione ex iste sed magnam nesciunt voluptatum. Ex officia laborum asperiores, voluptatem, saepe est enim esse unde placeat cupiditate dolorum fugit magni. Alias ipsa quis porro corporis dolor fugit, voluptatum quo. Obcaecati enim quo a aliquam, ullam neque cupiditate, illum accusamus incidunt quia eos ab, facere sequi et eius culpa repudiandae! Quibusdam mollitia magnam laudantium expedita ea, maiores repudiandae consequatur inventore, velit exercitationem explicabo? Necessitatibus illum dignissimos at voluptates quisquam, officiis repellat doloremque quaerat iure, ducimus earum numquam impedit nostrum laboriosam ab harum aut quos expedita deserunt maiores ipsa temporibus dolor voluptatem nemo. Libero eius est quia facilis ullam expedita ipsum, fugit magni dolorum? Expedita aliquid, dicta iure eligendi hic consectetur quisquam numquam officia facilis autem vero magni accusantium at vitae reprehenderit nulla nesciunt ad. Officiis consectetur adipisci voluptas saepe eligendi ullam quos molestiae rerum repudiandae iure molestias autem et, voluptates incidunt quidem! Culpa, sed! Perferendis facere corporis, tempora tempore alias possimus. Assumenda tempora temporibus a sunt quam, ipsa sit labore placeat alias, velit eum odio eos? Error, asperiores! Commodi provident rerum deleniti minus. Ea provident unde, adipisci ex laborum, eaque quis harum, dolorum porro praesentium quas similique itaque nostrum quam autem reiciendis. Sapiente ex necessitatibus ea porro voluptatibus optio, excepturi laboriosam nisi officia eaque inventore reiciendis sit? Eum ipsa aliquid eveniet dignissimos quisquam libero quam laborum accusamus, maxime repellendus dolores ratione delectus nisi itaque rerum eaque voluptates. Alias inventore voluptate dicta, facilis, dignissimos fuga ipsa quae vero officia tenetur quo iusto totam, dolorem omnis accusantium! Odio nulla hic temporibus enim praesentium voluptates pariatur debitis quo sequi, aperiam nobis dolorum alias doloremque repudiandae consequuntur ab doloribus delectus vero deserunt iste deleniti odit. Vel suscipit quod obcaecati maxime alias excepturi mollitia et debitis animi, porro recusandae facere repudiandae sed rem, provident nostrum amet sint nihil cum fuga aliquid dignissimos nobis aliquam! Eius harum in culpa corrupti fuga impedit necessitatibus id, est autem nihil voluptates, esse iure veritatis magnam voluptatem. Corporis obcaecati incidunt blanditiis quam, aliquid animi magnam at iste minus magni. Ex placeat doloremque rem, eligendi nobis ipsa, quia iure mollitia esse officiis nesciunt sapiente aperiam voluptatem ducimus adipisci ipsam ipsum at molestias quibusdam aliquam architecto reiciendis suscipit veritatis? Facilis ipsum autem, officia adipisci molestias voluptates ab nulla facere minus? Ipsum doloribus odio, voluptatum, totam deleniti in nulla quis distinctio cumque mollitia officia fugit fugiat enim. Quia eligendi reiciendis saepe, recusandae sequi fugiat eos iusto sint, nemo adipisci pariatur aliquid? Velit, reiciendis ipsam suscipit quo incidunt ducimus vero vitae placeat veniam eum? Ullam amet id voluptate alias dignissimos possimus sit sapiente error ducimus reiciendis. Eaque nam vitae blanditiis commodi! Blanditiis odit magnam pariatur soluta autem nulla beatae reprehenderit, quos, quae velit cupiditate nam necessitatibus rerum aut! Voluptate, itaque deserunt obcaecati animi minima necessitatibus quae quis eaque quam nobis exercitationem iste unde, saepe quas veritatis quidem illum corporis minus, porro provident impedit? Ab eius, ut, distinctio sapiente, ex nulla pariatur quibusdam laborum repellendus necessitatibus dignissimos? Velit, quibusdam culpa! Officiis libero facilis ab iste. Enim voluptates, temporibus nulla maxime vitae commodi porro consectetur? Atque repellat ipsum pariatur repudiandae cum, a ut quisquam vero molestiae ex iusto quos labore blanditiis libero voluptates dolorum sunt molestias laborum enim et nesciunt quasi esse in sequi! Debitis perferendis mollitia, adipisci laborum illum accusamus, eius, labore illo repudiandae vitae quis animi obcaecati omnis veniam velit blanditiis id sapiente enim dolores quidem dolor voluptate dolore? Aliquam rem aspernatur vitae fuga consequuntur. Iure aliquid quisquam quas ab quidem. Nemo error voluptatibus deserunt quaerat quibusdam blanditiis enim, consequatur provident vitae ratione aliquid hic voluptatum soluta officiis? Eveniet odit cupiditate soluta excepturi ex facere recusandae quaerat officia consequuntur libero vitae obcaecati dignissimos ipsam, iure, at, modi delectus velit ipsa. Ipsam, iusto hic sint beatae minus mollitia possimus eos voluptates est omnis reiciendis delectus dignissimos, modi cupiditate ipsum quae totam molestiae qui ratione quo assumenda corrupti? Velit praesentium odio nam veniam fuga rerum alias doloremque provident distinctio. Soluta vel ad nostrum voluptate! Doloribus ratione laboriosam est at amet mollitia praesentium obcaecati fugit velit ad id iure reiciendis molestiae eos aliquid exercitationem aperiam magni facilis, debitis tenetur, qui beatae delectus. Minus praesentium ut eius nemo maxime, et repellendus quam dolor cum iusto consequuntur eaque exercitationem possimus quidem rerum eum distinctio laborum. Hic id veritatis eligendi cumque quas, similique nobis natus rerum iste perferendis maxime reiciendis fuga iure ratione! Qui dignissimos ipsam quis nulla totam voluptatibus omnis asperiores excepturi praesentium eveniet, assumenda maxime et? Corrupti dolorem enim animi minima, sit tempore assumenda cumque expedita facere quos qui dolor nesciunt harum, magni eius consequuntur doloribus nihil recusandae! Dolorem ex, iusto aspernatur quas delectus veritatis similique illum atque nesciunt at sunt soluta in recusandae possimus quam dolore quaerat suscipit aliquam labore consequatur voluptas vel facere perspiciatis cumque! Deleniti illo nisi dolore consequatur cumque saepe, obcaecati temporibus ipsa quas, vero aspernatur recusandae, aut nulla esse id dignissimos. Est atque voluptate quis? Quae est vitae commodi ea dignissimos maxime optio doloribus voluptatibus, dolorem nisi praesentium earum impedit, suscipit beatae! A culpa deleniti molestiae inventore, optio libero animi itaque repellat ipsum, quod fugiat eius doloribus eveniet magni non at nostrum voluptatem esse architecto ea tempore doloremque soluta! Modi architecto odit est! Beatae minus quasi voluptatem molestias quaerat. Pariatur repellat laboriosam commodi, qui soluta ipsum, nobis esse dicta ab ducimus perferendis, aut odio. Consectetur accusamus repellendus, eius, maiores impedit reprehenderit recusandae veritatis incidunt deserunt quis labore fugit corrupti sit laudantium commodi autem quae nihil ipsum quos odio! Perspiciatis architecto aperiam, neque assumenda nulla odit eum itaque ipsam expedita molestias, maiores ducimus? Accusantium excepturi libero numquam enim dicta maiores tenetur asperiores tempora voluptate magnam iure, voluptates, soluta nobis corporis inventore sequi blanditiis provident magni ipsam illum tempore, sint dolorem! Ullam quia minus fugiat similique ea magni, maiores veniam. Porro?</p>
+            </div>
+        </div>
+    </section>
+    <!-- BLOG DETAIL THIRD SECTION END ********************************************* -->
 
     <!-- FOOTER START ***************************************************** -->
     <footer id="footer">
         <div class="service_lines_container">
-            <figure id="footer_sect_logo"><img src="img/jswebart_logo_big.svg" alt=""></figure>
+            <figure id="footer_sect_logo">
+                <img src="img/jswebart_logo_big.svg" alt="" />
+            </figure>
             <div class="s1"></div>
             <div class="s2"></div>
             <div class="s3"></div>
@@ -605,7 +594,7 @@
         <div id="footer_wrapper">
             <div id="footer_logo_link">
                 <a href="">
-                    <img src="jswebart_logo.svg" alt="">
+                    <img src="jswebart_logo.svg" alt="" />
                     <span>JSwebart</span>
                 </a>
             </div>
@@ -616,7 +605,7 @@
             </div>
             <div class="footer_news_letter_container">
                 <p class="newsletter_title">Subscribe To Our Newsletter</p>
-                <input type="email" name="" id="">
+                <input type="email" name="" id="" />
                 <button type="submit"><span>&rarr;</span></button>
             </div>
             <nav class="footer_nav_links_container">
@@ -704,7 +693,9 @@
                         </a>
                     </span>
                 </div>
-                <p class="footer_last">Made With 🤍 By <img src="jswebart_logo.svg" alt=""></p>
+                <p class="footer_last">
+                    Made With 🤍 By <img src="jswebart_logo.svg" alt="" />
+                </p>
             </div>
         </div>
     </footer>

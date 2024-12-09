@@ -39,7 +39,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: var(--dark-black-clr);
+  background-color: var(--white-clr);
   border-radius: 0.5rem;
 }
 

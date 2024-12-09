@@ -688,7 +688,7 @@ var workSwiper = new Swiper(".workSwiper", {
   breakpoints: {
     // When the screen width is >= 320px
     350: {
-      slidesPerView: 1.10,
+      slidesPerView: 0.568,
       spaceBetween: 15,
     },
     400: {
