@@ -278,7 +278,7 @@
 }
 
 .right_side {
-    width: 65%;
+    width: 60%;
 }
 
 .share {
@@ -303,6 +303,22 @@
 
 .blog_detail_third_title {
     font-size: 2.2vw;
+}
+
+.links_container {
+    padding-bottom: 5vw;
+    padding-top: 5vw;
+}
+
+.head {
+    font-size: 3vw;
+}
+
+.para_link1 {
+    font-size: 1.3vw;
+    width: 90%;
+    padding-left: 3.5vw;
+    padding-top: 1.5vw;
 }
 
 /* BLOG DETAIL THIRD SECTION END **************************************************** */
