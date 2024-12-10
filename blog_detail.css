@@ -256,6 +256,7 @@
     background-color: var(--white-clr);
     color: var(--dark-black-clr);
     padding: 8vw 0;
+    padding-top: 0;
 }
 
 .blog_detail_third_section_wrapper {
