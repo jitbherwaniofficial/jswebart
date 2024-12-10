@@ -97,7 +97,7 @@
     font-style: normal;
 }
 
-.writtenby span {
+.writtenby a {
     color: var(--green-clr);
 }
 
@@ -184,6 +184,12 @@
     font-size: 1.3vw;
     font-weight: var(--normal);
     line-height: 1.4;
+    color: var(--light-black-clr);
+}
+
+.blog_detail_second_right_para a{
+    color: var(--dark-black-clr);
+    text-decoration: underline;
 }
 
 .blog_social_link_container {
