@@ -1,0 +1,1073 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Jswebart {% endblock %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+{% endblock %}
+
+{% block content %}
+    <!-- HERO SECTION START ******************************** -->
+  <div class="hero_wrapper">
+    <section id="hero_section">
+      <div id="hero_left">
+        <h1 id="hero_title">
+          We Craft Impactful Brands That Grow Businesses And
+          Bring Positive Change In People's lives & World
+        </h1>
+        <p id="hero_para">
+          With our branding and creative design services we make your brand stands out in the competitive market and help
+          you achieve your noble cause. Let's work together and improve the world through solving people's problems in any
+          dimension.
+        </p>
+        <a href="{% url 'portfolio' %}" id="hero_work_btn">Our Work</a>
+      </div>
+      <div id="hero_right">
+        <div class="stripsminus2 strip"></div>
+        <div class="stripsminus1 strip"></div>
+        <div class="strips0 strip"></div>
+        <div class="strips1 strip"></div>
+        <div class="strips2 strip"></div>
+        <div class="strips3 strip"></div>
+        <div class="strips4 strip"></div>
+        <div class="strips5 strip"></div>
+        <div class="strips6 strip"></div>
+        <figure id="big_logo_container">
+          <img src="img/jswebart_logo_big.svg" alt="">
+        </figure>
+      </div>
+      <!-- COUNTER SCROLL START ********************************** -->
+      <div id="counter">
+        <div id="counter_box">
+          <h2 id="counter_number" class="num" data-val="120">00</h2>
+          <p id="counter_para">Projects Completed</p>
+        </div>
+        <div id="counter_box">
+          <h2 id="counter_number" class="num" data-val="20">00</h2>
+          <p id="counter_para">Industries Projects</p>
+        </div>
+        <div id="counter_box">
+          <h2 id="counter_number" class="num" data-val="80">00</h2>
+          <p id="counter_para">Active Clients</p>
+        </div>
+        <div id="counter_box">
+          <h2 id="counter_number" class="num_per" data-val="90">00</h2>
+          <p id="counter_para">Retention Rate</p>
+        </div>
+      </div>
+      <!-- COUNTER SCROLL END ********************************** -->
+    </section>
+  </div>
+  <!-- HERO SECTION END ******************************** -->
+
+  <!-- FEATURED WORK START ******************************** -->
+  <section id="section_container">
+    <div class="work_lines_container">
+      <div class="w1 w_line"></div>
+      <div class="w2 w_line"></div>
+      <div class="w3 w_line"></div>
+      <div class="w4 w_line"></div>
+      <div class="w5 w_line"></div>
+      <div class="w6 w_line"></div>
+      <div class="w7 w_line"></div>
+      <div class="w8 w_hor"></div>
+      <div class="w9 w_hor"></div>
+      <div class="w10 w_hor"></div>
+      <div class="w11 w_line"></div>
+      <div class="w12 w_line"></div>
+    </div>
+    <div class="section_wrapper">
+      <h2 id="section_title">Our Best Work As A Top Branding And Design Agency</h2>
+      <p id="section_para">
+        When strategic thinking and expertise meets a forward looking vision - Beautiful creation happens. We have
+        fueled each of the project with our innovative approach to drive exceptional results for our clients. These are
+        some of the testimony of it.
+      </p>
+      <div id="featured_work_container">
+        <div id="featured_work_wrapper" class="fww1">
+          <a href="" id="featured_work_anchor1" class="anchor_">
+            <figure id="featured_work_image-container" class="fic">
+              <img src="img/a6.jpg" alt="" />
+              <div id="caption_container">
+                <figcaption>What is it about?</figcaption>
+                <figcaption><span id="pill">Branding</span><span id="pill">Web Deevelopment</span><span
+                    id="pill">Digital Marketing</span></figcaption>
+              </div>
+            </figure>
+          </a>
+          <a href="" id="featured_work_anchor2" class="anchor_">
+            <figure id="featured_work_image-container" class="fic">
+              <img src="img/a2.jpg" alt="" />
+              <div id="caption_container">
+                <figcaption>What is it about?</figcaption>
+                <figcaption><span id="pill">Packaging Design</span><span id="pill">Digital Marketing</span></figcaption>
+              </div>
+            </figure>
+          </a>
+        </div>
+        <div id="featured_work_middle_wrapper" class="fwmw1">
+          <a href="" id="featured_work_anchor3" class="anchor_">
+            <figure id="featured_work_image-container" class="fic">
+              <img src="img/a13.jpg" alt="" />
+              <div id="caption_container">
+                <figcaption>What is it about?</figcaption>
+                <figcaption><span id="pill">Brand Identity</span><span id="pill">Digital Marketing</span></figcaption>
+              </div>
+            </figure>
+          </a>
+        </div>
+        <div id="featured_work_wrapper" class="fww2">
+          <a href="" id="featured_work_anchor4" class="anchor_">
+            <figure id="featured_work_image-container" class="fic">
+              <img src="img/a7.jpg" alt="" />
+              <div id="caption_container">
+                <figcaption>What is it about?</figcaption>
+                <figcaption><span id="pill">Packaging Design</span><span id="pill">Web Deevelopment</span><span
+                    id="pill">Digital Marketing</span></figcaption>
+              </div>
+            </figure>
+          </a>
+          <a href="" id="featured_work_anchor5" class="anchor_">
+            <figure id="featured_work_image-container" class="fic">
+              <img src="img/a8.jpg" alt="" />
+              <div id="caption_container">
+                <figcaption>What is it about?</figcaption>
+                <figcaption><span id="pill">Web Development</span><span id="pill">Digital Marketing</span></figcaption>
+              </div>
+            </figure>
+          </a>
+        </div>
+        <div id="featured_work_middle_wrapper" class="fwmw2">
+          <a href="" id="featured_work_anchor8" class="anchor_">
+            <figure id="featured_work_image-container" class="fic">
+              <img src="img/The Art Of Generation.png" alt="" />
+              <div id="caption_container">
+                <figcaption>What is it about?</figcaption>
+                <figcaption><span id="pill">Brand Identity</span><span id="pill">Digital Marketing</span></figcaption>
+              </div>
+            </figure>
+          </a>
+        </div>
+        <div id="featured_work_wrapper" class="fww3">
+          <a href="" id="featured_work_anchor6" class="anchor_">
+            <figure id="featured_work_image-container" class="fic">
+              <img src="img/a11.png" alt="" />
+              <div id="caption_container">
+                <figcaption>What is it about?</figcaption>
+                <figcaption><span id="pill">Branding</span><span id="pill">Web Deevelopment</span><span
+                    id="pill">Digital Marketing</span></figcaption>
+              </div>
+            </figure>
+          </a>
+          <a href="" id="featured_work_anchor7" class="anchor_">
+            <figure id="featured_work_image-container" class="fic">
+              <img src="img/a12.png" alt="" />
+              <div id="caption_container">
+                <figcaption>What is it about?</figcaption>
+                <figcaption><span id="pill">Brand Identity</span><span id="pill">Digital Marketing</span></figcaption>
+              </div>
+            </figure>
+          </a>
+        </div>
+        <a href="" id="view_all_works">View All Works</a>
+      </div>
+  </section>
+  <!-- FEATURED WORK END ******************************** -->
+
+  <!-- SERVICES SECTION START **************************************** -->
+  <section id="services_section">
+    <div class="service_lines_container">
+      <figure id="service_sect_logo"><img src="img/jswebart_logo_big.svg" alt=""></figure>
+      <div class="s1"></div>
+      <div class="s2"></div>
+      <div class="s3"></div>
+      <div class="s4"></div>
+      <div class="s5"></div>
+      <div class="s6"></div>
+      <div class="s7"></div>
+      <div class="s8"></div>
+      <div class="s9"></div>
+      <div class="s10"></div>
+      <div class="s11"></div>
+      <div class="s12"></div>
+      <div class="h1"></div>
+      <div class="h2"></div>
+      <div class="h3"></div>
+      <div class="h4"></div>
+      <div class="h5"></div>
+      <div class="h6"></div>
+      <div class="h7"></div>
+      <div class="h8"></div>
+      <div class="h9"></div>
+      <div class="h10"></div>
+      <div class="h11"></div>
+      <div class="h12"></div>
+    </div>
+    <div class="services_wrapper">
+      <h2 id="service_title">
+        Strategic Branding And Creative Design Solutions
+      </h2>
+      <p id="service_para">
+        We provide comprehensive digital solutions to craft brands that not only stands out but also have human-centric
+        values to cause a positive ripple in the world.
+      </p>
+      <div class="services_pills_container">
+        <button class="pill active" data-slide="0">Branding</button>
+        <button class="pill" data-slide="1">UI/UX Design</button>
+        <button class="pill" data-slide="2">Web Development</button>
+        <button class="pill" data-slide="3">Digital Marketing</button>
+        <button class="pill" data-slide="4">Packaging Design</button>
+        <button class="pill" data-slide="5">Print Design</button>
+      </div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="services_box">
+              <div class="services_box_left">
+                <h3 id="services_box_title">Comprehensive Branding Services</h3>
+                <p id="services_box_para">
+                  <span>
+                    JSwebart provides comprehensive branding solutions that your business needs to have a concrete brand
+                    personality. It is crucial for your business to connect well with the customer and tell who and what
+                    it is.
+                  </span>
+                  <span>
+                    With the following services we help businesses create, manage, and evolve their brand identities to
+                    connect with their target audiences effectively.
+                  </span>
+                </p>
+                <ol id="services_served_container">
+                  <li>  Brand Strategy Development</li>
+                  <li>  Brand Identity Design</li>
+                  <li>  Rebranding Services</li>
+                  <li>  Brand Communication</li>
+                  <li>  Brand Collateral Design</li>
+                </ol>
+                <a href="" id="service_redirect_link">Know More</a>
+              </div>
+              <figure class="services_box_right">
+                <img src="img/a14.jpg" alt="">
+              </figure>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="services_box">
+              <div class="services_box_left">
+                <h3 id="services_box_title">User-Centric UI/UX Design Services</h3>
+                <p id="services_box_para">
+                  <span>
+                    We offer you professional UI/UX design branding service that suits your business and make your
+                    digital touchpoint stunning.
+                  </span>
+                  <span>
+                    With the following UI/UX design services we help businesses in improving their customer satisfaction
+                    leading to long-term business success.
+                  </span>
+                </p>
+                <ol id="services_served_container">
+                  <li> User Research & Analysis</li>
+                  <li> Visual Design</li>
+                  <li> Mobile App UI/UX Design</li>
+                  <li> Web UI/UX Design</li>
+                  <li> E-commerce UX Design</li>
+                </ol>
+                <a href="" id="service_redirect_link">Know More</a>
+              </div>
+              <figure class="services_box_right">
+                <img src="img/a15.jpg" alt="">
+              </figure>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="services_box">
+              <div class="services_box_left">
+                <h3 id="services_box_title">Custom Web Development Solutions</h3>
+                <p id="services_box_para">
+                  <span>
+                    JSwebart provides you innovative web design and development digital solutions to create functional,
+                    user-friendly and scalable websites that not only look fabulous but also function seamlessly on
+                    every
+                    screen size.
+                  </span>
+                  <span>
+                    Our following web development services helps businesses create scalable and user-friendly websites
+                    that
+                    drive online growth.
+                  </span>
+                </p>
+                <ol id="services_served_container">
+                  <li> Front-end Development</li>
+                  <li> Backend Development</li>
+                  <li> Full-stack website development</li>
+                  <li> Website Redesign</li>
+                  <li> Deployment and Maintenance</li>
+                </ol>
+                <a href="" id="service_redirect_link">Know More</a>
+              </div>
+              <figure class="services_box_right">
+                <img src="img/a16.jpg" alt="">
+              </figure>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="services_box">
+              <div class="services_box_left">
+                <h3 id="services_box_title">Data-Driven Digital Marketing Services</h3>
+                <p id="services_box_para">
+                  <span>
+                    We provide data-driven digital marketing services to identify your target customers and connect them
+                    with your brand through various marketing channels. Through these channels we make your brand
+                    visible
+                    across the globe.
+                  </span>
+                  <span>
+                    With the following digital marketing services we help your business to stand out across the globe
+                    and
+                    mark your unique position on the web.
+                  </span>
+                </p>
+                <ol id="services_served_container">
+                  <li> Search Engine Optimization (SEO)</li>
+                  <li> Social Media Marketing</li>
+                  <li> Online Advertising Campaigns</li>
+                  <li> Content Marketing</li>
+                  <li> Email Marketing</li>
+                </ol>
+                <a href="" id="service_redirect_link">Know More</a>
+              </div>
+              <figure class="services_box_right">
+                <img src="img/a14.jpg" alt="">
+              </figure>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="services_box">
+              <div class="services_box_left">
+                <h3 id="services_box_title">Creative Packaging Design Solutions</h3>
+                <p id="services_box_para">
+                  <span>
+                    We craft packaging design for product in a way that resonates with your brand story and enhance
+                    brand
+                    perception in the eyes of the targeted customer, in the result- increase sales, build strong
+                    customer
+                    base.
+                  </span>
+                  <span>
+                    Our following creative packaging design solution make your product stands out in the crowd and
+                    increase
+                    sales.
+                  </span>
+                </p>
+                <ol id="services_served_container">
+                  <li> Custom Structural Design</li>
+                  <li> Sustainable Packaging</li>
+                  <li> Interactive Packaging</li>
+                  <li> Flexible Pouch Packaging</li>
+                  <li> Labeling and Branding</li>
+                </ol>
+                <a href="" id="service_redirect_link">Know More</a>
+              </div>
+              <figure class="services_box_right">
+                <img src="img/a14.jpg" alt="">
+              </figure>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="services_box">
+              <div class="services_box_left">
+                <h3 id="services_box_title">Creative Print Design Solutions</h3>
+                <p id="services_box_para">
+                  <span>
+                    JSwebart offers print design and printing services that not only look visually stunning but also
+                    ensures
+                    exceptional quality. Our creative printing designs communicate your message well and enhance your
+                    brand's visibility.
+                  </span>
+                  <span>
+                    These are some of the list of our print design solutions that make your marketing collaterals stands
+                    out.
+                  </span>
+                </p>
+                <ol id="services_served_container">
+                  <li> Business Card Design</li>
+                  <li> Letterheads and Envelopes</li>
+                  <li> Leaflets and Pamphlets Design</li>
+                  <li> Brochure and Flyers Design</li>
+                  <li> Event Invitation Design</li>
+                </ol>
+                <a href="" id="service_redirect_link">Know More</a>
+              </div>
+              <figure class="services_box_right">
+                <img src="img/a14.jpg" alt="">
+              </figure>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- SERVICES SECTION END **************************************** -->
+
+  <!-- GOAL SECTION START *********************************************** -->
+  <section id="goal_section">
+    <div class="work_lines_container">
+      <div class="w1 w2_line"></div>
+      <div class="w2 w2_line"></div>
+      <div class="w3 w2_line"></div>
+      <div class="w4 w2_line"></div>
+      <div class="w5 w2_line"></div>
+      <div class="w6 w2_line"></div>
+      <div class="w7 w2_line"></div>
+      <div class="w8 w2_hor"></div>
+      <div class="w9 w2_hor"></div>
+      <div class="w10 w2_hor"></div>
+      <div class="w11 w2_line"></div>
+      <div class="w12 w2_line"></div>
+    </div>
+    <div class="section_wrapper">
+      <h2 id="section_title" class="goal_title">Bridge The Goal-Outcome Gap With One Of The Top Branding And Creative Design Agency</h2>
+      <p id="section_para">
+        We follow 3-step process to fill the gap between your aspirations and objective to align the outcome with the
+        targeted result.
+      </p>
+      <div id="goal_wrapper">
+        <div id="goal_box">
+          <div class="goal_box_left">
+            <h3 id="goal_title">1. Goal Identification</h3>
+            <p id="goal_para">First crucial step is identifying the goal we are targeting. For this, we do-</p>
+            <p id="details">1. Detailed Research - in-depth consultations to understand your business, audience, and
+              market dynamics.</p>
+            <p id="details">2. Goal Setting - Finalizing specific, measurable, achievable goals that align with your
+              brand vision and objectives.</p>
+            <p id="details">3. Audience & Market Analysis- identify target demographics, competitors, and industry
+              trends to ensure a strategic foundation.</p>
+            <p id="details">4. Brand Audit- Assess your current brand positioning, performance, and digital presence to
+              define a clear path forward.</p>
+          </div>
+          <figure class="goal_box_right">
+            <img src="img/goal_identification.svg" alt="">
+          </figure>
+        </div>
+        <div id="goal_box">
+          <div class="goal_box_left">
+            <h3 id="goal_title">2. Bridging Goal-Outcome Gap</h3>
+            <p id="goal_para">Second crucial step is to taking actions for bridging the gap. For this we do-</p>
+            <p id="details">1. Customized Strategy Development - Design tailored branding, design, and marketing
+              strategies that leads you to your result.</p>
+            <p id="details">2. Implementation and Execution- Effectively implementing defined strategies to ensure
+              consistent branding and effective marketing.</p>
+            <p id="details">3. Performance Optimization - Continuously monitor the performance of initiatives, adjusting
+              strategies to improve outcomes.</p>
+            <p id="details">4. Collaborative Execution - We work in collaboration to ensure that our strategies align
+              with your expectations.</p>
+          </div>
+          <figure class="goal_box_right">
+            <img src="img/bridging_goal.svg" alt="">
+          </figure>
+        </div>
+        <div id="goal_box">
+          <div class="goal_box_left">
+            <h3 id="goal_title">3. Outcome Monitoring and Goal Expansion</h3>
+            <p id="goal_para">This is an important step for consistent growth. For maintaining this we do -</p>
+            <p id="details">1. Real-Time Analytics- We analyze data-driven insights to track the performance of branding
+              and marketing initiatives in real-time.</p>
+            <p id="details">2. KPI Monitoring- We measure the key performance indicators such as engagement,
+              conversions, and ROI to evaluate success and identify areas for improvement.</p>
+            <p id="details">3. Goal Expansion - Once the initial goals are met, we help you redefine objectives, scale
+              your brand presence, and pursue higher targets.</p>
+            <p id="details">4. Continuous Growth Strategy - We propose new initiatives and strategies to keep your brand
+              evolving and your market impact growing.</p>
+          </div>
+          <figure class="goal_box_right">
+            <img src="img/outcome_monitoring.svg" alt="">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- GOAL SECTION END *********************************************** -->
+
+  <!-- CTA PROCESS START *********************************************** -->
+  <section id="cta_process_section" >
+    <div class="cta_process_wrapper">
+      <div class="cta_lines_container">
+        <div class="cl1"></div>
+        <div class="cl2"></div>
+        <div class="cl3"></div>
+        <div class="cl4"></div>
+        <div class="ch1"></div>
+        <div class="ch2"></div>
+        <div class="ch3"></div>
+        <div class="ch4"></div>
+        <div class="ch5"></div>
+        <div class="ch6"></div>
+        <div class="ch7"></div>
+        <div class="ch8"></div>
+        <div class="ch9"></div>
+        <div class="ch10"></div>
+        <div class="ch11"></div>
+        <div class="ch12"></div>
+        <div class="ch13"></div>
+        <div class="ch14"></div>
+        <div class="ch15"></div>
+        <div class="ch16"></div>
+        <div class="ch17"></div>
+        <div class="ch18"></div>
+        <div class="ch19"></div>
+      </div>
+      <h2 id="cta_process_title">Let's Draft Your Business Strategy To Ensure Consistent Growth</h2>
+      <a href="contact.html" id="contact_cta_btn">Contact Us</a>
+    </div>
+  </section>
+  <!-- CTA PROCESS END *********************************************** -->
+
+  <!-- BUSINESS STEP START ******************************************* -->
+  <section id="business_step_section">
+    <div class="service_lines_container">
+      <figure id="service_sect_logo"><img src="img/jswebart_logo_big.svg" alt=""></figure>
+      <div class="s1"></div>
+      <div class="s2"></div>
+      <div class="s3"></div>
+      <div class="s4"></div>
+      <div class="s5"></div>
+      <div class="s6"></div>
+      <div class="s7"></div>
+      <div class="s8"></div>
+      <div class="s9"></div>
+      <div class="s10"></div>
+      <div class="s11"></div>
+      <div class="s12"></div>
+      <div class="h1"></div>
+      <div class="h2"></div>
+      <div class="h3"></div>
+      <div class="h4"></div>
+      <div class="h5"></div>
+      <div class="h6"></div>
+      <div class="h7"></div>
+      <div class="h8"></div>
+      <div class="h9"></div>
+      <div class="h10"></div>
+      <div class="h11"></div>
+      <div class="h12"></div>
+    </div>
+    <div class="services_wrapper">
+      <h2 id="service_title">
+        JSwebart : A perfect digital partner for each stage of your business needs
+      </h2>
+      <p id="service_para">
+        We are dedicated to support businesses at each stage of their journey. Whether your business is at the idea
+        stage or is an established enterprise we are here to boost your business growth.
+      </p>
+      <div class="services_pills_container">
+        <button class="business_pill active" data-slider="0">Idea Stage</button>
+        <button class="business_pill" data-slider="1">Own Startup</button>
+        <button class="business_pill" data-slider="2">Own SMB</button>
+        <button class="business_pill" data-slider="3">Enterprise</button>
+        <button class="business_pill" data-slider="4">Rebranding</button>
+      </div>
+      <div class="swiper-container-two">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="business_box">
+              <div class="business_box_left">
+                <h3 id="services_box_title">If you are at the idea stage</h3>
+                <span>we will help in -</span>
+                <ol id="services_served_container">
+                  <li> Market Research</li>
+                  <li> Target Audience Identification</li>
+                  <li> Branding Strategy</li>
+                  <li> Branding and marketing strategies</li>
+                </ol>
+              </div>
+              <figure class="business_box_right">
+                <img src="img/idea.jpg" alt="">
+              </figure>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="business_box">
+              <div class="business_box_left">
+                <h3 id="services_box_title"> If You Have a Startup</h3>
+                <span>we will help in -</span>
+                <ol id="services_served_container">
+                  <li> custom branding solutions</li>
+                  <li> strategic planning</li>
+                  <li> digital marketing strategies</li>
+                  <li> Establishing online presence</li>
+                </ol>
+              </div>
+              <figure class="business_box_right">
+                <img src="img/a15.jpg" alt="">
+              </figure>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="business_box">
+              <div class="business_box_left">
+                <h3 id="services_box_title">If You Have a Small or Medium Business (SMB)</h3>
+                <span>we will help in -</span>
+                <ol id="services_served_container">
+                  <li> Expanding your reach further</li>
+                  <li> Providing the services that you need</li>
+                  <li> Improving business-customer connection</li>
+                  <li> Boosting your market position</li>
+                </ol>
+              </div>
+              <figure class="business_box_right">
+                <img src="img/a16.jpg" alt="">
+              </figure>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="business_box">
+              <div class="business_box_left">
+                <h3 id="services_box_title">If You Own an Established enterprise</h3>
+                <span>we will help in -</span>
+                <ol id="services_served_container">
+                  <li> Scaling and Growth Strategy</li>
+                  <li> Brand Differentiation</li>
+                  <li> Advanced Digital Marketing solutions</li>
+                  <li> Increasing customer Retention and more</li>
+                </ol>
+              </div>
+              <figure class="business_box_right">
+                <img src="img/a14.jpg" alt="">
+              </figure>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="business_box">
+              <div class="business_box_left">
+                <h3 id="services_box_title">If You Need Rebranding</h3>
+                <span>we will help in -</span>
+                <ol id="services_served_container">
+                  <li> Refreshing Brand Identity </li>
+                  <li> Shifting Brand Perception</li>
+                  <li> Expanding Market Reach</li>
+                  <li> Adapting to Industry Changes</li>
+                </ol>
+              </div>
+              <figure class="business_box_right">
+                <img src="img/a14.jpg" alt="">
+              </figure>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- BUSINESS STEP END ******************************************* -->
+
+  <!-- CTA PROCESS START *********************************************** -->
+  <section id="cta_process_section" class="pad10 cta">
+    <div class="cta_process_wrapper cta_mob">
+      <div class="cta_lines_container">
+        <div class="cl1"></div>
+        <div class="cl2"></div>
+        <div class="cl3"></div>
+        <div class="cl4"></div>
+        <div class="cl5"></div>
+        <div class="cl6"></div>
+        <div class="ch1"></div>
+        <div class="ch2"></div>
+        <div class="ch3"></div>
+        <div class="ch4"></div>
+        <div class="ch5"></div>
+        <div class="ch6"></div>
+        <div class="ch7"></div>
+        <div class="ch8"></div>
+        <div class="ch9"></div>
+        <div class="ch10"></div>
+        <div class="ch11"></div>
+        <div class="ch12"></div>
+        <div class="ch13"></div>
+        <div class="ch14"></div>
+        <div class="ch15"></div>
+        <div class="ch16"></div>
+        <div class="ch17"></div>
+        <div class="ch18"></div>
+        <div class="ch19"></div>
+      </div>
+      <div class="cta_left">
+        <h2 id="cta_process_title">Got an idea? Not sure where to start?</h2>
+        <p id="cta_para">We will help you formulate your branding and marketing strategies that will give you a wing to
+          fly high in the success ladder.</p>
+      </div>
+      <a href="contact.html" id="contact_cta_btn" class="work_together_btn">Let’s Work Together</a>
+    </div>
+  </section>
+  <!-- CTA PROCESS END *********************************************** -->
+
+  <!-- ABOUT US SECTION START ***************************************************** -->
+  <section id="about_us_section">
+    <div class="about_us_wrapper">
+      <div class="about_us_left">
+        <h2 id="about_us_title">Values That Drives JSwebart Strategies And Team</h2>
+        <p id="about_us_para">Know about us, our values, ethos, and strategies to get aligned with our mission and
+          become a part of it.</p>
+        <a href="" id="about_us_anchor">Know More About Us</a>
+      </div>
+      <figure id="about_us_right">
+        <p id="figure_para">We are a group of passionate branding strategists, creative designers, digital marketers,
+          product designers etc, united under a roof of faith - "An idea that has potential to improve the life of
+          people in any way, deserves to be visible in digital world across the web". We fulfill this faith and make it
+          reality through our comprehensive branding and marketing services.</p>
+        <img src="img/about_image.svg" alt="">
+      </figure>
+    </div>
+  </section>
+  <!-- ABOUT US SECTION END ***************************************************** -->
+
+
+  <!-- BLOG SECTION START ************************************************** -->
+  <section id="blog_section">
+    <h2 id="blog_title">JSwebart Experts' Insights</h2>
+    <p id="blog_para"><span>Explore our guides for hands-on knowledge in branding, design, and marketing, and
+        more.</span></p>
+    <div id="blog_topics_container">
+
+      <a href="#" id="blog_section_container">
+        <figure id="blog_image_container">
+          <img src="./img/blog1.jpg" alt="">
+        </figure>
+        <div id="blog_right">
+          <h3 id="blog_topic">Branding</h3>
+          <h3 id="blog_topic_title">What Is Branding? Why It Is The Foundation Of Every Successful Business?</h3>
+          <p id="blog_date">28 september 2024</p>
+          <p id="blog_read_time">8 min read</p>
+        </div>
+      </a>
+      <a href="#" id="blog_section_container">
+        <figure id="blog_image_container">
+          <img src="./img/blog2.jpg" alt="">
+        </figure>
+        <div id="blog_right">
+          <h3 id="blog_topic">Website Development</h3>
+          <h3 id="blog_topic_title">Why Every Business Needs a Well-Developed Website: A Beginner’s Guide</h3>
+          <p id="blog_date">21 July 1996</p>
+          <p id="blog_read_time">12 min read</p>
+        </div>
+      </a>
+      <a href="#" id="blog_section_container">
+        <figure id="blog_image_container">
+          <img src="./img/blog3.jpg" alt="">
+        </figure>
+        <div id="blog_right">
+          <h3 id="blog_topic">UI/UX Design</h3>
+          <h3 id="blog_topic_title">What Is UI/UX Design and Why Does It Matter for Your Business?</h3>
+          <p id="blog_date">12 August 1992</p>
+          <p id="blog_read_time">21 min read</p>
+        </div>
+      </a>
+    </div>
+    <a href="#" id="more_insights">More Insights</a>
+  </section>
+  <!-- BLOG SECTION END ************************************************** -->
+
+
+  <!-- FAQ SECTION START ************************************************** -->
+  <section id="faq_section">
+    <div class="work_lines_container">
+        <div class="w1 w4_line"></div>
+        <div class="w2 w4_line"></div>
+        <div class="w3 w4_line"></div>
+        <div class="w4 w4_line"></div>
+        <div class="w5 w4_line"></div>
+        <div class="w6 w4_line"></div>
+        <div class="w7 w4_line"></div>
+        <div class="w8 w4_hor"></div>
+        <div class="w9 w4_hor"></div>
+        <div class="w10 w4_hor"></div>
+        <div class="w11 w4_line"></div>
+        <div class="w12 w4_line"></div>
+    </div>
+    <h2 id="faq_section_title">
+    Frequently Asked Questions
+    </h2>
+    <div class="faq_wrappers">
+    <div class="faq_container">
+        <div class="faq_question">
+        <div class="icon">
+            <div class="icon-shape"></div>
+        </div>
+        <div class="faq_question-text">
+            <h3>
+            What is included in JSwebart's comprehensive branding and design services?
+            </h3>
+        </div>
+
+        </div>
+        <div class="answercont">
+        <div class="answer">
+            <p>
+            Our comprehensive branding and design services encompass a wide range of digital solutions tailored to
+            meet your specific business needs.
+            </p>
+            <p>These digital solutions include -</p>
+            <p>1. Branding Services - In branding services we offer full spectrum of services that your business needs
+            to establish its identity, like - Brand Strategy Development, Logo Design, Visual Identity Creation, Brand
+            Guidelines, and more.</p>
+            <p>2. UI/UX Design Services - It's crucial to have stunning yet functional UI/UX for your digital touchpoint
+            to give your customer best user experience. For this we offer - Responsive UI/UX Design, App UI/UX Design,
+            Web UI/UX Design, and more.</p>
+            <p>3. Website Development Services - Websites are an integral part of establishing brand authority. It helps
+            in driving traffic to your business thus increasing brand value and sales. For a effective website for
+            your business we offer - Frontend Development, Backend Development, Full-stack Website Development,
+            Website Maintenance, and many more.</p>
+            <p>4. Digital Marketing Services - Branding and Digital Marketing services go hand in hand in establishing
+            your brand value and brand presence. For expanding your brand presence we offer - Search Engine
+            Optimization Services, Social Media Marketing Services, Online Ads Campaigns, and more.</p>
+            <p>5. Packaging Design - Crafting a unique packaging design for your product increases your brand reach. For
+            this our team build packaging design tailored to your need.</p>
+            <p>6. Print Design and Printing - Print Designs adds value to your brand presence and brand value. We craft
+            various types of print designs like - Business card design, Flyers Design, Postcard Design, Invitation
+            Card Design, and more.</p>
+            <p>These Comprehensive Services enhance your brand identity, brand positioning, Brand value and Brand reach.
+            </p>
+        </div>
+        </div>
+    </div>
+    <div class="faq_container">
+        <div class="faq_question">
+        <div class="icon">
+            <div class="icon-shape"></div>
+        </div>
+        <div class="faq_question-text">
+            <h3>Why should I choose JSwebart as my digital partner in these comprehensive services?</h3>
+        </div>
+
+        </div>
+        <div class="answercont">
+        <div class="answer">
+            <p>
+            Choosing JSWebArt offers you the advantage of having a reliable partner dedicated to your success. We
+            provide comprehensive services while fully embracing your aspirations as our own. Our goal is to align our
+            efforts with your vision, ensuring that we work together to achieve exceptional results. Whether your goal
+            is on paper right now or already in function, with our strategic and client-centric approach we mold our
+            strategy to align it with your unique business needs. Our method is designed to create brands that not
+            only stands out but also have human-centric values and ethos to cause a positive ripple in the world. With
+            this thought in mind "we carve out your business branding identity in a way that speaks for itself and
+            make the customer choose you in the crowd, market it to leave its imprint across the web and globe."
+            </p>
+        </div>
+        </div>
+    </div>
+    <div class="faq_container">
+        <div class="faq_question">
+        <div class="icon">
+            <div class="icon-shape"></div>
+        </div>
+        <div class="faq_question-text">
+            <h3>What makes JSwebart different from other agencies?</h3>
+        </div>
+
+        </div>
+        <div class="answercont">
+        <div class="answer">
+        
+            <p>
+            1. Comprehensive services - JSwebart offers a wide range of services under one roof. You just need to have
+            an idea, we will refine it with our branding and digital marketing services and will turn your idea into a
+            rising brand. Our services are what you need to brand your vision and all these under one roof will save
+            your time and will ensure consistency in brand personality across your projects.
+            </p>
+            <p>
+            2.Experienced Team - We are a team of experienced professionals, each having more than 6 years of
+            experience in branding and digital marketing field. Having a team with unique set of skills and years of
+            experience gives JSwebart an edge in the market. With experience comes efficiency. You can expect your
+            brand to have an unique identity at the end of project execution.
+            </p>
+            <p>
+            3. Innovative Approach - With a visionary outlook, we have cultivated a culture of innovation in our
+            working environment. This makes us stay ahead in the rapidly changing digital world and keeps us updated
+            with the latest technologies. In each project our team put fresh and innovative ideas to craft an engaging
+            brand story that connect your customer with your brand and keep you ahead of your competitors.
+            </p>
+            <p>
+            4. Integrity-driven team - Integrity is one of the building blocks of JSwebart's foundation. We are
+            committed to follow ethical practices like honesty, transparency, accountability, and trustworthiness in
+            the business realm. You will experience this not only in our letter but also in spirit. Our work helps
+            solve real-world problems, whether by improving technology or enhancing user experiences we contribute to
+            a better quality of life for people everywhere.
+            </p>
+            <p>
+            5. A Reliable Digital Partner - It is the core principle that builds the foundation of a strong, long-term
+            relationship between a company and its clients. With our skilled and experienced team, consistent quality
+            services and transparency, we provide the ample reason for you to have trust in us. Working with JSwebart
+            will give you a reliable team that ensures consistent innovative solution to your problems, benefiting you
+            as well as the society.
+            </p>
+            <p>
+            6. Proven Track Record - Work speaks louder than the words. We have been delivering unique innovative
+            solutions to real-world problems and giving our contribution in improving the life of people in any way.
+            Along with this, our client's satisfaction with our work and their encouraging words for us speaks volume
+            about the quality of work we provide. We have a great track record of providing consistent exceptional
+            results. Read below what our clients are saying.
+            </p>
+        </div>
+        </div>
+    </div>
+    <div class="faq_container">
+        <div class="faq_question">
+        <div class="icon">
+            <div class="icon-shape"></div>
+        </div>
+        <div class="faq_question-text">
+            <h3>Which industries does JSWebArt work with?</h3>
+        </div>
+
+        </div>
+        <div class="answercont">
+        <div class="answer">
+            <p>
+            We have expertise in working with wide range of industries. Till now we have completed more than 100
+            projects ranging in more than 20 industries.
+            We aspire to initiate a positive ripple in the world in any dimensions. As long as you have an idea that
+            improve people's life in any way, we are on board to work with you in this noble thought.
+            </p>
+        </div>
+        </div>
+    </div>
+    <div class="faq_container">
+        <div class="faq_question">
+        <div class="icon">
+            <div class="icon-shape"></div>
+        </div>
+        <div class="faq_question-text">
+            <h3>What is the typical timeline for project completion with JSWebArt?</h3>
+        </div>
+
+        </div>
+        <div class="answercont">
+        <div class="answer">
+            <p>
+            The typical timeline for a project with JSWebArt can vary based on its complexity and scope. Generally, smaller projects may take about 1 to 4 weeks, while larger projects can range from 5 to 10 weeks or more. At the start of the initial consultation with you, we discuss your business needs and provide a detailed timeline, ensuring clear communication throughout the process. Our goal is to deliver quality work on time while keeping you up to date with the project on-going stages.
+            </p>
+        </div>
+        </div>
+    </div>
+    <div class="faq_container">
+        <div class="faq_question">
+        <div class="icon">
+            <div class="icon-shape"></div>
+        </div>
+        <div class="faq_question-text">
+            <h3>What is Jswebart's price structure?</h3>
+        </div>
+
+        </div>
+        <div class="answercont">
+        <div class="answer">
+            <p>
+            We chart out the price structure tailored to your project needs and complexities. Every project has a different level of needs and requirements. So the effort, time, and skillset needed also varies. We analyze the unique aspects of your project and then craft an economical price matching your needs. Be assured, you will get much more than your investment.
+            </p>
+        </div>
+        </div>
+    </div>
+    </div>
+</section>
+<!-- FAQ SECTION END ************************************************** -->
+
+  <!-- GROW BUSINESS BANNER START **************************************** -->
+  <section id="cta_process_section">
+    <div class="cta_process_wrapper business_grow_wrapper">
+      <div class="cta_lines_container">
+        <div class="cl1"></div>
+        <div class="cl2"></div>
+        <div class="cl3"></div>
+        <div class="cl4"></div>
+        <div class="cl5"></div>
+        <div class="cl6"></div>
+        <div class="ch1"></div>
+        <div class="ch2"></div>
+        <div class="ch3"></div>
+        <div class="ch4"></div>
+        <div class="ch5"></div>
+        <div class="ch6"></div>
+        <div class="ch7"></div>
+        <div class="ch8"></div>
+        <div class="ch9"></div>
+        <div class="ch10"></div>
+        <div class="ch11"></div>
+        <div class="ch12"></div>
+        <div class="ch13"></div>
+        <div class="ch14"></div>
+        <div class="ch15"></div>
+        <div class="ch16"></div>
+        <div class="ch17"></div>
+        <div class="ch18"></div>
+        <div class="ch19"></div>
+      </div>
+      <div class="business_grow_left">
+        <h2 id="business_grow_title">Let's Drive Growth To Your Business Too</h2>
+        <a href="contact.html" id="con_cta_btn" class="con">Contact Us</a>
+      </div>
+      <div class="business_grow_right">
+        <div class="testimonials_one testimonials testimonials_mob">
+          <div class="testimonials_wrapper">
+            <p id="test_para"><q> Heartwarming Experience! The JSwebart team were proactive in helping me achieving my goal of providing quality education. With their support  I am now able to reach over 50 students in such a short period of time. I am truly excited to continue collaborating with this talented team. </q></p>
+            <h4 id="owner_name">Ramnath Rastogi</h4>
+            <p id="company_name_designation">Founder and Educator Of Vishal Classes</p>
+          </div>
+        </div>
+        <div class="testimonials_two testimonials testimonials_mob">
+          <div class="testimonials_wrapper">
+            <p id="test_para"><q> Heartwarming Experience! The JSwebart team were proactive in helping me achieving my goal of providing quality education. With their support  I am now able to reach over 50 students in such a short period of time. I am truly excited to continue collaborating with this talented team. </q></p>
+            <h4 id="owner_name">Ramnath Rastogi</h4>
+            <p id="company_name_designation">Founder and Educator Of Vishal Classes</p>
+          </div>
+        </div>
+        <div class="testimonials_three testimonials testimonials_mob">
+          <div class="testimonials_wrapper">
+            <p id="test_para"><q> Heartwarming Experience! The JSwebart team were proactive in helping me achieving my goal of providing quality education. With their support  I am now able to reach over 50 students in such a short period of time. I am truly excited to continue collaborating with this talented team. </q></p>
+            <h4 id="owner_name">Ramnath Rastogi</h4>
+            <p id="company_name_designation">Founder and Educator Of Vishal Classes</p>
+          </div>
+        </div>
+        <div class="testimonials_four testimonials testimonials_mob">
+          <div class="testimonials_wrapper">
+            <p id="test_para"><q> Heartwarming Experience! The JSwebart team were proactive in helping me achieving my goal of providing quality education. With their support  I am now able to reach over 50 students in such a short period of time. I am truly excited to continue collaborating with this talented team. </q></p>
+            <h4 id="owner_name">Ramnath Rastogi</h4>
+            <p id="company_name_designation">Founder and Educator Of Vishal Classes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- GROW BUSINESS BANNER END **************************************** -->
+
+  <!-- COMPANY MARQUE START ***************************** -->
+  <!-- <section id="company_marque">
+    <h2 id="company_marque_name"><img src="./jswebart_logo.svg" alt="">JSwebart</h2>
+   </section> -->
+  <!-- COMPANY MARQUE END ***************************** -->
+{% endblock %}
+
+
+{% block scripts %} 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="{% static 'js/animation.js' %}"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+{% endblock %}

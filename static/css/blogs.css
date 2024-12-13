@@ -1,0 +1,104 @@
+:root {
+    --green-clr: #6efacc;
+    --dark-black-clr: #14151c;
+    --medium-black-clr: #2c2c33;
+    --light-black-clr: #434449;
+    --eee-clr: #eee;
+    --white-clr: #f7f9ff;
+    --medium-white-clr: #f8faff;
+    --light-white-clr: #f9faff;
+    --near-pure-white: #fefeff;
+    --poppin-font: "Poppins", sans-serif;
+    --playfair-font: "Playfair Display", serif;
+    --semibold: 600;
+    --bold: 700;
+    --medium: 500;
+    --normal: 400;
+    --section-padding: 12vw 0;
+    --h2-font: 2.7vw;
+    --below-h2-para: 1.2vw;
+}
+
+.portfolio_hero_section {
+    background-color: var(--light-black-clr);
+    /* background-color: #434449; */
+}
+
+.portfolio_para {
+    font-size: 1.6vw !important;
+    line-height: 1.5;
+    padding-top: 1vw;
+    padding-bottom: 5vw;
+}
+
+.write_up_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 1vw;
+    font-family: var(--poppin-font);
+}
+
+.blog_section_time {
+    font-size: 1.3vw;
+    width: 50%;
+}
+
+.blog_section_service {
+    width: 30%;
+    text-align: end;
+    color: var(--green-clr);
+    font-size: 1.3vw;
+}
+
+.blog_section_topic {
+    width: 100%;
+    font-size: 1.6vw;
+    font-family: var(--playfair-font);
+    padding-top: 1vw;
+}
+
+@media only screen and (max-width: 1024px) {
+    .portfolio_para {
+        font-size: 2.5vw !important;
+    }
+
+    .blog_section_time {
+        font-size: 2vw;
+    }
+
+    .blog_section_service {
+        font-size: 2vw;
+    }
+
+    .blog_section_topic {
+        font-size: 2.5vw;
+        padding-top: 2vw;
+        line-height: 1.5;
+    }
+
+    .portfolios {gap: 9vw;}
+
+    .portfolio_para {
+        font-size: 3vw !important;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .portfolio_para {
+        font-size: 4.5vw !important;
+    }
+
+    .blog_section_time, .blog_section_service {
+        font-size: 3vw;
+        padding-top: 1vw;
+    }
+
+    .blog_section_topic {
+        font-size: 4vw;
+    }
+
+    .portfolios {
+        gap: 15vw;
+    }
+}

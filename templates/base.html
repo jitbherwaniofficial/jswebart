@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>{% block title %} {% endblock %}</title>
+  {% block stylesheet %} 
+  {% endblock %}
+  
+</head>
+
+<body>
+    <!-- HEADER START *********************************************************** -->
+        {% include 'includes/header.html' %}
+    <!-- HEADER END ************************************************************** -->
+
+    <!-- MAIN START ******************************************************************* -->
+        {% block content %}
+
+        {% endblock %}
+    <!-- MAIN END ******************************************************************* -->
+
+    <!-- FOOTER STARTS ************************************************************** -->
+        {% include 'includes/footer.html' %}
+    <!-- FOOTER END ************************************************************** -->
+
+    {% block scripts %} {% endblock %}
+</body>
+
+</html>    
