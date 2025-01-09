@@ -4,9 +4,14 @@
 # echo " BUILD END"
 
 #!/bin/bash
-echo " BUILD START"
-python3 -m venv venv
-source venv/bin/activate
-pip install --upgrade pip
-pip install -r requirements.txt
-echo " BUILD END"
+
+echo "BUILD START"
+
+# Upgrade pip and install dependencies
+python3 -m pip install --upgrade pip
+python3 -m pip install -r requirements.txt
+
+# Collect static files
+python3 manage.py collectstatic --noinput --clear
+
+echo "BUILD END"
