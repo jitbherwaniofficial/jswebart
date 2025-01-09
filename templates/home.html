@@ -5,7 +5,7 @@
 {% block stylesheet %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
     <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 {% endblock %}
 
@@ -36,7 +36,7 @@
         <div class="strips5 strip"></div>
         <div class="strips6 strip"></div>
         <figure id="big_logo_container">
-          <img src="img/jswebart_logo_big.svg" alt="">
+          <img src="{% static 'img/jswebart_logo_big.svg' %}" alt="">
         </figure>
       </div>
       <!-- COUNTER SCROLL START ********************************** -->
@@ -88,91 +88,89 @@
       </p>
       <div id="featured_work_container">
         <div id="featured_work_wrapper" class="fww1">
-          <a href="" id="featured_work_anchor1" class="anchor_">
+          <div id="featured_work_anchor1" class="anchor_">
             <figure id="featured_work_image-container" class="fic">
-              <img src="img/a6.jpg" alt="" />
+              <img src="{% static 'img/work/bhukh-lagi-kya.jpg' %}" alt="" /> 
               <div id="caption_container">
-                <figcaption>What is it about?</figcaption>
-                <figcaption><span id="pill">Branding</span><span id="pill">Web Deevelopment</span><span
-                    id="pill">Digital Marketing</span></figcaption>
+                <figcaption>Bhukh Lagi Kya?</figcaption>
+                <figcaption><span id="pill">Branding</span><span id="pill">UI/UX Design</span><span id="pill">Web Deevelopment</span></figcaption>
               </div>
             </figure>
-          </a>
-          <a href="" id="featured_work_anchor2" class="anchor_">
+          </div>
+          <div id="featured_work_anchor2" class="anchor_">
             <figure id="featured_work_image-container" class="fic">
-              <img src="img/a2.jpg" alt="" />
+              <img src="{% static 'img/work/wild-media.jpg' %}" alt="" />
               <div id="caption_container">
-                <figcaption>What is it about?</figcaption>
-                <figcaption><span id="pill">Packaging Design</span><span id="pill">Digital Marketing</span></figcaption>
+                <figcaption>WildLife Media Entertainment</figcaption>
+                <figcaption><span id="pill">Packaging Design</span><span id="pill">UI/UX Design</span><span id="pill">Web Development</span></figcaption>
               </div>
             </figure>
-          </a>
+          </div>
         </div>
         <div id="featured_work_middle_wrapper" class="fwmw1">
-          <a href="" id="featured_work_anchor3" class="anchor_">
+          <div id="featured_work_anchor3" class="anchor_">
             <figure id="featured_work_image-container" class="fic">
-              <img src="img/a13.jpg" alt="" />
+              <img src="{% static 'img/work/herold.jpg' %}" alt="" />
               <div id="caption_container">
-                <figcaption>What is it about?</figcaption>
-                <figcaption><span id="pill">Brand Identity</span><span id="pill">Digital Marketing</span></figcaption>
+                <figcaption>Herold</figcaption>
+                <figcaption><span id="pill">Brand</span><span id="pill">UI/UX Design</span><span id="pill">Packaging Design</span></figcaption>
               </div>
             </figure>
-          </a>
+          </div>
         </div>
         <div id="featured_work_wrapper" class="fww2">
-          <a href="" id="featured_work_anchor4" class="anchor_">
+          <div id="featured_work_anchor4" class="anchor_">
             <figure id="featured_work_image-container" class="fic">
-              <img src="img/a7.jpg" alt="" />
+              <img src="{% static 'img/work/dtiara.jpg' %}" alt="" />
               <div id="caption_container">
-                <figcaption>What is it about?</figcaption>
-                <figcaption><span id="pill">Packaging Design</span><span id="pill">Web Deevelopment</span><span
-                    id="pill">Digital Marketing</span></figcaption>
+                <figcaption>D'tiara</figcaption>
+                <figcaption><span id="pill">Packaging Design</span><span id="pill">Print Design</span><span
+                    id="pill">Branding</span></figcaption>
               </div>
             </figure>
-          </a>
-          <a href="" id="featured_work_anchor5" class="anchor_">
+          </div>
+          <div id="featured_work_anchor5" class="anchor_">
             <figure id="featured_work_image-container" class="fic">
-              <img src="img/a8.jpg" alt="" />
+              <img src="{% static 'img/work/fish-and-chips.jpg' %}" alt="" />
               <div id="caption_container">
-                <figcaption>What is it about?</figcaption>
-                <figcaption><span id="pill">Web Development</span><span id="pill">Digital Marketing</span></figcaption>
+                <figcaption>Fish & Chips</figcaption>
+                <figcaption><span id="pill">Logo Design</span><span id="pill">Digital Marketing</span></figcaption>
               </div>
             </figure>
-          </a>
+          </div>
         </div>
         <div id="featured_work_middle_wrapper" class="fwmw2">
-          <a href="" id="featured_work_anchor8" class="anchor_">
+          <div id="featured_work_anchor8" class="anchor_">
             <figure id="featured_work_image-container" class="fic">
-              <img src="img/The Art Of Generation.png" alt="" />
+              <img src="{% static 'img/work/the-art-of-generation.jpg' %}" alt="" />
               <div id="caption_container">
-                <figcaption>What is it about?</figcaption>
-                <figcaption><span id="pill">Brand Identity</span><span id="pill">Digital Marketing</span></figcaption>
+                <figcaption>The Art Of Generation</figcaption>
+                <figcaption><span id="pill">Brand Identity</span><span id="pill">UI/UX Design</span><span id="pill">Print Design</span></figcaption>
               </div>
             </figure>
-          </a>
+          </div>
         </div>
         <div id="featured_work_wrapper" class="fww3">
-          <a href="" id="featured_work_anchor6" class="anchor_">
+          <div id="featured_work_anchor6" class="anchor_">
             <figure id="featured_work_image-container" class="fic">
-              <img src="img/a11.png" alt="" />
+              <img src="{% static 'img/work/pure-skin.jpg' %}" alt="" />
               <div id="caption_container">
-                <figcaption>What is it about?</figcaption>
-                <figcaption><span id="pill">Branding</span><span id="pill">Web Deevelopment</span><span
-                    id="pill">Digital Marketing</span></figcaption>
+                <figcaption>Pure Skin</figcaption>
+                <figcaption><span id="pill">Brand Identity</span><span id="pill">Print Design</span></figcaption>
               </div>
             </figure>
-          </a>
-          <a href="" id="featured_work_anchor7" class="anchor_">
+          </div>
+          <div id="featured_work_anchor7" class="anchor_">
             <figure id="featured_work_image-container" class="fic">
-              <img src="img/a12.png" alt="" />
+              <img src="{% static 'img/work/bird-paris.jpg' %}" alt="" />
               <div id="caption_container">
-                <figcaption>What is it about?</figcaption>
-                <figcaption><span id="pill">Brand Identity</span><span id="pill">Digital Marketing</span></figcaption>
+                <figcaption>Bird Paris</figcaption>
+                <figcaption><span id="pill">Brand Identity</span><span id="pill">Print Design</span><span id="pill">Packaging Design</span></figcaption>
               </div>
             </figure>
-          </a>
+          </div>
         </div>
-        <a href="" id="view_all_works">View All Works</a>
+        <a href="{% url 'portfolio' %}" id="view_all_works">View All Works</a>
       </div>
   </section>
   <!-- FEATURED WORK END ******************************** -->
@@ -180,7 +178,7 @@
   <!-- SERVICES SECTION START **************************************** -->
   <section id="services_section">
     <div class="service_lines_container">
-      <figure id="service_sect_logo"><img src="img/jswebart_logo_big.svg" alt=""></figure>
+      <figure id="service_sect_logo"><img src="{% static 'img/jswebart_logo_big.svg' %}" alt=""></figure>
       <div class="s1"></div>
       <div class="s2"></div>
       <div class="s3"></div>
@@ -246,10 +244,10 @@
                   <li>  Brand Communication</li>
                   <li>  Brand Collateral Design</li>
                 </ol>
-                <a href="" id="service_redirect_link">Know More</a>
+                <a href="{% url 'branding_services' %}" id="service_redirect_link">Know More</a>
               </div>
               <figure class="services_box_right">
-                <img src="img/a14.jpg" alt="">
+                <img src="{% static 'img/index/index-branding-service.webp' %}" alt="">
               </figure>
             </div>
           </div>
@@ -275,10 +273,10 @@
                   <li> Web UI/UX Design</li>
                   <li> E-commerce UX Design</li>
                 </ol>
-                <a href="" id="service_redirect_link">Know More</a>
+                <a href="{% url 'ui_ux_services' %}" id="service_redirect_link">Know More</a>
               </div>
               <figure class="services_box_right">
-                <img src="img/a15.jpg" alt="">
+                <img src="{% static 'img/index/index-ui-service.webp' %}" alt="">
               </figure>
             </div>
           </div>
@@ -307,10 +305,10 @@
                   <li> Website Redesign</li>
                   <li> Deployment and Maintenance</li>
                 </ol>
-                <a href="" id="service_redirect_link">Know More</a>
+                <a href="{% url 'web_development_services' %}" id="service_redirect_link">Know More</a>
               </div>
               <figure class="services_box_right">
-                <img src="img/a16.jpg" alt="">
+                <img src="{% static 'img/index/index-webdev-service.webp' %}" alt="">
               </figure>
             </div>
           </div>
@@ -339,10 +337,10 @@
                   <li> Content Marketing</li>
                   <li> Email Marketing</li>
                 </ol>
-                <a href="" id="service_redirect_link">Know More</a>
+                <a href="{% url 'digital_marketing_services' %}" id="service_redirect_link">Know More</a>
               </div>
               <figure class="services_box_right">
-                <img src="img/a14.jpg" alt="">
+                <img src="{% static 'img/index/index-marketing-service.jpg' %}" alt="">
               </figure>
             </div>
           </div>
@@ -372,10 +370,10 @@
                   <li> Flexible Pouch Packaging</li>
                   <li> Labeling and Branding</li>
                 </ol>
-                <a href="" id="service_redirect_link">Know More</a>
+                <a href="{% url 'packaging_design_services' %}" id="service_redirect_link">Know More</a>
               </div>
               <figure class="services_box_right">
-                <img src="img/a14.jpg" alt="">
+                <img src="{% static 'img/index/index-packaging-service.jpg' %}" alt="">
               </figure>
             </div>
           </div>
@@ -403,10 +401,10 @@
                   <li> Brochure and Flyers Design</li>
                   <li> Event Invitation Design</li>
                 </ol>
-                <a href="" id="service_redirect_link">Know More</a>
+                <a href="{% url 'print_design_services' %}" id="service_redirect_link">Know More</a>
               </div>
               <figure class="services_box_right">
-                <img src="img/a14.jpg" alt="">
+                <img src="{% static 'img/index/index-print-service.jpg' %}" alt="">
               </figure>
             </div>
           </div>
@@ -455,7 +453,7 @@
               define a clear path forward.</p>
           </div>
           <figure class="goal_box_right">
-            <img src="img/goal_identification.svg" alt="">
+            <img src="{% static 'img/index/index-process-first.jpg' %}" alt="">
           </figure>
         </div>
         <div id="goal_box">
@@ -472,7 +470,7 @@
               with your expectations.</p>
           </div>
           <figure class="goal_box_right">
-            <img src="img/bridging_goal.svg" alt="">
+            <img src="{% static 'img/index/index-process-second.jpg' %}" alt="">
           </figure>
         </div>
         <div id="goal_box">
@@ -489,7 +487,7 @@
               evolving and your market impact growing.</p>
           </div>
           <figure class="goal_box_right">
-            <img src="img/outcome_monitoring.svg" alt="">
+            <img src="{% static 'img/index/index-process-third.jpg'  %}" alt="">
           </figure>
         </div>
       </div>
@@ -526,7 +524,7 @@
         <div class="ch19"></div>
       </div>
       <h2 id="cta_process_title">Let's Draft Your Business Strategy To Ensure Consistent Growth</h2>
-      <a href="contact.html" id="contact_cta_btn">Contact Us</a>
+      <a href="{% url 'contact' %}" id="contact_cta_btn">Contact Us</a>
     </div>
   </section>
   <!-- CTA PROCESS END *********************************************** -->
@@ -534,7 +532,7 @@
   <!-- BUSINESS STEP START ******************************************* -->
   <section id="business_step_section">
     <div class="service_lines_container">
-      <figure id="service_sect_logo"><img src="img/jswebart_logo_big.svg" alt=""></figure>
+      <figure id="service_sect_logo"><img src="{% static 'img/jswebart_logo_big.svg' %}" alt=""></figure>
       <div class="s1"></div>
       <div class="s2"></div>
       <div class="s3"></div>
@@ -590,7 +588,7 @@
                 </ol>
               </div>
               <figure class="business_box_right">
-                <img src="img/idea.jpg" alt="">
+                <img src="{% static 'img/index/index-business-stage-one.jpg' %}" alt="">
               </figure>
             </div>
           </div>
@@ -608,7 +606,7 @@
                 </ol>
               </div>
               <figure class="business_box_right">
-                <img src="img/a15.jpg" alt="">
+                <img src="{% static 'img/index/index-business-stage-two.jpg' %}" alt="">
               </figure>
             </div>
           </div>
@@ -626,7 +624,7 @@
                 </ol>
               </div>
               <figure class="business_box_right">
-                <img src="img/a16.jpg" alt="">
+                <img src="{% static 'img/index/index-business-stage-three.jpg' %}" alt="">
               </figure>
             </div>
           </div>
@@ -634,7 +632,7 @@
           <div class="swiper-slide">
             <div class="business_box">
               <div class="business_box_left">
-                <h3 id="services_box_title">If You Own an Established enterprise</h3>
+                <h3 id="services_box_title">If You Own an Established Enterprise</h3>
                 <span>we will help in -</span>
                 <ol id="services_served_container">
                   <li> Scaling and Growth Strategy</li>
@@ -644,7 +642,7 @@
                 </ol>
               </div>
               <figure class="business_box_right">
-                <img src="img/a14.jpg" alt="">
+                <img src="{% static 'img/index/index-business-stage-four.jpg' %}" alt="">
               </figure>
             </div>
           </div>
@@ -662,7 +660,7 @@
                 </ol>
               </div>
               <figure class="business_box_right">
-                <img src="img/a14.jpg" alt="">
+                <img src="{% static 'img/index/index-business-stage-five.jpg' %}" alt="">
               </figure>
             </div>
           </div>
@@ -709,7 +707,7 @@
         <p id="cta_para">We will help you formulate your branding and marketing strategies that will give you a wing to
           fly high in the success ladder.</p>
       </div>
-      <a href="contact.html" id="contact_cta_btn" class="work_together_btn">Let’s Work Together</a>
+      <a href="{% url 'contact' %}" id="contact_cta_btn" class="work_together_btn">Let’s Work Together</a>
     </div>
   </section>
   <!-- CTA PROCESS END *********************************************** -->
@@ -721,14 +719,14 @@
         <h2 id="about_us_title">Values That Drives JSwebart Strategies And Team</h2>
         <p id="about_us_para">Know about us, our values, ethos, and strategies to get aligned with our mission and
           become a part of it.</p>
-        <a href="" id="about_us_anchor">Know More About Us</a>
+        <a href="{% url 'about_us' %}" id="about_us_anchor">Know More About Us</a>
       </div>
       <figure id="about_us_right">
         <p id="figure_para">We are a group of passionate branding strategists, creative designers, digital marketers,
           product designers etc, united under a roof of faith - "An idea that has potential to improve the life of
           people in any way, deserves to be visible in digital world across the web". We fulfill this faith and make it
           reality through our comprehensive branding and marketing services.</p>
-        <img src="img/about_image.svg" alt="">
+        <img src="{% static 'img/index/index_about_image.jpg' %}" alt="">
       </figure>
     </div>
   </section>
@@ -742,41 +740,21 @@
         more.</span></p>
     <div id="blog_topics_container">
 
-      <a href="#" id="blog_section_container">
-        <figure id="blog_image_container">
-          <img src="./img/blog1.jpg" alt="">
-        </figure>
-        <div id="blog_right">
-          <h3 id="blog_topic">Branding</h3>
-          <h3 id="blog_topic_title">What Is Branding? Why It Is The Foundation Of Every Successful Business?</h3>
-          <p id="blog_date">28 september 2024</p>
-          <p id="blog_read_time">8 min read</p>
-        </div>
-      </a>
-      <a href="#" id="blog_section_container">
-        <figure id="blog_image_container">
-          <img src="./img/blog2.jpg" alt="">
-        </figure>
-        <div id="blog_right">
-          <h3 id="blog_topic">Website Development</h3>
-          <h3 id="blog_topic_title">Why Every Business Needs a Well-Developed Website: A Beginner’s Guide</h3>
-          <p id="blog_date">21 July 1996</p>
-          <p id="blog_read_time">12 min read</p>
-        </div>
-      </a>
-      <a href="#" id="blog_section_container">
-        <figure id="blog_image_container">
-          <img src="./img/blog3.jpg" alt="">
-        </figure>
-        <div id="blog_right">
-          <h3 id="blog_topic">UI/UX Design</h3>
-          <h3 id="blog_topic_title">What Is UI/UX Design and Why Does It Matter for Your Business?</h3>
-          <p id="blog_date">12 August 1992</p>
-          <p id="blog_read_time">21 min read</p>
-        </div>
-      </a>
+      {% for blog in all_post %} 
+        <a href="{% url 'blog_detail' blog.slug %}" id="blog_section_container">
+          <figure id="blog_image_container">
+            <img src="{{ blog.image.url }}" alt="{{ blog.title }}" alt="">
+          </figure>
+          <div id="blog_right">
+            <h3 id="blog_topic">{{ blog.categories.name }}</h3>
+            <h3 id="blog_topic_title">{{ blog.title }}</h3>
+            <p id="blog_date">{{ blog.created_at|date:"j F Y" }}</p>
+            <p id="blog_read_time">{{ blog.get_total_read_time }} min read</p>
+          </div>
+        </a>
+      {% endfor %}
     </div>
-    <a href="#" id="more_insights">More Insights</a>
+    <a href="{% url 'blog' %}" id="more_insights">More Insights</a>
   </section>
   <!-- BLOG SECTION END ************************************************** -->
 
@@ -1016,35 +994,35 @@
       </div>
       <div class="business_grow_left">
         <h2 id="business_grow_title">Let's Drive Growth To Your Business Too</h2>
-        <a href="contact.html" id="con_cta_btn" class="con">Contact Us</a>
+        <a href="{% url 'contact' %}" id="con_cta_btn" class="con">Contact Us</a>
       </div>
       <div class="business_grow_right">
         <div class="testimonials_one testimonials testimonials_mob">
           <div class="testimonials_wrapper">
             <p id="test_para"><q> Heartwarming Experience! The JSwebart team were proactive in helping me achieving my goal of providing quality education. With their support  I am now able to reach over 50 students in such a short period of time. I am truly excited to continue collaborating with this talented team. </q></p>
             <h4 id="owner_name">Ramnath Rastogi</h4>
-            <p id="company_name_designation">Founder and Educator Of Vishal Classes</p>
+            <p id="company_name_designation">Founder and Educator of "Vishal Classes"</p>
           </div>
         </div>
         <div class="testimonials_two testimonials testimonials_mob">
           <div class="testimonials_wrapper">
-            <p id="test_para"><q> Heartwarming Experience! The JSwebart team were proactive in helping me achieving my goal of providing quality education. With their support  I am now able to reach over 50 students in such a short period of time. I am truly excited to continue collaborating with this talented team. </q></p>
-            <h4 id="owner_name">Ramnath Rastogi</h4>
-            <p id="company_name_designation">Founder and Educator Of Vishal Classes</p>
+            <p id="test_para"><q>JSwebart made everything super easy for my jeans brand! They handled the branding, website, packaging, and marketing like pros. The whole process was smooth, and now my brand looks amazing. Can’t wait to keep working with them!</q></p>
+            <h4 id="owner_name">Sunny Chhatija</h4>
+            <p id="company_name_designation">Founder of "Legal Fashion"</p>
           </div>
         </div>
         <div class="testimonials_three testimonials testimonials_mob">
           <div class="testimonials_wrapper">
-            <p id="test_para"><q> Heartwarming Experience! The JSwebart team were proactive in helping me achieving my goal of providing quality education. With their support  I am now able to reach over 50 students in such a short period of time. I am truly excited to continue collaborating with this talented team. </q></p>
-            <h4 id="owner_name">Ramnath Rastogi</h4>
-            <p id="company_name_designation">Founder and Educator Of Vishal Classes</p>
+            <p id="test_para"><q>JSwebart has been incredible! They handled everything for The South Indian Plate—branding, web design, packaging, and marketing. Their team made the process so smooth and exciting. Thanks to them, my dream is now a reality!</q></p>
+            <h4 id="owner_name">Nirmala B.</h4>
+            <p id="company_name_designation">Founder of "The South Indian Plate"</p>
           </div>
         </div>
         <div class="testimonials_four testimonials testimonials_mob">
           <div class="testimonials_wrapper">
-            <p id="test_para"><q> Heartwarming Experience! The JSwebart team were proactive in helping me achieving my goal of providing quality education. With their support  I am now able to reach over 50 students in such a short period of time. I am truly excited to continue collaborating with this talented team. </q></p>
-            <h4 id="owner_name">Ramnath Rastogi</h4>
-            <p id="company_name_designation">Founder and Educator Of Vishal Classes</p>
+            <p id="test_para"><q> Big thanks to JSwebart for totally transforming Bhukh Lagi Kya! They took care of all the branding, website, and marketing, making everything come together perfectly. Now, our food is reaching more people, and it’s been an incredible journey </q></p>
+            <h4 id="owner_name">Aakash</h4>
+            <p id="company_name_designation">Founder of Bhukh Lagi Kya?</p>
           </div>
         </div>
       </div>
@@ -1068,6 +1046,66 @@
     integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert for toasts -->
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const form = document.querySelector("#subscriptionForm");
+        
+        form.addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const formData = new FormData(form);
+            const csrfToken = document.querySelector("[name=csrfmiddlewaretoken]").value;
+
+            fetch(form.action, {
+                method: "POST",
+                headers: {
+                    "X-CSRFToken": csrfToken,
+                    "X-Requested-With": "XMLHttpRequest" // Mark as AJAX request
+                },
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    Swal.fire({
+                        icon: "success",
+                        title: "Success",
+                        text: data.message,
+                        toast: true,
+                        position: "top-end",
+                        timer: 3000,
+                        showConfirmButton: false
+                    });
+                    form.reset(); // Reset the form
+                } else {
+                    Swal.fire({
+                        icon: "error",
+                        title: "Error",
+                        text: data.message,
+                        toast: true,
+                        position: "top-end",
+                        timer: 3000,
+                        showConfirmButton: false
+                    });
+                }
+            })
+            .catch(error => {
+                Swal.fire({
+                    icon: "error",
+                    title: "Error",
+                    text: "Something went wrong. Please try again later.",
+                    toast: true,
+                    position: "top-end",
+                    timer: 3000,
+                    showConfirmButton: false
+                });
+            });
+        });
+    });
+</script>
+
     <script src="{% static 'js/animation.js' %}"></script>
     <script src="{% static 'js/index.js' %}"></script>
 {% endblock %}

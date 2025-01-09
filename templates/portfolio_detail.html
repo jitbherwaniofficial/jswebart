@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} JSwebart-{{ portfolio.title }}  {% endblock %}
+    {% block stylesheet %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/portfolio.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    {% endblock %}
+
+    
+    {% block content %}
+
+    <div style="padding: 15vw 0; width: 90%; margin: 0 auto; display: flex; gap: 3vw; flex-direction: column;">
+        <h1>{{ portfolio.title }}</h1>
+        <p><strong>Categories:</strong>
+            {% for category in categories %}
+                {% if category.slug != "view-all" %}
+                <span style="color: var(--green-clr);">{{ category.name }}</span>{% if not forloop.last %}
+                <span style="font-size: 2vw;">|</span> 
+                {% endif %}
+                {% endif %}
+            {% endfor %}
+        </p>
+        <p>{{ portfolio.description }}</p>
+        <p><strong>Created At:</strong> {{ portfolio.created_at }}</p>
+        <img src="{{ portfolio.image.url }}" alt="{{ portfolio.title }}">
+    </div>
+    
+{% endblock %} 
+
+
+    
+
+{% block scripts %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="{% static 'js/animation.js' %}"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+{% endblock %}

@@ -72,11 +72,14 @@
     flex-direction: column;
     width: 45%;
     height: 45vw;
-    /* gap: 1vw; */
+    gap: 0.5rem;
 }
 
-.sp_left {transform: translateY(5%);}
-.sp_right {transform: translateY(25%);}
+/* .sp_left {transform: translateY(5%);}
+.sp_right {transform: translateY(25%);} */
+
+.single_portfolio:nth-child(odd) {transform: translateY(5%);}
+.single_portfolio:nth-child(even) {transform: translateY(25%);}
 
 .single_portfolio figure {
     width: 100%;
@@ -194,7 +197,11 @@
         height: 100vw;
     }
 
-    .sp_left , .sp_right {
+    /* .sp_left , .sp_right {
+        transform: translateY(0);
+    } */
+
+    .single_portfolio:nth-child(even),.single_portfolio:nth-child(odd) {
         transform: translateY(0);
     }
 

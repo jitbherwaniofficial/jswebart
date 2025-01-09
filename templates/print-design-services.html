@@ -1,0 +1,780 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Print Design Services {% endblock %}
+
+{% block stylesheet %} 
+<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+<link rel="stylesheet" href="{% static 'css/services.css' %}">
+<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+{% endblock %}
+{% block style %}
+<style>
+        .cta_left {
+            width: 45%;
+        }
+
+        .box {
+            border: 2px solid var(--light-black-clr);
+            margin: 2vw;
+            cursor: pointer;
+            width: fit-content;
+            text-wrap: nowrap;
+            padding: 10px 20px;
+            font-size: 24px;
+            font-weight: var(--semibold);
+            font-family: var(--playfair-font);
+            align-self: normal !important;
+        }
+
+        .services_box {
+    width: 90%;
+    height: 42vw;
+}
+
+.business_box_left {
+    background-color: var(--dark-black-clr);
+    width: 90%;
+    height: 22vw;
+}
+
+.business_box_left {
+    background-color: var(--dark-black-clr);
+    width: 90%;
+    height: 22vw;
+}
+
+@media only screen and (max-width:1024px) {
+    .business_box_left {
+    background-color: var(--dark-black-clr);
+    width: 90%;
+    height: 28vw;
+}
+}
+
+@media only screen and (max-width:768px) {
+    .business_box_left {
+    background-color: var(--dark-black-clr);
+    width: 90%;
+    height: 37vw;
+}
+#brand1, #brand2, #brand3, #brand4 {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .business_box_left {
+    background-color: var(--dark-black-clr);
+    width: 90%;
+    height: 55vw;
+    }
+}
+#hero_section {
+    padding-top: 6vw;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+
+    <!-- HERO SECTION START ******************************** -->
+    <div class="hero_wrapper">
+        <section id="hero_section">
+            <div id="hero_left">
+                <h1 id="hero_title">
+                    The Best Print Design Agency in India That Makes Designs that Stand Out 
+                </h1>
+                <p id="hero_para">
+                    Our offer print designs that do not just make the viewers say: "WOW!" but they create connections (emotional). Our designs are second-to-none and there are no limitations when it comes to printing materials. We can come up with any idea. From eye-catching business cards to engaging brochures, our designs make your brand unforgettable. Let’s work together to create print materials that truly represent your brand and engage your customers.
+                </p>
+                <a href="{% url 'portfolio' %}" id="hero_work_btn">Our Work</a>
+            </div>
+            <div id="hero_right">
+                <div class="stripsminus2 strip"></div>
+                <div class="stripsminus1 strip"></div>
+                <div class="strips0 strip"></div>
+                <div class="strips1 strip"></div>
+                <div class="strips2 strip"></div>
+                <div class="strips3 strip"></div>
+                <div class="strips4 strip"></div>
+                <div class="strips5 strip"></div>
+                <div class="strips6 strip"></div>
+                <div class="stripsh1 striph"></div>
+                <div class="stripsh2 striph"></div>
+                <div class="stripsh3 striph"></div>
+                <div class="stripsh4 striph"></div>
+                <div class="stripsh5 striph"></div>
+                <div class="stripsh6 striph"></div>
+                <div class="stripsh7 striph"></div>
+                <div class="stripsh8 striph"></div>
+                <div class="stripsh9 striph"></div>
+                <div class="stripsh10 striph"></div>
+                <div class="stripsh11 striph"></div>
+                <div class="stripsh12 striph"></div>
+
+                <div class="marquee-container">
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="sth"></div>
+                    <div class="sth"></div>
+                    <div class="sth"></div>
+                    <div class="sth"></div>
+                    <div class="sth"></div>
+                    <div class="marquee_img">
+                        <!-- Original images -->
+                        <img class="hw_img hero_img_1" src="{% static 'img/The Art Of Generation.png' %}" alt="">
+                        <img class="hw_img hero_img_2" src="{% static 'img/a2.jpg' %}" alt="">
+                        <img class="hw_img hero_img_3" src="{% static 'img/a4.jpg' %}" alt="">
+                        <img class="hw_img hero_img_4" src="{% static 'img/img2.jpg' %}" alt="">
+                        <img class="hw_img hero_img_5" src="{% static 'img/img6.jpg' %}" alt="">
+                        <img class="hw_img hero_img_6" src="{% static 'img/z5.jpg' %}" alt="">
+
+                        <img class="hw_img hero_img_1" src="{% static 'img/The Art Of Generation.png' %}" alt="">
+                        <img class="hw_img hero_img_2" src="{% static 'img/a2.jpg' %}" alt="">
+                        <img class="hw_img hero_img_3" src="{% static 'img/a4.jpg' %}" alt="">
+                        <img class="hw_img hero_img_4" src="{% static 'img/img2.jpg' %}" alt="">
+                        <img class="hw_img hero_img_5" src="{% static 'img/img6.jpg' %}" alt="">
+                        <img class="hw_img hero_img_6" src="{% static 'img/z5.jpg' %}" alt="">
+
+                        <img class="hw_img hero_img_1" src="{% static 'img/The Art Of Generation.png' %}" alt="">
+                        <img class="hw_img hero_img_2" src="{% static 'img/a2.jpg' %}" alt="">
+                        <img class="hw_img hero_img_3" src="{% static 'img/a4.jpg' %}" alt="">
+                        <img class="hw_img hero_img_4" src="{% static 'img/img2.jpg' %}" alt="">
+                        <img class="hw_img hero_img_5" src="{% static 'img/img6.jpg' %}" alt="">
+                        <img class="hw_img hero_img_6" src="{% static 'img/z5.jpg' %}" alt="">
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- COUNTER SCROLL START ********************************** -->
+            <div id="counter">
+                <div id="counter_box">
+                    <h2 id="counter_number" class="num" data-val="236">00</h2>
+                    <p id="counter_para">Printing Project Delivered</p>
+                </div>
+                <div id="counter_box">
+                    <h2 id="counter_number" class="num_per" data-val="92">00</h2>
+                    <p id="counter_para">Customer Engagement Increased</p>
+                </div>
+                <div id="counter_box">
+                    <h2 id="counter_number" class="num_per" data-val="89">00</h2>
+                    <p id="counter_para"> Boost in Brand Recognition</p>
+                </div>
+            </div>
+            <!-- COUNTER SCROLL END ********************************** -->
+        </section>
+    </div>
+    <!-- HERO SECTION END ******************************** -->
+
+    <!-- MARWUE BOX START ******************************* -->
+    <div class="marquee">
+        <div class="marquee-content">
+            <div class="item">Custom print design services</div>
+            <div class="item">Professional print design company </div>
+            <div class="item">Affordable print design solutions </div>
+            <div class="item">High-quality print design services</div>
+            <div class="item">Graphic design for printed materials</div>
+            <div class="item">Print design for brochures and flyers</div>
+            <div class="item">Business card design services</div>
+            <div class="item">Print design for packaging and labels</div>
+            <div class="item">Creative print design for marketing</div>
+            <div class="item">Print design for product catalogs</div>
+            <div class="item">Expert print design for branding</div>
+            <div class="item">Print design for promotional materials</div>
+        </div>
+    </div>
+    <!-- MARWUE BOX ENDS ******************************* -->
+
+    <!-- SOME WORKS *********************************** -->
+    <section id="section_container" class="service_work_section">
+        <div class="work_lines_container">
+            <div class="w1 w_line"></div>
+            <div class="w2 w_line"></div>
+            <div class="w3 w_line"></div>
+            <div class="w4 w_line"></div>
+            <div class="w5 w_line"></div>
+            <div class="w6 w_line"></div>
+            <div class="w7 w_line"></div>
+            <div class="w8 w_hor"></div>
+            <div class="w9 w_hor"></div>
+            <div class="w10 w_hor"></div>
+            <div class="w11 w_line"></div>
+            <div class="w12 w_line"></div>
+        </div>
+        <div class="section_wrapper">
+            <h2 id="section_title">Enhance Your Business with Authentic Print Designs from Our Experts</h2>
+            <p id="section_para">
+                With the help of our comprehensive print design solutions, we have worked with more than 200 businesses to increase their brand exposure and reach as well as their sales profitability. Our team is focused on producing designs that not only add attraction but also create brand recall which is critically important for branding. Choose from the services offered below and identify those that can contribute to the success of your brand. We are going to take you to success!
+            </p>
+            <div class="work_content">
+                <h2 id="work_head">Corporate Stationery Print Design Solutions</h2>
+                
+                <!-- Swiper -->
+                <div class="swiper workSwiper">
+                    <div class="swiper-wrapper sw">
+                        <div class="swiper-slide ss_slide color-1">
+                            <img src="{% static 'img/b1.PNG' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-2">
+                            <img src="{% static 'img/b2.PNG' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-3">
+                            <img src="{% static 'img/b3.PNG' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-4">
+                            <img src="{% static 'img/b4.PNG' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-5">
+                            <img src="{% static 'img/b1.PNG' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Swiper JS -->
+                <div class="slider_work_container">
+                    <p class="sliderwork_para">
+                        Companies that want to enhance their brand should use our corporate stationary design solutions, which has been designed specifically for them to create a professional and stylish identity. In the middle of a cut-throat market, quality stationery is essential. It is an item that can be used for several different purposes, hence the need for it to be designed properly in order to create an impression among colleagues and customers. As the top graphic and print design agency, we know how to communicate design’s influence on the brand and make it a part of your company’s vision, which must be very clear and attractive in every sales cycle.  
+                    </p>
+                    <p class="sliderwork_para">
+                        The print design design solutions we cover in this: <strong>Business Card, Letterheads and envelopes, Notepad, Bill-books, Price lists for services and products</strong> and more.
+                    </p>
+                </div>
+            </div>
+            <div class="work_content">
+                <h2 id="work_head">Marketing & Advertising Materials Print Design Solutions</h2>
+                <!-- Swiper -->
+                <div class="swiper workSwiper">
+                    <div class="swiper-wrapper sw">
+                        <div class="swiper-slide ss_slide color-1">
+                            <img src="{% static 'img/tsip-try.svg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-2">
+                            <img src="{% static 'img/tsip2.PNG' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-3">
+                            <img src="{% static 'img/tsip3.PNG' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-4">
+                            <img src="{% static 'img/tsip4.PNG' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-5">
+                            <img src="{% static 'img/tsip5.PNG' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Swiper JS -->
+                <div class="slider_work_container">
+                    <p class="sliderwork_para">
+                        Our marketing and advertising materials print design services are ideal for your brand to stand out among the others. These are designed to catch attention and deliver results. For a business, in order to compete, your presence must be supported by high-quality materials. Whatever it is banners, or promotional flyers, a successful design can shape a potential customer's outlook and inspire action. As a leading graphic and print design company, proper design ensures that your brand’s vision is clearly communicated while doing marketing materials and this is what contributes to the long-lasting impression and ultimately sales.
+                    </p>
+                    <p class="sliderwork_para">
+                        The print design design solutions we cover in this: <strong>Brochures and flyers Print, Postcards, Catalogues, Leaflets and pamphlets Print, Posters, Banner, Signages, Billboards Designs</strong>, and more.
+                    </p>
+                </div>
+            </div>
+            <div class="work_content">
+                <h2 id="work_head">Publication and Document Print Design Solutions</h2>
+                <!-- Swiper -->
+                <div class="swiper workSwiper">
+                    <div class="swiper-wrapper sw">
+                        <div class="swiper-slide ss_slide color-1">
+                            <img src="{% static 'img/z1.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-2">
+                            <img src="{% static 'img/z2.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-3">
+                            <img src="{% static 'img/z3.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-4">
+                            <img src="{% static 'img/z4.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-5">
+                            <img src="{% static 'img/z5.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Swiper JS -->
+                <div class="slider_work_container">
+                    <p class="sliderwork_para">
+                        For companies to convey their message in the most captivating and professional way, our publication and document print design solutions are specifically designed. Be it annual reports, magazines, or corporate brochures, well-crafted documents are the most effective way to communicate your idea. In the fiercely competitive arena, beautiful design stands your publications out from the crowd, making sure that your audience is happy. As the best print design agency, we believe in the power of visual design and also make sure we comply with your brand’s vision, ensuring our printing publications conveys your story clearly to your readers.
+                    </p>
+                    <p class="sliderwork_para">
+                        The print design solutions we cover in this: <strong>Magazines, Newsletters, Books, Journals Designs</strong>, and more.
+                    </p>
+                </div>
+            </div>
+            <div class="work_content">
+                <h2 id="work_head">Event and Special Stationery Print Design Solutions</h2>
+                <!-- Swiper -->
+                <div class="swiper workSwiper">
+                    <div class="swiper-wrapper sw">
+                        <div class="swiper-slide ss_slide color-1">
+                            <img src="{% static 'img/z1.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-2">
+                            <img src="{% static 'img/z2.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-3">
+                            <img src="{% static 'img/z3.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-4">
+                            <img src="{% static 'img/z4.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-5">
+                            <img src="{% static 'img/z5.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Swiper JS -->
+                <div class="slider_work_container">
+                    <p class="sliderwork_para">
+                        Our event and special stationary print design solutions are designed with the idea of adding a unique touch to every occasion. We are well aware of the significance of the stationery items such as invitation cards, thank-you cards, event programs, and place cards, so we make every piece exactly fit your event. In a world full of unforgettable memories, the stationery is what sets the tone and leaves a memorable impression on the guests. Being an established print design agency, we take care of this by creating matching designs for your event, which will make sure that your stationery captures everyone's attention and complements and heightens the entire experience.
+                    </p>
+                    <p class="sliderwork_para">
+                        The print design solutions we cover in this: <strong>Wedding cards, Event Invitations card, Greeting cards, Announcement cards, Restaurant menus, Award certificates Designs </strong>, and more.
+                    </p>
+                </div>
+            </div>
+            
+    </section>
+    <!-- SOME WORKS *********************************** -->
+
+    <!-- CTA PROCESS START *********************************************** -->
+    <section id="cta_process_section" class="upper_footer_cta">
+        <div class="cta_process_wrapper cta_process_wrapper_above_footer">
+            <div class="cta_lines_container">
+                <div class="cl1"></div>
+                <div class="cl2"></div>
+                <div class="cl3"></div>
+                <div class="cl4"></div>
+                <div class="ch1"></div>
+                <div class="ch2"></div>
+                <div class="ch3"></div>
+                <div class="ch4"></div>
+                <div class="ch5"></div>
+                <div class="ch6"></div>
+                <div class="ch7"></div>
+                <div class="ch8"></div>
+                <div class="ch9"></div>
+                <div class="ch10"></div>
+                <div class="ch11"></div>
+                <div class="ch12"></div>
+                <div class="ch13"></div>
+                <div class="ch14"></div>
+                <div class="ch15"></div>
+                <div class="ch16"></div>
+                <div class="ch17"></div>
+                <div class="ch18"></div>
+                <div class="ch19"></div>
+            </div>
+            <h2 id="cta_process_title" class="cta_h2 top_cta">Work with the Leading Print Design Agency for Impactful Design Solutions</h2>
+            <a href="{% url 'contact' %}" id="contact_cta_btn" class="contact_cta_btn">Contact Us</a>
+        </div>
+    </section>
+    <!-- CTA PROCESS END *********************************************** -->
+
+    <!-- MARWUE BOX START ******************************* -->
+    <div class="marquee">
+        <div class="marquee-content">
+            <a href="{% url 'digital_marketing_services' %}" class="box">Web Development</a>
+            <a href="{% url 'branding_services' %}" class="box">Branding design</a>
+            <a href="{% url 'web_development_services' %}" class="box">UI/UX design</a>
+            <a href="{% url 'packaging_design_services' %}" class="box">Digital Marketing</a>
+            <a href="print_design_services" class="box">Packaging Design</a>
+            <a href="{% url 'digital_marketing_services' %}" class="box">Web Development</a>
+            <a href="{% url 'branding_services' %}" class="box">Branding design</a>
+            <a href="{% url 'web_development_services' %}" class="box">UI/UX design</a>
+            <a href="{% url 'packaging_design_services' %}" class="box">Digital Marketing</a>
+            <a href="print_design_services" class="box">Packaging Design</a>
+            <a href="{% url 'digital_marketing_services' %}" class="box">Web Development</a>
+            <a href="{% url 'branding_services' %}" class="box">Branding design</a>
+            <a href="{% url 'web_development_services' %}" class="box">UI/UX design</a>
+            <a href="{% url 'packaging_design_services' %}" class="box">Digital Marketing</a>
+            <a href="print_design_services" class="box">Packaging Design</a>
+            <a href="{% url 'digital_marketing_services' %}" class="box">Web Development</a>
+            <a href="{% url 'branding_services' %}" class="box">Branding design</a>
+            <a href="{% url 'web_development_services' %}" class="box">UI/UX design</a>
+            <a href="{% url 'packaging_design_services' %}" class="box">Digital Marketing</a>
+            <a href="print_design_services" class="box">Packaging Design</a>
+            <a href="{% url 'digital_marketing_services' %}" class="box">Web Development</a>
+            <a href="{% url 'branding_services' %}" class="box">Branding design</a>
+            <a href="{% url 'web_development_services' %}" class="box">UI/UX design</a>
+            <a href="{% url 'packaging_design_services' %}" class="box">Digital Marketing</a>
+            <a href="print_design_services" class="box">Packaging Design</a>
+        </div>
+    </div>
+    <!-- MARWUE BOX ENDS ******************************* -->
+
+
+    <!-- TRANSFORM YOUR BRAND START ********************************************* -->
+    <section id="section_container" class="transform_brand_section">
+        <div class="work_lines_container">
+            <div class="w1 w3_line"></div>
+            <div class="w2 w3_line"></div>
+            <div class="w3 w3_line"></div>
+            <div class="w4 w3_line"></div>
+            <div class="w5 w3_line"></div>
+            <div class="w6 w3_line"></div>
+            <div class="w7 w3_line"></div>
+            <div class="w8 w3_hor"></div>
+            <div class="w9 w3_hor"></div>
+            <div class="w10 w3_hor"></div>
+            <div class="w11 w3_line"></div>
+            <div class="w12 w3_line"></div>
+        </div>
+        <div class="section_wrapper">
+            <h2 id="section_title">Our Proven Print Design Process to Deliver Impactful and Effective Printing Materials</h2>
+            <p id="section_para">
+                Our print process is composed of a four-stage working procedure that shall lead your print outputs to be crafted with attention to detail and efficacy of results. From the first sparkle of ideas to the release of the final printed product, we assure you that our approach is built to guarantee the success of your print pieces, reaching your audience and adding value to your brand.
+            </p>
+        </div>
+        <div id="brand_process_section">
+            <div class="brand_process_wrapper">
+                <div class="brand_sidebar">
+                    <button id="defaultOpenProcess" class="sidebarLink" data-brand-slider="0"
+                        onclick="openSidebar('brand1', this, '#14151c')">Research and strategy</button>
+                    <button class="sidebarLink" data-brand-slider="1"
+                        onclick="openSidebar('brand2', this, '#14151c')">Concept development</button>
+                    <button class="sidebarLink" data-brand-slider="2"
+                        onclick="openSidebar('brand3', this, '#14151c')">Design Execution</button>
+                    <button class="sidebarLink" data-brand-slider="4"
+                        onclick="openSidebar('brand4', this, '#14151c')">Prototyping and Refinement</button>
+                </div>
+
+                <div id="brand1" class="brandContent">
+                    <div class="business_box_left">
+                        <h3 id="services_box_title"> Research and strategy</h3>
+                        <p id="service_paragraph"> Initially, we identify your brand's USP, target audience, and direct competitors. Based on the market analysis, we gain the insights required to come up with the proper strategy for creating outstanding materials that attract customers, make them participate and buy products.</p>
+                    </div>
+                </div>
+                <div id="brand2" class="brandContent">
+                    <div class="business_box_left">
+                        <h3 id="services_box_title">Concept development</h3>
+                        <p id="service_paragraph"> In this stage, our creative team analyzes the research findings and transforms them into powerful concepts. We skim through color palettes, fonts, and graphics, with the goal being matching your brand's identity as you remain trendy and the materials are still visually appealing and usable.
+                        </p>
+                    </div>
+                </div>
+                <div id="brand3" class="brandContent">
+                    <div class="business_box_left">
+                        <h3 id="services_box_title">
+                            Design Execution
+                        </h3>
+                        <p id="service_paragraph">As soon as the concept is approved by you, we take it forward and add the visual elements as well as ensuring the production specifications are met. At the end of the day, we pay equal attention both to design and utility, therefore, the materials not only catch your eye but also are effective and ready for production.
+                        </p>
+                    </div>
+                </div>
+                <div id="brand4" class="brandContent">
+                    <div class="business_box_left">
+                        <h3 id="services_box_title">Prototyping and refinement</h3>
+                        <p id="service_paragraph">
+                            We make a physical or digital prototype to check how our ideas are applied to actual conditions. According to your reaction, we do the needful and come out with the last and so the best version, which is right for your product before moving to full-scale production.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TRANSFORM YOUR BRAND END ********************************************* -->
+
+    <!-- FAQ SECTION START ************************************************** -->
+    <section id="faq_section">
+        <div class="work_lines_container">
+            <div class="w1 w4_line"></div>
+            <div class="w2 w4_line"></div>
+            <div class="w3 w4_line"></div>
+            <div class="w4 w4_line"></div>
+            <div class="w5 w4_line"></div>
+            <div class="w6 w4_line"></div>
+            <div class="w7 w4_line"></div>
+            <div class="w8 w4_hor"></div>
+            <div class="w9 w4_hor"></div>
+            <div class="w10 w4_hor"></div>
+            <div class="w11 w4_line"></div>
+            <div class="w12 w4_line"></div>
+        </div>
+        <h2 id="faq_section_title">
+            Frequently Asked Questions
+        </h2>
+        <div class="faq_wrappers">
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3>
+                            What should I consider when selecting a print design company?
+                        </h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            There is one important thing you should evaluate when choosing a print company. That's right, their portfolio. Here you can see the level of their work. It is important that make sure they are familiar with your industry and that their past projects were successful with customer. Examine if their projects in the past have been in line with your imagination in terms of the point of view and the power that the viewers receive from them.
+                        </p>
+                        <p> On-time delivery and budget compliance are also among the long list of their strengths. Promptness is of the essence in any business, and a trustworthy company will always be upfront about their price. Besides, it's a two-way process—only put your trust in the company that listens to your ideas, provides feedback, and interacts with you during the whole process. By doing so, a print company at the top of its craft will not only bring life to your vision but also develop your materials in such a way that they will be both visually attractive and useful for reaching your brand's goals.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3>Why should you choose JSwebart for your print design needs?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            JSwebart is a company that specializes in the production of materials with an emotional impact and the promotion of your brand. Our team of professionals combine art and marketing to ensure that your prints get to your audience in a way that is both artistic and of high esthetic value. When getting to know your business, market, and audience, we consider you first which allows us to come with unique and custom solutions for your needs.
+                        </p>
+                        <p>We are professionals, proud of the fact that we are experienced in various industries, we work with care and the highest professional standards. Whether it's corporate materials, marketing assets, or event stationery, we ensure every project reflects professionalism and innovation. We strive to provide our customers with timely delivery and are committed to customer satisfaction from the beginning to the end of the project.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3>What industries do you specialize in for print design?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+
+                        <p>
+                            In varying industries that we serve, such as corporate, retail, hospitality, healthcare, education, and events, we are the number one company when it comes to printing solutions. Our team customizes each project to the specific requirements of the industry you are in, making sure the final output matches your brand's identity and goals.
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3> What types of print materials do you create?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            We craft print materials focusing on elevating your brand’s positioning. Our printing solution includes - Marketing & Advertising Materials, Corporate Stationery, Publication and Document and many more. 
+
+
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3>  How much do your print design services cost?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            Our pricing depends on the type of project and your specific needs. Simple projects like flyers may cost less, while more detailed work like brochures might cost more. We’ll give you a clear quote after we understand what you’re looking for. Feel free to contact us for an estimate.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3>  How do you determine the pricing for print services?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            Pricing depends on several factors, including the type of materials, quantity, complexity of the design, and printing method. We’ll provide a clear, detailed quote after discussing your project requirements.
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3> Can you help with rebranding or updating existing print materials?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            Yes, we specialize in rebranding and updating existing print materials to keep your business looking fresh and aligned with your current brand image.
+                    </p>
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3> What’s the difference between digital and offset printing?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            Digital printing is ideal for small runs and offers fast turnaround times, while offset printing is better for larger volumes and provides more consistent color quality. We’ll help you choose the right option based on your project needs.
+
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3>Do you offer both design and printing services?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            No, we primarily offer print design services for clients outside Mumbai. However, if you are from Mumbai, we also provide printing services.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3>  Can you help with print materials for events or special promotions?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            Absolutely! We create eye-catching print materials for events, promotions, trade shows, and more. Whether it’s flyers, posters, or banners, we ensure your event materials are designed to attract attention and drive engagement.
+                            
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ SECTION END ************************************************** -->
+
+    <!-- CTA PROCESS START *********************************************** -->
+    <section id="cta_process_section" class="upper_footer_cta">
+        <div class="cta_process_wrapper cta_process_wrapper_above_footer">
+            <div class="cta_lines_container">
+                <div class="cl1"></div>
+                <div class="cl2"></div>
+                <div class="cl3"></div>
+                <div class="cl4"></div>
+                <div class="ch1"></div>
+                <div class="ch2"></div>
+                <div class="ch3"></div>
+                <div class="ch4"></div>
+                <div class="ch5"></div>
+                <div class="ch6"></div>
+                <div class="ch7"></div>
+                <div class="ch8"></div>
+                <div class="ch9"></div>
+                <div class="ch10"></div>
+                <div class="ch11"></div>
+                <div class="ch12"></div>
+                <div class="ch13"></div>
+                <div class="ch14"></div>
+                <div class="ch15"></div>
+                <div class="ch16"></div>
+                <div class="ch17"></div>
+                <div class="ch18"></div>
+                <div class="ch19"></div>
+            </div>
+            <h2 id="cta_process_title" class="cta_h2">Work With the Best Graphic Design Agency to Elevate the Design and Impact of Your Print Materials</h2>
+            <a href="{% url 'contact' %}" id="contact_cta_btn" class="contact_cta_btn">Contact Us</a>
+        </div>
+    </section>
+    <!-- CTA PROCESS END *********************************************** -->
+{% endblock %}
+  
+
+{% block scripts %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        function openSidebar(pageName,elmnt,color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("brandContent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("sidebarLink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+                tablinks[i].style.color = "#14151c";
+            }
+            document.getElementById(pageName).style.display = "flex";
+            elmnt.style.backgroundColor = color;
+            elmnt.style.color = "white";
+        }
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpenProcess").click();
+    </script>
+    <script src="{% static 'js/animation.js' %}"></script>
+    <script src="{% static 'js/marque.js' %}"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+{% endblock %}

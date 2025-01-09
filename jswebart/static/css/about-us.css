@@ -119,7 +119,7 @@
   .about_image_marque_container .about_marque span {
     display: flex;
     flex-direction: column;
-    gap: 2vw;
+    gap: 2vw; 
   }
 
   .ab1,.ab4, .ab7, .ab10, .ab13{
@@ -577,6 +577,9 @@
     height: 40vw;
     background-color: var(--dark-black-clr);
     color: var(--white-clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .founder_image img {

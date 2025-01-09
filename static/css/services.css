@@ -420,7 +420,7 @@
 
 .services_box {
   width: 90%;
-  height: 38vw;
+  height: 42vw;
 }
 
 .services_box_left,
@@ -859,6 +859,10 @@
 .tablink {
   font-size: 2vw;
   width: calc(100% / 3);
+}
+
+.services_box {
+  height: 90vw !important;
 }
 
 .services_box_right {

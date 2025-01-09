@@ -160,7 +160,7 @@
 }
 
 .form_control label {
-    width: 50%;
+    width: 100%;
     color: var(--dark-black-clr);
     font-size: 1.6vw;
     font-weight: var(--medium);
@@ -176,6 +176,40 @@
     background-color: transparent;
     outline: none;
     border: 1px solid var(--dark-black-clr);
+}
+
+/* .err {
+    width: 90%;
+    margin: 2vw auto;
+} */
+
+small {
+    font-size: 1.2vw;
+    color: red;
+    font-family: var(--poppin-font);
+    padding: 0.3rem 0;
+}
+
+.phone_and_country_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.phone_and_country:nth-child(1) {
+    width: 30%;
+}
+.phone_and_country:nth-child(2) {
+    width: 68%;
+}
+
+.phone_and_country:nth-child(1) select{
+    outline: none;
+    margin-top: 5px;
+}
+
+.phone_and_country:nth-child(2) input {
+    margin-top: 5px;
 }
 
 #company_stage_wrapper {
@@ -667,6 +701,17 @@
         font-size: 1.9vw;
     }
 
+    .phone_code {
+        width: 100%;
+    }
+
+    .phone_and_country:nth-child(1) {
+        width: 49%;
+    }
+    .phone_and_country:nth-child(2) {
+        width: 49%;
+    }
+
     #contact_banner_head {
         font-size: 3.4vw;
     }
@@ -855,6 +900,13 @@
     .form_control select {
         font-size: 2.3vw;
         height: 10vw;
+    }
+
+    .phone_and_country:nth-child(1) {
+        width: 30%;
+    }
+    .phone_and_country:nth-child(2) {
+        width: 68%;
     }
 
     .upload-button {

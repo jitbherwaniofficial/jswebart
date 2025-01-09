@@ -686,15 +686,6 @@ var workSwiper = new Swiper(".workSwiper", {
   },
   grabCursor: true, // Enable grab effect
   breakpoints: {
-    // When the screen width is >= 320px
-    350: {
-      slidesPerView: 0.568,
-      spaceBetween: 15,
-    },
-    400: {
-      slidesPerView: 0.568,
-      spaceBetween: 15,
-    },
     // When the screen width is >= 768px
     768: {
       slidesPerView: 1.165,
@@ -707,9 +698,21 @@ var workSwiper = new Swiper(".workSwiper", {
     },
 
     1366: {
-      slidesPerView: 1.45,
+      slidesPerView: 1.44,
       spaceBetween: 60,
     },
     // Add more breakpoints as needed
+    350: {
+      slidesPerView: 0.568,
+      spaceBetween: 15,
+    },
+    400: {
+      slidesPerView: 1.04,
+      spaceBetween: 15,
+    },
+    350: {
+      slidesPerView: 1.04,
+      spaceBetween: 15,
+    },
   },
 });

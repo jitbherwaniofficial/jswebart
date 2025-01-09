@@ -1,0 +1,1129 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Web Development Services {% endblock %}
+
+{% block stylesheet %} 
+<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+<link rel="stylesheet" href="{% static 'css/services.css' %}">
+<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+{% endblock %}
+{% block style %}
+<style>
+        .cta_left {
+            width: 45%;
+        }
+
+        .box {
+            border: 2px solid var(--light-black-clr);
+            margin: 2vw;
+            cursor: pointer;
+            width: fit-content;
+            text-wrap: nowrap;
+            padding: 10px 20px;
+            font-size: 24px;
+            font-weight: var(--semibold);
+            font-family: var(--playfair-font);
+            align-self: normal !important;
+        }
+
+        .services_box {
+    width: 90%;
+    height: 40vw;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+
+    <!-- HERO SECTION START ******************************** -->
+    <div class="hero_wrapper">
+        <section id="hero_section">
+            <div id="hero_left">
+                <h1 id="hero_title">
+                    Best Web Development Agency in India That Builds High-Performing Websites
+                </h1>
+                <p id="hero_para">
+                    With our results-oriented web design and development services, we have handed over more than 120 websites across 25+ industries. Our team focuses on crafting a web platform that is technologically smart as well as drives conversions for your business. So, we deliver to you a platform that gives a massive boost to your idea.
+                </p>
+                <a href="{% url 'portfolio' %}" id="hero_work_btn">Our Work</a>
+            </div>
+            <div id="hero_right">
+                <div class="stripsminus2 strip"></div>
+                <div class="stripsminus1 strip"></div>
+                <div class="strips0 strip"></div>
+                <div class="strips1 strip"></div>
+                <div class="strips2 strip"></div>
+                <div class="strips3 strip"></div>
+                <div class="strips4 strip"></div>
+                <div class="strips5 strip"></div>
+                <div class="strips6 strip"></div>
+                <div class="stripsh1 striph"></div>
+                <div class="stripsh2 striph"></div>
+                <div class="stripsh3 striph"></div>
+                <div class="stripsh4 striph"></div>
+                <div class="stripsh5 striph"></div>
+                <div class="stripsh6 striph"></div>
+                <div class="stripsh7 striph"></div>
+                <div class="stripsh8 striph"></div>
+                <div class="stripsh9 striph"></div>
+                <div class="stripsh10 striph"></div>
+                <div class="stripsh11 striph"></div>
+                <div class="stripsh12 striph"></div>
+
+                <div class="marquee-container">
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="sth"></div>
+                    <div class="sth"></div>
+                    <div class="sth"></div>
+                    <div class="sth"></div>
+                    <div class="sth"></div>
+                    <div class="marquee_img">
+                        <!-- Original images -->
+                        <img class="hw_img hero_img_1 work_bhukh-lagi-kya" src="{% static 'img/work/bhukh-lagi-kya.jpg' %}" alt="">
+                        <img class="hw_img hero_img_2 work_dtiara" src="{% static 'img/work/dtiara.jpg' %}" alt="">
+                        <img class="hw_img hero_img_3 work_the-art-of-generation" src="{% static 'img/work/the-art-of-generation.jpg' %}" alt="">
+                        <img class="hw_img hero_img_4 work_wild-media" src="{% static 'img/work/wild-media.jpg' %}" alt="">
+                        <img class="hw_img hero_img_5 work_thesouthindianplate" src="{% static 'img/work/thesouthindianplate.jpg' %}" alt="">
+                        <img class="hw_img hero_img_6 work_fitpeo" src="{% static 'img/work/fitpeo.jpg' %}" alt="">
+
+                        <img class="hw_img hero_img_1 work_bhukh-lagi-kya" src="{% static 'img/work/bhukh-lagi-kya.jpg' %}" alt="">
+                        <img class="hw_img hero_img_2 work_dtiara" src="{% static 'img/work/dtiara.jpg' %}" alt="">
+                        <img class="hw_img hero_img_3 work_the-art-of-generation" src="{% static 'img/work/the-art-of-generation.jpg' %}" alt="">
+                        <img class="hw_img hero_img_4 work_wild-media" src="{% static 'img/work/wild-media.jpg' %}" alt="">
+                        <img class="hw_img hero_img_5 work_thesouthindianplate" src="{% static 'img/work/thesouthindianplate.jpg' %}" alt="">
+                        <img class="hw_img hero_img_6 work_fitpeo" src="{% static 'img/work/fitpeo.jpg' %}" alt="">
+
+                        <img class="hw_img hero_img_1 work_bhukh-lagi-kya" src="{% static 'img/work/bhukh-lagi-kya.jpg' %}" alt="">
+                        <img class="hw_img hero_img_2 work_dtiara" src="{% static 'img/work/dtiara.jpg' %}" alt="">
+                        <img class="hw_img hero_img_3 work_the-art-of-generation" src="{% static 'img/work/the-art-of-generation.jpg' %}" alt="">
+                        <img class="hw_img hero_img_4 work_wild-media" src="{% static 'img/work/wild-media.jpg' %}" alt="">
+                        <img class="hw_img hero_img_5 work_thesouthindianplate" src="{% static 'img/work/thesouthindianplate.jpg' %}" alt="">
+                        <img class="hw_img hero_img_6 work_fitpeo" src="{% static 'img/work/fitpeo.jpg' %}" alt="">
+
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- COUNTER SCROLL START ********************************** -->
+            <div id="counter">
+                <div id="counter_box">
+                    <h2 id="counter_number" class="num" data-val="127">00</h2>
+                    <p id="counter_para">Websites Built</p>
+                </div>
+                <div id="counter_box">
+                    <h2 id="counter_number" class="num_per" data-val="90">00</h2>
+                    <p id="counter_para">Client Satisfaction</p>
+                </div>
+                <div id="counter_box">
+                    <h2 id="counter_number" class="num" data-val="118">00</h2>
+                    <p id="counter_para">Happy Clients Globally</p>
+                </div>
+            </div>
+            <!-- COUNTER SCROLL END ********************************** -->
+        </section>
+    </div>
+    <!-- HERO SECTION END ******************************** -->
+
+    <!-- MARWUE BOX START ******************************* -->
+    <div class="marquee">
+        <div class="marquee-content">
+            <div class="item">Web development company </div>
+            <div class="item">Custom web development services </div>
+            <div class="item">Professional web development </div>
+            <div class="item">Website development services</div>
+            <div class="item">Responsive web development</div>
+            <div class="item">Web development for startups</div>
+            <div class="item">Web development for small businesses</div>
+            <div class="item">SEO-friendly web development</div>
+            <div class="item">Scalable web development</div>
+            <div class="item">Website redesign services</div>
+            <div class="item">Website optimization services</div>
+            <div class="item">Full-stack web development</div>
+            <div class="item">Front-end web development</div>
+            <div class="item">Back-end web development</div>
+        </div>
+    </div>
+    <!-- MARWUE BOX ENDS ******************************* -->
+
+    <!-- SOME WORKS *********************************** -->
+    <section id="section_container" class="service_work_section">
+        <div class="work_lines_container">
+            <div class="w1 w_line"></div>
+            <div class="w2 w_line"></div>
+            <div class="w3 w_line"></div>
+            <div class="w4 w_line"></div>
+            <div class="w5 w_line"></div>
+            <div class="w6 w_line"></div>
+            <div class="w7 w_line"></div>
+            <div class="w8 w_hor"></div>
+            <div class="w9 w_hor"></div>
+            <div class="w10 w_hor"></div>
+            <div class="w11 w_line"></div>
+            <div class="w12 w_line"></div>
+        </div>
+        <div class="section_wrapper">
+            <h2 id="section_title">Some of the Awesome Websites We've Built as a Top Web Development Agency in India</h2>
+            <p id="section_para">
+                Our work in web development ranges from startups to e-commerce to service sector websites and more. With our innovative website development solutions, we have delivered futuristic solutions to our clients, so that their business not only has a beautifully crafted web platform but also a digital medium to drive conversions.
+            </p>
+            <div class="work_content">
+                <h2 id="work_head">Bhukh Lagi Kya?</h2>
+                <p id="work_para">A Restaurant that focusing on bringing unique flavor of chicken fry to life.</p>
+                <!-- Swiper -->
+                <div class="swiper workSwiper">
+                    <div class="swiper-wrapper sw">
+                        <div class="swiper-slide ss_slide color-1">
+                            <img src="{% static 'img/bh1.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-2">
+                            <img src="{% static 'img/bh2.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-3">
+                            <img src="{% static 'img/bh3.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-4">
+                            <img src="{% static 'img/bh4.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-5">
+                            <img src="{% static 'img/bh5.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Swiper JS -->
+                <div class="test_quotes">
+                    <span>“</span>
+                    <p class="test_para">Big thanks to JSwebart for totally transforming Bhukh Lagi Kya! They took care of all the branding, website, and marketing, making everything come together perfectly. Now, our food is reaching more people, and it’s been an incredible journey</p>
+                    <address>Aakash ( Founder Of Bhukhlagikya? )</address>
+                </div>
+            </div>
+            <div class="work_content">
+                <h2 id="work_head">The South Indian Plate</h2>
+                <p id="work_para">The South Indian Plate is well recognized as the best Idli and Medu Vada bulk
+                    suppliers in Mumbai.</p>
+                <!-- Swiper -->
+                <div class="swiper workSwiper">
+                    <div class="swiper-wrapper sw">
+                        <div class="swiper-slide ss_slide color-1">
+                            <img src="{% static 'img/tsip1.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-2">
+                            <img src="{% static 'img/tsip2.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-3">
+                            <img src="{% static 'img/tsip3.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-4">
+                            <img src="{% static 'img/tsip4.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-5">
+                            <img src="{% static 'img/tsip5.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Swiper JS -->
+                <div class="test_quotes">
+                    <span>“</span>
+                    <p class="test_para">JSwebart has been incredible! They handled everything for The South Indian Plate—branding, web design, packaging, and marketing. Their team made the process so smooth and exciting. Thanks to them, my dream is now a reality!</p>
+                    <address>Nirmala B. ( Founder Of The South Indian Plate )</address>
+                </div>
+            </div>
+            <div class="work_content">
+                <h2 id="work_head">D'tiara, Herold, WildMedia & More</h2>
+                <p id="work_para">Some more examples of our web development solutions across industries.</p>
+                <!-- Swiper -->
+                <div class="swiper workSwiper">
+                    <div class="swiper-wrapper sw">
+                        <div class="swiper-slide ss_slide color-1">
+                            <img src="{% static 'img/work/wild-media.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-2">
+                            <img src="{% static 'img/work/the-art-of-generation.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-3">
+                            <img src="{% static 'img/work/fish-and-chips.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-4">
+                            <img src="{% static 'img/work/dtiara.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-5">
+                            <img src="{% static 'img/work/herold.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Swiper JS -->
+                <div class="test_quotes">
+                    <span>“</span>
+                    <p class="test_para">I am thrilled with the branding and design work JSWebArt delivered for
+                        Wildlife. They truly understood our commitment to natural beauty and helped us create an
+                        authentic brand identity that stands out. Their professionalism and creative insights were
+                        invaluable in launching our product line, and our customers love the result!</p>
+                    <address>Ananya Mehta ( Founder of WildLife Media)</address>
+                </div>
+            </div>
+    </section>
+    <!-- SOME WORKS *********************************** -->
+
+    <!-- CTA PROCESS START *********************************************** -->
+    <section id="cta_process_section" class="upper_footer_cta">
+        <div class="cta_process_wrapper cta_process_wrapper_above_footer">
+            <div class="cta_lines_container">
+                <div class="cl1"></div>
+                <div class="cl2"></div>
+                <div class="cl3"></div>
+                <div class="cl4"></div>
+                <div class="ch1"></div>
+                <div class="ch2"></div>
+                <div class="ch3"></div>
+                <div class="ch4"></div>
+                <div class="ch5"></div>
+                <div class="ch6"></div>
+                <div class="ch7"></div>
+                <div class="ch8"></div>
+                <div class="ch9"></div>
+                <div class="ch10"></div>
+                <div class="ch11"></div>
+                <div class="ch12"></div>
+                <div class="ch13"></div>
+                <div class="ch14"></div>
+                <div class="ch15"></div>
+                <div class="ch16"></div>
+                <div class="ch17"></div>
+                <div class="ch18"></div>
+                <div class="ch19"></div>
+            </div>
+            <h2 id="cta_process_title" class="cta_h2 top_cta">Work with the Best Custom Website Development Agency in India</h2>
+            <a href="{% url 'contact' %}" id="contact_cta_btn" class="contact_cta_btn">Contact Us</a>
+        </div>
+    </section>
+    <!-- CTA PROCESS END *********************************************** -->
+
+    <!-- MARWUE BOX START ******************************* -->
+    <div class="marquee">
+        <div class="marquee-content">
+            <a href="{% url 'digital_marketing_services' %}" class="box">Digital Marketing</a>
+            <a href="{% url 'branding_services' %}" class="box">Branding design</a>
+            <a href="{% url 'web_development_services' %}" class="box">UI/UX design</a>
+            <a href="{% url 'packaging_design_services' %}" class="box">Packaging Design</a>
+            <a href="print_design_services" class="box">Print Design</a>
+            <a href="{% url 'digital_marketing_services' %}" class="box">Digital Marketing</a>
+            <a href="{% url 'branding_services' %}" class="box">Branding design</a>
+            <a href="{% url 'web_development_services' %}" class="box">UI/UX design</a>
+            <a href="{% url 'packaging_design_services' %}" class="box">Packaging Design</a>
+            <a href="print_design_services" class="box">Print Design</a>
+            <a href="{% url 'digital_marketing_services' %}" class="box">Digital Marketing</a>
+            <a href="{% url 'branding_services' %}" class="box">Branding design</a>
+            <a href="{% url 'web_development_services' %}" class="box">UI/UX design</a>
+            <a href="{% url 'packaging_design_services' %}" class="box">Packaging Design</a>
+            <a href="print_design_services" class="box">Print Design</a>
+            <a href="{% url 'digital_marketing_services' %}" class="box">Digital Marketing</a>
+            <a href="{% url 'branding_services' %}" class="box">Branding design</a>
+            <a href="{% url 'web_development_services' %}" class="box">UI/UX design</a>
+            <a href="{% url 'packaging_design_services' %}" class="box">Packaging Design</a>
+            <a href="print_design_services" class="box">Print Design</a>
+            <a href="{% url 'digital_marketing_services' %}" class="box">Digital Marketing</a>
+            <a href="{% url 'branding_services' %}" class="box">Branding design</a>
+            <a href="{% url 'web_development_services' %}" class="box">UI/UX design</a>
+            <a href="{% url 'packaging_design_services' %}" class="box">Packaging Design</a>
+            <a href="print_design_services" class="box">Print Design</a>
+        </div>
+    </div>
+    <!-- MARWUE BOX ENDS ******************************* -->
+
+    <!-- INNOVATIVE BRANDING START ****************************************** -->
+    <section id="section_container">
+        <div class="work_lines_container">
+            <div class="w1 w2_line"></div>
+            <div class="w2 w2_line"></div>
+            <div class="w3 w2_line"></div>
+            <div class="w4 w2_line"></div>
+            <div class="w5 w2_line"></div>
+            <div class="w6 w2_line"></div>
+            <div class="w7 w2_line"></div>
+            <div class="w8 w2_hor"></div>
+            <div class="w9 w2_hor"></div>
+            <div class="w10 w2_hor"></div>
+            <div class="w11 w2_line"></div>
+            <div class="w12 w2_line"></div>
+        </div>
+        <div class="section_wrapper">
+            <h2 id="section_title">Accelerate Your Business Growth with Our Professional Web Development Services
+            </h2>
+            <p id="section_para">
+                We have summarized our website development solutions into three parts for ease of understanding. These services cover a wide range of software solutions that a business needs to start making its mark on the digital canvas and connect with its customer base. Slide to read the full service list and choose the solution with which we can assist your business.
+            </p>
+        </div>
+    </section>
+    <!-- INNOVATIVE BRANDING END ****************************************** -->
+
+    <!-- BRAND FOUNDATION, DEVELOPMENT, GROWTH START ******************************************** -->
+    <section class="brand_foundation">
+        <div class="brand_foundation_wrapper">
+            <button class="tablink tl" onclick="openPage('s1', this, '#14151c')">Website Development </button>
+            <button class="tablink tl" onclick="openPage('s2', this, '#14151c')" id="defaultOpen">Specialized Solutions</button>
+            <button class="tablink tl" onclick="openPage('s3', this, '#14151c')">Post-Development</button>
+            <!-- <button class="tablink" onclick="openPage('s4', this, '#14151c')">Wireframing </button> -->
+        </div>
+    </section>
+
+    <section id="s1" class="tabcontent">
+        <div class="services_wrapper">
+            <h2 id="service_title">
+                Website Development Services
+            </h2>
+            <p id="service_para">
+                Under this pillar, we have grouped the services that form the heart of website development. As a leading web design and development agency, our core web solutions cover everything from Front-End Development to E-Commerce Website Development. Explore the slides to get a complete overview of the web solutions we provide and see how we can help bring your digital vision to life. 
+            </p>
+            <div class="services_pills_container">
+                <button class="pill active" data-slide-branding="0">Front-End</button>
+                <button class="pill" data-slide-branding="1">Backend </button>
+                <button class="pill" data-slide-branding="2">Full Stack  </button>
+                <button class="pill" data-slide-branding="3">Custom Website</button>
+                <button class="pill" data-slide-branding="4">E-Commerce Website</button>
+                <button class="pill" data-slide-branding="5">Static Website</button>
+            </div>
+            <div class="swiper-container-three">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="services_box">
+                            <div class="services_box_left">
+                                <h3 id="services_box_title">Creating User-Friendly Website Designs</h3>
+                                <p id="services_box_para">
+                                    <span>
+                                        Our team builds the look and feel of your website using the latest technologies and practices. With our front-end development service, we provide you with a web platform that communicates everything about your business in a visually appealing and brand-focused way.
+                                    </span>
+                                </p>
+                                <span>This helps your business with:</span>
+                                <ol id="services_served_container">
+                                    <li> Stronger Brand Identity</li>
+                                    <li> Higher Conversion Rates</li>
+                                    <li> A digital touchpoint</li>
+                                    <li> Improved User Experience</li>
+                                </ol>
+                            </div>
+                            <figure class="services_box_right">
+                                <img src="{% static 'img/uiux-audit.jpg' %}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="services_box">
+                            <div class="services_box_left">
+                                <h3 id="services_box_title">Building the Strong Foundation Behind Your Website</h3>
+                                <p id="services_box_para">
+                                    <span>
+                                        Backend is the part of your website that is essential for its functionality. Our team uses reliable and fast-working technologies to craft the database, manage user authentication, and implement other key functions that ensure your website runs smoothly, efficiently, and securely. 
+                                    </span>
+                                </p>
+                                <span>This helps your business with: </span>
+                                <ol id="services_served_container">
+                                    <li> Improved Website Performance</li>
+                                    <li> Enhanced Security </li>
+                                    <li> Scalability </li>
+                                    <li> Reliable Operations</li>
+                                </ol>
+                            </div>
+                            <figure class="services_box_right">
+                                <img src="{% static 'img/website-foundation.jpg' %}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="services_box">
+                            <div class="services_box_left">
+                                <h3 id="services_box_title">Complete Website Solutions from Start to Finish</h3>
+                                <p id="services_box_para">
+                                    <span>
+                                        This covers both front-end and back-end development of your website. In this service, our full-stack developers build a well-functioning website that is both visually stunning and smooth in its operation. This is the complete solution your business needs to establish a strong digital presence.
+                                    </span>
+
+                                </p>
+                                <span>
+                                    This helps your business with:
+                                </span>
+                                <ol id="services_served_container">
+                                    <li> Improved functionality</li>
+                                    <li> Increased conversions</li>
+                                    <li> Complete web solution</li>
+                                    <li> Increased performance</li>
+                                </ol>
+
+                            </div>
+                            <figure class="services_box_right">
+                                <img src="{% static 'img/start-to-finish.jpg' %}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="services_box">
+                            <div class="services_box_left">
+                                <h3 id="services_box_title"> Tailored Websites Built Just for Your Business</h3>
+                                <p id="services_box_para">
+                                    <span>
+                                        We also provide custom website development services. Unlike pre-made templates, we craft websites that are unique to your brand identity and voice. This allows you to modify the design and features according to your business needs, audience base, and brand story.
+                                    </span>
+
+                                </p>
+                                <span>
+                                    This helps your business with:
+                                </span>
+                                <ol id="services_served_container">
+                                    <li> Unique Brand Perception</li>
+                                    <li> Increased Flexibility</li>
+                                    <li> Scalability Scope</li>
+                                    <li> Better user experience</li>
+
+                                </ol>
+
+                            </div>
+                            <figure class="services_box_right">
+                                <img src="{% static 'img/tailored-website.jpg' %}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="services_box">
+                            <div class="services_box_left">
+                                <h3 id="services_box_title"> Creating Powerful E-Commerce Solutions </h3>
+                                <p id="services_box_para">
+                                    <span>
+                                        With our e-commerce website development services, we build your online store to be safe, secure, and user-friendly in the digital market. We help you sell your products online by designing and crafting your e-commerce platform, as well as marketing it.
+                                    </span>
+
+                                </p>
+                                <span>
+                                    This helps your business with:
+                                </span>
+                                <ol id="services_served_container">
+                                    <li> Increased Sales</li>
+                                    <li> Secure Transactions</li>
+                                    <li> Easy Product Management</li>
+                                    <li> Wider Reach</li>
+
+                                </ol>
+
+                            </div>
+                            <figure class="services_box_right">
+                                <img src="{% static 'img/ecommerce.jpg' %}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="services_box">
+                            <div class="services_box_left">
+                                <h3 id="services_box_title"> Building Simple and Effective Websites</h3>
+                                <p id="services_box_para">
+                                    <span>
+                                        This service is ideal for you if your business does not need complex web features and constant updates. Static websites are more than enough for you if your business need gets fulfilled only by showcasing your business, products, or services with a clear, straightforward design.
+                                    </span>
+
+                                </p>
+                                <span>
+                                    This helps your business with:
+                                </span>
+                                <ol id="services_served_container">
+                                    <li> Cost-Effective Solution</li>
+                                    <li> Fast Loading Times</li>
+                                    <li> Low Maintenance</li>
+                                    <li> Simple Navigation</li>
+
+                                </ol>
+
+                            </div>
+                            <figure class="services_box_right">
+                                <img src="{% static 'img/simple-yet-effective.jpg' %}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="s2" class="tabcontent">
+        <div class="services_wrapper">
+            <h2 id="service_title">
+                Specialized Web Solutions
+            </h2>
+            <p id="service_para">
+                Under this pillar, we cover web solutions that require a unique approach and method to craft. These requirements go beyond general web development and address more specific business needs, such as Website Redesign services, Startup-focused web solutions, SEO-optimized website development, and more.
+            </p>
+            <div class="services_pills_container">
+                <button class="pill active" data-slide-b="0">Redesign </button>
+                <button class="pill" data-slide-b="1">For Startups</button>
+                <button class="pill" data-slide-b="2">SEO-Friendly</button>
+                <button class="pill" data-slide-b="3">Landing Page</button>
+                <button class="pill" data-slide-b="4">SaaS Platform</button>
+            </div>
+            <div class="swiper-container-four">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="services_box">
+                            <div class="services_box_left">
+                                <h3 id="services_box_title">Revamping Your Website for Better Results</h3>
+                                <p id="services_box_para">
+                                    <span>
+                                        As an innovation-driven web development agency, our team has the expertise to modify your web platform to match your current business needs. This service is vital for your business if it is failing to drive conversions and meet your business goals.
+                                    </span>
+                                </p>
+                                <span>
+                                    This helps your business with:
+                                </span>
+                                <ol id="services_served_container">
+                                    <li> Fresh Look</li>
+                                    <li> Clear Brand Personality</li>
+                                    <li> Improved User Experience</li>
+                                    <li> Increased Conversions</li>
+                                </ol>
+                            </div>
+                            <figure class="services_box_right">
+                                <img src="{% static 'img/revamping.jpg' %}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="services_box">
+                            <div class="services_box_left">
+                                <h3 id="services_box_title">Web Solutions Tailored for Startups</h3>
+                                <p id="services_box_para">
+                                    <span>
+                                        Our web solutions, specially crafted for startups, help bring your new vision to life with a strong online presence. We design a web platform for your idea that is both affordable and scalable, allowing it to grow with your business and adapting to future needs.
+                                    </span>
+                                </p>
+                                <span>
+                                    This helps your business with:
+                                </span>
+                                <ol id="services_served_container">
+                                    <li> Affordable Solutions</li>
+                                    <li> Consistent Brand Voice</li>
+                                    <li> Scalability Scope</li>
+                                    <li> Brand Building</li>
+                                </ol>
+                            </div>
+                            <figure class="services_box_right">
+                                <img src="{% static 'img/web.jpg' %}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="services_box">
+                            <div class="services_box_left">
+                                <h3 id="services_box_title">SEO-Optimized Web Development Solutions</h3>
+                                <p id="services_box_para">
+                                    <span>
+                                        A website built with SEO-enriched practices boosts conversions and improves your visibility in the digital world. Our web developers work closely with SEO specialists to provide your business with a  web platform optimized for both users and search engines.
+                                    </span>
+                                    <span>
+                                        This helps your business with:
+                                    </span>
+                                </p>
+                                <ol id="services_served_container">
+                                    <li> Higher Search Rankings</li>
+                                    <li> Increased Organic Traffic </li>
+                                    <li> Faster Loading Speed</li>
+                                    <li> Stronger Online Presence</li>
+                                </ol>
+                            </div>
+                            <figure class="services_box_right">
+                                <img src="{% static 'img/seo-optimized.jpg' %}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="services_box">
+                            <div class="services_box_left">
+                                <h3 id="services_box_title">Effective Landing Page Development Solutions</h3>
+                                <p id="services_box_para">
+                                    <span>
+                                        We also provide landing page development services if your business is targeting specific goals such as promoting products, running campaigns, or driving conversions. We build these pages in alignment with your goals and the audience you are targeting.
+                                    </span>
+                                    <span>
+                                        This helps your business with:
+                                    </span>
+                                </p>
+                                <ol id="services_served_container">
+                                    <li> Targeting Specific Goals</li>
+                                    <li> Faster Campaign Launches</li>
+                                    <li> Higher Conversions</li>
+                                    <li> Lead Generation</li>
+                                </ol>
+                            </div>
+                            <figure class="services_box_right">
+                                <img src="{% static 'img/landing-page.jpg' %}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="services_box">
+                            <div class="services_box_left">
+                                <h3 id="services_box_title">Building Reliable and Scalable SaaS Platforms</h3>
+                                <p id="services_box_para">
+                                    <span>
+                                        If your business needs a platform that can offer its services online without the need to install, SaaS is the best solution. These platforms scale with the growth of your business and We have expertise in creating these kind of platforms that are safe, secure, and tailored to your business.
+                                    </span>
+                                    <span>
+                                        This helps your business with:
+                                    </span>
+                                </p>
+                                <ol id="services_served_container">
+                                    <li> Automatic Updates</li>
+                                    <li> Easy Access Anywhere</li>
+                                    <li> Data Security</li>
+                                    <li> Scalability</li>
+                                </ol>
+                            </div>
+                            <figure class="services_box_right">
+                                <img src="{% static 'img/globe_network.jpg' %}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="s3" class="tabcontent">
+        <div class="services_wrapper">
+            <h2 id="service_title">
+                Post-Development Services
+            </h2>
+            <p id="service_para">
+                This is the last pillar in our web development service. In this, we provide services that are a continuation of the launch of your product. This includes ongoing support, maintenance, performance optimization, or any other changes you want in your product in the future. JSwebart is your best web development partner beyond the kickoff of your product. Here are the services that this pillar includes.
+            </p>
+            <div class="services_pills_container">
+                <button class="pill active" data-slide-g="0">Deployment</button>
+                <button class="pill" data-slide-g="1">Maintenance</button>
+            </div>
+            <div class="swiper-container-five">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="services_box">
+                            <div class="services_box_left">
+                                <h3 id="services_box_title"> Smooth and Efficient Deployment for Your Website </h3>
+                                <p id="services_box_para">
+                                    <span>
+                                        After developing your web product according to your business needs, we also help you launch the platform to make it accessible to your users and search engines. Our team efficiently handles the entire deployment process to ensure it functions smoothly.
+                                    </span>
+                                    <span>
+                                        This helps your business by:
+                                    </span>
+                                </p>
+                                <ol id="services_served_container">
+                                    <li> Ensuring Smooth Launch</li>
+                                    <li> Enhancing Security</li>
+                                    <li> Performance Monitoring</li>
+                                    <li> CI CD Pipelines</li>
+                                </ol>
+                            </div>
+                            <figure class="services_box_right">
+                                <img src="{% static 'img/deployment-servers.jpg' %}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="services_box">
+                            <div class="services_box_left">
+                                <h3 id="services_box_title"> Reliable Website Maintenance for Ongoing Success</h3>
+                                <p id="services_box_para">
+                                    <span>
+                                        Regular maintenance of your web products is extremely important to keep them up-to-date and aligned with the market and business needs. We offer maintenance services as well, thus encompassing all the web development services that your business needs to run smoothly.
+                                    </span>
+                                    <span>
+                                        This helps your business by:
+                                    </span>
+                                </p>
+                                <ol id="services_served_container">
+                                    <li> Updating Content</li>
+                                    <li> Boosting SEO</li>
+                                    <li> Improving Performance</li>
+                                    <li> Fixing Issues quickly</li>
+                                </ol>
+                            </div>
+                            <figure class="services_box_right">
+                                <img src="{% static 'img/maintaining-website.jpg' %}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- BRAND FOUNDATION, DEVELOPMENT, GROWTH END ******************************************** -->
+
+    <!-- TRANSFORM YOUR BRAND START ********************************************* -->
+    <section id="section_container" class="transform_brand_section">
+        <div class="work_lines_container">
+            <div class="w1 w3_line"></div>
+            <div class="w2 w3_line"></div>
+            <div class="w3 w3_line"></div>
+            <div class="w4 w3_line"></div>
+            <div class="w5 w3_line"></div>
+            <div class="w6 w3_line"></div>
+            <div class="w7 w3_line"></div>
+            <div class="w8 w3_hor"></div>
+            <div class="w9 w3_hor"></div>
+            <div class="w10 w3_hor"></div>
+            <div class="w11 w3_line"></div>
+            <div class="w12 w3_line"></div>
+        </div>
+        <div class="section_wrapper">
+            <h2 id="section_title">Our Web Development Process That Delivers Quality Websites</h2>
+            <p id="section_para">
+                We believe that having a well-tested process helps in making it easy for developers to systematically develop the product and deliver it. Also, it is helpful for clients to know at which stage their platform is and what comes next. For this, we have divided our website development process into 4 stages.
+            </p>
+        </div>
+        <div id="brand_process_section">
+            <div class="brand_process_wrapper">
+                <div class="brand_sidebar">
+                    <button id="defaultOpenProcess" class="sidebarLink" data-brand-slider="0"
+                        onclick="openSidebar('brand1', this, '#14151c')">Discovery and Planning</button>
+                    <button class="sidebarLink" data-brand-slider="1"
+                        onclick="openSidebar('brand2', this, '#14151c')">Design and Content Strategy</button>
+                    <button class="sidebarLink" data-brand-slider="2"
+                        onclick="openSidebar('brand3', this, '#14151c')">Development and Testing</button>
+                    <button class="sidebarLink" data-brand-slider="4"
+                        onclick="openSidebar('brand4', this, '#14151c')">Launch and Maintenance</button>
+                </div>
+
+                <div id="brand1" class="brandContent">
+                    <div class="business_box_left">
+                        <h3 id="services_box_title">Discovery and Planning</h3>
+                        <p id="service_paragraph">At this stage, we focus on gathering in-depth data to plan further. For this, our team conducts meetings with you, performs market research, develops user personas, analyzes the customer base, and their behavior patterns to build a website that drives conversions.</p>
+                        <span>In short, this stage includes -</span>
+                        <ol id="services_served_container">
+                            <li> Client Brief</li>
+                            <li> Market Research </li>
+                            <li> Opportunity Mapping</li>
+                        </ol>
+                    </div>
+                </div>
+                <div id="brand2" class="brandContent">
+                    <div class="business_box_left">
+                        <h3 id="services_box_title">Design and Content Strategy</h3>
+                        <p id="service_paragraph">After having a clear insight, we move on to design the UI/UX of your web platform. We also include your feedback in the design refinement. Alongside, our team conducts keyword research to write SEO-optimized copy for your website and draft a content strategy.
+                        </p>
+                        <span>In short, this stage includes:</span>
+                        <ol id="services_served_container">
+                            <li> Wireframing and Prototyping</li>
+                            <li> UI/UX Design and On-Page SEO</li>
+                            <li> Content Strategy</li>
+                        </ol>
+                    </div>
+                </div>
+                <div id="brand3" class="brandContent">
+                    <div class="business_box_left">
+                        <h3 id="services_box_title">Development and Testing</h3>
+                        <p id="service_paragraph">At this stage, we have the UI/UX and content in hand. Now, our web developers come into the picture. They build your web platform with the latest technologies and trends to keep you ahead in the market. We also test for SEO and performance optimization before moving further.
+                        </p>
+                        <span>In short, this stage includes:</span>
+                        <ol id="services_served_container">
+                            <li> Website Development</li>
+                            <li> Technical SEO Optimization</li>
+                            <li> Performance Testing</li>
+                        </ol>
+                    </div>
+                </div>
+                <div id="brand4" class="brandContent">
+                    <div class="business_box_left">
+                        <h3 id="services_box_title">Launch and Maintenance</h3>
+                        <p id="service_paragraph">This is the final stage in our web development process. After development and testing, your product is now ready to be launched in the digital world. Our team launches your platform smoothly and also offers ongoing maintenance support to keep your website up-to-date.
+                        </p>
+                        <span>In short, this stage includes:</span>
+                        <ol id="services_served_container">
+                            <li> Website Launch</li>
+                            <li> On-Going Support</li>
+                            <li> Maintenance </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TRANSFORM YOUR BRAND END ********************************************* -->
+
+    <!-- FAQ SECTION START ************************************************** -->
+    <section id="faq_section">
+        <div class="work_lines_container">
+            <div class="w1 w4_line"></div>
+            <div class="w2 w4_line"></div>
+            <div class="w3 w4_line"></div>
+            <div class="w4 w4_line"></div>
+            <div class="w5 w4_line"></div>
+            <div class="w6 w4_line"></div>
+            <div class="w7 w4_line"></div>
+            <div class="w8 w4_hor"></div>
+            <div class="w9 w4_hor"></div>
+            <div class="w10 w4_hor"></div>
+            <div class="w11 w4_line"></div>
+            <div class="w12 w4_line"></div>
+        </div>
+        <h2 id="faq_section_title">
+            Frequently Asked Questions
+        </h2>
+        <div class="faq_wrappers">
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3>
+                            Why choose JSwebart as your web development partner?
+                        </h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            JSwebart is well-recognized as the best web development, branding, and marketing agency in Mumbai, India. Choosing JSwebart gives you an advantage over your competitors on several fronts – our team has expertise in building websites in a wide range of industries, we provide comprehensive web development services, our innovation-centric approach makes us go out of the box in design thinking, and last but not least, our track record in delivering exceptional web solutions.
+                        </p>
+                        <p> There are plenty of reasons why you should work with us. With our comprehensive branding, UI/UX, web development, packaging, marketing, and print design services, we are confident in our ability to help you achieve your objectives.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3>What industries do you specialize in for web design and development?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            We have expertise in a wide range of industries. So far, we have delivered more than 120 web platforms across 25+ industries. As a leading web development agency, we offer our services in industries such as SaaS, E-commerce, Technology & Software, Startups, Hospitality & Food Services, Health & Wellness, Education & E-learning, Real Estate, Fintech, the Service sector, and many more. As long as you have a vision to positively transform people's lives in any way, we are excited to be your web development partner in this cause.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3>Why work with a website development company?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+
+                        <p>
+                            A website development company helps you create the web platform you've always dreamt of. From stunning designs to building with modern technologies, your business will have a web touchpoint that connects well with your customers. A website is crucial in shaping your overall brand image and personality. Therefore, a professional web developer is needed to ensure your website is safe, secure, and optimized for both user intent and search engines. A web development agency will assist you in achieving this.
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3> Benefits of investing in a web development agency?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            Investing in a web development agency brings real value to your business. With expert guidance, you get a tailored web platform that your business actually needs, aligning with your audience to stand out in the market. A website will provide a centralized look and personality, connecting your other digital channels as one. This fosters trust, strengthens customer connections, and improves recognition, setting a solid foundation for long-term growth and loyalty.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3> What specific website development services does JSwebart provide?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            We provide comprehensive web design and development services to make your product visually stunning while ensuring its functionality. This includes front-end development, back-end development, full-stack development, landing page development, SaaS platform development, redesign and development, e-commerce platform development, and many more.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3>How much do your web development services cost?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            The cost for a web development project varies from project to project. With the level of complexities and the time and effort needed, we chart out a tailored price. Be assured, we will hand you over a stunning website that will drive you success more than your investment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3> How long does it take to build a website?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            The typical timeline for a website development project with JSwebart can vary based on its complexity and scope. Generally, smaller projects may take about 2 to 3 weeks, while larger projects can range from 5 to 8 weeks or more. 
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3>Can you help enhance our existing website?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            Yes, our comprehensive web development services also include revamping websites if they are not aligning well with business goals. We redesign them to perform fabulously within their niche.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3>Do I need a web platform if I’m just starting up my business?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            We recommend investing in a web platform, as it significantly impacts your business growth. A one-time investment in a website gives you an edge from the start by maintaining your brand's personality and identity while aligning with your customer base. Our start-up-focused web development service and strategy are tailored to meet your needs. Contact us—we’ll be happy to assist you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3>Do you provide ongoing support after the website is completed?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            Yes, you are at JSwebart, and we provide comprehensive branding, Digital marketing, UI/UX design, packaging, as well as print design services apart from web development services. You will get everything under JSwebart for your idea to become a successful brand of the future. Contact us, and let's mark our own spot in the market.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ SECTION END ************************************************** -->
+
+    <!-- CTA PROCESS START *********************************************** -->
+    <section id="cta_process_section" class="upper_footer_cta">
+        <div class="cta_process_wrapper cta_process_wrapper_above_footer">
+            <div class="cta_lines_container">
+                <div class="cl1"></div>
+                <div class="cl2"></div>
+                <div class="cl3"></div>
+                <div class="cl4"></div>
+                <div class="ch1"></div>
+                <div class="ch2"></div>
+                <div class="ch3"></div>
+                <div class="ch4"></div>
+                <div class="ch5"></div>
+                <div class="ch6"></div>
+                <div class="ch7"></div>
+                <div class="ch8"></div>
+                <div class="ch9"></div>
+                <div class="ch10"></div>
+                <div class="ch11"></div>
+                <div class="ch12"></div>
+                <div class="ch13"></div>
+                <div class="ch14"></div>
+                <div class="ch15"></div>
+                <div class="ch16"></div>
+                <div class="ch17"></div>
+                <div class="ch18"></div>
+                <div class="ch19"></div>
+            </div>
+            <h2 id="cta_process_title" class="cta_h2">Work With the Best Web Development Agency to Drive Consistent Growth</h2>
+            <a href="{% url 'contact' %}" id="contact_cta_btn" class="contact_cta_btn">Contact Us</a>
+        </div>
+    </section>
+    <!-- CTA PROCESS END *********************************************** -->
+{% endblock %}
+  
+
+{% block scripts %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="{% static 'js/service.js' %}"></script>
+    <script src="{% static 'js/animation.js' %}"></script>
+    <script src="{% static 'js/marque.js' %}"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+{% endblock %}

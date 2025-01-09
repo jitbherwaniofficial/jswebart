@@ -1,0 +1,856 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Packaging Design Services {% endblock %}
+
+{% block stylesheet %} 
+<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+<link rel="stylesheet" href="{% static 'css/services.css' %}">
+<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+{% endblock %}
+{% block style %}
+<style>
+        .cta_left {
+            width: 45%;
+        }
+
+        .box {
+            border: 2px solid var(--light-black-clr);
+            margin: 2vw;
+            cursor: pointer;
+            width: fit-content;
+            text-wrap: nowrap;
+            padding: 10px 20px;
+            font-size: 24px;
+            font-weight: var(--semibold);
+            font-family: var(--playfair-font);
+            align-self: normal !important;
+        }
+
+        .services_box {
+    width: 90%;
+    height: 42vw;
+}
+
+.business_box_left {
+    background-color: var(--dark-black-clr);
+    width: 90%;
+    height: 22vw;
+}
+
+
+@media only screen and (max-width:1024px) {
+    .business_box_left {
+    background-color: var(--dark-black-clr);
+    width: 90%;
+    height: 28vw;
+}
+}
+
+@media only screen and (max-width:768px) {
+    .business_box_left {
+    background-color: var(--dark-black-clr);
+    width: 90%;
+    height: 37vw;
+}
+#brand1, #brand2, #brand3, #brand4 {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .business_box_left {
+    background-color: var(--dark-black-clr);
+    width: 90%;
+    height: 55vw;
+    }
+}
+</style>
+{% endblock %}
+
+{% block content %}
+
+    <!-- HERO SECTION START ******************************** -->
+    <div class="hero_wrapper">
+        <section id="hero_section">
+            <div id="hero_left">
+                <h1 id="hero_title">
+                    Best Packaging Design Agency in India That Creates Memorable Brand Packaging
+                </h1>
+                <p id="hero_para">
+                    We know the influence that quality packaging design holds on the product's acceptance in the market. It literally sells your product by impacting the behavioral economic decisions of the customers. As a top packaging design agency in India, our expert designers craft captivating package designs that psychologically force your customers to choose you. 
+                </p>
+                <a href="{% url 'portfolio' %}" id="hero_work_btn">Our Work</a>
+            </div>
+            <div id="hero_right">
+                <div class="stripsminus2 strip"></div>
+                <div class="stripsminus1 strip"></div>
+                <div class="strips0 strip"></div>
+                <div class="strips1 strip"></div>
+                <div class="strips2 strip"></div>
+                <div class="strips3 strip"></div>
+                <div class="strips4 strip"></div>
+                <div class="strips5 strip"></div>
+                <div class="strips6 strip"></div>
+                <div class="stripsh1 striph"></div>
+                <div class="stripsh2 striph"></div>
+                <div class="stripsh3 striph"></div>
+                <div class="stripsh4 striph"></div>
+                <div class="stripsh5 striph"></div>
+                <div class="stripsh6 striph"></div>
+                <div class="stripsh7 striph"></div>
+                <div class="stripsh8 striph"></div>
+                <div class="stripsh9 striph"></div>
+                <div class="stripsh10 striph"></div>
+                <div class="stripsh11 striph"></div>
+                <div class="stripsh12 striph"></div>
+
+                <div class="marquee-container">
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="sth"></div>
+                    <div class="sth"></div>
+                    <div class="sth"></div>
+                    <div class="sth"></div>
+                    <div class="sth"></div>
+                    <div class="marquee_img">
+                        <!-- Original images -->
+                        <img class="hw_img hero_img_1 work_bhukh-lagi-kya" src="{% static 'img/work/bhukh-lagi-kya.jpg' %}" alt="">
+                        <img class="hw_img hero_img_2 work_dtiara" src="{% static 'img/work/dtiara.jpg' %}" alt="">
+                        <img class="hw_img hero_img_3 work_the-art-of-generation" src="{% static 'img/work/the-art-of-generation.jpg' %}" alt="">
+                        <img class="hw_img hero_img_4 work_wild-media" src="{% static 'img/work/wild-media.jpg' %}" alt="">
+                        <img class="hw_img hero_img_5 work_thesouthindianplate" src="{% static 'img/work/thesouthindianplate.jpg' %}" alt="">
+                        <img class="hw_img hero_img_6 work_fitpeo" src="{% static 'img/work/fitpeo.jpg' %}" alt="">
+
+                        <img class="hw_img hero_img_1 work_bhukh-lagi-kya" src="{% static 'img/work/bhukh-lagi-kya.jpg' %}" alt="">
+                        <img class="hw_img hero_img_2 work_dtiara" src="{% static 'img/work/dtiara.jpg' %}" alt="">
+                        <img class="hw_img hero_img_3 work_the-art-of-generation" src="{% static 'img/work/the-art-of-generation.jpg' %}" alt="">
+                        <img class="hw_img hero_img_4 work_wild-media" src="{% static 'img/work/wild-media.jpg' %}" alt="">
+                        <img class="hw_img hero_img_5 work_thesouthindianplate" src="{% static 'img/work/thesouthindianplate.jpg' %}" alt="">
+                        <img class="hw_img hero_img_6 work_fitpeo" src="{% static 'img/work/fitpeo.jpg' %}" alt="">
+
+                        <img class="hw_img hero_img_1 work_bhukh-lagi-kya" src="{% static 'img/work/bhukh-lagi-kya.jpg' %}" alt="">
+                        <img class="hw_img hero_img_2 work_dtiara" src="{% static 'img/work/dtiara.jpg' %}" alt="">
+                        <img class="hw_img hero_img_3 work_the-art-of-generation" src="{% static 'img/work/the-art-of-generation.jpg' %}" alt="">
+                        <img class="hw_img hero_img_4 work_wild-media" src="{% static 'img/work/wild-media.jpg' %}" alt="">
+                        <img class="hw_img hero_img_5 work_thesouthindianplate" src="{% static 'img/work/thesouthindianplate.jpg' %}" alt="">
+                        <img class="hw_img hero_img_6 work_fitpeo" src="{% static 'img/work/fitpeo.jpg' %}" alt="">
+
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- COUNTER SCROLL START ********************************** -->
+            <div id="counter">
+                <div id="counter_box">
+                    <h2 id="counter_number" class="num" data-val="173">00</h2>
+                    <p id="counter_para">Packaging Project Delivered</p>
+                </div>
+                <div id="counter_box">
+                    <h2 id="counter_number" class="num_per" data-val="94">00</h2>
+                    <p id="counter_para">Product Visibility Increased</p>
+                </div>
+                <div id="counter_box">
+                    <h2 id="counter_number" class="num_per" data-val="86">00</h2>
+                    <p id="counter_para"> Boost in Brand Recall</p>
+                </div>
+            </div>
+            <!-- COUNTER SCROLL END ********************************** -->
+        </section>
+    </div>
+    <!-- HERO SECTION END ******************************** -->
+
+    <!-- MARWUE BOX START ******************************* -->
+    <div class="marquee">
+        <div class="marquee-content">
+            <div class="item">Custom packaging design services</div>
+            <div class="item">Eco-friendly packaging design </div>
+            <div class="item">Professional product packaging design </div>
+            <div class="item">Packaging design agency for startups</div>
+            <div class="item">Luxury packaging design</div>
+            <div class="item">Affordable packaging design solutions</div>
+            <div class="item">Creative packaging design</div>
+            <div class="item">Innovative packaging design</div>
+            <div class="item">Sustainable packaging design services</div>
+            <div class="item">Branding and packaging design services</div>
+        </div>
+    </div>
+    <!-- MARWUE BOX ENDS ******************************* -->
+
+    <!-- SOME WORKS *********************************** -->
+    <section id="section_container" class="service_work_section">
+        <div class="work_lines_container">
+            <div class="w1 w_line"></div>
+            <div class="w2 w_line"></div>
+            <div class="w3 w_line"></div>
+            <div class="w4 w_line"></div>
+            <div class="w5 w_line"></div>
+            <div class="w6 w_line"></div>
+            <div class="w7 w_line"></div>
+            <div class="w8 w_hor"></div>
+            <div class="w9 w_hor"></div>
+            <div class="w10 w_hor"></div>
+            <div class="w11 w_line"></div>
+            <div class="w12 w_line"></div>
+        </div>
+        <div class="section_wrapper">
+            <h2 id="section_title">Boost Your Brand with Our Expert Packaging Design Services</h2>
+            <p id="section_para">
+                With our comprehensive brand package designing solution, we have increased brand recall and product visibility for more than 157 products. We conduct performance packaging research before finalizing any product to go into the market, ensuring a positive impact. Go through all the services below and select the ones that your product needs to thrive in the market. We will assist you in achieving this. 
+            </p>
+            <div class="work_content">
+                <h2 id="work_head">Food and Beverage Packaging Design Solution</h2>
+                
+                <!-- Swiper -->
+                <div class="swiper workSwiper">
+                    <div class="swiper-wrapper sw">
+                        <div class="swiper-slide ss_slide color-1">
+                            <img src="{% static 'img/packaging1.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-2">
+                            <img src="{% static 'img/packaging.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-3">
+                            <img src="{% static 'img/packaging.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-4">
+                            <img src="{% static 'img/packaging.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-5">
+                            <img src="{% static 'img/packaging.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Swiper JS -->
+                <div class="slider_work_container">
+                    <p class="sliderwork_para">
+                        Our food and beverage packaging design service is specially for products in the food and beverage industry. Just like in other industries, there is tight competition in this one as well. Your customers have various other options in front of them to choose from. As a leading packaging design company, we conduct research on how design affects human psychology and make your product their first choice.
+                    </p>
+                    <p class="sliderwork_para">
+                        The product packaging design solutions we cover in this: <strong>Custom Food Packaging Design, Beverage Packaging Design, Product Label Design, Bottle & Can Packaging Design, Food Box & Carton Design, Tea & Coffee Packaging Design, Frozen & Chilled Food Packaging, Luxury Food Packaging Design, Cake, Honey & Ice Cream Packaging, Snack & Juice Packaging Design</strong> and more.
+                    </p>
+                </div>
+            </div>
+            <div class="work_content">
+                <h2 id="work_head">Retail and Consumer Goods Packaging Design</h2>
+                <!-- Swiper -->
+                <div class="swiper workSwiper">
+                    <div class="swiper-wrapper sw">
+                        <div class="swiper-slide ss_slide color-1">
+                            <img src="{% static 'img/tsip-try.svg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-2">
+                            <img src="{% static 'img/tsip2.PNG' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-3">
+                            <img src="{% static 'img/tsip3.PNG' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-4">
+                            <img src="{% static 'img/tsip4.PNG' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-5">
+                            <img src="{% static 'img/tsip5.PNG' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Swiper JS -->
+                <div class="slider_work_container">
+                    <p class="sliderwork_para">
+                        Our design team combines creativity with practicality to help your product thrive in the market for a range of products such as custom retail packaging for consumer goods, toy packaging design, electronic items packaging, clothing packaging solutions, and more. This service area requires a deep understanding of market trends, consumer behavior, and the specific needs of different consumer goods categories. We design visually appealing packaging while ensuring product shelf life.
+                    </p>
+                    <p class="sliderwork_para">
+                        The product packaging design solutions we cover in this: <strong>Custom Retail Packaging Design, Consumer Goods Product Packaging, Perfume Box Design, Soap Packaging Design, Toy Packaging Design, Cosmetics and Personal Care Packaging, Packaging for Household Products, Apparel and Clothing Packaging, Packaging Design for Electronics</strong>, and more.
+                    </p>
+                </div>
+            </div>
+            <div class="work_content">
+                <h2 id="work_head">Healthcare and Pharmaceutical Packaging Design</h2>
+                <!-- Swiper -->
+                <div class="swiper workSwiper">
+                    <div class="swiper-wrapper sw">
+                        <div class="swiper-slide ss_slide color-1">
+                            <img src="{% static 'img/z1.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-2">
+                            <img src="{% static 'img/z2.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-3">
+                            <img src="{% static 'img/z3.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-4">
+                            <img src="{% static 'img/z4.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-5">
+                            <img src="{% static 'img/z5.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Swiper JS -->
+                <div class="slider_work_container">
+                    <p class="sliderwork_para">
+                        Our design team has experience of working with more than 25 healthcare and pharmaceutical products. They have expertise in a variety of products, including medicine boxes, medical device packaging, specialized designs, Medicine Box and Bottle Packaging, and many more. This area demands a deep understanding of safety standards, industry regulations, and customer preferences. So, we first research all of these and then start designing your product's packaging to make it both stunning and safe to use. 
+                    </p>
+                    <p class="sliderwork_para">
+                        The product package designing solutions we cover in this: <strong>Custom Pharmaceutical Packaging Design, Medicine Box and Bottle Packaging, Medical Device Packaging Design, Packaging Design for Healthcare Kits, Pharmaceutical Labeling and Graphics, Packaging for Supplements and Vitamins</strong>, and more.
+                    </p>
+                </div>
+            </div>
+            <div class="work_content">
+                <h2 id="work_head">Custom and Corporate Packaging Design</h2>
+                <!-- Swiper -->
+                <div class="swiper workSwiper">
+                    <div class="swiper-wrapper sw">
+                        <div class="swiper-slide ss_slide color-1">
+                            <img src="{% static 'img/z1.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-2">
+                            <img src="{% static 'img/z2.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-3">
+                            <img src="{% static 'img/z3.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-4">
+                            <img src="{% static 'img/z4.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-5">
+                            <img src="{% static 'img/z5.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Swiper JS -->
+                <div class="slider_work_container">
+                    <p class="sliderwork_para">
+                        We create packaging that reflects your brand's uniqueness and professionalism. Whether it is gifting, branding, or retail purposes, we can build one-of-a-kind custom and corporate packaging design tailored to your needs. Sleek and minimal to bold and daring packaging; with every line we draw, our focus remains steadfast on presenting your product in the best light. The packaging must blend in with the identity of your brand to form a lasting impression on your clients and customers. With attention to detail and creative expertise, we deliver packaging that truly represents your business.  
+                    </p>
+                    <p class="sliderwork_para">
+                        The product package designing solutions we cover in this: <strong>Bespoke Packaging Design, Corporate Gift Packaging Design, Custom Box and Carton Packaging, Luxury Corporate Packaging, Corporate Identity Packaging, Packaging for Corporate Merchandise</strong>, and more.
+                    </p>
+                </div>
+            </div>
+            <div class="work_content">
+                <h2 id="work_head">Additional Packaging Services</h2>
+                <!-- Swiper -->
+                <div class="swiper workSwiper">
+                    <div class="swiper-wrapper sw">
+                        <div class="swiper-slide ss_slide color-1">
+                            <img src="{% static 'img/z1.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-2">
+                            <img src="{% static 'img/z2.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-3">
+                            <img src="{% static 'img/z3.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-4">
+                            <img src="{% static 'img/z4.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-5">
+                            <img src="{% static 'img/z5.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Swiper JS -->
+                <div class="slider_work_container">
+                    <p class="sliderwork_para">
+                        We offer a variety of custom packaging solutions to make your brand pop. Eco-friendly? Luxurious? Maybe an outside-the-box subscription box? We got this. Our packaging designing team prides itself on making packaging that does not just protect the product but also conveys your brand’s story. From structural packaging to imaginative graphic designs and illustrations, we ensure that the product is easily visible. With us, your packaging will amaze and engage you customers and make them aware of your brand. 
+                    </p>
+                    <p class="sliderwork_para">
+                        The product packaging solutions we cover in this: <strong>Eco-Friendly Packaging solutions, Sustainable Packaging, Subscription Box Packaging Design, Structural Packaging, Luxury Packaging, Packaging Graphics and Illustrations</strong>, and more. 
+                    </p>
+                </div>
+            </div>
+    </section>
+    <!-- SOME WORKS *********************************** -->
+
+    <!-- CTA PROCESS START *********************************************** -->
+    <section id="cta_process_section" class="upper_footer_cta">
+        <div class="cta_process_wrapper cta_process_wrapper_above_footer">
+            <div class="cta_lines_container">
+                <div class="cl1"></div>
+                <div class="cl2"></div>
+                <div class="cl3"></div>
+                <div class="cl4"></div>
+                <div class="ch1"></div>
+                <div class="ch2"></div>
+                <div class="ch3"></div>
+                <div class="ch4"></div>
+                <div class="ch5"></div>
+                <div class="ch6"></div>
+                <div class="ch7"></div>
+                <div class="ch8"></div>
+                <div class="ch9"></div>
+                <div class="ch10"></div>
+                <div class="ch11"></div>
+                <div class="ch12"></div>
+                <div class="ch13"></div>
+                <div class="ch14"></div>
+                <div class="ch15"></div>
+                <div class="ch16"></div>
+                <div class="ch17"></div>
+                <div class="ch18"></div>
+                <div class="ch19"></div>
+            </div>
+            <h2 id="cta_process_title" class="cta_h2 top_cta">Work with the Leading Packaging Design Agency for Impactful Results</h2>
+            <a href="{% url 'contact' %}" id="contact_cta_btn" class="contact_cta_btn">Contact Us</a>
+        </div>
+    </section>
+    <!-- CTA PROCESS END *********************************************** -->
+
+    <!-- MARWUE BOX START ******************************* -->
+    <div class="marquee">
+        <div class="marquee-content">
+            <a href="{% url 'digital_marketing_services' %}" class="box">Web Development</a>
+            <a href="{% url 'branding_services' %}" class="box">Branding design</a>
+            <a href="{% url 'web_development_services' %}" class="box">UI/UX design</a>
+            <a href="{% url 'packaging_design_services' %}" class="box">Digital Marketing</a>
+            <a href="print_design_services" class="box">Print Design</a>
+            <a href="{% url 'digital_marketing_services' %}" class="box">Web Development</a>
+            <a href="{% url 'branding_services' %}" class="box">Branding design</a>
+            <a href="{% url 'web_development_services' %}" class="box">UI/UX design</a>
+            <a href="{% url 'packaging_design_services' %}" class="box">Digital Marketing</a>
+            <a href="print_design_services" class="box">Print Design</a>
+            <a href="{% url 'digital_marketing_services' %}" class="box">Web Development</a>
+            <a href="{% url 'branding_services' %}" class="box">Branding design</a>
+            <a href="{% url 'web_development_services' %}" class="box">UI/UX design</a>
+            <a href="{% url 'packaging_design_services' %}" class="box">Digital Marketing</a>
+            <a href="print_design_services" class="box">Print Design</a>
+            <a href="{% url 'digital_marketing_services' %}" class="box">Web Development</a>
+            <a href="{% url 'branding_services' %}" class="box">Branding design</a>
+            <a href="{% url 'web_development_services' %}" class="box">UI/UX design</a>
+            <a href="{% url 'packaging_design_services' %}" class="box">Digital Marketing</a>
+            <a href="print_design_services" class="box">Print Design</a>
+            <a href="{% url 'digital_marketing_services' %}" class="box">Web Development</a>
+            <a href="{% url 'branding_services' %}" class="box">Branding design</a>
+            <a href="{% url 'web_development_services' %}" class="box">UI/UX design</a>
+            <a href="{% url 'packaging_design_services' %}" class="box">Digital Marketing</a>
+            <a href="print_design_services" class="box">Print Design</a>
+        </div>
+    </div>
+    <!-- MARWUE BOX ENDS ******************************* -->
+
+
+    <!-- TRANSFORM YOUR BRAND START ********************************************* -->
+    <section id="section_container" class="transform_brand_section">
+        <div class="work_lines_container">
+            <div class="w1 w3_line"></div>
+            <div class="w2 w3_line"></div>
+            <div class="w3 w3_line"></div>
+            <div class="w4 w3_line"></div>
+            <div class="w5 w3_line"></div>
+            <div class="w6 w3_line"></div>
+            <div class="w7 w3_line"></div>
+            <div class="w8 w3_hor"></div>
+            <div class="w9 w3_hor"></div>
+            <div class="w10 w3_hor"></div>
+            <div class="w11 w3_line"></div>
+            <div class="w12 w3_line"></div>
+        </div>
+        <div class="section_wrapper">
+            <h2 id="section_title">A Comprehensive Packaging Design Process to Build Trust and Increase Sell </h2>
+            <p id="section_para">
+                We have designed our product packaging approach into four key stages to cover every aspect of that requires while designing product's package design. This will ensure your brand product connect effectively with it's customer base and achieves it's business goals.
+            </p>
+        </div>
+        <div id="brand_process_section">
+            <div class="brand_process_wrapper">
+                <div class="brand_sidebar">
+                    <button id="defaultOpenProcess" class="sidebarLink" data-brand-slider="0"
+                        onclick="openSidebar('brand1', this, '#14151c')">Research and strategy</button>
+                    <button class="sidebarLink" data-brand-slider="1"
+                        onclick="openSidebar('brand2', this, '#14151c')">Concept development</button>
+                    <button class="sidebarLink" data-brand-slider="2"
+                        onclick="openSidebar('brand3', this, '#14151c')">Design Execution</button>
+                    <button class="sidebarLink" data-brand-slider="4"
+                        onclick="openSidebar('brand4', this, '#14151c')">Prototyping and refinement</button>
+                </div>
+
+                <div id="brand1" class="brandContent">
+                    <div class="business_box_left">
+                        <h3 id="services_box_title"> Research and strategy</h3>
+                        <p id="service_paragraph">The first step, we reach out to you to get in-depth insights on your product, target audience, and competition in the market. Through the use of customer preference analysis, industry trend study, and competitor unique selling point investigations, we are able to create strategies that allow for good packaging that sells.</p>
+                    </div>
+                </div>
+                <div id="brand2" class="brandContent">
+                    <div class="business_box_left">
+                        <h3 id="services_box_title">Concept development</h3>
+                        <p id="service_paragraph">The creative team handles all the research insights and converts them into the initial design ideas. Mood boards, sketches of ideas, color palettes, typefaces, and graphic elements are compiled. The focus is the alignment of the aesthetics and functionality to allow the packaging to tell the brand story.
+                        </p>
+                    </div>
+                </div>
+                <div id="brand3" class="brandContent">
+                    <div class="business_box_left">
+                        <h3 id="services_box_title">
+                            Design Execution
+                        </h3>
+                        <p id="service_paragraph">Once the concept is approved, our designers take that and stretch it into life, creating detailed mocked-up visuals, transferring image and other visual elements onto the design while truly sticking to production specifications. Structural design and details of the graphics are given utmost importance, ensuring the packaging looks good but also functions well.
+                        </p>
+                    </div>
+                </div>
+                <div id="brand4" class="brandContent">
+                    <div class="business_box_left">
+                        <h3 id="services_box_title">Prototyping and refinement</h3>
+                        <p id="service_paragraph">
+                            We create a physical sample or digital mock-up of the packaging to give it a go. This enables testing the design on its function, appearance, and usability. Depending on your feedback on the mock-up, we can refine it, ensuring it's just perfect for your product and the final one is ready for production.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TRANSFORM YOUR BRAND END ********************************************* -->
+
+    <!-- FAQ SECTION START ************************************************** -->
+    <section id="faq_section">
+        <div class="work_lines_container">
+            <div class="w1 w4_line"></div>
+            <div class="w2 w4_line"></div>
+            <div class="w3 w4_line"></div>
+            <div class="w4 w4_line"></div>
+            <div class="w5 w4_line"></div>
+            <div class="w6 w4_line"></div>
+            <div class="w7 w4_line"></div>
+            <div class="w8 w4_hor"></div>
+            <div class="w9 w4_hor"></div>
+            <div class="w10 w4_hor"></div>
+            <div class="w11 w4_line"></div>
+            <div class="w12 w4_line"></div>
+        </div>
+        <h2 id="faq_section_title">
+            Frequently Asked Questions
+        </h2>
+        <div class="faq_wrappers">
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3>
+                            What should I consider when selecting a packaging design company?
+                        </h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            Let's get an insight into this. A packaging design company isn't a business decision; it's an investment into how your product shows up in the world. You want to ensure the company you choose gets your vision and is skilled to bring it to life. Here is what you should keep in mind:
+                        </p>
+                        <p> 1. Do They Understand Your Industry?
+                            Not all packaging needs are the same. If you're selling skincare, your packaging should scream "luxury" or "organic," depending on your brand. If you're selling snacks, a whole different look will require: bright colors, fun designs, maybe even resealable qualities. A company familiar with your field would be more suitable to judge what works and what doesn't.</p>
+                        <p>2. Are They Full of Ideas?
+                            You don't want generic designs. You want packaging that draws eyes and stops shopping carts in their tracks. Find a company that isn't afraid to think outside the box creatively. Be it elegant patterns or a unique box shape, their ideas should mirror your ambition.</p>
+                        <p> 3. Will They Work With You, Not Just For You?
+                            Communication is an essential ingredient. Will you be able to talk to them as if you were more than another client? An able design team should ask the right questions, listen to your needs, and develop a stunning design based on your ideas. Think of them as your creative partners, not just service providers.</p>
+                        <p>4. Do They Keep Pace With Trends?
+                            Packaging trends change faster than you can say "minimalist chic." For example, eco-friendly and sustainable packaging is all the rage today; tomorrow, it might be smart packaging with QR codes. You want a team that will stay ahead of the curve and be able to lead you to the next one. </p>
+                        <p> 5. Is Cost Transparent?
+                            Let's talk about money now. Packaging design is akin to a real investment; one certainly wouldn't want any surprises afterwards. The company should therefore be direct in telling you how much it will cost you and give you various choices on price so that you do not overspend. </p>
+                        <p> 6. What Do Their Past Clients Say?
+                            Testimonials and comments are like gold. Go through their portfolio of previous clients and, if at all possible, speak to those clients directly. Did they meet the delivery deadline? Was the team easy to work with? Did the packaging design help them sell more?</p>
+                        <p>7. Are They Adaptable?
+                            Projects differ from one to another. Perhaps you need to use only eco-friendly materials, or you wish to present an impression of luxury. The company should be ready to adapt itself to the job at hand by creating environments based on your requirements.</p>
+                        <p>8. What's the General Vibe?
+                            Now this one is underrated. Do you click with them? Working with the right people sometimes makes all the difference. Packaging design is creative-a lot of time will be spent brainstorming ideas, making alterations, and planning. It'd be preferable if the team understands your energy and enthusiasm too.</p>
+
+                        <p>Choosing the right packaging design company isn't about making things look pretty-it's about making an impression, driving sales, and building a brand that sticks in the customers' minds. Take your time, do your research, and you'll know you've found the right team when you see it!  As a leading packaging design agency, JSwebart team is excited to be the one you choose.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3> Why should you choose JSwebart for your packaging design needs?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            When it comes to packaging design, JSwebart is the trusted partner of more than 289 clients. We blend creativity, strategy, and expertise to deliver designs in harmony with your brand and with your audience. There are plenty of reasons why you should choose us for fulfilling your packaging design needs.
+                        </p>
+                        <p>1. Custom Touches, Unique Packaging - JSWebArt believes that one solution does not fit all. Because of the uniqueness of your brand, your packaging must do the same. From bold and colorful to subdued and minimalistic, we create designs that match your vision.</p>
+                        <p> 2. Innovative Creative Designs - Our team is always ready with new creative ideas! Whether quirky box shapes or beautiful graphics and designs that your product demands, we craft them to shift the attention to your brand and put your products into the limelight in oversaturated markets.</p>
+                        <p>3. All Aesthetic, All Functional - This is our aim to deliver not just good-looking designs, but also to ensure great usability in your packaging. We make sure your product stays functional—that is, practical, easy to store, great for shipping, and stunning on shelves!</p>
+                        <p>4. Experience Across Industries
+                            We have expertise in various ranges of industries as we have delivered more than 157 packaging solutions across 25+ industries. This means we know how to cater to different audiences and ensure your packaging resonates with your target market.</p>
+                        <p>5. Passion Which Delivers Results - At JSwebart, we’re as invested in your success as you are. Your growth is our goal, and we go the extra mile to deliver packaging that not only looks good but also helps your brand shine.</p>
+                        <p>Working with JSwebart as your partner agency in packaging design, your packaging won’t just protect your product—it’ll elevate your brand, captivate customers, and drive your success. Along with this, with our comprehensive branding, UI/UX, web development, packaging, digital marketing and print design services, we are confident in our ability to help you achieve your objectives in every areas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3>What industries do you specialize in for packaging design?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+
+                        <p>
+                            We have expertise in a wide range of industries. So far, we have  completed over 157 packaging design solutions across 25+ industries. As a best digital marketing agency, we offer our services in industries such as SaaS, E-commerce, Technology & Software, Startups, Hospitality & Food Services, Health & Wellness, Education & E-learning, Real Estate, Fintech, the Service sector, and many more. As long as you have a vision to positively transform people's lives in any way, we are excited to tell your brand story in a creative branding design way.
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3> What specific package design services does JSwebart provide?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            We provide comprehensive packaging design services focusing on elevating your brand’s product visibility and market acceptance. This includes Custom Packaging Design, Eco-friendly Packaging Solutions, Luxury Packaging, Subscription Box Packaging, Structural Packaging, Packaging Graphics and Illustrations, Repackaging, and more. Our expert team ensures package design for each mentioned above, not only looks appealing but also serves your product’s practical needs and ensure that your brand's product stand out on the shelf and connect with your target audience effectively.
+
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3>  Do you offer re-packaging services?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            Yes! We do provide a re-packaging service. If your current packaging isn't driving the result you expected, we've got your back. Let's discuss fresh designs or improvements that will work better and look better. Our aim will be to design your product's package that convey the right brand message and elevates your product's value in your customers eye. Boost your packaging together with us and let it work better for your business.  
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3> How much do your packaging design services cost?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            The cost of a packaging design solution depends on the type of material and product used in the design. It also varies based on the complexity of the design and any regulations that need to be considered. For example, luxury packaging designs will obviously cost more than other packaging solutions, assuming we are comparing them without considering additional complexities. Rest assured, we will craft a design that not only ensures the success of your business but also helps increase consumer acceptance of your product.
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3> Is it necessary to invest in packaging design when starting my business?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            Packaging design might seem to be an afterthought when establishing a new startup. However, it's actually one of the very first things you should focus on. Why? Because packaging forms the first impression a customer gets of your product. It tells your brand story, builds trust, and really does help your product stand out in a crowded market.
+                    </p>
+                    <p>If we simplify, your product's packaging is like the "clothes" you wear- this is the first thing that people see when they look at you first. If it has that wow factor, it states, "Buy me!" Good design position your brand in market as a  quality and reliable brand that sells high-end product.</p>
+                    <p>In simplest terms, yes, we will recommend you to invest in packaging design early. It will not only be a smart move; it is now necessary. It makes such a huge difference in the value perception of a customer toward the brand and the product. And, it's more than just about the aesthetics; it's all about leaving a mark that positively explodes in sales. So, do get it right, and your venture will be in your good books! 
+                    </p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3> How does a packaging design company add value to your business?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            Packaging isn’t just a protective cover for your product; it’s a key element that represents your brand. It goes a long way in adding to the brand identity and pulling customers and sales. A packaging design company adds great value to your business by catering to design, functionality, and customer experience. Here's how:
+
+                        </p>
+                        <p>1. Greater Visibility of Product - A well-executed package design grabs attention and make it stand out of the crowd. Think of it as an eye-catching display on a storefront; it invites passersby to stop, look, and pick it up. With proper design, your product has a better chance of being remembered, thus pulling customers towards it and triggering a purchase.</p>
+                        <p>2. Improved Brand Recognition - Packaging is the first impression of your brand. An appealingly designed package delivers the message of values, personality, and style. It is an opportunity to narrate a visual brand story while establishing a consistent look across products. Such coherent branding makes for easy recognition of your product by customers, which fosters trust and loyalty over time. This coherence provides deeper engagement with the target audience.</p>
+                        <p>3. Enhanced Customer Experience - Packaging is not just about appealing looks; it also includes ease and function. A smart package can be opened, used, and stored easily. A smooth experience means happy customers, which equals more return customers. Elements as simple as an easy-to-peel label or cushioning protection will enrich the premium feel of your product—the high satisfaction encourages repeat purchases.</p>
+                        <p>4. Differentiation in a Competitive Market - It becomes hard to stand out in a marketplace full of options. The uniqueness of the package design makes the product distinctive from others. Whether it is in bold colors, in cutting shapes, or in entirely new materials, a fresh design version can make it instantly identifiable. This differentiation grabs the attention of possible customers searching for novelty and excitement. Consequently, this is what gives your company an edge in the competitive market.</p>
+                        <p>5. Enhanced Shelf Impact and Marketing
+                            In other words, packaging is a very powerful marketing toolkit. The right solution would create a situation where your creation does not simply stand still. Instead, it grabs the customer's attention and creates curiosity about what lies within the package. It will allow you to highlight certain selling features like limited-time offers or sustainability, directly translating into purchases. With a good design, your product becomes a hard-to-miss item on the shelves that attracts the attention of any relevant active customers.</p>
+
+                        <p>Therefore, we can say that, a packaging design company definitely adds value to your business by designing quality product packaging . As it is an important enabler for customer engagement, reinforcing brand value and product competitiveness in the market. The investment in professional packaging design has wide-ranging benefits that go far beyond aesthetics; it offers real value in terms of collective recognition, building great customer experience, and growing your business. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3> How are packaging design and branding connected?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            Packaging design and branding go hand in hand and are important elements that form a consumer's perception of a business. Imagine walking into a store and right away, a product catches your eye. You stop. What made you to do so? It's not just the product, but the packaging that makes it attractive. The colors, logo, fonts, and images work together to quickly communicate the brand’s identity and values.
+                        </p>
+                        <p>If done right, packaging becomes a reflection of your identity. It's all about who you are, what you stand for, and how you want others to perceive you. For instance, if you're a luxury brand, your packaging should scream sleekness and exclusivity. On the other hand, a cheerful product must be integrated with vibrant colors and playful designs to echo personality and joy.</p>
+                        <p>So, whatever the mix-n-match is on your product, consistent packaging will generate familiarity and trust among your audience. So far, wherever they come across the product, they know what to expect. The packaging is not just a protective cover; it's a brand ambassador.
+                        </p>
+                        <p>The relationship between packaging design and branding is quite simple. Designed well, a packaging launches recognition, pulls customers toward your product, and leaves a lasting impression, resulting in increased sales and brand loyalty. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3>  What are the latest trends in packaging design?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            The latest trends in packaging design today revolves around sustainability, creativity, and consumer engagement. Eco-friendly materials, like biodegradable packaging and recyclable alternatives, are in high demand as consumers loves sustainability. Minimalist and bold designs have also become trending with vibrant colors and unusual shapes making an instant appeal. Interactive packaging, such as QR codes and augmented reality features, enhances the customer experience. Also, brands are embracing customization by offering personalized packaging to build deeper emotional engagement with consumers. 
+                            
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3>How does cultural influence enhance packaging design?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            Cultural influence has a big role in determining product-packaging design since it helps create a deep connection with the consumer. Brands that adds cultural symbols, colors, and design elements resonate with their target market on a personal level. For example, colors that are meant to be positive in certain cultures or traditional artwork can make packaging more interesting and relatable. Awareness of cultural difference not only establishes a sense of trust but also reflects how the brand respects and understands its market, therefore solidifying the loyalty of the customer. 
+As a top packaging design company, our expert designer team also keeps this aspect in mind while designing package for your product. So that it can connect the customer on cultural level.
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ SECTION END ************************************************** -->
+
+    <!-- CTA PROCESS START *********************************************** -->
+    <section id="cta_process_section" class="upper_footer_cta">
+        <div class="cta_process_wrapper cta_process_wrapper_above_footer">
+            <div class="cta_lines_container">
+                <div class="cl1"></div>
+                <div class="cl2"></div>
+                <div class="cl3"></div>
+                <div class="cl4"></div>
+                <div class="ch1"></div>
+                <div class="ch2"></div>
+                <div class="ch3"></div>
+                <div class="ch4"></div>
+                <div class="ch5"></div>
+                <div class="ch6"></div>
+                <div class="ch7"></div>
+                <div class="ch8"></div>
+                <div class="ch9"></div>
+                <div class="ch10"></div>
+                <div class="ch11"></div>
+                <div class="ch12"></div>
+                <div class="ch13"></div>
+                <div class="ch14"></div>
+                <div class="ch15"></div>
+                <div class="ch16"></div>
+                <div class="ch17"></div>
+                <div class="ch18"></div>
+                <div class="ch19"></div>
+            </div>
+            <h2 id="cta_process_title" class="cta_h2">Work With the Best Packaging Design Agency to Drive Consistent Growth</h2>
+            <a href="{% url 'contact' %}" id="contact_cta_btn" class="contact_cta_btn">Contact Us</a>
+        </div>
+    </section>
+    <!-- CTA PROCESS END *********************************************** -->
+{% endblock %}
+  
+
+{% block scripts %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        function openSidebar(pageName,elmnt,color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("brandContent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("sidebarLink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+                tablinks[i].style.color = "#14151c";
+            }
+            document.getElementById(pageName).style.display = "flex";
+            elmnt.style.backgroundColor = color;
+            elmnt.style.color = "white";
+        }
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpenProcess").click();
+    </script>
+    <script src="{% static 'js/animation.js' %}"></script>
+    <script src="{% static 'js/marque.js' %}"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+{% endblock %}

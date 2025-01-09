@@ -1,0 +1,16 @@
+{% if posts.exists %}
+{% for post in posts %}
+<a href="{% url 'blog_detail' project_slug=post.slug %}" class="single_portfolio sp_left">
+    <figure>
+        <img src="{{ post.image.url }}" alt="{{ post.title }}" alt="">
+    </figure>
+    <div class="write_up_container">
+        <h3 class="blog_section_time">{{ post.created_at|date:"j F Y" }}</h3>
+        <p class="blog_section_service">{{ post.categories.name }}</p>
+        <div class="blog_section_topic">{{ post.title }}</div>
+    </div>
+</a>
+{% endfor %}
+{% else %}
+<p>No Blogs available.</p>
+{% endif %}

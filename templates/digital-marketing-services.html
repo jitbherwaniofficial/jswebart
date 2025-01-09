@@ -1,0 +1,1000 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Digital Marketing Services {% endblock %}
+
+{% block stylesheet %} 
+<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+<link rel="stylesheet" href="{% static 'css/services.css' %}">
+<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+{% endblock %}
+{% block style %}
+<style>
+        .cta_left {
+            width: 45%;
+        }
+
+        .box {
+            border: 2px solid var(--light-black-clr);
+            margin: 2vw;
+            cursor: pointer;
+            width: fit-content;
+            text-wrap: nowrap;
+            padding: 10px 20px;
+            font-size: 24px;
+            font-weight: var(--semibold);
+            font-family: var(--playfair-font);
+            align-self: normal !important;
+        }
+
+        .services_box {
+    width: 90%;
+    height: 42vw;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+
+    <!-- HERO SECTION START ******************************** -->
+    <div class="hero_wrapper">
+        <section id="hero_section">
+            <div id="hero_left">
+                <h1 id="hero_title">
+                    Best Digital Marketing Agency in India That Can Grow Your Online Presence
+                </h1>
+                <p id="hero_para">
+                    We know that an ROI-driven digital marketing strategy is essential for success in the constantly evolving digital world. Strong and effective marketing makes your brand memorable in the online market. As the leading marketing agency in India, we specialize in driving growth, visibility, and conversions for your business. Let's work together and leave our imprint on the digital canvas.
+                </p>
+                <a href="{% url 'portfolio' %}" id="hero_work_btn">Our Work</a>
+            </div>
+            <div id="hero_right">
+                <div class="stripsminus2 strip"></div>
+                <div class="stripsminus1 strip"></div>
+                <div class="strips0 strip"></div>
+                <div class="strips1 strip"></div>
+                <div class="strips2 strip"></div>
+                <div class="strips3 strip"></div>
+                <div class="strips4 strip"></div>
+                <div class="strips5 strip"></div>
+                <div class="strips6 strip"></div>
+                <div class="stripsh1 striph"></div>
+                <div class="stripsh2 striph"></div>
+                <div class="stripsh3 striph"></div>
+                <div class="stripsh4 striph"></div>
+                <div class="stripsh5 striph"></div>
+                <div class="stripsh6 striph"></div>
+                <div class="stripsh7 striph"></div>
+                <div class="stripsh8 striph"></div>
+                <div class="stripsh9 striph"></div>
+                <div class="stripsh10 striph"></div>
+                <div class="stripsh11 striph"></div>
+                <div class="stripsh12 striph"></div>
+
+                <div class="marquee-container">
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="st"></div>
+                    <div class="sth"></div>
+                    <div class="sth"></div>
+                    <div class="sth"></div>
+                    <div class="sth"></div>
+                    <div class="sth"></div>
+                    <div class="marquee_img">
+                        <!-- Original images -->
+                        <img class="hw_img hero_img_1 work_bhukh-lagi-kya" src="{% static 'img/work/bhukh-lagi-kya.jpg' %}" alt="">
+                        <img class="hw_img hero_img_2 work_dtiara" src="{% static 'img/work/dtiara.jpg' %}" alt="">
+                        <img class="hw_img hero_img_3 work_the-art-of-generation" src="{% static 'img/work/the-art-of-generation.jpg' %}" alt="">
+                        <img class="hw_img hero_img_4 work_wild-media" src="{% static 'img/work/wild-media.jpg' %}" alt="">
+                        <img class="hw_img hero_img_5 work_thesouthindianplate" src="{% static 'img/work/thesouthindianplate.jpg' %}" alt="">
+                        <img class="hw_img hero_img_6 work_fitpeo" src="{% static 'img/work/fitpeo.jpg' %}" alt="">
+
+                        <img class="hw_img hero_img_1 work_bhukh-lagi-kya" src="{% static 'img/work/bhukh-lagi-kya.jpg' %}" alt="">
+                        <img class="hw_img hero_img_2 work_dtiara" src="{% static 'img/work/dtiara.jpg' %}" alt="">
+                        <img class="hw_img hero_img_3 work_the-art-of-generation" src="{% static 'img/work/the-art-of-generation.jpg' %}" alt="">
+                        <img class="hw_img hero_img_4 work_wild-media" src="{% static 'img/work/wild-media.jpg' %}" alt="">
+                        <img class="hw_img hero_img_5 work_thesouthindianplate" src="{% static 'img/work/thesouthindianplate.jpg' %}" alt="">
+                        <img class="hw_img hero_img_6 work_fitpeo" src="{% static 'img/work/fitpeo.jpg' %}" alt="">
+
+                        <img class="hw_img hero_img_1 work_bhukh-lagi-kya" src="{% static 'img/work/bhukh-lagi-kya.jpg' %}" alt="">
+                        <img class="hw_img hero_img_2 work_dtiara" src="{% static 'img/work/dtiara.jpg' %}" alt="">
+                        <img class="hw_img hero_img_3 work_the-art-of-generation" src="{% static 'img/work/the-art-of-generation.jpg' %}" alt="">
+                        <img class="hw_img hero_img_4 work_wild-media" src="{% static 'img/work/wild-media.jpg' %}" alt="">
+                        <img class="hw_img hero_img_5 work_thesouthindianplate" src="{% static 'img/work/thesouthindianplate.jpg' %}" alt="">
+                        <img class="hw_img hero_img_6 work_fitpeo" src="{% static 'img/work/fitpeo.jpg' %}" alt="">
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- COUNTER SCROLL START ********************************** -->
+            <div id="counter">
+                <div id="counter_box">
+                    <h2 id="counter_number" class="num" data-val="123">00</h2>
+                    <p id="counter_para">Businesses Transformed</p>
+                </div>
+                <div id="counter_box">
+                    <h2 id="counter_number" class="num" data-val="109">00</h2>
+                    <p id="counter_para">SEO Projects</p>
+                </div>
+                <div id="counter_box">
+                    <h2 id="counter_number" class="num" data-val="232">00</h2>
+                    <p id="counter_para"> Campaigns Managed</p>
+                </div>
+            </div>
+            <!-- COUNTER SCROLL END ********************************** -->
+        </section>
+    </div>
+    <!-- HERO SECTION END ******************************** -->
+
+    <!-- MARWUE BOX START ******************************* -->
+    <div class="marquee">
+        <div class="marquee-content">
+            <div class="item">Full-service digital marketing agency</div>
+            <div class="item">Custom digital marketing solutions </div>
+            <div class="item">Professional digital marketing services </div>
+            <div class="item">Digital marketing company</div>
+            <div class="item">Performance marketing agency</div>
+            <div class="item">Social media marketing services</div>
+            <div class="item">Search engine marketing (SEM) services</div>
+            <div class="item">Digital marketing for small businesses</div>
+            <div class="item">Digital marketing for start-ups</div>
+        </div>
+    </div>
+    <!-- MARWUE BOX ENDS ******************************* -->
+
+    <!-- SOME WORKS *********************************** -->
+    <section id="section_container" class="service_work_section">
+        <div class="work_lines_container">
+            <div class="w1 w_line"></div>
+            <div class="w2 w_line"></div>
+            <div class="w3 w_line"></div>
+            <div class="w4 w_line"></div>
+            <div class="w5 w_line"></div>
+            <div class="w6 w_line"></div>
+            <div class="w7 w_line"></div>
+            <div class="w8 w_hor"></div>
+            <div class="w9 w_hor"></div>
+            <div class="w10 w_hor"></div>
+            <div class="w11 w_line"></div>
+            <div class="w12 w_line"></div>
+        </div>
+        <div class="section_wrapper">
+            <h2 id="section_title">Some of Our Amazing Work as a Leading Marketing Agency in India</h2>
+            <p id="section_para">
+                From launching startups to running big brand campaigns, our digital marketing plans have helped businesses in a variety of fields get real results. We know our stuff when it comes to SEO social media marketing, PPC, content marketing, and more. Our work leads to growth, more people engaging, and more sales. 
+            </p>
+            <div class="work_content">
+                <h2 id="work_head">Bhukh Lagi Kya?</h2>
+                <p id="work_para">A Restaurant that focusing on bringing unique flavor of chicken fry to life.</p>
+                <!-- Swiper -->
+                <div class="swiper workSwiper">
+                    <div class="swiper-wrapper sw">
+                        <div class="swiper-slide ss_slide color-1">
+                            <img src="{% static 'img/bh1.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-2">
+                            <img src="{% static 'img/bh2.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-3">
+                            <img src="{% static 'img/bh3.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-4">
+                            <img src="{% static 'img/bh4.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-5">
+                            <img src="{% static 'img/bh5.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Swiper JS -->
+                <div class="test_quotes">
+                    <span>“</span>
+                    <p class="test_para">Big thanks to JSwebart for totally transforming Bhukh Lagi Kya! They took care of all the branding, website, and marketing, making everything come together perfectly. Now, our food is reaching more people, and it’s been an incredible journey</p>
+                    <address>Aakash ( Founder Of Bhukhlagikya? )</address>
+                </div>
+            </div>
+            <div class="work_content">
+                <h2 id="work_head">The South Indian Plate</h2>
+                <p id="work_para">The South Indian Plate is well recognized as the best Idli and Medu Vada bulk
+                    suppliers in Mumbai.</p>
+                <!-- Swiper -->
+                <div class="swiper workSwiper">
+                    <div class="swiper-wrapper sw">
+                        <div class="swiper-slide ss_slide color-1">
+                            <img src="{% static 'img/tsip1.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-2">
+                            <img src="{% static 'img/tsip2.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-3">
+                            <img src="{% static 'img/tsip3.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-4">
+                            <img src="{% static 'img/tsip4.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-5">
+                            <img src="{% static 'img/tsip5.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Swiper JS -->
+                <div class="test_quotes">
+                    <span>“</span>
+                    <p class="test_para">JSwebart has been incredible! They handled everything for The South Indian Plate—branding, web design, packaging, and marketing. Their team made the process so smooth and exciting. Thanks to them, my dream is now a reality!</p>
+                    <address>Nirmala B. ( Founder Of The South Indian Plate )</address>
+                </div>
+            </div>
+            <div class="work_content">
+                <h2 id="work_head">D'tiara, Herold, WildMedia & More</h2>
+                <p id="work_para">Some more examples of our online marketing solutions across industries.</p>
+                <!-- Swiper -->
+                <div class="swiper workSwiper">
+                    <div class="swiper-wrapper sw">
+                        <div class="swiper-slide ss_slide color-1">
+                            <img src="{% static 'img/work/wild-media.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-2">
+                            <img src="{% static 'img/work/the-art-of-generation.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-3">
+                            <img src="{% static 'img/work/fish-and-chips.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-4">
+                            <img src="{% static 'img/work/dtiara.jpg' %}" alt="">
+                        </div>
+                        <div class="swiper-slide ss_slide color-5">
+                            <img src="{% static 'img/work/herold.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Swiper JS -->
+                <div class="test_quotes">
+                    <span>“</span>
+                    <p class="test_para">I am thrilled with the branding and design work JSWebArt delivered for
+                        Wildlife. They truly understood our commitment to natural beauty and helped us create an
+                        authentic brand identity that stands out. Their professionalism and creative insights were
+                        invaluable in launching our product line, and our customers love the result!</p>
+                    <address>Ananya Mehta ( Founder of WildLife Media)</address>
+                </div>
+            </div>
+    </section>
+    <!-- SOME WORKS *********************************** -->
+
+    <!-- CTA PROCESS START *********************************************** -->
+    <section id="cta_process_section" class="upper_footer_cta">
+        <div class="cta_process_wrapper cta_process_wrapper_above_footer">
+            <div class="cta_lines_container">
+                <div class="cl1"></div>
+                <div class="cl2"></div>
+                <div class="cl3"></div>
+                <div class="cl4"></div>
+                <div class="ch1"></div>
+                <div class="ch2"></div>
+                <div class="ch3"></div>
+                <div class="ch4"></div>
+                <div class="ch5"></div>
+                <div class="ch6"></div>
+                <div class="ch7"></div>
+                <div class="ch8"></div>
+                <div class="ch9"></div>
+                <div class="ch10"></div>
+                <div class="ch11"></div>
+                <div class="ch12"></div>
+                <div class="ch13"></div>
+                <div class="ch14"></div>
+                <div class="ch15"></div>
+                <div class="ch16"></div>
+                <div class="ch17"></div>
+                <div class="ch18"></div>
+                <div class="ch19"></div>
+            </div>
+            <h2 id="cta_process_title" class="cta_h2 top_cta">Work with the Top Digital Marketing Agency for Impactful Results</h2>
+            <a href="{% url 'contact' %}" id="contact_cta_btn" class="contact_cta_btn">Contact Us</a>
+        </div>
+    </section>
+    <!-- CTA PROCESS END *********************************************** -->
+
+    <!-- MARWUE BOX START ******************************* -->
+    <div class="marquee">
+        <div class="marquee-content">
+            <a href="{% url 'digital_marketing_services' %}" class="box">Web Development</a>
+            <a href="{% url 'branding_services' %}" class="box">Branding design</a>
+            <a href="{% url 'web_development_services' %}" class="box">UI/UX design</a>
+            <a href="{% url 'packaging_design_services' %}" class="box">Packaging Design</a>
+            <a href="print_design_services" class="box">Print Design</a>
+            <a href="{% url 'digital_marketing_services' %}" class="box">Web Development</a>
+            <a href="{% url 'branding_services' %}" class="box">Branding design</a>
+            <a href="{% url 'web_development_services' %}" class="box">UI/UX design</a>
+            <a href="{% url 'packaging_design_services' %}" class="box">Packaging Design</a>
+            <a href="print_design_services" class="box">Print Design</a>
+            <a href="{% url 'digital_marketing_services' %}" class="box">Web Development</a>
+            <a href="{% url 'branding_services' %}" class="box">Branding design</a>
+            <a href="{% url 'web_development_services' %}" class="box">UI/UX design</a>
+            <a href="{% url 'packaging_design_services' %}" class="box">Packaging Design</a>
+            <a href="print_design_services" class="box">Print Design</a>
+            <a href="{% url 'digital_marketing_services' %}" class="box">Web Development</a>
+            <a href="{% url 'branding_services' %}" class="box">Branding design</a>
+            <a href="{% url 'web_development_services' %}" class="box">UI/UX design</a>
+            <a href="{% url 'packaging_design_services' %}" class="box">Packaging Design</a>
+            <a href="print_design_services" class="box">Print Design</a>
+            <a href="{% url 'digital_marketing_services' %}" class="box">Web Development</a>
+            <a href="{% url 'branding_services' %}" class="box">Branding design</a>
+            <a href="{% url 'web_development_services' %}" class="box">UI/UX design</a>
+            <a href="{% url 'packaging_design_services' %}" class="box">Packaging Design</a>
+            <a href="print_design_services" class="box">Print Design</a>
+        </div>
+    </div>
+    <!-- MARWUE BOX ENDS ******************************* -->
+
+    <!-- INNOVATIVE BRANDING START ****************************************** -->
+    <section id="section_container">
+        <div class="work_lines_container">
+            <div class="w1 w2_line"></div>
+            <div class="w2 w2_line"></div>
+            <div class="w3 w2_line"></div>
+            <div class="w4 w2_line"></div>
+            <div class="w5 w2_line"></div>
+            <div class="w6 w2_line"></div>
+            <div class="w7 w2_line"></div>
+            <div class="w8 w2_hor"></div>
+            <div class="w9 w2_hor"></div>
+            <div class="w10 w2_hor"></div>
+            <div class="w11 w2_line"></div>
+            <div class="w12 w2_line"></div>
+        </div>
+        <div class="section_wrapper">
+            <h2 id="section_title">Boost Your Company's Web Presence with Our Top-Notch Online Marketing Solutions
+            </h2>
+            <p id="section_para">
+                We have classified our digital marketing services into three categories in order to offer customized solutions for your business. Our team aims for increasing visibility of your brand, enhancing engagement of your audience base, and conversions. Let us help you establish long-lasting growth and success through proven and results-driven approaches in the digital world. 
+            </p>
+        </div>
+    </section>
+    <!-- INNOVATIVE BRANDING END ****************************************** -->
+
+    <!-- BRAND FOUNDATION, DEVELOPMENT, GROWTH START ******************************************** -->
+    <section class="brand_foundation">
+        <div class="brand_foundation_wrapper">
+            <button class="tablink tl" onclick="openPage('s1', this, '#14151c')">SEO & Advertising </button>
+            <button class="tablink tl" onclick="openPage('s2', this, '#14151c')" id="defaultOpen">SM & Content Marketing</button>
+            <button class="tablink tl" onclick="openPage('s3', this, '#14151c')">Email & Analytics</button>
+            <!-- <button class="tablink" onclick="openPage('s4', this, '#14151c')">Wireframing </button> -->
+        </div>
+    </section>
+
+    <section id="s1" class="tabcontent">
+        <div class="services_wrapper">
+            <h2 id="service_title">
+                SEO & Advertising
+            </h2>
+            <p id="service_para">
+                Under this pillar, we have grouped the services that form the heart of website development. As a leading web design and development agency, our core web solutions cover everything from Front-End Development to E-Commerce Website Development. Explore the slides to get a complete overview of the web solutions we provide and see how we can help bring your digital vision to life. 
+            </p>
+            <div class="services_pills_container">
+                <button class="pill active" data-slide-branding="0">SEO</button>
+                <button class="pill" data-slide-branding="1">SEM </button>
+                <button class="pill" data-slide-branding="2">Advertising Campaign  </button>
+            </div>
+            <div class="swiper-container-three">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="services_box">
+                            <div class="services_box_left">
+                                <h3 id="services_box_title">Building the Foundation for Online Visibility</h3>
+                                <p id="services_box_para">
+                                    <span>
+                                        The whole digital success depends on a solid SEO plan. We work with you to determine your company's needs and market base. By optimizing for search engines and aligning with SEO best practices, we ensure that your brand attains higher rankings, gains organic traffic, and authority in the market.
+                                    </span>
+                                </p>
+                                <span>This will help your brand achieve:</span>
+                                <ol id="services_served_container">
+                                    <li> Improvement in search engines' rankings</li>
+                                    <li> Increase in organic traffic</li>
+                                    <li> Higher conversions</li>
+                                    <li> Sustained online growth </li>
+                                </ol>
+                            </div>
+                            <figure class="services_box_right">
+                                <img src="{% static 'img/seo-optimized.jpg' %}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="services_box">
+                            <div class="services_box_left">
+                                <h3 id="services_box_title">Driving Targeted Traffic Through Paid Campaigns</h3>
+                                <p id="services_box_para">
+                                    <span>
+                                        An effective SEM strategy serves to create immediate online visibility and quality leads. We implement paid search campaigns that precisely align with your business goals based on proven keywords and optimization techniques to ensure a better ROI. Our service help you reach the right audience at the right time by driving traffic and conversions.
+                                    </span>
+                                </p>
+                                <span>This will help your brand achieve:</span>
+                                <ol id="services_served_container">
+                                    <li> A spike in traffic in no time</li>
+                                    <li> Higher CTRs</li>
+                                    <li> Greater Brand Visibility</li>
+                                    <li> Optimized Ad Spend and ROI </li>
+                                </ol>
+                            </div>
+                            <figure class="services_box_right">
+                                <img src="{% static 'img/online-visibility.jpg' %}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="services_box">
+                            <div class="services_box_left">
+                                <h3 id="services_box_title"> Amplify Your Reach with Impactful Advertising Campaigns</h3>
+                                <p id="services_box_para">
+                                    <span>
+                                        Strategic advertising campaigns are the key to boosting your brand visibility and delivering crucial results. We create data-driven, targeted ads on platforms like Google, Facebook, and Instagram, ensuring you connect with the right audience. Using a mix of art with analytics and precise audience targeting, we help to enhance engagement and deliver excellent returns. 
+                                    </span>
+
+                                </p>
+                                <span>
+                                    This provides the following for your brand:
+                                </span>
+                                <ol id="services_served_container">
+                                    <li> Enhanced brand visibility</li>
+                                    <li> Elevated engagement rates</li>
+                                    <li> Target audience reach</li>
+                                    <li> Maximized returns on ad spend </li>
+                                </ol>
+
+                            </div>
+                            <figure class="services_box_right">
+                                <img src="{% static 'img/ads-campaign.jpg' %}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="s2" class="tabcontent">
+        <div class="services_wrapper">
+            <h2 id="service_title">
+                Social Media & Content Marketing
+            </h2>
+            <p id="service_para">
+                We know that solid growth on the internet today relies heavily on having a strong social media and content marketing strategy. Our team crafts unique content and runs impactful social campaigns to help keep your brand aligned with its goals. Our user-centric and insights-driven approach keeps your social media profile ready for connecting with users.
+            </p>
+            <div class="services_pills_container">
+                <button class="pill active" data-slide-b="0">SMO</button>
+                <button class="pill" data-slide-b="1">SMM</button>
+                <button class="pill" data-slide-b="2">Content Marketing</button>
+            
+            </div>
+            <div class="swiper-container-four">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="services_box">
+                            <div class="services_box_left">
+                                <h3 id="services_box_title">Elevate Your Brand’s Social Media Presence</h3>
+                                <p id="services_box_para">
+                                    <span>
+                                        Social Media Optimization (SMO) is necessary for optimizing your social media profile for each platform's algorithms as well as for users. It plays an important role in making your brand more visible and increasing engagement. With creativity and strategic planning, our team helps your social media profile look amazing and ensures your content grabs attention.
+                                    </span>
+                                </p>
+                                <span>
+                                    This offers to your brand:
+                                </span>
+                                <ol id="services_served_container">
+                                    <li> Higher profile visibility</li>
+                                    <li> Engagement</li>
+                                    <li> Stronger audience connection</li>
+                                    <li> Growth without investment </li>
+                                </ol>
+                            </div>
+                            <figure class="services_box_right">
+                                <img src="{% static 'img/social-media-presence.jpg' %}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="services_box">
+                            <div class="services_box_left">
+                                <h3 id="services_box_title">Connect, Engage, and Grow With Our Social Media Marketing</h3>
+                                <p id="services_box_para">
+                                    <span>
+                                        With social media marketing, we shine your brand on the platform that your users use daily. Our team runs campaigns and posts engaging content to help you match your business goals and achieve real results from these platforms. We aim to make your social media profile a powerful tool to increase your brand presence on these social platforms.
+                                    </span>
+                                </p>
+                                <span>
+                                    This helps your brand with:
+                                </span>
+                                <ol id="services_served_container">
+                                    <li> Interlinked Social Channels</li>
+                                    <li> Data-Driven Campaigns</li>
+                                    <li> User-Centric Strategy</li>
+                                    <li> Performance Tracking</li>
+                                </ol>
+                            </div>
+                            <figure class="services_box_right">
+                                <img src="{% static 'img/social-media-marketing.jpg' %}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="services_box">
+                            <div class="services_box_left">
+                                <h3 id="services_box_title">Grow Your Market Presence With our Content Marketing</h3>
+                                <p id="services_box_para">
+                                    <span>
+                                        As we know, content is the king. Having a strong content marketing strategy drives immense growth to your business. Our team identifies the contents suitable to your brand such as - images, videos, infographics, illustrations, blogs and other. Then we design a content calendar for your brand to keep it in touch with its customer.
+                                    </span>
+                                    <span>
+                                        This helps your brand with:
+                                    </span>
+                                </p>
+                                <ol id="services_served_container">
+                                    <li> Consistent Brand Messaging</li>
+                                    <li> Targeted Content Creation</li>
+                                    <li> Improved Audience Interaction</li>
+                                    <li> Result-Driven Performance</li>
+                                </ol>
+                            </div>
+                            <figure class="services_box_right">
+                                <img src="{% static 'img/content-marketing.jpg' %}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="s3" class="tabcontent">
+        <div class="services_wrapper">
+            <h2 id="service_title">
+                Email Marketing & Analytics
+            </h2>
+            <p id="service_para">
+                We cover every area of marketing to not leave any channel untouched. Email marketing is a powerful marketing channel that helps your business update specific details with your customers and stay connected with them. When it comes to analytics, we cannot ignore it. Analytics helps us formulate a marketing strategy for your business based on real data and insights. Know more about these below.
+
+            </p>
+            <div class="services_pills_container">
+                <button class="pill active" data-slide-g="0">Email Marketing</button>
+                <button class="pill" data-slide-g="1">Web Analytics </button>
+            </div>
+            <div class="swiper-container-five">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="services_box">
+                            <div class="services_box_left">
+                                <h3 id="services_box_title"> Build Connections With Our Email Marketing Service</h3>
+                                <p id="services_box_para">
+                                    <span>
+                                        When it comes to connecting with your customers and potential customers in a personalized way, keeping them updated with your brand, and building lasting relationships, email marketing is the best choice. With this service, we design various personalized email campaigns and schedule them to ensure your communication with your customers remains consistent.
+                                    </span>
+                                    <span>
+                                        This helps your brand with:
+                                    </span>
+                                </p>
+                                <ol id="services_served_container">
+                                    <li> Personalized Content Supply</li>
+                                    <li> Enhanced Communication Flow</li>
+                                    <li> Improved Conversion Rates</li>
+                                    <li> Performance-Driven Results</li>
+                                </ol>
+                            </div>
+                            <figure class="services_box_right">
+                                <img src="{% static 'img/email-marketing.jpg' %}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="services_box">
+                            <div class="services_box_left">
+                                <h3 id="services_box_title">  Track Insights Effectively With Our Web Analytics Service</h3>
+                                <p id="services_box_para">
+                                    <span>
+                                        Through web analytics, our professional digital marketers define the footsteps to take further necessary actions. We keep track of how users interact with your website, other digital channels, and social media platforms, and based on that insight, we refine our online strategy to help your business grow.
+                                    </span>
+                                    <span>
+                                        This helps your brand with:
+                                    </span>
+                                </p>
+                                <ol id="services_served_container">
+                                    <li> Actionable Data Insights</li>
+                                    <li> Smart Strategy Formulation</li>
+                                    <li> Effective Retargeting</li>
+                                    <li> Enhanced Conversion Rates</li>
+                                </ol>
+                            </div>
+                            <figure class="services_box_right">
+                                <img src="{% static 'img/analytics.jpg' %}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- BRAND FOUNDATION, DEVELOPMENT, GROWTH END ******************************************** -->
+
+    <!-- TRANSFORM YOUR BRAND START ********************************************* -->
+    <section id="section_container" class="transform_brand_section">
+        <div class="work_lines_container">
+            <div class="w1 w3_line"></div>
+            <div class="w2 w3_line"></div>
+            <div class="w3 w3_line"></div>
+            <div class="w4 w3_line"></div>
+            <div class="w5 w3_line"></div>
+            <div class="w6 w3_line"></div>
+            <div class="w7 w3_line"></div>
+            <div class="w8 w3_hor"></div>
+            <div class="w9 w3_hor"></div>
+            <div class="w10 w3_hor"></div>
+            <div class="w11 w3_line"></div>
+            <div class="w12 w3_line"></div>
+        </div>
+        <div class="section_wrapper">
+            <h2 id="section_title">A Comprehensive Digital Marketing Process to Drive Results </h2>
+            <p id="section_para">
+                We have designed our digital marketing approach into four key stages to cover every aspect of the marketing funnel, ensuring your brand achieves its business goals.
+            </p>
+        </div>
+        <div id="brand_process_section">
+            <div class="brand_process_wrapper">
+                <div class="brand_sidebar">
+                    <button id="defaultOpenProcess" class="sidebarLink" data-brand-slider="0"
+                        onclick="openSidebar('brand1', this, '#14151c')">Research & Analysis</button>
+                    <button class="sidebarLink" data-brand-slider="1"
+                        onclick="openSidebar('brand2', this, '#14151c')">Strategy Development</button>
+                    <button class="sidebarLink" data-brand-slider="2"
+                        onclick="openSidebar('brand3', this, '#14151c')">Execution & Management</button>
+                    <button class="sidebarLink" data-brand-slider="4"
+                        onclick="openSidebar('brand4', this, '#14151c')">Tracking and Optimization</button>
+                </div>
+
+                <div id="brand1" class="brandContent">
+                    <div class="business_box_left">
+                        <h3 id="services_box_title"> Research & Analysis</h3>
+                        <p id="service_paragraph">At this stage, we craft a strong foundation for your online marketing strategy. We do this by gathering pivotal data insights such as industry trends, market and customer analysis, competitor information, and key opportunities to strengthen the foundation of your strategy.</p>
+                        <span>In short, this stage includes -</span>
+                        <ol id="services_served_container">
+                            <li> Analyzing industry trends</li>
+                            <li> Researching competitors</li>
+                            <li> Identifying key opportunities</li>
+                        </ol>
+                    </div>
+                </div>
+                <div id="brand2" class="brandContent">
+                    <div class="business_box_left">
+                        <h3 id="services_box_title">Strategy Development</h3>
+                        <p id="service_paragraph">We already have important data about your business in hand. In this stage, we assist you in identifying the best marketing channels necessary to transform your business into a brand. For this, our strategists formulate a tailored online marketing plan for your business.
+                        </p>
+                        <span>In short, this stage includes:</span>
+                        <ol id="services_served_container">
+                            <li> Planning In-depth Web Marketing Strategy</li>
+                            <li> Allocating Marketing Budget</li>
+                            <li> Developing a Timeline For Execution</li>
+                        </ol>
+                    </div>
+                </div>
+                <div id="brand3" class="brandContent">
+                    <div class="business_box_left">
+                        <h3 id="services_box_title">Execution & Management</h3>
+                        <p id="service_paragraph">In this stage, we execute the strategy we have previously designed. We create engaging content, post it across various social media platforms and digital channels, manage ad campaigns, and achieve the other marketing targets we have set for your business.
+                        </p>
+                        <span>In short, this stage includes:</span>
+                        <ol id="services_served_container">
+                            <li> Creating engaging content</li>
+                            <li> Monitoring campaign performance</li>
+                            <li> Achieving set marketing targets</li>
+                        </ol>
+                    </div>
+                </div>
+                <div id="brand4" class="brandContent">
+                    <div class="business_box_left">
+                        <h3 id="services_box_title">Tracking and Optimization</h3>
+                        <p id="service_paragraph">Our marketing efforts do not end with execution. We continuously track day-to-day insights about how users are interacting with your website and other social platforms. Based on these findings, we identify areas for improvement and refine strategies to achieve long-term success for your business.
+                        </p>
+                        <span>In short, this stage includes:</span>
+                        <ol id="services_served_container">
+                            <li> Tracking user interactions</li>
+                            <li> Refining strategies based on insights</li>
+                            <li> Ensuring long-term business growth</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TRANSFORM YOUR BRAND END ********************************************* -->
+
+    <!-- FAQ SECTION START ************************************************** -->
+    <section id="faq_section">
+        <div class="work_lines_container">
+            <div class="w1 w4_line"></div>
+            <div class="w2 w4_line"></div>
+            <div class="w3 w4_line"></div>
+            <div class="w4 w4_line"></div>
+            <div class="w5 w4_line"></div>
+            <div class="w6 w4_line"></div>
+            <div class="w7 w4_line"></div>
+            <div class="w8 w4_hor"></div>
+            <div class="w9 w4_hor"></div>
+            <div class="w10 w4_hor"></div>
+            <div class="w11 w4_line"></div>
+            <div class="w12 w4_line"></div>
+        </div>
+        <h2 id="faq_section_title">
+            Frequently Asked Questions
+        </h2>
+        <div class="faq_wrappers">
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3>
+                            Why choose JSwebart as your digital marketing partner?
+                        </h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            JSwebart is well-recognized as the best digital marketing, UI/UX design, branding, packaging and print design agency in Mumbai and India that provides data-driven, comprehensive digital marketing services. Choosing JSwebart gives you an advantage over your competitors on several fronts.
+                        </p>
+                        <p> 1. Our Mission - Our team at JSwebart is on a mission of impacting society and people at large by simplifying digital experiences for users and create lasting, positive impacts thus easing their experience in the digital world.  We take every project as a challenge to create strategies that not only resonate with your market but also ensure your brand stands out, driving meaningful connections and lasting success.</p>
+                        <p> 2. Track Record in Digital Marketing Campaigns - As a top digital marketing company, we have successfully completed over 232 digital marketing campaigns, delivering exceptional results and helping businesses carve their niche in a crowded market. Of these, 167 campaigns have already achieved their key business milestones, and our team has redefined new targets for these businesses to expand their digital presence even further.</p>
+                        <p> 3. Wider Industry Expertise – JSwebart’s team has experience working across a wide range of industries. From startups to enterprises, our team is ready to assist you in designing a foolproof digital marketing plan that takes your brand to its targeted level. We also help you execute these plans through our comprehensive marketing services. As long as your vision is to simplify people’s lives in any way, we will help you deliver that through the digital world.</p>
+                        <p> 4. User-Centric Working Culture – This working culture has made us a leading internet marketing agency in India. We conduct user interviews, persona mapping, demographic research, and analyze user needs and market trends to draft digital marketing strategies that cater to user requirements. Our goal is to keep your business in front of the eyes of your customers so that they remember your products or services and choose your brand over your competitors.</p>
+                        <p> 5. Your Inclusive Engagement - JSwebart partners with you with a commitment to fostering a transparent and collaborative relationship. We value your input, incorporate our expertise, and work together to reach a conclusion that reflects our collective vision for the brand. Your voice matters to us. </p>
+                        <p> There are plenty of reasons why you should work with us. With our comprehensive branding, UI/UX, web development, packaging, web-based marketing and print design services, we are confident in our ability to help you achieve your objectives. </p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3> What industries do you specialize in for digital marketing?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            We have expertise in a wide range of industries. So far, we have  completed over 232 digital marketing campaigns across 25+ industries. As a leading digital marketing agency, we offer our services in industries such as SaaS, E-commerce, Technology & Software, Startups, Hospitality & Food Services, Health & Wellness, Education & E-learning, Real Estate, Fintech, the Service sector, and many more. As long as you have a vision to positively transform people's lives in any way, we are excited to be your marketing partner in this cause.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3>Why work with a digital marketing company?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+
+                        <p>
+                            A digital marketing agency helps you build the online presence your business needs to connect with it's customer. Whether it’s through creating engaging content, designing eye-catching posts and reels, or implementing the other marketing strategies, your business will have a digital partner that will truly ease your way to market yourself.
+                        </p>
+                        <p>You also know that in today's world your online presence plays a huge role in defining your brand and expanding it's market reach. It's how potential customers see you, learn about you, and decide whether they want to engage with your business or not. That’s why having the right digital marketing strategies is essential to standing out from your competitors.
+                        This is where a professional digital marketing agency will help you. They will not  just create a website or social media page—they will make sure your business is visible, trustworthy, and easy to find. They optimize your website for both users and search engines, ensuring it’s secure, easy to navigate, and drives the right kind of traffic.</p>
+                         <p>By working with a digital marketing agency, you get the expertise needed to build a strong online presence that brings in customers, builds your brand, and helps your business grow.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3> Benefits of investing in a digital marketing agency?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            Investing in a digital marketing agency brings real value to your business. With expert guidance, you get a custom marketing strategy designed specifically to target the result you want to achieve. It will also help your business stand out in the market and connect with it's target audience.
+                        </p>
+                        <p>This investment will help your business establish a strong online presence through various digital touchpoints, such as your website and social media channels. It ensures your brand is present where your customers are, making it easier for them to find and connect with you.</p>
+                        <p>So, by working with a digital marketing agency, you will lay the foundation for long-term growth for your brand. You will reach more people, increase customer loyalty, and keep your business moving forward with effective, results-driven strategies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3> What specific digital marketing services does JSwebart provide?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            We provide comprehensive digital marketing services designed to elevate your brand’s online presence. This includes  Search Engine Optimization ( SEO ), Search Engine Marketing ( SEM ), Social Media Optimization ( SMO ),
+                            Social Media Marketing ( SMM ), Advertising Campaign, Content Marketing,
+                            Email Marketing, Web Analytics and more.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3>How much do your digital marketing services cost?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            The cost of a digital marketing project varies depending on the goals, strategies, and services needed. Based on the variety of digital platforms we need to work with to match your goals, we provide you with a tailored price for the required services. Rest assured, we will bring success to your business and help you reach your true customer base.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3> How long does it take get results from your marketing efforts?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            Getting results from digital marketing efforts requires patience. While some services will show results within a few weeks, others, like SEO, may take months to show their powerful impact on your business success. Throughout this marketing journey, we will work hand in hand with you to deliver real results for your business.
+                    </p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3> Can you help us generate real marketing results for my existing business?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            Yes, our comprehensive digital marketing services also include revamping strategies for businesses that aren't achieving the results they need. Whether it's through improving website performance, refining your social media approach, or enhancing SEO, we work with you to realign your marketing efforts and help your business achieve its full potential.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3>Do I need to invest in digital marketing if I’m just starting up my business?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            Yes, we recommend you investing in digital marketing as it plays a crucial role in your business growth. By establishing a strong online presence from the beginning, you can effectively reach and engage with your target audience. A solid digital marketing strategy will ensures your brand maintains its personality and identity while connecting with potential customers. Our marketing strategy that are specifically tailored for startups, will  help you in getting started. Contact us, we will be happy to help you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq_container">
+                <div class="faq_question">
+                    <div class="icon">
+                        <div class="icon-shape"></div>
+                    </div>
+                    <div class="faq_question-text">
+                        <h3>Can you help with branding and design in addition to digital marketing?</h3>
+                    </div>
+
+                </div>
+                <div class="answercont">
+                    <div class="answer">
+                        <p>
+                            Yes, you are at JSWebArt, and we do more than just digital marketing. We offer branding, UI/UX design, packaging, print design, and web development—all in one place. Think of us as your creative partner. Need a logo? We’ve got you. Want a stunning website? Done. Eye-catching packaging or designs for print? We handle it all.
+                        </p>
+                        <p>Everything you need to turn your idea into a brand that stands out is here. Let’s team up and leave our unique mark on the digital world together!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ SECTION END ************************************************** -->
+
+    <!-- CTA PROCESS START *********************************************** -->
+    <section id="cta_process_section" class="upper_footer_cta">
+        <div class="cta_process_wrapper cta_process_wrapper_above_footer">
+            <div class="cta_lines_container">
+                <div class="cl1"></div>
+                <div class="cl2"></div>
+                <div class="cl3"></div>
+                <div class="cl4"></div>
+                <div class="ch1"></div>
+                <div class="ch2"></div>
+                <div class="ch3"></div>
+                <div class="ch4"></div>
+                <div class="ch5"></div>
+                <div class="ch6"></div>
+                <div class="ch7"></div>
+                <div class="ch8"></div>
+                <div class="ch9"></div>
+                <div class="ch10"></div>
+                <div class="ch11"></div>
+                <div class="ch12"></div>
+                <div class="ch13"></div>
+                <div class="ch14"></div>
+                <div class="ch15"></div>
+                <div class="ch16"></div>
+                <div class="ch17"></div>
+                <div class="ch18"></div>
+                <div class="ch19"></div>
+            </div>
+            <h2 id="cta_process_title" class="cta_h2">Work With the Best Digital Marketing Agency to Drive Consistent Growth</h2>
+            <a href="{% url 'contact' %}" id="contact_cta_btn" class="contact_cta_btn">Contact Us</a>
+        </div>
+    </section>
+    <!-- CTA PROCESS END *********************************************** -->
+{% endblock %}
+  
+
+{% block scripts %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="{% static 'js/service.js' %}"></script>
+    <script src="{% static 'js/animation.js' %}"></script>
+    <script src="{% static 'js/marque.js' %}"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+{% endblock %}

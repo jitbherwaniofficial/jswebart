@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'core',
+    'portfolio',
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -74,15 +77,33 @@ WSGI_APPLICATION = 'jswebart.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
+
+# Add these at the top of your settings.py
+
+# Replace the DATABASES section of your settings.py with this
+# tmpPostgres = urlparse("DATABASE_URL")
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': config('DB_NAME'),
         'USER': config('DB_USER'),
         'PASSWORD': config('DB_PASSWORD'),
-        'HOST': config('DB_HOST')
+        'HOST': config('DB_HOST'),
+        'PORT': config('DB_PORT'),
     }
 }
+
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': config('DB_NAME'),
+#         'USER': config('DB_USER'),
+#         'PASSWORD': config('DB_PASSWORD'),
+#         'HOST': config('DB_HOST')
+#     }
+# }
 
 
 # Password validation
@@ -126,6 +147,12 @@ STATICFILES_DIRS = [
     'jswebart/static'
 ]
 
+# MEDIA FILES 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
@@ -138,3 +165,7 @@ EMAIL_HOST_USER = config('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 EMAIL_USE_TLS = config('EMAIL_USE_TLS')
 DEFAULT_FROM_EMAIL = 'Jit Design <darkenergy120892@gmail.com>'
+
+
+
+
