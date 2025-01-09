@@ -1,0 +1,114 @@
+:root {
+    --green-clr: #6efacc;
+    --dark-black-clr: #14151c;
+    --medium-black-clr: #2c2c33;
+    --light-black-clr: #434449;
+    --eee-clr: #eee;
+    --white-clr: #f7f9ff;
+    --medium-white-clr: #f8faff;
+    --light-white-clr: #f9faff;
+    --near-pure-white: #fefeff;
+    --poppin-font: "Poppins", sans-serif;
+    --playfair-font: "Playfair Display", serif;
+    --semibold: 600;
+    --bold: 700;
+    --medium: 500;
+    --normal: 400;
+    --section-padding: 12vw 0;
+    --h2-font: 2.7vw;
+    --below-h2-para: 1.2vw;
+}
+
+.privacy_section {
+    padding: 7vw 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--playfair-font);
+}
+
+.privacy_wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.p_head {
+    font-size: 3vw;
+    color: var(--green-clr);
+    padding-bottom: 3vw;
+    letter-spacing: 0.1vw;
+}
+
+.p_points {
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+}
+
+.p_points_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.p_sub_points {
+    font-size: 2vw;
+    letter-spacing: 0.05vw;
+    color: var(--green-clr);
+    font-family: var(--poppin-font);
+}
+
+.p_sub_points_para {
+    font-size: 1.6vw;
+    font-family: var(--poppin-font);
+    line-height: 1.5;
+}
+
+.p_sub_points_para a {
+    color: var(--green-clr);
+    font-weight: var(--semibold);
+    text-decoration: underline;
+}
+
+.p_sub_points_ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    /* padding-left: 2.5vw; */
+}
+
+.ul_p {
+    font-size: 1.5vw;
+    font-family: var(--poppin-font);
+}
+
+li {
+    font-size: 1.5vw;
+    font-family: var(--poppin-font);
+}
+
+ol li::marker {
+    color: var(--near-pure-white);
+}
+
+li::marker {
+    color: var(--green-clr);
+}
+
+li strong {
+    font-family: var(--poppin-font);
+    font-size: 1.5vw;
+}
+
+.li_p {
+    font-size: 1.5vw;
+    font-family: var(--poppin-font);
+    padding-top: 0.5vw;
+}
+
+li .an {
+    color: var(--green-clr);
+    font-weight: var(--semibold);
+    font-size: 1.45vw;
+    text-decoration: underline;
+}

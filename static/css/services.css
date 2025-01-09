@@ -147,6 +147,7 @@
   width: 25vw;
   height: 25vw;
   object-fit: cover;
+  aspect-ratio: 1;
   margin: 25px 0;
 }
 
@@ -162,28 +163,28 @@
 }
 
 
-.hero_img_1 {
-  border: 2vw solid #6ba00d;
+.work_bhukh-lagi-kya, .hero_img_1 {
+  border: 8px solid #1B1B1F;
 }
 
-.hero_img_2 {
-  border: 2vw solid #a2524b;
+.work_dtiara, .hero_img_2 {
+  border: 8px solid #826C33;
 }
 
-.hero_img_3 {
-  border: 2vw solid #5f6064;
+.work_the-art-of-generation, .hero_img_3{
+  border: 8px solid #2C4805;
 }
 
-.hero_img_4 {
-  border: 2vw solid #9e6944;
+.work_wild-media, .hero_img_4 {
+  border: 8px solid #280201;
 }
 
-.hero_img_5 {
-  border: 2vw solid #141218;
+.work_thesouthindianplate, .hero_img_5 {
+  border: 8px solid #F0E583;
 }
 
-.hero_img_6 {
-  border: 2vw solid #00b0d7;
+.work_fitpeo, .hero_img_6 {
+  border: 8px solid #0033FF;
 }
 
 
@@ -261,6 +262,23 @@
   padding-bottom: 20px;
 }
 
+.slider_work_container {
+  width: 100%;
+  color: var(--dark-black-clr) !important;
+  font-family: var(--playfair-font);
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+  padding-top: 3vw;
+}
+
+.sliderwork_para {
+  width: 100%;
+  color: var(--dark-black-clr) !important;
+  line-height: 1.5;
+  font-size: 1.6vw;
+}
+
 /* .service_work_section {
   padding-bottom: 10vw !important;
 } */
@@ -281,8 +299,12 @@
   justify-content: center;
   align-items: center;
   width: 60vw !important;
-  height: 30vw !important;
-  padding: 30px;
+  height: 35vw !important;
+  /* padding: 10px; */
+}
+
+.ss_slide img {
+  padding: 5px;
 }
 
 .color-1 {
@@ -307,7 +329,7 @@
 }
 
 .swiper-slide img {
-  display: block;
+  /* display: block; */
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -842,6 +864,15 @@
     font-size: 2vw;
   }
 
+  .slider_work_container {
+    gap: 4vw;
+    padding-top: 4vw;
+  }
+
+  .sliderwork_para {
+    font-size: 2.5vw;
+  }
+
 
   .ss_slide {
     width: 75vw !important;
@@ -955,6 +986,10 @@
   left: 0;
 }
 
+.sliderwork_para {
+  font-size: 3.2vw;
+}
+
 #work_head {
   font-size: 4vw;
 }
@@ -1025,11 +1060,13 @@
 }
 
 #brand1, #brand2, #brand3, #brand4 {
-  width: 100%;
+  width: 90%;
+  justify-content: center;
 }
 
 .business_box_left {
   height: 60vw;
+  width: 90%;
 }
 
 #service_paragraph {
@@ -1071,7 +1108,9 @@
   .hw_img {
     width: 50vw;
     height: 50vw;
+    object-fit: cover;
     margin-top: 68px;
+    aspect-ratio: 1;
   }
 
   @keyframes scrollUp {
@@ -1153,6 +1192,13 @@
   font-size: 5vw !important;
   padding: 4vw 10vw !important;
 }
+.slider_work_container {
+  gap: 5vw;
+  padding-top: 5vw;
+}
+.sliderwork_para {
+  font-size: 4vw;
+}
 
 #section_para {
   font-size: 3.6vw !important;
@@ -1176,13 +1222,17 @@
   font-size: 3.5vw;
 }
 
-.ss_slide {
-  padding: 10px;
-}
 
-.ss_slide {
+/* .ss_slide {
   width: 160vw !important;
   height: 80vw !important;
+} */
+
+
+
+.ss_slide {
+  width: 95% !important;
+  height: 50vw !important;
 }
 
 .test_quotes span {

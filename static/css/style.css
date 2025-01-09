@@ -34,12 +34,16 @@ body {
   overflow-x: hidden;
 }
 
+.subscribe_message {
+  padding: 1vw 0;
+}
+
 ::-webkit-scrollbar {
   width: 0.2rem;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: var(--dark-black-clr);
+  background-color: transparent;
   border-radius: 0.5rem;
 }
 
@@ -1525,7 +1529,6 @@ span {
   left: 96%;
   top: 0;
 }
-
 
 .services_wrapper {
   width: 90%;
