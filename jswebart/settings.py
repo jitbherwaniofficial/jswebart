@@ -93,7 +93,6 @@ DATABASES = {
         'PASSWORD': config('DB_PASSWORD'),
         'HOST': config('DB_HOST'),
         'PORT': config('DB_PORT'),
-        'BUCKET_NAME': config('BUCKET_NAME'),
     }
 }
 
