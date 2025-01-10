@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 import os
 from pathlib import Path
 from decouple import config
+from supabase import Client, create_client
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,7 +28,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', cast=bool)
 
-ALLOWED_HOSTS = ['.vercel.app','.now.sh', 'jswebart.com','www.jswebart.com']
+ALLOWED_HOSTS = ['.vercel.app','.now.sh', 'jswebart.com','www.jswebart.com', '127.0.0.1']
 
 
 # Application definition
@@ -92,6 +93,7 @@ DATABASES = {
         'PASSWORD': config('DB_PASSWORD'),
         'HOST': config('DB_HOST'),
         'PORT': config('DB_PORT'),
+        'BUCKET_NAME': config('BUCKET_NAME'),
     }
 }
 
@@ -149,8 +151,18 @@ STATICFILES_DIRS = [
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
 # MEDIA FILES 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
+# MEDIA_URL = '/media/'
+# MEDIA_ROOT = BASE_DIR / 'media'
+
+#SUPABASE CONFIGURATION
+SUPABASE_URL = config('SUPABASE_URL')
+SUPABASE_KEY = config('SUPABASE_ANON_KEY')
+SUPABASE_BUCKET_NAME = 'media-files'
+# supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+
+
+DEFAULT_FILE_STORAGE = 'jswebart.storage_backends.SupabaseMediaStorage'
+MEDIA_URL = f"{SUPABASE_URL}/storage/v1/object/public/{SUPABASE_BUCKET_NAME}/"
 
 
 
