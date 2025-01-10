@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 import os
 from pathlib import Path
 from decouple import config
-from supabase import Client, create_client
+import cloudinary_storage
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -28,7 +28,9 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', cast=bool)
 
-ALLOWED_HOSTS = ['.vercel.app','.now.sh', 'jswebart.com','www.jswebart.com', '127.0.0.1']
+# ALLOWED_HOSTS = ['.vercel.app','.now.sh', 'jswebart.com','www.jswebart.com', '127.0.0.1', 'locahost']
+ALLOWED_HOSTS = []
+
 
 
 # Application definition
@@ -43,6 +45,8 @@ INSTALLED_APPS = [
     'core',
     'portfolio',
     'blog',
+    'cloudinary',
+    'cloudinary_storage',
 ]
 
 MIDDLEWARE = [
@@ -153,17 +157,13 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 # MEDIA_URL = '/media/'
 # MEDIA_ROOT = BASE_DIR / 'media'
 
-#SUPABASE CONFIGURATION
-SUPABASE_URL = config('SUPABASE_URL')
-SUPABASE_KEY = config('SUPABASE_ANON_KEY')
-SUPABASE_BUCKET_NAME = 'media-files'
-# supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': config('CLOUD_NAME'),
+    'API_KEY': config('API_KEY'),
+    'API_SECRET_KEY': config('API_SECRET_KEY'),
+}
 
-
-DEFAULT_FILE_STORAGE = 'jswebart.storage_backends.SupabaseMediaStorage'
-MEDIA_URL = f"{SUPABASE_URL}/storage/v1/object/public/{SUPABASE_BUCKET_NAME}/"
-
-
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
@@ -178,6 +178,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # EMAIL_USE_TLS = config('EMAIL_USE_TLS')
 # DEFAULT_FROM_EMAIL = 'Jit Design <darkenergy120892@gmail.com>'
 
-
+# Django>=3.0,<5.0
 
 
