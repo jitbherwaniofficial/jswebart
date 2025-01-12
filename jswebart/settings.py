@@ -26,9 +26,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
+# DEBUG = False
 DEBUG = config('DEBUG', cast=bool)
 
-ALLOWED_HOSTS = ['.vercel.app','.now.sh', 'jswebart.com','www.jswebart.com', '127.0.0.1', 'locahost']
+ALLOWED_HOSTS = ['.vercel.app','.now.sh', 'jswebart.com','www.jswebart.com', '127.0.0.1', 'localhost']
 
 
 
@@ -41,11 +42,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cloudinary',
+    'cloudinary_storage',
     'core',
     'portfolio',
     'blog',
-    'cloudinary',
-    'cloudinary_storage',
 ]
 
 MIDDLEWARE = [
@@ -146,23 +147,38 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 
+import os
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     'jswebart/static'
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
-# MEDIA FILES 
-# MEDIA_URL = '/media/'
-# MEDIA_ROOT = BASE_DIR / 'media'
-
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': config('CLOUD_NAME'),
-    'API_KEY': config('API_KEY'),
-    'API_SECRET_KEY': config('API_SECRET_KEY'),
+    'CLOUD_NAME': config('CLOUD_NAME', default=None),
+    'API_KEY': config('API_KEY', default=None),
+    'API_SECRET': config('API_SECRET_KEY', default=None),
+    'RESOURCE_TYPE': 'auto',  # or 'auto' for mixed file types
 }
 
+CLOUD_NAME = config('CLOUD_NAME')
+
+# Cloudinary for static and media files
+# STORAGES = {
+#     "default": {
+#         "BACKEND": "cloudinary_storage.storage.MediaCloudinaryStorage",
+#     },
+#     "staticfiles": {
+#         "BACKEND": "cloudinary_storage.storage.StaticHashedCloudinaryStorage",
+#     },
+# }
+
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+MEDIA_URL = f'https://res.cloudinary.com/{CLOUD_NAME}/media/'
+
+
+# Static and Media URLs (Cloudinary will handle the URL generation)
+MEDIA_URL = '/media/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field

@@ -1,4 +1,5 @@
 from django.db import models
+from cloudinary.models import CloudinaryField
 
 class Contact(models.Model):
     name = models.CharField(max_length=255, blank=False)
@@ -149,9 +150,7 @@ class JoinUs(models.Model):
 
     location = models.CharField(max_length=255, blank=False, verbose_name="Where are you based?")
 
-    file_upload = models.FileField(
-        upload_to='Resume/', blank=False, verbose_name="Upload Your Resume"
-    )
+    file_upload = CloudinaryField('image')
 
     join_us_message = models.TextField(blank=False, null=True)
 
