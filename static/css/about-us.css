@@ -1,0 +1,1197 @@
+:root {
+    --green-clr: #6efacc;
+    --dark-black-clr: #14151c;
+    --medium-black-clr: #2c2c33;
+    --light-black-clr: #434449;
+    --eee-clr: #eee;
+    --white-clr: #f7f9ff;
+    --medium-white-clr: #f8faff;
+    --light-white-clr: #f9faff;
+    --near-pure-white: #fefeff;
+    --poppin-font: "Poppins", sans-serif;
+    --playfair-font: "Playfair Display", serif;
+    --semibold: 600;
+    --bold: 700;
+    --medium: 500;
+    --normal: 400;
+    --section-padding: 12vw 0;
+    --h2-font: 2.7vw;
+    --below-h2-para: 1.2vw;
+  }
+
+
+  .about_hero_section {
+    margin: 0 auto;
+    background-color: var(--white-clr);
+    padding: 8vw 0;
+    padding-bottom: 10vw;
+  }
+
+  .about_hero_section_wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .about_hero_logo {
+    opacity: 0.3;
+  }
+
+  .about_section_left {
+    width: 40%;
+  }
+
+  
+
+  .about_us_image_container {
+    width: 100%;
+    position: relative;
+  }
+
+  .about_hero_logo {
+    width: 70%;
+  }
+
+  .about_us_head {
+    position: absolute;
+    color: var(--dark-black-clr);
+    font-family: var(--playfair-font);
+    font-size: 3vw;
+    letter-spacing: 0.05vw;
+    left: 3%;
+    top: 26%;
+    scale: 0;
+  }
+
+  .about_section_right {
+    padding-top: 3vw;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    align-items: start;
+    justify-content: start;
+  }
+  .about_para_upper{
+    font-family: var(--playfair-font);
+    font-weight: var(--medium);
+    font-size: 1.7vw;
+    color: var(--dark-black-clr);
+    
+  }
+  .about_para_middle1, .about_para_middle2, .about_para_down{
+    font-family: var(--poppin-font);
+    font-weight: var(--medium);
+    font-size: 1.3vw;
+    color: var(--medium-black-clr);
+  }
+
+  #counter {
+    width: 90%;
+    margin: 0 auto;
+    gap: 5vw;
+  }
+
+  .city {
+    font-size: 2.5vw !important;
+  }
+
+  .about_image_marque_container {
+    position: relative;
+    width: 100%;
+    padding: 2.5vw 0;
+    height: 37vw;
+    overflow: hidden;
+    /* margin-bottom: 10vw; */
+  }
+
+  .about_marque {
+    display: flex;
+    animation: scrollleft 40s linear infinite;
+  }
+
+  .about_image_marque_container .about_marque img {
+    width: 32vw;
+    object-fit: cover;
+    padding-right: 2vw;
+  }
+
+  .about_image_marque_container .about_marque span {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw; 
+  }
+
+  .ab1,.ab4, .ab7, .ab10, .ab13{
+    height: 32vw;
+  }
+
+  .ab2, .ab3, .ab5,.ab6, .ab8, .ab9, .ab11, .ab12 {
+    height: 15vw;
+  }
+
+@keyframes scrollleft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-450%);
+    }
+}
+
+.about_marque:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+/* Values and Mission starts here */
+
+.values_and_mission {
+    width: 100%;
+    padding: var(--section-padding);
+    background-color: var(--white-clr);
+    position: relative;
+}
+
+.w_li {
+    height: 76%;
+}
+
+.w_li2 {
+    height: 76%;
+}
+
+
+.values_heading{
+    color: var(--dark-black-clr);
+    font-weight: var(--semibold);
+    font-family: var(--playfair-font);
+    font-size: 3vw;
+    width: 90%;
+    margin: 0 auto;
+    text-align: start;
+    padding-top: 4vw;
+    padding-bottom: 10vw;
+}
+
+.values_boxes_container{
+    width: 100%;
+    background-color: var(--dark-black-clr);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10vw;
+}
+
+.first_box_container, .second_box_container, .third_box_container{
+    width: 100%;
+    height: 25vw;
+    display: flex;
+}
+
+.value_box, .value_img_box, .values_para_box{
+    width: calc(100%/3);
+    height: 100%;
+     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s all;
+}
+
+.value_box{
+    background-color: var(--dark-black-clr);
+    transition: 0.5s all;
+    position: relative;
+}
+
+.value{
+    color: var(--white-clr);
+    font-weight: var(--semibold);
+    font-family: var(--playfair-font);
+    font-size: 2.5vw;
+    
+} 
+.values_para_box{
+    background-color: var(--medium-black-clr);
+    padding: 2vw;
+    transition: 0.5s all 0.5s; 
+}
+.value_para{
+    color: var(--white-clr);
+    font-weight: var(--normal);
+    font-family: var(--poppin-font);
+    font-size: 1.3vw;
+    text-align: center;
+}
+
+.value_img_box{
+    background-color: var(--dark-black-clr);
+    transition: 0.5s all;
+}
+.value_img_box img{
+  width: 100%;
+  height: 100%;  
+}
+
+
+.first_box_container:hover .first_value_box{
+    transform: translateX(33.3vw);
+}
+
+.first_box_container:hover .first_img_box {
+    transform: translateX(-33.3vw);
+}
+.first_box_container:hover .first_para_box {
+    border: 2px solid var(--green-clr);
+}
+.second_box_container:hover .snd_value_box {
+    transform: translateX(-66.55vw);
+}
+.second_box_container:hover .snd_img_box {
+    transform: translateX(66.55vw);
+}
+.second_box_container:hover .snd_para_box{
+    border: 2px solid var(--green-clr);
+}
+.third_box_container:hover .thrd_value_box {
+    transform: translateX(33.3vw);
+}
+.third_box_container:hover .thrd_img_box {
+    transform: translateX(-33.3vw);
+}
+.third_box_container:hover .thrd_para_box{
+    border: 2px solid var(--green-clr);
+}
+
+/* Mission part */
+.mission_container{
+    width: 100%;
+    background-color: var(--white-clr);
+
+}
+.mission_heading{
+    padding-top: 4vw;
+    color: var(--dark-black-clr);
+    font-weight: var(--semibold);
+    font-family: var(--playfair-font);
+    font-size: 3vw;
+    width: 90%;
+    margin: 0 auto;
+    text-align: start;
+    padding-bottom: 6vw;
+}
+
+.mission_list_container{
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--white-clr);
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.first_mission_box{
+    border-right: 1.5px solid var(--dark-black-clr);
+    /* border-bottom: 1.5px solid var(--dark-black-clr); */
+    transition: 0.5s all;
+}
+.second_mission_box{
+    /* border-bottom: 1.5px solid var(--dark-black-clr); */
+    border-right: 1.5px solid var(--dark-black-clr);
+    transition: 0.5s all;
+}
+.third_mission_box{
+    border-right: 1.5px solid var(--dark-black-clr);
+    transition: 0.5s all;
+}
+.forth_mission_box{
+    /* border: 1.5px solid var(--dark-black-clr); */
+    transition: 0.5s all;
+}
+
+.first_mission_box:hover{
+  background-color: var(--dark-black-clr);
+  cursor: pointer;
+}
+.first_mission_box:hover .mission{
+    color: var(--white-clr);
+}
+.first_mission_box:hover .mission_para{
+    color: var(--medium-white-clr);
+}
+.second_mission_box:hover{
+  background-color: var(--dark-black-clr);
+  cursor: pointer;
+}
+.second_mission_box:hover .mission{
+    color: var(--white-clr);
+}
+.second_mission_box:hover .mission_para{
+    color: var(--medium-white-clr);
+}
+.third_mission_box:hover{
+  background-color: var(--dark-black-clr);
+  cursor: pointer;
+}
+.third_mission_box:hover .mission{
+    color: var(--white-clr);
+}
+.third_mission_box:hover .mission_para{
+    color: var(--medium-white-clr);
+}
+.forth_mission_box:hover{
+  background-color: var(--dark-black-clr);
+  cursor: pointer;
+}
+.forth_mission_box:hover .mission{
+    color: var(--white-clr);
+}
+.forth_mission_box:hover .mission_para{
+    color: var(--medium-white-clr);
+}
+
+
+.mission_box{
+    width: 25%;
+    height: 25vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2vw;
+}
+
+.mission{
+    color: var(--dark-black-clr);
+    font-weight: var(--semibold);
+    font-family: var(--playfair-font);
+    font-size: 1.8vw;
+    text-align: start;
+    width: 90%;
+    margin: 0 auto;
+}
+.mission_para{
+    color: var(--medium-black-clr);
+    font-weight: var(--medium);
+    font-family: var(--poppin-font);
+    font-size: 1.1vw;
+    text-align: start;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* CAPABILITIES SECTION *************************************************** */
+.capabilities_section {
+    display: flex;
+    flex-direction: column;
+    padding: var(--section-padding);
+}
+
+.capabilities_head {
+    font-size: 3vw;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.capabilities_container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 5vw 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
+.capabilities_circle {
+    background-color: var(--medium-black-clr);
+    width: 43.9vw;
+    height: 43.9vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform-origin: 50% 50%;
+    transition: 0.6s all;
+}
+
+.capabilities_circle:hover {
+    background-color: transparent;
+}
+
+.capabilities_circle:hover .capability_name {
+   color: var(--green-clr);
+   text-decoration: underline;
+}
+
+.capability_name::after {
+    content: "";
+    background-color: var(--medium-black-clr);
+    width: 22vw;
+    height: 22vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transition: 0.6s all;
+    z-index: -1;
+    scale: 0;
+}
+
+.capabilities_circle:hover .capability_name::after {
+    scale: 1;
+}
+
+.capability_name {
+    font-size: 2vw;
+    transition: 0.6s all;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.capabilities_points_container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.capabilities_points {
+    width: 10vw;
+    height: 10vw;
+    background-color: var(--light-black-clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.2vw;
+    transform: scale(0);
+    /* opacity: 0; */
+    transition: 0.6s all;
+}
+
+.capabilities_circle:hover .capabilities_points {
+    transform: scale(1);
+}
+
+.capabilities_points:nth-child(1) {
+    position: absolute;
+    top: 0%;
+}
+
+.capabilities_points:nth-child(2) {
+    position: absolute;
+    top: 22%;
+    left: 0%;
+}
+
+.capabilities_points:nth-child(3) {
+    position: absolute;
+    top: 22%;
+    right: 0%;
+}
+
+.capabilities_points:nth-child(4) {
+    position: absolute;
+    top: 55%;
+    left: 0%;
+}
+
+.capabilities_points:nth-child(5) {
+    position: absolute;
+    top: 55%;
+    right: 0%;
+}
+
+.capabilities_points:nth-child(6) {
+    position: absolute;
+    bottom: 0%;
+
+}
+
+.capabilities_points:nth-child(7) {
+    position: absolute;
+    bottom: -10%;
+    left: 1%;
+}
+
+.capabilities_points:nth-child(8) {
+    position: absolute;
+    bottom: -10%;
+    right: 1%;
+
+}
+/* CAPABILITIES SECTION *************************************************** */
+
+
+/* MEET TEAM SECTION **************************************************** */
+
+.meet_team_section {
+    padding: var(--section-padding);
+    background-color: var(--white-clr);
+    position: relative;
+    color: var(--dark-black-clr);
+}
+
+.meet_team_wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.meet_team_heading {
+    font-size: 3vw;
+    font-family: var(--playfair-font);
+    padding-top: 5vw;
+}
+
+.founder_bar_container {
+    padding-top: 7vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.founder_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.founder_image_caption {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.founder_image {
+    width: 100%;
+    height: 40vw;
+    background-color: var(--dark-black-clr);
+    color: var(--white-clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.founder_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.jit {
+    object-position: top;
+}
+
+.founder_name {
+    font-weight: var(--bold);
+    font-size: 1.8vw;
+    font-family: var(--playfair-font);
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.founder_designation {
+    font-size: 1.3vw;
+    letter-spacing: 0.5px;
+    font-family: var(--poppin-font);
+}
+
+.founder_quote {
+    width: 55%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.founder_quote span {
+    font-size: 15vw;
+    display: block;
+    transform: translateY(-10%);
+    margin-right: 2vw;
+}
+
+.founder_quote p {
+    font-size: 2vw;
+}
+
+.team_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 5vw;
+    gap: 5vw;
+}
+
+.cta {
+    padding: 0 !important;
+    height: 26.5vw;
+}
+
+.above_cta {
+    width: 100% !important;
+}
+
+.cta_process_wrapper {
+    justify-content: space-around;
+}
+
+
+/* MEET TEAM SECTION **************************************************** */
+
+
+@media only screen and (max-width: 1024px) {
+    .about_hero_section_wrapper {
+        flex-wrap: wrap;
+    }
+
+    .about_section_left, .about_section_right {
+        width: 100%;
+    }
+
+    .about_section_left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about_us_image_container {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about_us_head {
+        font-size: 4vw;
+        top: 26%;
+        left: auto;
+    }
+
+    .about_section_right {
+        padding-top: 5vw;
+    }
+
+    .about_para_upper {
+        font-size: 4vw;
+    }
+
+    .about_para_middle1, .about_para_middle2, .about_para_down {
+        font-size: 3vw;
+    }
+
+    .about_section_right {
+        gap: 5vw;
+    }
+
+    @keyframes scrollleft {
+        0% {
+            transform: translateX(0);
+        }
+    
+        100% {
+            transform: translateX(-1050%);
+        }
+    }
+
+    #counter {
+        width: 90% !important;
+        flex-wrap: wrap;
+    }
+
+    .about_image_marque_container {
+        height: 70vw;
+    }
+
+    .about_image_marque_container .about_marque img {
+        width: 65vw;
+    }
+
+    .ab1, .ab4, .ab7, .ab10, .ab13 {
+        height: 65vw;
+    }
+
+    .ab2, .ab3, .ab5, .ab6, .ab8, .ab9, .ab11, .ab12 {
+        height: 31.51vw;
+    }
+
+    .values_heading {
+        font-size: 4vw;
+    }
+
+    .value_para {
+        font-size: 1.5vw;
+        line-height: 1.4;
+    }
+
+    .value {
+        font-size: 3.5vw;
+    }
+
+    .mission_heading {
+        font-size: 4vw;
+    }
+
+    .mission_list_container {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .mission_list_container {
+        font-size: 2vw;
+    }
+
+    .mission_para {
+        font-size: 1.6vw;
+    }
+
+    .mission_box {
+        height: 35vw;
+        justify-content: center;
+    }
+
+    .capabilities_head {
+        font-size: 4vw;
+    }
+
+    .meet_team_heading {
+        font-size: 4vw;
+    }
+
+    .founder_name {
+        font-size: 2.5vw;
+    }
+
+    .founder_designation {
+        font-size: 1.8vw;
+    }
+
+    .founder_quote p {
+        font-size: 3vw;
+    }
+
+    #cta_para {
+        font-size: 2vw !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .about_us_image_container {
+        width: 100%;
+    }
+
+    .first_box_container:hover .first_value_box{
+        transform: translateX(0);
+    }
+    
+    .first_box_container:hover .first_img_box {
+        transform: translateX(0);
+    }
+    .first_box_container:hover .first_para_box {
+        border: none;
+    }
+    .second_box_container:hover .snd_value_box {
+        transform: translateX(0);
+    }
+    .second_box_container:hover .snd_img_box {
+        transform: translateX(0);
+    }
+    .second_box_container:hover .snd_para_box{
+        border: none;
+    }
+    .third_box_container:hover .thrd_value_box {
+        transform: translateX(0);
+    }
+    .third_box_container:hover .thrd_img_box {
+        transform: translateX(0);
+    }
+    .third_box_container:hover .thrd_para_box{
+        border: none;
+    }
+
+    .first_box_container, .second_box_container, .third_box_container {
+        height: auto !important;
+        flex-direction: column;
+    }
+
+    .vbc {
+        width: 100%;
+        height: 70vw;
+    }
+
+    .first_value_box {order: 2;}
+    .first_img_box {order: 1;}
+    .first_para_box {order: 3;}
+    .snd_para_box {order: 3;}
+    .snd_value_box {order: 2;}
+    .thrd_value_box {order: 2;}
+    .thrd_img_box {order: 1;}
+    .thrd_para_box {order: 3;}
+
+    .value {
+        font-size: 6.5vw;
+    }
+
+    .value_para {
+        font-size: 4vw;
+        line-height: 1.5;
+        width: 75%;
+    }
+
+    .meet_team_heading {
+        font-size: 5vw;
+    }
+
+    .founder_bar_container {
+        padding-top: 10vw;
+        gap: 10vw;
+    }
+
+    .founder_image_caption {
+        width: 100%;
+    }
+
+    .founder_image {
+        height: 100vw;
+    }
+
+    .founder_name {
+        font-size: 4.5vw;
+    }
+
+    .founder_designation {
+        font-size: 3.5vw;
+    }
+
+    .founder_bar {
+        flex-direction: column;
+        gap: 5vw;
+    }
+
+    .founder_quote {
+        width: 90%;
+    }
+
+    .founder_quote p {
+        font-size: 3.5vw;
+    }
+
+    .team_container {
+        gap: 10vw;
+    }
+
+    .above_cta, .cta_left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .cta_left > #cta_process_title {
+        text-align: center;
+        font-size: 6vw !important;
+        width: 80% !important;
+    }
+
+    #cta_para {
+        font-size: 2.3vw;
+        font-size: 3vw !important;
+        text-align: center;
+        padding-top: 2vw;
+    }
+
+    #contact_cta_btn {
+        font-size: 3.5vw !important;
+        padding: 3vw !important;
+    }
+
+    .fme {
+        order: 2;
+    }
+
+    .about_us_head{
+        font-size: 7vw;
+    }
+
+    .about_section_right {
+        padding-top: 15vw;
+        gap: 6vw;
+    }
+    .about_para_upper {
+        font-size: 5vw;
+        line-height: 1.5;
+    }
+
+    .about_para_middle1, .about_para_middle2, .about_para_down {
+        line-height: 1.4;
+        font-size: 4vw;
+    }
+
+    .about_marque:hover {
+        animation-play-state: running;
+        cursor: pointer;
+    }
+
+    .city {
+        font-size: 5vw !important;
+        padding-bottom: 1vw;
+    }
+
+    .about_image_marque_container .about_marque img {
+        width: 75vw;
+    }
+
+    .ab1, .ab4, .ab7, .ab10, .ab13 {
+        height: 80vw;
+    }
+
+    .about_image_marque_container {
+        height: 85vw;
+    }
+
+    .ab2, .ab3, .ab5, .ab6, .ab8, .ab9, .ab11, .ab12 {
+        height: 39vw;
+    }
+
+    .about_marque {
+        display: flex;
+        animation: scrollleft 70s linear infinite;
+      }
+
+    @keyframes scrollleft {
+        0% {
+            transform: translateX(0);
+        }
+    
+        100% {
+            transform: translateX(-1250%);
+        }
+    }
+
+    .values_heading {
+        font-size: 5vw;
+    }
+
+    .mission_heading {
+        font-size: 5vw;
+    }
+
+    .mission_box {
+        width: 50%;
+    }
+
+    .first_mission_box, .second_mission_box {
+        border-bottom: 2px solid var(--dark-black-clr);
+    }
+
+    .mission {
+        font-size: 3.2vw;
+    }
+
+    .mission_para {
+        font-size: 2.2vw;
+    }
+
+    .mission_box {
+        height: 40vw;
+        padding: 3vw;
+    }
+
+    .first_box_container, .second_box_container, .third_box_container {
+        height: 30vw;
+    }
+
+    .capabilities_head {
+        font-size: 5vw;
+    }
+
+    .capabilities_circle {
+        width: 80vw;
+        height: 80vw;
+        margin:  5vw auto;
+    }
+
+    .capability_name {
+        font-size: 4.5vw; 
+    }
+
+    .capability_name::after {
+        width: 38vw;
+        height: 38vw;
+    }
+
+    .capabilities_points {
+        width: 20vw;
+        height: 20vw;
+        font-size: 2.5vw;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .about_hero_logo {
+        width: 90%;
+    }
+
+    .about_hero_section {padding-bottom: 20vw;}
+
+    .about_us_head {
+        font-size: 9vw;
+    }
+
+    .about_para_upper {
+        font-size: 6.5vw;
+        line-height: 1.5;
+    }
+
+    .about_para_middle1, .about_para_middle2, .about_para_down {
+        font-size: 5vw;
+    }
+
+    #counter {padding-top: 20vw;}
+
+    .city {
+        font-size: 7vw !important;
+    }
+
+    .about_image_marque_container {
+        height: 100vw;
+    }
+
+    .about_image_marque_container .about_marque img {
+        width: 85vw;
+    }
+
+    .ab1, .ab4, .ab7, .ab10, .ab13 {
+        height: 95vw;
+    }
+
+    .ab2, .ab3, .ab5, .ab6, .ab8, .ab9, .ab11, .ab12 {
+        height: 46.2vw;
+    }
+
+    .about_marque {
+        display: flex;
+        animation: scrollleft 50s linear infinite;
+      }
+
+    @keyframes scrollleft {
+        0% {
+            transform: translateX(0);
+        }
+    
+        100% {
+            transform: translateX(-1430%);
+        }
+    }
+
+    .values_boxes_container {margin-bottom: 20vw;}
+
+    .values_heading {
+        font-size: 6vw;
+    }
+
+    .mission_heading {
+        font-size: 6vw;
+    }
+
+    .mission_box {
+        height: 70vw;
+        width: 100%;
+        gap: 3vw;
+    }
+
+    .first_mission_box, .second_mission_box, .third_mission_box, .fourth_mission_box {
+        border-bottom: 1px solid rgba(20, 21, 28,0.3);
+    }
+
+    .mission {
+        font-size: 5vw;
+    }
+
+    .mission_para {
+        font-size: 4vw;
+        line-height: 1.4;
+    }
+    .capabilities_container {gap: 10vw;}
+
+    .capabilities_head {
+        font-size: 6vw;
+    }
+
+    .capabilities_circle {
+        width: 90vw;
+        height: 90vw;
+        margin: 5vw auto;
+        background-color: transparent;
+    }
+
+    .capabilities_points {
+        width: 24vw;
+        height: 24vw;
+        font-size: 3.4vw;
+    }
+
+    .capability_name::after {
+        scale: 1;
+    }
+
+    .capabilities_points {
+        transform: scale(1);
+    }
+
+    .meet_team_heading {
+        font-size: 6vw;
+    }
+
+    .founder_name {
+        font-size: 5vw;
+    }
+
+    .founder_designation {
+        font-size: 4vw;
+    }
+
+    .founder_quote {
+        width: 100%;
+    }
+
+    .founder_quote p {
+        font-size: 4vw;
+        line-height: 1.4;
+        padding-top: 8vw;
+    }
+
+    .founder_bar_container {
+        gap: 18vw;
+    }
+
+    .cta_left > #cta_process_title {
+        font-size: 7vw !important;
+    }
+
+    #cta_para {
+        font-size: 4vw !important;
+        width: 100% !important;
+    }
+
+    #contact_cta_btn {
+        font-size: 4vw !important;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50% !important;
+    }
+
+    .cta_mob {height: 90vw !important;}
+    
+}
