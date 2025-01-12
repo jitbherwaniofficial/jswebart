@@ -42,8 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'cloudinary',
     'cloudinary_storage',
+    'cloudinary',
     'core',
     'portfolio',
     'blog',
@@ -152,6 +152,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     'jswebart/static'
 ]
+# STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
 CLOUDINARY_STORAGE = {
@@ -172,6 +173,10 @@ CLOUD_NAME = config('CLOUD_NAME')
 #         "BACKEND": "cloudinary_storage.storage.StaticHashedCloudinaryStorage",
 #     },
 # }
+
+# STATIC_URL = f'https://res.cloudinary.com/{config("CLOUD_NAME")}/static/'
+# STATICFILES_STORAGE = "cloudinary_storage.storage.StaticHashedCloudinaryStorage"
+
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 MEDIA_URL = f'https://res.cloudinary.com/{CLOUD_NAME}/media/'
