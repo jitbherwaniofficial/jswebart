@@ -149,11 +149,11 @@ USE_TZ = True
 
 import os
 STATIC_URL = 'https://jitbherwaniofficial.github.io/jswebart-staticfiles/'
-STATICFILES_DIRS = [
-    'jswebart/static'
-]
+# STATICFILES_DIRS = [
+#     'jswebart/static'
+# ]
 # STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': config('CLOUD_NAME', default=None),
