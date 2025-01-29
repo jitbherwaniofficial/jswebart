@@ -726,7 +726,7 @@
           product designers etc, united under a roof of faith - "An idea that has potential to improve the life of
           people in any way, deserves to be visible in digital world across the web". We fulfill this faith and make it
           reality through our comprehensive branding and marketing services.</p>
-        <img src="{% static 'img/home/_about_image.jpg' %}" alt="">
+        <img src="{% static 'img/home/about_image.jpg' %}" alt="">
       </figure>
     </div>
   </section>
@@ -1046,64 +1046,7 @@
     integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert for toasts -->
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const form = document.querySelector("#subscriptionForm");
-        
-        form.addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent default form submission
-
-            const formData = new FormData(form);
-            const csrfToken = document.querySelector("[name=csrfmiddlewaretoken]").value;
-
-            fetch(form.action, {
-                method: "POST",
-                headers: {
-                    "X-CSRFToken": csrfToken,
-                    "X-Requested-With": "XMLHttpRequest" // Mark as AJAX request
-                },
-                body: formData
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    Swal.fire({
-                        icon: "success",
-                        title: "Success",
-                        text: data.message,
-                        toast: true,
-                        position: "top-end",
-                        timer: 3000,
-                        showConfirmButton: false
-                    });
-                    form.reset(); // Reset the form
-                } else {
-                    Swal.fire({
-                        icon: "error",
-                        title: "Error",
-                        text: data.message,
-                        toast: true,
-                        position: "top-end",
-                        timer: 3000,
-                        showConfirmButton: false
-                    });
-                }
-            })
-            .catch(error => {
-                Swal.fire({
-                    icon: "error",
-                    title: "Error",
-                    text: "Something went wrong. Please try again later.",
-                    toast: true,
-                    position: "top-end",
-                    timer: 3000,
-                    showConfirmButton: false
-                });
-            });
-        });
-    });
+   
 </script>
 
     <script src="{% static 'js/animation.js' %}"></script>

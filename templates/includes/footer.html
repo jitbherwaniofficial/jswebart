@@ -42,7 +42,7 @@
             <a href="tel:+919167674367" id="phone_no_link">Phone no : +919167674367</a>
             <a href="mailto:jitbherwani92@gmail.com" id="email_link">Email : info@JSwebart.com</a>
         </div>
-        <form method="post" action="" id="subscriptionForm" class="footer_news_letter_container">
+        <form method="post" id="subscriptionForm" class="footer_news_letter_container" action="{% url 'subscribe' %}">
             {% csrf_token %}
             <p class="newsletter_title">Subscribe To Our Newsletter</p>
             <input type="email" name="email" id="" />
@@ -151,4 +151,6 @@
             </p>
         </div>
     </div>
+   
 </footer>
+

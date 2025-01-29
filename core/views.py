@@ -7,24 +7,25 @@ from .forms import ContactForm, JoinUsForm
 
 # Create your views here. 
 
-def home(request):
-    form = SubscriptionForm()
-    if request.method == "POST":
-        if request.headers.get('x-requested-with') == 'XMLHttpRequest':  # Check for AJAX request
-            form = SubscriptionForm(request.POST)
-            if form.is_valid():
-                form.save()
-                messages.success(request, "Thank you for subscribing!")
-                return JsonResponse({"success": True, "message": "Thank you for subscribing!"})
-            else:
-                return JsonResponse({"success": False, "message": "Failed to subscribe. This Email is already in use."})
+
+def subscribe(request):
+    if request.method == "POST" and request.headers.get('x-requested-with') == 'XMLHttpRequest':
+        form = SubscriptionForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return JsonResponse({"success": True, "message": "Thank you for subscribing!"})
+        else:
+            return JsonResponse({"success": False, "message": "Failed to subscribe. This email is already in use."})
+    return JsonResponse({"success": False, "message": "Invalid request."})
+
+def home(request): 
     all_post = Blog.objects.order_by('-created_at')[:3]
     return render(request, 'home.html', {'all_post': all_post}) 
 
 
 def about_us(request):
     return render(request, 'about-us.html')
-
+ 
 def branding_services(request):
     return render(request, 'branding_services.html')
 

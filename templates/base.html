@@ -11,6 +11,7 @@
   {% block stylesheet %} 
   {% endblock %}
   {% block style %} {% endblock %}
+  
 </head>
 
 <body>
@@ -27,8 +28,74 @@
     <!-- FOOTER STARTS ************************************************************** -->
         {% include 'includes/footer.html' %}
     <!-- FOOTER END ************************************************************** -->
+ 
+    <!-- SWEET ALERT -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+    <!-- SWEET ALERT -->
 
-    {% block scripts %} {% endblock %}
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const form = document.querySelector("#subscriptionForm");
+      document.addEventListener("DOMContentLoaded", function() {
+    const form = document.querySelector("#subscriptionForm");
+});
+
+      form.addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent default form submission
+      
+        const formData = new FormData(form);
+        const csrfToken = document.querySelector("[name=csrfmiddlewaretoken]").value;
+      
+        fetch(form.action, {
+            method: "POST",
+            headers: {
+                "X-CSRFToken": csrfToken,
+                "X-Requested-With": "XMLHttpRequest" // Mark as AJAX request
+            },
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                Swal.fire({
+                    icon: "success",
+                    title: "Success",
+                    text: data.message,
+                    toast: true,
+                    position: "top-end",
+                    timer: 3000,
+                    showConfirmButton: false
+                });
+                form.reset(); // Reset the form
+            } else {
+                Swal.fire({
+                    icon: "error",
+                    title: "Error",
+                    text: data.message,
+                    toast: true,
+                    position: "top-end",
+                    timer: 3000,
+                    showConfirmButton: false
+                });
+            }
+        })
+        .catch(error => {
+            Swal.fire({
+                icon: "error",
+                title: "Error",
+                text: "Something went wrong. Please try again later.",
+                toast: true,
+                position: "top-end",
+                timer: 3000,
+                showConfirmButton: false
+            });
+        });
+      });
+      });
+    </script>
+    {% block scripts %}
+    {% endblock %}
+   
 </body>
-
+    
 </html>    

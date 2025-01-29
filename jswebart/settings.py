@@ -72,6 +72,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'jswebart.context_processors.subscription_form',
             ],
         },
     },
@@ -148,12 +149,16 @@ USE_TZ = True
 
 
 import os
-STATIC_URL = 'https://jitbherwaniofficial.github.io/jswebart-staticfiles/'
-# STATICFILES_DIRS = [
-#     'jswebart/static'
-# ]
+if DEBUG:
+    STATIC_URL = '/static/'
+    STATICFILES_DIRS = [
+        'jswebart/static'
+    ]
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+else:    
+    STATIC_URL = 'https://jitbherwaniofficial.github.io/jswebart-staticfiles/'
+
 # STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': config('CLOUD_NAME', default=None),
