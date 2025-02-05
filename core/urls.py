@@ -17,6 +17,5 @@ urlpatterns = [
     path('join-us/', views.joinus, name='join_us'),
     path('privacy-policy/', views.privacy_policy, name='privacy_policy'),
     path('terms-and-conditions/', views.terms_and_conditons, name='terms_and_conditions'),
-    path("subscribe/", views.subscribe, name="subscribe"),
     
 ]

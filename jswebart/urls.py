@@ -17,9 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
+from jswebart import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('core.urls')),
     path('blog/', include('blog.urls')),
     path('portfolio/', include('portfolio.urls')),
+    path("subscribe/", views.subscribe, name="subscribe"),
 ]

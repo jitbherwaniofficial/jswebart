@@ -72,7 +72,7 @@
                 <div class="insights_container">
                     <p class="insights_para">Subscribe for insights, case studies, and updates penned by the experts at
                         JSwebart.</p>
-                    <form action="" method="POST" class="insights_form" id="subscriptionForm">
+                    <form action="{% url 'subscribe' %}" method="post" class="insights_form subscription-form" id="subscriptionForm">
                         {% csrf_token %}
                         <div class="form_input">
                             <input type="email" name="email" placeholder="Enter Your Email" id="">
@@ -226,7 +226,7 @@
   </section>
 
   <!-- CTA PROCESS END *********************************************** -->
-
+   
 {% endblock %}
   
 {% block scripts %}
