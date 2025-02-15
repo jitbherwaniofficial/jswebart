@@ -157,3 +157,5 @@ class JoinUs(models.Model):
     class Meta:
       verbose_name_plural = "Join Us"
 
+    def __str__(self):
+       return f"{self.join_us_name} - {self.join_us_email}"
