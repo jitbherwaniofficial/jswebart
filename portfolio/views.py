@@ -64,7 +64,9 @@ def portfolio_by_category(request, category_slug):
 def portfolio_detail(request, project_slug):
     # Get the portfolio project
     portfolio = get_object_or_404(Portfolio, slug=project_slug)
+    linked_categories = portfolio.categories.all()
+    print(linked_categories)
     categories = PortfolioCategory.objects.all()
-    return render(request, 'portfolio_detail.html', {'portfolio': portfolio, 'categories':categories})
+    return render(request, 'portfolio_detail.html', {'portfolio': portfolio, 'categories':categories, 'linked_categories':linked_categories})
 
 

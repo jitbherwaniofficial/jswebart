@@ -11,16 +11,17 @@
     {% endblock %}
 
     
-    {% block content %}
+{% block content %}
 
     <div style="padding: 15vw 0; width: 90%; margin: 0 auto; display: flex; gap: 3vw; flex-direction: column;">
         <h1>{{ portfolio.title }}</h1>
         <p><strong>Categories:</strong>
-            {% for category in categories %}
+            {% for category in linked_categories %}
                 {% if category.slug != "view-all" %}
-                <span style="color: var(--green-clr);">{{ category.name }}</span>{% if not forloop.last %}
-                <span style="font-size: 2vw;">|</span> 
-                {% endif %}
+                    <span style="color: var(--green-clr);">{{ category.name }}</span>
+                    {% if not forloop.last %}
+                        <span style="font-size: 2vw;">|</span> 
+                    {% endif %}
                 {% endif %}
             {% endfor %}
         </p>
