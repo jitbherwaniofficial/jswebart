@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'captcha',
     'django.contrib.staticfiles',
     'cloudinary_storage',
     'cloudinary',
@@ -197,8 +196,6 @@ MEDIA_URL = '/media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-RECAPTCHA_PUBLIC_KEY = config('SITE_KEY')
-RECAPTCHA_PRIVATE_KEY = config('CAPTCHA_SECRET_KEY')
 
 # Email Configuration
 # EMAIL_HOST = config('EMAIL_HOST')

@@ -185,14 +185,9 @@
                     {% endfor %}
                 {% endif %}
             </div>
-            <div id="recaptcha_box">
-                {{ form.captcha }}  <!-- Render the reCAPTCHA widget here -->
-                {% if form.captcha.errors %}
-                    {% for error in form.captcha.errors %}
-                        <small class="error">{{ error }}</small>
-                    {% endfor %}
-                {% endif %}
-            </div>
+            <!-- <div id="recaptcha_box">
+                Recaptcha Box
+            </div> -->
             <div id="contact_submit_wrapper">
                 <button id="contact_submit" type="submit">Submit</button>
             </div>
