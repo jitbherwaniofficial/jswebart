@@ -1,7 +1,14 @@
 from django import forms
 from .models import Contact, JoinUs
+from captcha.fields import ReCaptchaField
+from captcha.widgets import ReCaptchaV2Checkbox  # For reCAPTCHA v2
+# from captcha.widgets import ReCaptchaV3  # For reCAPTCHA v3
 
 class ContactForm(forms.ModelForm):
+
+     # Add reCAPTCHA field
+    captcha = ReCaptchaField(widget=ReCaptchaV2Checkbox)  # For reCAPTCHA v2
+    # captcha = ReCaptchaField(widget=ReCaptchaV3)  # For reCAPTCHA v3
 
     class Meta:
         model = Contact
