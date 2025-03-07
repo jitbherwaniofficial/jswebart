@@ -1,10 +1,12 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %} JSwebart- Portfolio {% endblock %}
-
-{% block meta %} 
-{% if noindex %}
+{% block title %}  Our Work | Creative Branding &amp; Digital Solutions Portfolio {% endblock %}
+{% block meta %}
+    <meta name="description"
+        content="Our portfolio reflects the creativity and strategic thinking we bring to every project. Explore the brands we've helped grow and the impact we've made." />
+    <!-- <link rel="canonical" href="https://jswebart.com/portfolio/" /> -->
+    {% if noindex %}
 <meta name="robots" content="noindex, nofollow">
 {% endif %}
 
@@ -12,6 +14,7 @@
 <link rel="canonical" href="{{ canonical_url }}">
 {% endif %}
 {% endblock %}
+
 
 {% block stylesheet %}
 <link rel="stylesheet" href="{% static 'css/style.css' %}" />
