@@ -16,7 +16,7 @@ def blog(request):
 
       # By default, noindex for portfolio view (optional)
     noindex = False
-    canonical_url = None
+    canonical_url = request.build_absolute_uri()
 
     # Check if it's an AJAX request
     if request.headers.get('x-requested-with') == 'XMLHttpRequest':
