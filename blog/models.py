@@ -26,6 +26,8 @@ class BlogCategory(models.Model):
 class Blog(models.Model):
     title = models.CharField(max_length=255)
     desc = models.TextField(blank=True, null=True)
+    blog_meta_title = models.CharField(max_length=255, default="")
+    blog_meta_desc =  models.TextField(blank=True, null=True, default="")
     slug = models.SlugField(max_length=700, unique=True, blank=True)
     categories = models.ForeignKey(BlogCategory,on_delete=models.CASCADE,default="")  # Many-to-Many Relationship
     image = models.ImageField(upload_to='blogs_images/')  # For images if needed

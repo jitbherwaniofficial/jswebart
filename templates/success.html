@@ -1,6 +1,11 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %} JSwebart - Thank You {% endblock %}
+{% block title %} Thank You for Joining Us | We’ll Be in Touch Soon {% endblock %}
+{% block meta %}
+    <meta name="description"
+        content="Your application has been received. Our team will review it and get in touch soon.  " />
+    <link rel="canonical" href="https://jswebart.com/success/" />
+{% endblock %}
 {% block stylesheet %}
 <link rel="stylesheet" href="{% static 'css/style.css' %}" />
 <link rel="stylesheet" href="{% static 'css/contact.css' %}" />

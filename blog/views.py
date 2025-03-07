@@ -73,7 +73,7 @@ def blog_detail(request, project_slug):
         'linked_categories': linked_categories,
         'post': post,
         'categories':categories,
-        'all_post': all_post
+        'all_post': all_post,
     }
     return render(request, 'blog_detail.html', context)
 
