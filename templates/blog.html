@@ -9,13 +9,13 @@
         content="Stay updated with expert tips on branding, digital marketing, web development, and more. Our blog offers strategies to drive success across industries." />
     <!-- <link rel="canonical" href="https://jswebart.com/blog/" /> -->
 
-{% if noindex %}
-<meta name="robots" content="noindex, nofollow">
-{% endif %}
+    {% if noindex %}
+    <meta name="robots" content="noindex, nofollow">
+    {% endif %}
 
-{% if canonical_url %}
-<link rel="canonical" href="{{ canonical_url }}">
-{% endif %}
+    {% if canonical_url %}
+        <link rel="canonical" href="{{ canonical_url }}">
+    {% endif %}
 {% endblock %}
 
 {% block stylesheet %}
