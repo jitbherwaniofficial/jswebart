@@ -19,7 +19,7 @@ def portfolio(request):
         return JsonResponse({'html': content})
 
     # For Portfolio view, you might want to add noindex or a canonical link
-    noindex = True  # Optionally add noindex here if it's the main page
+    noindex = False  # Optionally add noindex here if it's the main page
 
     return render(request, 'portfolio.html', {
         'categories': categories,
@@ -39,7 +39,7 @@ def portfolio_by_category(request, category_slug):
     portfolios = Portfolio.objects.filter(categories=category)
 
      # Add canonical URL or noindex logic here
-    noindex = False
+    noindex = True
     canonical_url = request.build_absolute_uri()
 
     # Check if it's an AJAX request

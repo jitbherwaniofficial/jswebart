@@ -1,12 +1,19 @@
 {% if portfolios.exists %} 
 {% for portfolio in portfolios %}
-<a href="{% url 'portfolio_detail' project_slug=portfolio.slug %}" class="single_portfolio">
+<span class="single_portfolio">
     <figure>
         <img src="{{ portfolio.image.url }}" alt="{{ portfolio.title }}" />
     </figure>
     <h3>{{ portfolio.title }}</h3>
     <p>{{ portfolio.description }}</p>
-</a>
+</span>
+<!-- <a href="{% url 'portfolio_detail' project_slug=portfolio.slug %}" class="single_portfolio">
+    <figure>
+        <img src="{{ portfolio.image.url }}" alt="{{ portfolio.title }}" />
+    </figure>
+    <h3>{{ portfolio.title }}</h3>
+    <p>{{ portfolio.description }}</p>
+</a> -->
 {% endfor %} 
 {% else %}
 <p>No portfolios available.</p>
