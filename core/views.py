@@ -1,4 +1,4 @@
-from django.http import JsonResponse
+from django.http import HttpResponse, JsonResponse
 from django.shortcuts import get_object_or_404, render, redirect
 from django.contrib import messages
 from blog.forms import SubscriptionForm
@@ -78,3 +78,5 @@ def privacy_policy(request):
 
 def terms_and_conditons(request): 
     return render(request, 'terms-and-conditions.html')
+
+

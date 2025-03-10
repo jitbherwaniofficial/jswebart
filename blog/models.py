@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 from django.utils.text import slugify
 from django.utils import timezone
 from math import ceil
@@ -33,6 +34,7 @@ class Blog(models.Model):
     image = models.ImageField(upload_to='blogs_images/')  # For images if needed
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    is_published = models.BooleanField(default=True)
 
     def save(self, *args, **kwargs):
         if not self.slug:
@@ -51,6 +53,8 @@ class Blog(models.Model):
     def __str__(self):
         return self.title
     
+
+
 
 
 

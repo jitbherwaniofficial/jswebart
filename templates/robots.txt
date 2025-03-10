@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /thank-you/
+Disallow: /success/
+
+
+
+Sitemap: https://jswebart.com/sitemap.xml

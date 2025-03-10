@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     'core',
     'portfolio',
     'blog',
+    'django.contrib.sites',
+    'django.contrib.sitemaps'
 ]
 
 
@@ -195,7 +197,7 @@ MEDIA_URL = '/media/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
+SITE_ID = 1
 
 # Email Configuration
 # EMAIL_HOST = config('EMAIL_HOST')

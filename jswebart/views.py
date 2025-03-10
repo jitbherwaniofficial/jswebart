@@ -1,5 +1,5 @@
 from blog.forms import SubscriptionForm
-from django.http import JsonResponse
+from django.http import HttpResponse, JsonResponse
 
 
 def subscribe(request):
@@ -11,3 +11,11 @@ def subscribe(request):
         else:
             return JsonResponse({"success": False, "message": "Failed to subscribe. This email is already in use."})
     return JsonResponse({"success": False, "message": "Invalid request."})
+
+
+from django.template import loader
+
+def robots_txt(request):
+    template = loader.get_template('robots.txt')
+    content = template.render({})
+    return HttpResponse(content, content_type='text/plain')

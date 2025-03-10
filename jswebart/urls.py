@@ -16,8 +16,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-
 from jswebart import views
+from django.contrib.sitemaps.views import sitemap
+from .sitemaps import StaticSitemap, BlogPostSitemap
+
+
+sitemaps = {
+    'static': StaticSitemap,
+    'blog': BlogPostSitemap,
+}
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,4 +32,9 @@ urlpatterns = [
     path('blog/', include('blog.urls')),
     path('portfolio/', include('portfolio.urls')),
     path("subscribe/", views.subscribe, name="subscribe"),
+    path('robots.txt', views.robots_txt, name='robots_txt'),
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='sitemap'),
 ]
+
+
+
