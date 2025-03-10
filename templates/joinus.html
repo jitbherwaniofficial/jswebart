@@ -121,7 +121,7 @@
                 </p>
             </div>
             <div id="contact_banner_right">
-                <img src="{% static 'img/join_us.webp' %}" alt="">
+                <img src="{% static 'img/join_us.webp' %}" alt="Join Us Banner">
             </div>
         </div>
     </section>
@@ -235,7 +235,7 @@
             <div id="contact_submit_wrapper">
                 <button id="contact_submit" type="submit">Submit</button>
             </div>
-            <p id="agreement">By submitting, you agree to our <a href="">Terms & Conditions</a> and <a href="">Privacy
+            <p id="agreement">By submitting, you agree to our <a href="{% url 'terms_and_conditions' %}" title="Link redirecting to Terms and Conditions page" target="_blank">Terms & Conditions</a> and <a href="{% url 'privacy_policy' %}" title="Link redirecting to privacy policy page" target="_blank">Privacy
                     Policy</a>.</p>
         </form>
     </section>

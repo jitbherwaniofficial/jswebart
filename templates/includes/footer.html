@@ -38,14 +38,14 @@
             </a>
         </div>
         <div class="footer_links_container">
-            <a href="" id="location_link" title="link redirecting to JSwebart's google map location.">20th A Rd Khar West</a>
-            <a href="tel:+919167674367" id="phone_no_link" title="Phone Link">Phone no : +919167674367</a>
-            <a href="mailto:jitbherwani92@gmail.com" id="email_link" title="Link redirecting to Email Address">Email : info@jswebart.com</a>
+            <a href="https://g.co/kgs/YtM2ZMo" target="_blank" id="location_link" title="link redirecting to JSwebart's google map location.">20th B Rd, Khar, Khar Danda</a>
+            <a href="tel:+919167674367" target="_blank" rel="nofollow" id="phone_no_link" title="Phone Link">Phone no : +919167674367</a>
+            <a href="mailto:jitbherwani92@gmail.com" rel="nofollow" target="_blank" id="email_link" title="Link redirecting to Email Address">Email : info@jswebart.com</a>
         </div>
         <form id="subscriptionForm" method="post"  class="subscription-form footer_news_letter_container" action="{% url 'subscribe' %}">
             {% csrf_token %}
             <p class="newsletter_title">Subscribe To Our Newsletter</p>
-            <input type="email" name="email" id="" />
+            <input type="email" name="email" />
             <button type="submit"><span>&rarr;</span></button>
         </form>
         <nav class="footer_nav_links_container">
