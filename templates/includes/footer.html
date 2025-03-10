@@ -46,7 +46,7 @@
             {% csrf_token %}
             <p class="newsletter_title">Subscribe To Our Newsletter</p>
             <input type="email" name="email" />
-            <button type="submit"><span>&rarr;</span></button>
+            <button class="g-recaptcha" data-sitekey="{{SHARE_SITE_KEY}}" type="submit"><span>&rarr;</span></button>
         </form>
         <nav class="footer_nav_links_container">
             <span>
