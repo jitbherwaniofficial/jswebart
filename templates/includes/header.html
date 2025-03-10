@@ -2,17 +2,17 @@
 
 <header id="header">
     <div id="header-wrapper">
-        <a href="{% url 'home' %}" id="logo">
-            <img src="{% static 'img/jswebart_logo.svg' %}" alt="" />
+        <a href="{% url 'home' %}" id="logo" title="Link redirecting to JSwebart Homepage">
+            <img src="{% static 'img/jswebart_logo.svg' %}" alt="JSwebart Logo" />
             <span class="company_name">JSwebart</span>
         </a>
         <nav>
             <ul id="navbar">
-                <li><a href="{% url 'about_us' %}" class="nav_link">About Us</a></li>
+                <li><a href="{% url 'about_us' %}" title="Link redirecting to About us page" class="nav_link">About Us</a></li>
                 <li class="services_li">
                     <button class="nav_link services">Services</button>
                     <div id="dropdown">
-                        <a href="{% url 'branding_services' %}" class="dropdown_link">
+                        <a href="{% url 'branding_services' %}" title="Link redirecting to Branding Service Page" class="dropdown_link">
                             <figure class="dropdown_image_container">
                                 <!DOCTYPE svg
                                     PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
@@ -45,7 +45,7 @@
                                     identity.</p>
                             </div>
                         </a>
-                        <a href="{% url 'ui_ux_services' %}" class="dropdown_link">
+                        <a href="{% url 'ui_ux_services' %}" title="Link redirecting to UI/UX Service Page" class="dropdown_link">
                             <figure class="dropdown_image_container">
                                 <!DOCTYPE svg
                                     PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
@@ -90,7 +90,7 @@
                                     experience.</p>
                             </div>
                         </a>
-                        <a href="{% url 'web_development_services' %}" class="dropdown_link">
+                        <a href="{% url 'web_development_services' %}" title="Link redirecting to Web Development Service Page" class="dropdown_link">
                             <figure class="dropdown_image_container">
                                 <!DOCTYPE svg
                                     PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
@@ -129,7 +129,7 @@
                                     digital touchpoint.</p>
                             </div>
                         </a>
-                        <a href="{% url 'digital_marketing_services' %}" class="dropdown_link">
+                        <a href="{% url 'digital_marketing_services' %}" title="Link redirecting to Digital Marketing Service Page" class="dropdown_link">
                             <figure class="dropdown_image_container">
                                 <!DOCTYPE svg
                                     PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
@@ -244,7 +244,7 @@
                                     globe.</p>
                             </div>
                         </a>
-                        <a href="{% url 'packaging_design_services' %}" class="dropdown_link">
+                        <a href="{% url 'packaging_design_services' %}" title="Link redirecting to Packaging Design Service Page" class="dropdown_link">
                             <figure class="dropdown_image_container">
                                 <!DOCTYPE svg
                                     PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
@@ -322,7 +322,7 @@
                                     in the crowd.</p>
                             </div>
                         </a>
-                        <a href="{% url 'print_design_services' %}" class="dropdown_link">
+                        <a href="{% url 'print_design_services' %}" title="Link redirecting to Print Design Service Page" class="dropdown_link">
                             <figure class="dropdown_image_container">
                                 <!DOCTYPE svg
                                     PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
@@ -365,10 +365,10 @@
                         </a>
                     </div>
                 </li>
-                <li><a href="{% url 'portfolio' %}" class="nav_link">Portfolio</a></li>
-                <li class="blog"><a href="{% url 'blog' %}" class="nav_link">Blog</a></li>
+                <li><a href="{% url 'portfolio' %}" title="Link redirecting to Porfolio page" class="nav_link">Portfolio</a></li>
+                <li class="blog"><a href="{% url 'blog' %}" title="Link redirecting to Blog page" class="nav_link">Blog</a></li>
                 <li class="contact">
-                    <a href="{% url 'contact' %}" class="nav_link">Contact Us</a>
+                    <a href="{% url 'contact' %}" title="Link redirecting to Contact Us page" class="nav_link">Contact Us</a>
                 </li>
 
 
@@ -413,26 +413,26 @@
         <div class="mob_line21"></div>
         <div class="mob_line22"></div>
     </div>
-    <a href="{% url 'about_us' %}" class="mob_link">About Us</a>
+    <a href="{% url 'about_us' %}" title="Link redirecting to About Us page" class="mob_link">About Us</a>
     <button class="mob_link" id="service_btn">
         Service
     </button>
     <div class="service_link_container">
-        <a href="{% url 'branding_services' %}" class="service_link">Branding</a>
-        <a href="{% url 'ui_ux_services' %}" class="service_link">UI/UX Design</a>
-        <a href="{% url 'web_development_services' %}" class="service_link">Web Development</a>
-        <a href="{% url 'digital_marketing_services' %}" class="service_link">Digital Marketing</a>
-        <a href="{% url 'packaging_design_services' %}" class="service_link">Packaging Design</a>
-        <a href="{% url 'print_design_services' %}" class="service_link">Print Design</a>
+        <a href="{% url 'branding_services' %}" title="Link redirecting to Branding Service page" class="service_link">Branding</a>
+        <a href="{% url 'ui_ux_services' %}" title="Link redirecting to UI/UX Service page" class="service_link">UI/UX Design</a>
+        <a href="{% url 'web_development_services' %}" title="Link redirecting to Web Development Service page" class="service_link">Web Development</a>
+        <a href="{% url 'digital_marketing_services' %}" title="Link redirecting to Digital Marketing Service page" class="service_link">Digital Marketing</a>
+        <a href="{% url 'packaging_design_services' %}" title="Link redirecting to Packaging Service page" class="service_link">Packaging Design</a>
+        <a href="{% url 'print_design_services' %}" title="Link redirecting to Print Service page" class="service_link">Print Design</a>
     </div>
-    <a href="{% url 'portfolio' %}" class="mob_link">Portfolio</a>
-    <a href="{% url 'blog' %}" class="mob_link">Blog</a>
-    <span><a href="{% url 'contact' %}" class="contactUs">Contact Us</a></span>
+    <a href="{% url 'portfolio' %}" title="Link redirecting to Porfolio page" class="mob_link">Portfolio</a>
+    <a href="{% url 'blog' %}" title="Link redirecting to Blog page" class="mob_link">Blog</a>
+    <span><a href="{% url 'contact' %}" title="Link redirecting to Contact Us page" class="contactUs">Contact Us</a></span>
 </nav>
 
 <!-- MOBILE VIEW -->
 <span class="absolute_logo_container">
-    <a href="{% url 'home' %}" id="absolute_logo">
-        <img src="{% static 'img/jswebart_logo.svg' %}" alt="">
+    <a href="{% url 'home' %}" id="absolute_logo" title="Link redirecting to Home page">
+        <img src="{% static 'img/jswebart_logo.svg' %}" alt="JSwebart Logo">
     </a>
 </span>

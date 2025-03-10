@@ -40,7 +40,7 @@ def portfolio_by_category(request, category_slug):
 
      # Add canonical URL or noindex logic here
     noindex = True
-    canonical_url = request.build_absolute_uri()
+    canonical_url = "https://jswebart.com/portfolio/"
 
     # Check if it's an AJAX request
     if request.headers.get('x-requested-with') == 'XMLHttpRequest':

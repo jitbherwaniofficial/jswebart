@@ -11,6 +11,92 @@
     <!-- {% if canonical_url %}
         <link rel="canonical" href="{{ canonical_url }}">
     {% endif %} -->
+    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+     <!-- FOR META -->
+     <!-- FOR TELEGRAM -->
+     <meta prefix="og: https://.me/ns#" /> 
+     <!-- FOR TELEGRAM -->
+     <meta property="og:locale" content="en_US" />
+     <meta property="og:type" content="Article" />
+     <meta property="og:title" content="{{page.blog_meta_title}}" />
+     <meta property="og:description" content="{{page.blog_meta_desc}}" />
+     <meta property="og:url" content="https://jswebart.com/blog/{{page.slug}}" />
+     <meta property="og:site_name" content="JSwebart" />
+     <meta property="og:image" content="{{ page.image.url }}" />
+     <meta property="og:image:secure_url" content="{{ page.image.url }}" />
+     <meta property="og:image:alt" content="{{ page.title }}" />
+     <meta property="og:image:width" content="1200" />
+     <meta property="og:image:height" content="630" />
+     <meta property="og:image:type" content="image/png" />
+     <meta property="article:section" content="All" />
+     <meta property="article:published_time" content="{{ page.created_at|date:"j F Y" }}" />
+     <meta property="og:updated_time" content="{{ page.updated_at|date:"j F Y" }}" />
+     
+     <!-- FOR META END -->   
+      
+     <!-- Twitter card -->
+     <meta name="twitter:card" content="summary_large_image" />
+     <meta name="twitter:title" content="{{page.blog_meta_title}}" />
+     <meta name="twitter:description" content="{{page.blog_meta_desc}}" />
+     <meta name="twitter:image" content="{{ page.image.url }}" />
+     <meta name="twitter:label1" content="Services" />
+     <meta name="twitter:data1" content="Branding, Web Design, Digital Marketing, UI/UX Design, Packaging Design, Print Design" />
+     <meta name="twitter:label2" content="Location" />
+     <meta name="twitter:data2" content="Mumbai, India" />
+    <!-- Twitter card End -->
+ <!-- BREADCRUMBS -->
+ <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/", 
+      "@type": "BreadcrumbList", 
+      "itemListElement": [{
+        "@type": "ListItem", 
+        "position": 1, 
+        "name": "Home",
+        "item": "https://jswebart.com/"  
+      },{
+        "@type": "ListItem", 
+        "position": 2, 
+        "name": "Blog",
+        "item": "https://jswebart.com/blog/"  
+      },{
+        "@type": "ListItem", 
+        "position": 3, 
+        "name": "{{page.blog_meta_title}}",
+        "item": "https://jswebart.com/blog/{{page.slug}}"  
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://jswebart.com/blog/{{page.slug}}"
+          },
+          "headline": "{{page.blog_meta_title}}",
+          "description": "{{page.blog_meta_desc}}",
+          "image":"{{ page.image.url }}" ,  
+          "author": {
+            "@type": "Organization",
+            "name": "JSwebart",
+            "url": "https://jswebart.com/"
+          },  
+          "publisher": {
+            "@type": "Organization",
+            "name": "JSwebart",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://jitbherwaniofficial.github.io/jswebart-staticfiles/img/jswebart_logo.svg"
+            }
+          },
+          "datePublished": "{{ page.created_at|date:"j F Y" }}",
+          "dateModified": "{{ page.updated_at|date:"j F Y" }}"
+        }
+        </script>
+    
+        
 {% endblock %}
 
 {% block stylesheet %}
@@ -25,14 +111,14 @@
     <!-- HERO SECTION START *********************************************** -->
     <section class="blog_detail_hero_section">
         <figure class="cover_img">
-            <img src="{{ page.image.url }}" alt="{{ page.title }}" alt="">
+            <img src="{{ page.image.url }}" alt="{{ page.title }}" >
         </figure>
         <div class="cover_part">
             <div class="cover_content_container">
                 <p class="category_name">{{page.categories.name}}</p>
                 <h1 class="blog_detail_title">{{ page.title }}</h1>
                 <div class="cover_bottom">
-                    <address class="writtenby">Written by <a href="{% url 'home' %}">JSwebart</a></address>
+                    <address class="writtenby">Written by <a href="{% url 'home' %}" title="home page">JSwebart</a></address>
                     <p class="timeandreadtime">
                         {{ page.created_at|date:"j F Y" }}
                     </p>
@@ -65,18 +151,18 @@
                 <div class="tab_left">
                     <div class="brand_logo_blog_container">
                         <figure class="brand_logo_blog">
-                            <img src="{% static 'img/jswebart_logo.svg' %}" alt="">
+                            <img src="{% static 'img/jswebart_logo.svg' %}" alt="JSwebart logo">
                         </figure>
                         <h3 class="brand_name">JSwebart</h3>
                     </div>
                     <p class="blog_detail_second_right_para">
-                        JSwebart is one of the leading branding and design agencies, with more than 6 years of expertise in the industry. Within this period, our team has delivered exceptional brands that are impacting future on local, national and global levels. Apart from <a href="{% url 'branding_services' %}">brand identity design</a>, Jswebart also provides <a href="{% url 'ui_ux_services' %}">UI/UX design</a>, <a href="{% url 'web_development_services' %}">web development</a>, <a href="{% url 'packaging_design_services' %}">packaging design</a>, <a href="{% url 'digital_marketing_services' %}">digital marketing</a> and <a href="{% url 'print_design_services' %}">print design services</a>.
+                        JSwebart is one of the leading branding and design agencies, with more than 6 years of expertise in the industry. Within this period, our team has delivered exceptional brands that are impacting future on local, national and global levels. Apart from <a href="{% url 'branding_services' %}" title="branding service link">brand identity design</a>, Jswebart also provides <a href="{% url 'ui_ux_services' %}" title="ui ux design service">UI/UX design</a>, <a href="{% url 'web_development_services' %}" title="web development service">web development</a>, <a href="{% url 'packaging_design_services' %}" title="packaging design service">packaging design</a>, <a href="{% url 'digital_marketing_services' %}" title="digital marketing service">digital marketing</a> and <a href="{% url 'print_design_services' %}" title="print design service">print design services</a>.
                     </p>
                     <div class="blog_social_link_container">
-                        <a href="">Linkedin</a>
-                        <a href="">Instagram</a>
-                        <a href="">Facebook</a>
-                        <a href="">Twitter</a>
+                        <a title="Link redirecting to LinkedIn Page" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn" href="https://www.linkedin.com/company/jswebart/">Linkedin</a>
+                        <a title="Link redirecting to Instagram Page" target="_blank" rel="noreferrer noopener" aria-label="Instagram" href="https://www.instagram.com/jswebart_branding/">Instagram</a>
+                        <a title="Link redirecting to Facebook Page" target="_blank" rel="noreferrer noopener" aria-label="Facebook" href="https://www.facebook.com/JSwebart">Facebook</a>
+                        <a title="Link redirecting to Twitter Page" target="_blank" rel="noreferrer noopener" aria-label="Twitter" href="https://x.com/JSwebart">Twitter</a>
                     </div>
                 </div>
                 <div class="insights_container">
@@ -106,17 +192,17 @@
                     <div class="share_container">
                         <h4 class="share">Share</h4>
                         <div class="share_icons_container">
-                            <a href="">
-                                <img src="{% static 'img/linkedin_share.svg' %}" alt="">
+                            <a title="Link redirecting to LinkedIn Page" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn" href="https://www.linkedin.com/">
+                                <img src="{% static 'img/linkedin_share.svg' %}" alt="LinkedIn">
                             </a>
-                            <a href="">
-                                <img src="{% static 'img/facebook_share.svg' %}" alt="">
+                            <a title="Link redirecting to Facebook Page" target="_blank" rel="noreferrer noopener" aria-label="Facebook" href="https://www.facebook.com/">
+                                <img src="{% static 'img/facebook_share.svg' %}" alt="Facebook">
                             </a>
-                            <a href="">
-                                <img src="{% static 'img/whatsapp_share.svg' %}" alt="">
+                            <a title="Link redirecting to Whatsapp Page" target="_blank" rel="noreferrer noopener" aria-label="Whatsapp" href="https://api.whatsapp.com/">
+                                <img src="{% static 'img/whatsapp_share.svg' %}" alt="Whatsapp">
                             </a>
-                            <a href="">
-                                <img src="{% static 'img/twitter_share.svg' %}" alt="">
+                            <a title="Link redirecting to X Page" target="_blank" rel="noreferrer noopener" aria-label="X" href="https://www.x.com/">
+                                <img src="{% static 'img/twitter_share.svg' %}" alt="Twitter">
                             </a>
                         </div>
                     </div>
@@ -140,7 +226,7 @@
                         <span id="section-{{ forloop.counter }}"></span>
                         {% if section.heading %}
                         <h2 class="head">
-                            <a href=""><img src="{% static 'img/share_icon.svg' %}" alt=""></a>
+                            <!-- <a href=""><img src="{% static 'img/share_icon.svg' %}" alt=""></a> -->
                             <span>{{ section.heading }}</span>
                         </h2>
                         {% endif %}
@@ -164,7 +250,7 @@
                 {% for blog in all_post %} 
                 <a href="{% url 'blog_detail' blog.slug %}" class="blog_post_box">
                     <figure class="blogpost_img">
-                        <img src="{{ blog.image.url }}" alt="{{ blog.title }}" alt="">
+                        <img src="{{ blog.image.url }}" alt="{{ blog.title }}" >
                     </figure>
                     <div class="blog_post_content">
                         <div class="blog_topic_time_container">
@@ -231,7 +317,7 @@
         <h2 id="cta_process_title">Ready to Elevate Your Brand?</h2>
         <p id="cta_para">Our expert team is here to bring your vision to life with customized solutions that drive growth.</p>
       </div>
-      <a href="contact.html" id="contact_cta_btn" class="work_together_btn">Let’s Work Together</a>
+      <a href="contact.html" title="contact page link" id="contact_cta_btn" class="work_together_btn">Let’s Work Together</a>
     </div>
   </section>
 

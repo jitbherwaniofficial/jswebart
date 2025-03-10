@@ -24,7 +24,7 @@ def blog(request):
         return JsonResponse({'html': content})
 
         # For Blog view, you might want to add noindex or a canonical link
-    noindex = True  # Optionally add noindex here if it's the main page
+    noindex = False  # Optionally add noindex here if it's the main page
     return render(request, 'blog.html', {
         'posts': posts, 
         'categories': categories, 
@@ -40,8 +40,8 @@ def blog_by_category(request, category_slug):
     categories = BlogCategory.objects.all()
 
      # Add canonical URL or noindex logic here
-    noindex = False
-    canonical_url = request.build_absolute_uri()
+    noindex = True
+    canonical_url = "https://jswebart.com/blog/"
 
 
      # Check if it's an AJAX request
@@ -66,7 +66,7 @@ def blog_by_category(request, category_slug):
 def blog_detail(request, project_slug):
     # Get the portfolio project
     post = get_object_or_404(Blog, slug=project_slug)
-    all_post = Blog.objects.exclude(id=post.id).order_by('-created_at')[:2]
+    all_post = Blog.objects.exclude(id=post.id).order_by('-updated_at')[:2]
     linked_categories = post.categories.all()  # Categories linked to the blog
     categories = BlogCategory.objects.all()
     context = {

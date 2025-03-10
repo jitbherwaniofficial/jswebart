@@ -18,7 +18,7 @@ class ContentSectionInline(admin.TabularInline):
 
 @admin.register(Blog)
 class BlogAdmin(admin.ModelAdmin):
-    list_display = ('title', 'created_at',)
+    list_display = ('title', 'created_at','updated_at')
     prepopulated_fields = {"slug": ("title",)}
     search_fields = ('title', 'category__name',)
     list_filter = ('created_at',)

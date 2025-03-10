@@ -31,7 +31,8 @@ class Blog(models.Model):
     slug = models.SlugField(max_length=700, unique=True, blank=True)
     categories = models.ForeignKey(BlogCategory,on_delete=models.CASCADE,default="")  # Many-to-Many Relationship
     image = models.ImageField(upload_to='blogs_images/')  # For images if needed
-    created_at = models.DateTimeField(default=timezone.now)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
     def save(self, *args, **kwargs):
         if not self.slug:

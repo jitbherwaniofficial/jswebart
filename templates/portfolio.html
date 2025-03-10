@@ -87,7 +87,7 @@
         <h1 class="portfolio_title">We elevate products and brands to new heights.</h1>
 
         <nav class="portfolio_nav">
-            <a href="{% url 'portfolio' %}" data-url="{% url 'portfolio' %}" class="{% if not current_category %}active{% endif %}">
+            <a href="{% url 'portfolio' %}" title="portfolio page link" data-url="{% url 'portfolio' %}" class="{% if not current_category %}active{% endif %}">
                 View All
             </a>
             <!-- {% for category in categories %}
@@ -99,7 +99,7 @@
                 {% endif %}
                 {% endfor %} -->
                 {% for category in categories %}
-                <a href="{% url 'portfolio_by_category' category_slug=category.slug %}"
+                <a href="{% url 'portfolio_by_category' category_slug=category.slug %}" rel="nofollow"
                     class="{% if current_category and current_category.slug == category.slug %}active{% endif %}"
                     data-url="{% url 'portfolio_by_category' category_slug=category.slug %}">
                     {{ category.name }}
@@ -158,7 +158,7 @@
             <div class="ch19"></div>
         </div>
         <h2 id="cta_process_title">Let's Drive Growth To Your Business Too</h2>
-        <a href="contact.html" id="contact_cta_btn">Contact Us</a>
+        <a href="contact.html" title="contact page link" id="contact_cta_btn">Contact Us</a>
     </div>
 </section>
 
