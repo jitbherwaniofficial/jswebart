@@ -48,7 +48,8 @@ INSTALLED_APPS = [
     'portfolio',
     'blog',
     'django.contrib.sites',
-    'django.contrib.sitemaps'
+    'django.contrib.sitemaps',
+    'captcha',
 ]
 
 

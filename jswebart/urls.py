@@ -34,6 +34,7 @@ urlpatterns = [
     path("subscribe/", views.subscribe, name="subscribe"),
     path('robots.txt', views.robots_txt, name='robots_txt'),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='sitemap'),
+    path('captcha/', include('captcha.urls')),
 ]
 
 

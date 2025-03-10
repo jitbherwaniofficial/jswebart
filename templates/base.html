@@ -1,110 +1,129 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  {% block meta %} {% endblock %} 
-  <title>{% block title %} {% endblock %}</title>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MTXWCRMN');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% block meta %} {% endblock %}
+    <title>{% block title %} {% endblock %}</title>
 
-  <!-- FAVICONS ******************************************* -->
-  <link rel="shortcut icon" href="{% static 'favicon.png' %}" type="image/x-icon" />
-  <link rel="manifest" href="{% static 'manifest.webmanifest' %}" />
-  <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
-  <link rel="icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
-  <link rel="apple-touch-icon" href="{% static 'apple-touch-icon.png' %}" />
+    <!-- FAVICONS ******************************************* -->
+    <link rel="shortcut icon" href="{% static 'favicon.png' %}" type="image/x-icon" />
+    <link rel="manifest" href="{% static 'manifest.webmanifest' %}" />
+    <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{% static 'apple-touch-icon.png' %}" />
 
-  {% block stylesheet %} 
-  {% endblock %}
-  {% block style %} {% endblock %}
-  
+    {% block stylesheet %}
+    {% endblock %}
+    {% block style %} {% endblock %}
+
 </head>
 
 <body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTXWCRMN" height="0" width="0"
+            style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <!-- HEADER START *********************************************************** -->
-        {% include 'includes/header.html' %}
+    {% include 'includes/header.html' %}
     <!-- HEADER END ************************************************************** -->
 
     <!-- MAIN START ******************************************************************* -->
-        {% block content %}
+    {% block content %}
 
-        {% endblock %}
+    {% endblock %}
     <!-- MAIN END ******************************************************************* -->
 
     <!-- FOOTER STARTS ************************************************************** -->
-        {% include 'includes/footer.html' %}
+    {% include 'includes/footer.html' %}
     <!-- FOOTER END ************************************************************** -->
- 
+
     <!-- SWEET ALERT -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- SWEET ALERT -->
 
     <script>
-   document.addEventListener("DOMContentLoaded", function() {
-  // Select all forms with the class 'subscription-form'
-  const forms = document.querySelectorAll(".subscription-form");
+        document.addEventListener("DOMContentLoaded", function () {
+            // Select all forms with the class 'subscription-form'
+            const forms = document.querySelectorAll(".subscription-form");
 
-  forms.forEach(form => {
-    form.addEventListener("submit", function(event) {
-      event.preventDefault(); // Prevent default form submission
-    
-      const formData = new FormData(form);
-      // Get CSRF token from the current form
-      const csrfToken = form.querySelector("[name=csrfmiddlewaretoken]").value;
-    
-      fetch(form.action, {
-          method: "POST",
-          headers: {
-              "X-CSRFToken": csrfToken,
-              "X-Requested-With": "XMLHttpRequest" // Mark as AJAX request
-          },
-          body: formData
-      })
-      .then(response => response.json())
-      .then(data => {
-          if (data.success) {
-              Swal.fire({
-                  icon: "success",
-                  title: "Success",
-                  text: data.message,
-                  toast: true,
-                  position: "top-end",
-                  timer: 3000,
-                  showConfirmButton: false
-              });
-              form.reset(); // Reset the submitted form
-          } else {
-              Swal.fire({
-                  icon: "error",
-                  title: "Error",
-                  text: data.message,
-                  toast: true,
-                  position: "top-end",
-                  timer: 3000,
-                  showConfirmButton: false
-              });
-          }
-      })
-      .catch(error => {
-          Swal.fire({
-              icon: "error",
-              title: "Error",
-              text: "Something went wrong. Please try again later.",
-              toast: true,
-              position: "top-end",
-              timer: 3000,
-              showConfirmButton: false
-          });
-      });
-    });
-  });
-});
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"></script>
+            forms.forEach(form => {
+                form.addEventListener("submit", function (event) {
+                    event.preventDefault(); // Prevent default form submission
+
+                    const formData = new FormData(form);
+                    // Get CSRF token from the current form
+                    const csrfToken = form.querySelector("[name=csrfmiddlewaretoken]").value;
+
+                    fetch(form.action, {
+                        method: "POST",
+                        headers: {
+                            "X-CSRFToken": csrfToken,
+                            "X-Requested-With": "XMLHttpRequest" // Mark as AJAX request
+                        },
+                        body: formData
+                    })
+                        .then(response => response.json())
+                        .then(data => {
+                            if (data.success) {
+                                Swal.fire({
+                                    icon: "success",
+                                    title: "Success",
+                                    text: data.message,
+                                    toast: true,
+                                    position: "top-end",
+                                    timer: 3000,
+                                    showConfirmButton: false
+                                });
+                                form.reset(); // Reset the submitted form
+                            } else {
+                                Swal.fire({
+                                    icon: "error",
+                                    title: "Error",
+                                    text: data.message,
+                                    toast: true,
+                                    position: "top-end",
+                                    timer: 3000,
+                                    showConfirmButton: false
+                                });
+                            }
+                        })
+                        .catch(error => {
+                            Swal.fire({
+                                icon: "error",
+                                title: "Error",
+                                text: "Something went wrong. Please try again later.",
+                                toast: true,
+                                position: "top-end",
+                                timer: 3000,
+                                showConfirmButton: false
+                            });
+                        });
+                });
+            });
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"></script>
     {% block scripts %}
     {% endblock %}
-   
+
 </body>
-    
-</html>    
+
+</html>
