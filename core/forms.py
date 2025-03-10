@@ -1,12 +1,10 @@
 from django import forms
 from .models import Contact, JoinUs
-from captcha.fields import CaptchaField
 
 class ContactForm(forms.ModelForm):
-
     class Meta:
         model = Contact
-        fields = ['name', 'email','country_code', 'phone_number', 'company_stage', 'help_with', 'message']
+        fields = ['name', 'email','country_code', 'phone_number', 'company_stage', 'help_with', 'message',]
         widgets = {
             'help_with': forms.CheckboxSelectMultiple(choices=[
                 ('branding', 'Branding'),

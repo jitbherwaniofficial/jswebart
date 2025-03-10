@@ -4,6 +4,7 @@ from django.contrib import messages
 from blog.forms import SubscriptionForm
 from blog.models import Blog
 from .forms import ContactForm, JoinUsForm
+from decouple import config
 
 # Create your views here. 
 
@@ -37,6 +38,7 @@ def print_design_services(request):
 
 
 def contact(request):
+    SITE_KEY = config('SITE_KEY')
     if request.method == 'POST':
         print("POST data received:", request.POST)
         form = ContactForm(request.POST)
@@ -49,7 +51,7 @@ def contact(request):
             return render(request, 'contact-us.html', {'form': form, 'errors': form.errors})
     else:
         form = ContactForm()
-    return render(request, 'contact-us.html', {'form': form})
+    return render(request, 'contact-us.html', {'form': form, 'SITE_KEY':SITE_KEY})
 
 
 def thankyou(request):

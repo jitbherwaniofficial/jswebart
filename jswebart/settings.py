@@ -49,7 +49,6 @@ INSTALLED_APPS = [
     'blog',
     'django.contrib.sites',
     'django.contrib.sitemaps',
-    'captcha',
 ]
 
 
