@@ -60,6 +60,7 @@ def thankyou(request):
 
 
 def joinus(request):
+    SITE_KEY = config('SITE_KEY')
     if request.method == 'POST':
         form = JoinUsForm(request.POST, request.FILES)
         if form.is_valid():
@@ -69,7 +70,7 @@ def joinus(request):
             return render(request, 'joinus.html', {'form': form, 'success': False})
     else:
         form = JoinUsForm()
-    return render(request, 'joinus.html', {'form': form})
+    return render(request, 'joinus.html', {'form': form, 'SITE_KEY':SITE_KEY})
 
 
 def success(request):
