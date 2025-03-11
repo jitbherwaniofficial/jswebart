@@ -60,7 +60,7 @@ def thankyou(request):
     if request.session.get('form_submitted', False):
         # WE HAVE TO DELETE THE FLAG TO PREVENT DIRECT ACCESS ON REFRESH
         del request.session['form_submitted'] # THIS WILL REMOVE THE FLAG
-        return redirect('thankyou')
+        return redirect('contact')
     else:
         return render(request, 'contact-us.html') # IF AN HACKER IS HARDCODING 'THANK-YOU' ON URL THEN REDIRECT THAT STUPID FELLOW TO CONTACT PAGE
 
@@ -86,7 +86,7 @@ def success(request):
     if request.session.get('joinus_form_submitted', False):
         # WE HAVE TO DELETE THE FLAG TO PREVENT DIRECT ACCESS ON REFRESH
         del request.session['joinus_form_submitted'] # THIS WILL REMOVE THE FLAG
-        return redirect('success')
+        return redirect('join_us')
     else:
         return render(request, 'joinus.html') # IF AN HACKER IS HARDCODING 'THANK-YOU' ON URL THEN REDIRECT THAT STUPID FELLOW TO JOIN US PAGE
 

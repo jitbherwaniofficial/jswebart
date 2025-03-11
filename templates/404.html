@@ -8,6 +8,40 @@
 {% endblock %}
 
 {% block content %}
+
+<style>
+    .four_wrapper {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .four_o_four_error {
+        font-size: 2rem;
+        color: #6efacc;
+    }
+
+    .four_para {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .four_para a {
+        font-size: 1.6rem;
+        color: white;
+    }
+
+    .four_para a:hover {
+        color: #6efacc;
+    }
+</style>
+
 <div class="four_wrapper">
     <h1 class="four_o_four_error">404 ERROR</h1>
     <p class="four_para"><a href="{% url 'home' %}">Go Back To Home Page</a></p>
