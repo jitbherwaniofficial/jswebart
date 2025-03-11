@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+<!-- CSS LINKS ******************************************************* -->
+{% block stylesheet %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+{% endblock %}
+
+{% block content %}
+<div class="four_wrapper">
+    <h1 class="four_o_four_error">404 ERROR</h1>
+    <p class="four_para"><a href="{% url 'home' %}">Go Back To Home Page</a></p>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'js/animation.js' %}"></script>
+<script src="{% static 'js/index.js' %}"></script>
+
+{% endblock %}
