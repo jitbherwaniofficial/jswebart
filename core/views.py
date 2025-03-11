@@ -45,6 +45,7 @@ def contact(request):
         if form.is_valid():
             print("Form is valid. Saving data.")
             form.save()
+            request.session['form_submitted'] = True # Session flag
             return redirect('thankyou')
         else:
             print("Form errors:", form.errors)
@@ -55,7 +56,13 @@ def contact(request):
 
 
 def thankyou(request):
-    return render(request, 'thankyou.html')
+    # WE HAVE TO CHECK IF SESSION FLAG EXISTS OR NOT
+    if request.session.get('form_submitted', False):
+        # WE HAVE TO DELETE THE FLAG TO PREVENT DIRECT ACCESS ON REFRESH
+        del request.session['form_submitted'] # THIS WILL REMOVE THE FLAG
+        return redirect('thankyou')
+    else:
+        return render(request, 'contact-us.html') # IF AN HACKER IS HARDCODING 'THANK-YOU' ON URL THEN REDIRECT THAT STUPID FELLOW TO CONTACT PAGE
 
 
 
@@ -65,6 +72,7 @@ def joinus(request):
         form = JoinUsForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()  # Save the form data to the model
+            request.session['joinus_form_submitted'] = True # Session flag
             return redirect('success')  # Redirect to the success page after form submission
         else:
             return render(request, 'joinus.html', {'form': form, 'success': False})
@@ -74,7 +82,13 @@ def joinus(request):
 
 
 def success(request):
-    return render(request, 'success.html')
+    # WE HAVE TO CHECK IF SESSION FLAG EXISTS OR NOT
+    if request.session.get('joinus_form_submitted', False):
+        # WE HAVE TO DELETE THE FLAG TO PREVENT DIRECT ACCESS ON REFRESH
+        del request.session['joinus_form_submitted'] # THIS WILL REMOVE THE FLAG
+        return redirect('success')
+    else:
+        return render(request, 'joinus.html') # IF AN HACKER IS HARDCODING 'THANK-YOU' ON URL THEN REDIRECT THAT STUPID FELLOW TO JOIN US PAGE
 
 def privacy_policy(request):
     return render(request, 'privacy-policy.html')
