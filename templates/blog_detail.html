@@ -5,12 +5,8 @@
 
 {% block meta %} 
 
-    <meta name="description"
-        content="{{page.blog_meta_desc}}" />
-    <link rel="canonical" href="https://jswebart.com/blog/{{page.slug}}">
-    <!-- {% if canonical_url %}
-        <link rel="canonical" href="{{ canonical_url }}">
-    {% endif %} -->
+    <meta name="description" content="{{page.blog_meta_desc}}" />
+    <link rel="canonical" href="https://jswebart.com/blog/{{page.slug|urlencode}}/">
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
      <!-- FOR META -->
      <!-- FOR TELEGRAM -->
@@ -20,7 +16,7 @@
      <meta property="og:type" content="Article" />
      <meta property="og:title" content="{{page.blog_meta_title}}" />
      <meta property="og:description" content="{{page.blog_meta_desc}}" />
-     <meta property="og:url" content="https://jswebart.com/blog/{{page.slug}}" />
+     <meta property="og:url" content="https://jswebart.com/blog/{{page.slug|urlencode}}/" />
      <meta property="og:site_name" content="JSwebart" />
      <meta property="og:image" content="{{ page.image.url }}" />
      <meta property="og:image:secure_url" content="{{ page.image.url }}" />
@@ -63,7 +59,7 @@
         "@type": "ListItem", 
         "position": 3, 
         "name": "{{page.blog_meta_title}}",
-        "item": "https://jswebart.com/blog/{{page.slug}}"  
+        "item": "https://jswebart.com/blog/{{page.slug|urlencode}}/"  
       }]
     }
     </script>
@@ -73,7 +69,7 @@
           "@type": "BlogPosting",
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://jswebart.com/blog/{{page.slug}}"
+            "@id": "https://jswebart.com/blog/{{page.slug|urlencode}}/"
           },
           "headline": "{{page.blog_meta_title}}",
           "description": "{{page.blog_meta_desc}}",
