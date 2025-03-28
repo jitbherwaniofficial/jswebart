@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'blog',
     'django.contrib.sites',
     'django.contrib.sitemaps',
+    'django_recaptcha',
 ]
 
 
@@ -209,4 +210,6 @@ SITE_ID = 1
 
 # Django>=3.0,<5.0
 
+RECAPTCHA_PUBLIC_KEY = 'your_site_key_here'    # From Google reCAPTCHA
+RECAPTCHA_PRIVATE_KEY = 'your_secret_key_here' # From Google reCAPTCHA
 

@@ -1,7 +1,17 @@
 from django import forms
 from .models import Contact, JoinUs
+from django_recaptcha.fields import ReCaptchaField
+from django_recaptcha.widgets import ReCaptchaV2Checkbox
 
 class ContactForm(forms.ModelForm):
+    captcha = ReCaptchaField(
+        widget=ReCaptchaV2Checkbox(
+            attrs={
+                'data-theme': 'dark',
+                'data-action': 'submit',
+            }
+        )
+    )
     class Meta:
         model = Contact
         fields = ['name', 'email','country_code', 'phone_number', 'company_stage', 'help_with', 'message',]
