@@ -65,7 +65,14 @@ class ContactForm(forms.ModelForm):
     
 
 class JoinUsForm(forms.ModelForm):
-
+    captcha = ReCaptchaField(
+        widget=ReCaptchaV2Checkbox(
+            attrs={
+                'data-theme': 'dark',
+                'data-action': 'submit',
+            }
+        )
+    )
     class Meta:
         model = JoinUs
         fields = [

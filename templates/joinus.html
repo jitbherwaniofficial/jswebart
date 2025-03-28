@@ -231,7 +231,7 @@
                 {{ form.file_upload.errors }}
             </div>
             <div id="recaptcha_box" style="margin-top: 2vw;">
-                <div class="g-recaptcha" data-sitekey="{{SITE_KEY}}" aria-required="true" required  data-theme="dark" data-action='submit'></div>
+                {{ form.captcha }}
             </div>
             <div id="contact_submit_wrapper">
                 <button id="contact_submit" type="submit">Submit</button>

@@ -38,7 +38,7 @@ def print_design_services(request):
 
 
 def contact(request):
-    SITE_KEY = config('SITE_KEY')
+    # SITE_KEY = config('SITE_KEY')
     if request.method == 'POST':
         print("POST data received:", request.POST)
         form = ContactForm(request.POST)
@@ -52,7 +52,7 @@ def contact(request):
             return render(request, 'contact-us.html', {'form': form, 'errors': form.errors})
     else:
         form = ContactForm()
-    return render(request, 'contact-us.html', {'form': form, 'SITE_KEY':SITE_KEY})
+    return render(request, 'contact-us.html', {'form': form})
 
 
 def thankyou(request):
@@ -67,7 +67,7 @@ def thankyou(request):
 
 
 def joinus(request):
-    SITE_KEY = config('SITE_KEY')
+    # SITE_KEY = config('SITE_KEY')
     if request.method == 'POST':
         form = JoinUsForm(request.POST, request.FILES)
         if form.is_valid():
@@ -78,7 +78,7 @@ def joinus(request):
             return render(request, 'joinus.html', {'form': form, 'success': False})
     else:
         form = JoinUsForm()
-    return render(request, 'joinus.html', {'form': form, 'SITE_KEY':SITE_KEY})
+    return render(request, 'joinus.html', {'form': form})
 
 
 def success(request):
